@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOG公司 - 链上矿机创新者</title>
+    <title>DOG团队 - 创新链上矿机</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#FF8A00',
-                        secondary: '#FF5E00',
-                        accent: '#FFD166',
-                        dark: '#333333',
-                        light: '#FFF9E6',
+                        cream: '#FFF8E7',
+                        primary: '#FF5252',
+                        secondary: '#2196F3',
+                        dark: '#1A1A2E',
+                        accent: '#FFC107',
+                        light: '#F5F5F5'
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
                     },
                     animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'float-slow': 'float 8s ease-in-out infinite',
-                        'float-fast': 'float 4s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        }
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     }
                 },
             }
@@ -40,299 +34,330 @@
             .text-shadow {
                 text-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
-            .text-shadow-lg {
-                text-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
             }
-            .bg-gradient-warm {
-                background: linear-gradient(135deg, #FFF9E6 0%, #FFE8CC 100%);
+            .bg-glass {
+                background: rgba(255, 248, 231, 0.7);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
             }
-            .card-hover {
-                transition: all 0.3s ease;
-            }
-            .card-hover:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            .tech-border {
+                border-image: linear-gradient(45deg, #2196F3, #FF5252) 1;
             }
         }
     </style>
 </head>
-<body class="bg-gradient-warm min-h-screen text-dark overflow-x-hidden">
-    <!-- 飘动的DOG图标 -->
-    <div class="fixed inset-0 pointer-events-none z-0 opacity-10 overflow-hidden">
-        <div class="absolute top-[10%] left-[5%] w-16 h-16 animate-float">
-            <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/e6c40c2e18464d4c9ddbc378064dc9f9.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=wrxW2dzjszqqbrxTMqjm2sdQOYM%3D" alt="DOG图标" class="w-full h-full object-contain">
-        </div>
-        <div class="absolute top-[30%] right-[10%] w-20 h-20 animate-float-slow">
-            <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/924813a4dcda40f1bb22e9f9f01256dd.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=ij%2FA3wopn%2FLdkais9w7ujmJrCmE%3D" alt="DOG图标" class="w-full h-full object-contain">
-        </div>
-        <div class="absolute bottom-[20%] left-[20%] w-18 h-18 animate-float-fast">
-            <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/e6c40c2e18464d4c9ddbc378064dc9f9.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=wrxW2dzjszqqbrxTMqjm2sdQOYM%3D" alt="DOG图标" class="w-full h-full object-contain">
-        </div>
-        <div class="absolute bottom-[40%] right-[5%] w-14 h-14 animate-float">
-            <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/924813a4dcda40f1bb22e9f9f01256dd.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=ij%2FA3wopn%2FLdkais9w7ujmJrCmE%3D" alt="DOG图标" class="w-full h-full object-contain">
-        </div>
-    </div>
-
+<body class="bg-cream font-sans text-dark antialiased">
     <!-- 导航栏 -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/924813a4dcda40f1bb22e9f9f01256dd.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=ij%2FA3wopn%2FLdkais9w7ujmJrCmE%3D" alt="DOG Logo" class="w-10 h-10 rounded-full">
-                <span class="text-xl font-bold text-primary">DOG公司</span>
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <nav class="bg-glass border-b border-gray-200/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 flex items-center">
+                            <img class="h-8 w-8 rounded-full" src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/ded618f4910048919cd663332d744feb.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=nfv8M7fJ9hs4jqIfKnhmWv397k0%3D" alt="DOG Logo">
+                            <span class="ml-2 text-xl font-bold text-dark">DOG团队</span>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#about" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">关于我们</a>
+                        <a href="#miner" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">DOG矿机</a>
+                        <a href="#team" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">团队成员</a>
+                        <a href="#stats" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 text-sm font-medium">数据统计</a>
+                        <a href="#buy" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md text-sm font-medium transition-all transform hover:scale-105">立即购买</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button type="button" id="mobile-menu-button" class="text-gray-700 hover:text-primary">
+                            <i class="fa fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-primary transition-colors">关于我们</a>
-                <a href="#mining-machine" class="hover:text-primary transition-colors">DOG矿机</a>
-                <a href="#benefits" class="hover:text-primary transition-colors">收益模式</a>
-                <a href="#team" class="hover:text-primary transition-colors">团队介绍</a>
-                <a href="#purchase" class="hover:text-primary transition-colors">购买链接</a>
+            
+            <!-- 移动端菜单 -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary">关于我们</a>
+                    <a href="#miner" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary">DOG矿机</a>
+                    <a href="#team" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary">团队成员</a>
+                    <a href="#stats" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary">数据统计</a>
+                    <a href="#buy" class="block px-3 py-2 mt-2 rounded-md text-base font-medium bg-primary text-white text-center">立即购买</a>
+                </div>
             </div>
-            <button class="md:hidden text-dark text-xl">
-                <i class="fa fa-bars"></i>
-            </button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- 英雄区域 -->
-    <header class="relative py-16 md:py-24 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-                <div class="md:w-1/2 space-y-6 text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary text-shadow-lg">
-                        书写X链神话
+    <section class="pt-28 pb-20 md:pt-36 md:pb-28 px-4 bg-gradient-to-b from-cream to-light relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden opacity-10">
+            <div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-secondary"></div>
+            <div class="absolute left-1/4 bottom-10 w-64 h-64 rounded-full bg-primary"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                        <span class="bg-gradient-to-r from-secondary to-primary text-gradient">DOG矿机</span>
+                        <br>链上创新革命
                     </h1>
-                    <p class="text-xl md:text-2xl font-bold">
-                        底池燃烧 | 零泡沫挖矿 | 分红OKB
+                    <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-lg">
+                        短短一个月3500+持币用户，组织架构极简的创新型链上公司，让DOG矿机走进千家万户。
                     </p>
-                    <p class="text-lg text-dark/80">
-                        成立于2025年9月11日，今天刚刚满月的创新型链上公司
-                    </p>
-                    <div class="pt-4">
-                        <a href="#purchase" class="inline-block bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#miner" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md text-lg font-medium transition-all transform hover:scale-105 text-center">
                             了解矿机 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#buy" class="bg-white border border-gray-300 hover:border-secondary text-dark px-6 py-3 rounded-md text-lg font-medium transition-all transform hover:scale-105 text-center">
+                            立即购买 <i class="fa fa-shopping-cart ml-2"></i>
                         </a>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
-                    <a href="https://x.com/OKXDOG" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/e6c40c2e18464d4c9ddbc378064dc9f9.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=wrxW2dzjszqqbrxTMqjm2sdQOYM%3D" 
-                            alt="DOG官推" 
-                            class="w-full max-w-md rounded-xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                    </a>
+                    <div class="relative">
+                        <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/ded618f4910048919cd663332d744feb.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=nfv8M7fJ9hs4jqIfKnhmWv397k0%3D" 
+                             alt="DOG Logo" 
+                             class="w-64 h-64 md:w-80 md:h-80 object-contain animate-pulse-slow">
+                        <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg border border-gray-100">
+                            <div class="text-2xl font-bold text-primary">3500+</div>
+                            <div class="text-sm text-gray-600">持币用户</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- 关于我们 -->
-    <section id="about" class="py-16 bg-white/50 rounded-3xl mx-4 md:mx-8 my-8">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">关于我们</h2>
-            <div class="max-w-3xl mx-auto space-y-6 text-lg">
-                <p>
-                    这是一家成立于2025年9月11日的公司，今天刚刚满月。短短一个月已有3500+持币用户，很少空投，追求真实持币人。
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">关于DOG团队</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    我们是一家追求真实持币人的创新型链上公司，组织架构极简，却拥有强大的执行力
                 </p>
-                <p>
+            </div>
+            
+            <div class="bg-cream rounded-2xl p-8 shadow-lg border border-gray-100 mb-12">
+                <p class="text-lg text-gray-700 mb-6">
                     如果我们把持有DOG大于500万的地址数当做正式员工数，那么这已经是一家拥有1200+正式员工的大型公司了。
                 </p>
-                <p>
-                    这是一家组织架构极简的公司，有技术大神，有销售天团，有内容高手，目标只有一个：让DOG矿机走进千家万户。
+                <p class="text-lg text-gray-700">
+                    这是一家我们从未见过的链上公司。它没有官网，没有前端交互，只有一个已经开源和弃权的智能合约。它足够创新，融合了此前所有机制币的优点，集齐了常用的激励手段。
                 </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <h3 class="text-xl font-bold text-primary mb-3">产品部</h3>
-                        <p>以中本中为代表，开发了本公司的底层产品：DOG智能合约。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-light rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-code text-primary text-2xl"></i>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <h3 class="text-xl font-bold text-primary mb-3">销售部</h3>
-                        <p>以法哥为代表，百大工作室逐步搭建中，誓言打通线下流量。</p>
-                    </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <h3 class="text-xl font-bold text-primary mb-3">市场部</h3>
-                        <p>以老铁为代表，吸引了越来越多的人才，持续产出图文视频。</p>
-                    </div>
+                    <h3 class="text-xl font-bold mb-3">产品部</h3>
+                    <p class="text-gray-600">
+                        以中本中为代表，开发了本公司的底层产品：DOG智能合约，确保所有操作公开透明。
+                    </p>
                 </div>
+                
+                <div class="bg-light rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-line-chart text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">销售部</h3>
+                    <p class="text-gray-600">
+                        以法哥为代表，百大工作室逐步搭建中，誓言打通线下流量，让更多人了解DOG矿机。
+                    </p>
+                </div>
+                
+                <div class="bg-light rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bullhorn text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">市场部</h3>
+                    <p class="text-gray-600">
+                        以老铁为代表，吸引了越来越多的人才，持续产出图文视频，扩大DOG的影响力。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-xl text-gray-700 font-medium">
+                    有技术大神，有销售天团，有内容高手，目标只有一个
+                </p>
+                <p class="text-2xl md:text-3xl font-bold text-primary mt-4">
+                    让DOG矿机走进千家万户
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- DOG矿机 -->
-    <section id="mining-machine" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">DOG矿机</h2>
-            <p class="text-center text-xl mb-16 max-w-3xl mx-auto">
-                一种创新的链上矿机，集大成者，融合了此前诸多矿机的优势
-            </p>
-
+    <!-- DOG矿机介绍 -->
+    <section id="miner" class="py-20 px-4 bg-gradient-to-b from-light to-cream">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">DOG矿机</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    一种创新的链上矿机，融合了诸多优势，为用户带来全新的挖矿体验
+                </p>
+            </div>
+            
             <!-- 矿机特色 -->
             <div class="mb-20">
-                <h3 class="text-2xl font-bold text-center mb-10">矿机特色</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-money"></i>
+                <h3 class="text-2xl font-bold mb-10 text-center">矿机特色</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-money text-primary"></i>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">单次投入</h4>
-                        <p>一次性投入，无额外成本。不耗电，无维修。</p>
+                        <h4 class="font-bold text-lg mb-2">单次投入</h4>
+                        <p class="text-gray-600 text-sm">
+                            一次性投入，无额外成本。不耗电，无维修。
+                        </p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-magic"></i>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-check-circle text-secondary"></i>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">操作简单</h4>
-                        <p>仅需持有即可挖矿，产出自动到账，无需操作。</p>
+                        <h4 class="font-bold text-lg mb-2">操作简单</h4>
+                        <p class="text-gray-600 text-sm">
+                            仅需持有即可挖矿，产出自动到账，无需操作。
+                        </p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-cogs"></i>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-cogs text-accent"></i>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">智能执行</h4>
-                        <p>全程智能合约控制，准时、准确，公开、公正、公平。</p>
+                        <h4 class="font-bold text-lg mb-2">智能执行</h4>
+                        <p class="text-gray-600 text-sm">
+                            全程智能合约控制，准时、准确，公开、公正、公平。
+                        </p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-shield"></i>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-shield text-green-500"></i>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">无惧稀释</h4>
-                        <p>因为DOG通缩，只要你持币不动，挖矿算力只会增强。</p>
+                        <h4 class="font-bold text-lg mb-2">无惧稀释</h4>
+                        <p class="text-gray-600 text-sm">
+                            因为DOG通缩，只要你持币不动，挖矿算力只会增强。
+                        </p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-gift"></i>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-diamond text-purple-500"></i>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">双重产出</h4>
-                        <p>矿机数量≥1即享双重产出，即产出母币WOKB，又产出本币DOG。</p>
+                        <h4 class="font-bold text-lg mb-2">双重产出</h4>
+                        <p class="text-gray-600 text-sm">
+                            矿机数量≥1即享双重产出，即产出母币WOKB，又产出本币DOG。
+                        </p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-puzzle-piece"></i>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-indigo-500/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-calculator text-indigo-500"></i>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">化整为零</h4>
-                        <p>以500万的倍数来计算矿机数量，比如50万DOG=0.1台矿机，1000万DOG=2台矿机。</p>
+                        <h4 class="font-bold text-lg mb-2">化整为零</h4>
+                        <p class="text-gray-600 text-sm">
+                            以500万的倍数来计算矿机数量，比如50万DOG=0.1台矿机。
+                        </p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover md:col-span-2 lg:col-span-1 md:mx-auto lg:mx-0">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-star"></i>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-star text-red-500"></i>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">数量稀缺</h4>
-                        <p>因为DOG通缩，所以矿机总量不仅有限，还越来越少。考虑到底池购买不完，预计当前矿机上限最多10000台，先到先得。</p>
+                        <h4 class="font-bold text-lg mb-2">数量稀缺</h4>
+                        <p class="text-gray-600 text-sm">
+                            因为DOG通缩，矿机总量有限且越来越少，预计上限10000台。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                        <div class="w-12 h-12 bg-teal-500/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fa fa-users text-teal-500"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">背靠社区</h4>
+                        <p class="text-gray-600 text-sm">
+                            背后有强大的社区和基金会做支撑，市场地推巩固底部。
+                        </p>
                     </div>
                 </div>
             </div>
-
+            
             <!-- 矿机获取方式 -->
             <div class="mb-20">
-                <h3 class="text-2xl font-bold text-center mb-10">矿机获取方式</h3>
+                <h3 class="text-2xl font-bold mb-10 text-center">矿机获取方式</h3>
+                
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-shopping-cart"></i>
+                    <div class="bg-white rounded-xl p-8 shadow-md border border-gray-100">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                <i class="fa fa-shopping-bag text-primary"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h4 class="font-bold text-xl mb-3">一级市场购买</h4>
+                                <p class="text-gray-600 mb-4">
+                                    通过钱包，输入CA地址，直接DEX进货。
+                                </p>
+                                <div class="bg-gray-100 p-3 rounded-lg text-sm font-mono overflow-x-auto">
+                                    0x903358faf7c6304afbd560e9e29b12ab1b8fddc5
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">一级市场购买</h4>
-                        <p>通过钱包，输入CA：0x903358faf7c6304afbd560e9e29b12ab1b8fddc5，直接DEX进货。</p>
                     </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-exchange"></i>
+                    
+                    <div class="bg-white rounded-xl p-8 shadow-md border border-gray-100">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                <i class="fa fa-exchange text-secondary"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h4 class="font-bold text-xl mb-3">二级市场转让</h4>
+                                <p class="text-gray-600">
+                                    钱包点对点转账，场外直接交易，灵活便捷。
+                                </p>
+                            </div>
                         </div>
-                        <h4 class="text-xl font-bold mb-3">二级市场转让</h4>
-                        <p>钱包点对点转账，场外直接交易。</p>
                     </div>
                 </div>
             </div>
-
-            <!-- 收益查看方式 -->
+            
+            <!-- 收益查看 -->
             <div>
-                <h3 class="text-2xl font-bold text-center mb-10">收益查看方式</h3>
+                <h3 class="text-2xl font-bold mb-10 text-center">矿机收益查看</h3>
+                
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-3">浏览器查看</h4>
-                        <p>到XLayer浏览器输入自己的钱包地址即可查看。</p>
-                    </div>
-                    <div class="bg-white rounded-xl p-6 shadow-md card-hover">
-                        <div class="text-primary text-3xl mb-4">
-                            <i class="fa fa-wallet"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-3">钱包查看</h4>
-                        <p>用支持XLayer的钱包即可查看，其中TP钱包产出明细更详细。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 收益模式 -->
-    <section id="benefits" class="py-16 bg-white/50 rounded-3xl mx-4 md:mx-8 my-8">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">收益模式</h2>
-            
-            <div class="max-w-4xl mx-auto space-y-12">
-                <!-- 100%赋能 -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-center">100%赋能DOG</h3>
-                    <div class="bg-white rounded-xl p-6 shadow-md">
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <span class="text-primary mr-3 mt-1"><i class="fa fa-percent"></i></span>
-                                <p>矿机买卖手续费2%，以WOKB形式，按矿机占比，100%分配给1台以上的矿机持有者。交易额大的情况下，基本上每小时分配一次。</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-3 mt-1"><i class="fa fa-percent"></i></span>
-                                <p>矿机买卖手续费1%，以DOG/WOKB的形式，持续回流到流动性底池，为一级市场的销售提供持续性的流动性补充。</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-3 mt-1"><i class="fa fa-percent"></i></span>
-                                <p>矿机转让手续费1%，实时转入XLayer黑洞地址，使得DOG持续通缩，稀缺性越来越强。</p>
-                            </li>
-                        </ul>
-                        
-                        <div class="mt-8 p-4 bg-primary/10 rounded-lg">
-                            <p class="font-semibold">短短30天成就：</p>
-                            <ul class="mt-2 space-y-2">
-                                <li class="flex items-center">
-                                    <i class="fa fa-line-chart text-primary mr-2"></i>
-                                    <span>产生了700万U+的流水</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fa fa-money text-primary mr-2"></i>
-                                    <span>向符合条件的矿机持有者分配了14万U+的净利润</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fa fa-tint text-primary mr-2"></i>
-                                    <span>增强了7万U+的一级市场流动性</span>
-                                </li>
-                            </ul>
+                    <div class="bg-white rounded-xl p-8 shadow-md border border-gray-100 hover:border-secondary transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                <i class="fa fa-globe text-secondary"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h4 class="font-bold text-xl mb-3">浏览器查看</h4>
+                                <p class="text-gray-600">
+                                    到XLayer浏览器输入自己的钱包地址即可查看详细收益情况。
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- 全职员工激励 -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-center">全职员工激励</h3>
-                    <div class="bg-white rounded-xl p-6 shadow-md">
-                        <p class="mb-4">即使销售惨淡，也从制度上持续激励全职员工（持有≥500万DOG）：</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <span class="text-primary mr-3 mt-1"><i class="fa fa-clock-o"></i></span>
-                                <p>每12小时，单边提取流动底池里0.75%的DOG，单日合计1.5%。</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-3 mt-1"><i class="fa fa-share-alt"></i></span>
-                                <p>其中流动底池0.5%的DOG，作为分红，按矿机比例，分配给全职员工。</p>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-3 mt-1"><i class="fa fa-burn"></i></span>
-                                <p>另外流动底池0.25%的DOG，转入XLayer黑洞地址，让员工手上的DOG越来越稀缺。</p>
-                            </li>
-                        </ul>
-                        
-                        <div class="mt-6 p-4 bg-accent/20 rounded-lg">
-                            <p class="font-semibold">销毁成果：</p>
-                            <p class="mt-2">加上转让手续费、创始人的大额回购销毁，短短30天，DOG累计销毁了近48%。只要你长期持有，你在DOG生态的筹码占比将越来越大。</p>
+                    
+                    <div class="bg-white rounded-xl p-8 shadow-md border border-gray-100 hover:border-primary transition-colors">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mt-1 flex-shrink-0">
+                                <i class="fa fa-wallet text-primary"></i>
+                            </div>
+                            <div class="ml-6">
+                                <h4 class="font-bold text-xl mb-3">钱包查看</h4>
+                                <p class="text-gray-600">
+                                    用支持XLayer的钱包即可查看，其中TP钱包产出明细更详细。
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -340,175 +365,540 @@
         </div>
     </section>
 
-    <!-- 团队介绍 -->
-    <section id="team" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">团队与社区代表</h2>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- 团队成员1 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
-                    <a href="https://x.com/OKXDOG" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/e6c40c2e18464d4c9ddbc378064dc9f9.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=wrxW2dzjszqqbrxTMqjm2sdQOYM%3D" 
-                            alt="官推" 
-                            class="w-full h-64 object-cover">
-                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-1">官方推特</h3>
-                        <p class="text-dark/70 text-sm">@OKXDOG</p>
-                    </div>
-                </div>
-                
-                <!-- 团队成员2 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
-                    <a href="https://x.com/DOGxlayer" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/924813a4dcda40f1bb22e9f9f01256dd.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=ij%2FA3wopn%2FLdkais9w7ujmJrCmE%3D" 
-                            alt="基金会推特" 
-                            class="w-full h-64 object-cover">
-                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-1">基金会推特</h3>
-                        <p class="text-dark/70 text-sm">@DOGxlayer</p>
-                    </div>
-                </div>
-                
-                <!-- 团队成员3 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
-                    <a href="https://x.com/LaoTieBro" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/a800890cf3824154b7336ff0ee950acd.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=m50%2FhTjP3m6O4MwQnUDCGkEMN%2FU%3D" 
-                            alt="市场销售" 
-                            class="w-full h-64 object-cover">
-                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-1">市场销售</h3>
-                        <p class="text-dark/70 text-sm">@LaoTieBro</p>
-                    </div>
-                </div>
-                
-                <!-- 团队成员4 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
-                    <a href="https://x.com/calerc20" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/be4b8034bd174bb5a518dc448705f3f2.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=1ShXz5Y4s9axagQy6CJFIhRzOPo%3D" 
-                            alt="市场销售" 
-                            class="w-full h-64 object-cover">
-                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-1">市场销售</h3>
-                        <p class="text-dark/70 text-sm">@calerc20</p>
-                    </div>
-                </div>
-                
-                <!-- 团队成员5 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
-                    <a href="https://x.com/thlm_jimi" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/010500d2191f4c6194b5e83c58ad10a2.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=nToUAg11AblVVDbr1dpnPpRw%2FYE%3D" 
-                            alt="内容博主" 
-                            class="w-full h-64 object-cover">
-                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-1">内容博主</h3>
-                        <p class="text-dark/70 text-sm">@thlm_jimi</p>
-                    </div>
-                </div>
-                
-                <!-- 团队成员6 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
-                    <a href="https://x.com/Cassie1656439" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/c6987b4549824d92a1efaedcba47e36c.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=4VyA%2FE7ZMNuoEw9fZ%2BqcVSr%2BZhI%3D" 
-                            alt="冲推代表" 
-                            class="w-full h-64 object-cover">
-                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-1">冲推代表</h3>
-                        <p class="text-dark/70 text-sm">@Cassie1656439</p>
-                    </div>
-                </div>
-                
-                <!-- 团队成员7 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover">
-                    <a href="https://x.com/yangfengzilin" target="_blank" rel="noopener noreferrer">
-                        <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/43a79e2af92240c5a309d8188e410772.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=iCjPHPpBJlTL8BSVC06zhK0lNSg%3D" 
-                            alt="形象代表" 
-                            class="w-full h-64 object-cover">
-                    </a>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-1">形象代表</h3>
-                        <p class="text-dark/70 text-sm">@yangfengzilin</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 购买链接 -->
-    <section id="purchase" class="py-16 bg-white/50 rounded-3xl mx-4 md:mx-8 my-8">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary">购买DOG矿机</h2>
-            <p class="text-xl mb-10 max-w-2xl mx-auto">
-                点击下方链接，开始您的DOG矿机之旅。请记住，投资有风险，入市需谨慎。
-            </p>
-            
-            <a href="https://potatoswap.finance/swap?outputCurrency=0x903358faf7c6304afbd560e9e29b12ab1b8fddc5" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="inline-block bg-primary hover:bg-secondary text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 text-lg">
-                <i class="fa fa-shopping-bag mr-2"></i> 前往购买
-            </a>
-            
-            <div class="mt-12 p-6 bg-red-50 border border-red-200 rounded-xl max-w-2xl mx-auto">
-                <h3 class="text-xl font-bold text-red-600 mb-3">风险提示</h3>
-                <p class="text-red-700">
-                    DOG属于一级市场，代币价格波动极大。投资有风险，入市需谨慎。请对您自己的仓位负责，盈亏自负。本文仅做DOG机制和现状分享，不作为投资建议。
+    <!-- 公司模式和赋能机制 -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">公司模式与赋能机制</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    100%利润赋能DOG，打造可持续发展的生态系统
                 </p>
             </div>
+            
+            <div class="bg-cream rounded-2xl p-8 md:p-10 shadow-lg border border-gray-100 mb-16">
+                <h3 class="text-2xl font-bold mb-6 text-center">100%利润赋能DOG</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <div class="text-3xl font-bold text-primary mb-2">2%</div>
+                        <p class="text-gray-700 font-medium mb-3">矿机买卖手续费</p>
+                        <p class="text-gray-600 text-sm">
+                            以WOKB形式，按矿机占比，100%分配给1台以上的矿机持有者。交易额大的情况下，基本上每小时分配一次。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <div class="text-3xl font-bold text-secondary mb-2">1%</div>
+                        <p class="text-gray-700 font-medium mb-3">矿机买卖手续费</p>
+                        <p class="text-gray-600 text-sm">
+                            以DOG/WOKB的形式，持续回流到流动性底池，为一级市场的销售提供持续性的流动性补充。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <div class="text-3xl font-bold text-accent mb-2">1%</div>
+                        <p class="text-gray-700 font-medium mb-3">矿机转让手续费</p>
+                        <p class="text-gray-600 text-sm">
+                            实时转入XLayer黑洞地址，使得DOG持续通缩，稀缺性越来越强。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">员工激励机制</h3>
+                    <p class="text-gray-700 mb-6">
+                        这是一家即使销售惨淡，也从制度上持续激励全职员工（持有≥500万DOG）的公司。
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">每12小时，单边提取流动底池里0.75%的DOG，单日合计1.5%。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">其中流动底池0.5%的DOG，作为分红，按矿机比例，分配给全职员工。</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">另外流动底池0.25%的DOG，转入XLayer黑洞地址，让员工手上的DOG越来越稀缺。</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-700 mt-6 font-medium">
+                        因此只要你拿住500万DOG，即使销售惨淡，每天本币分红也会有的。换句话说，只要长期持有，你DOG的成本会越来越低。
+                    </p>
+                </div>
+                
+                <div class="bg-light rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <h4 class="text-xl font-bold mb-6 text-center">DOG销毁进度</h4>
+                    <div class="relative pt-1 mb-8">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">
+                                    累计销毁
+                                </span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-red-600">
+                                    48%
+                                </span>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-red-200">
+                            <div style="width: 48%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-center">
+                        加上转让手续费、创始人的大额回购销毁，短短30天，DOG累计销毁了近48%。只要你长期持有，你在DOG生态的筹码占比将越来越大。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 text-center">
+                <p class="text-xl md:text-2xl font-medium text-gray-800">
+                    可以说，这是一家特别适合<span class="text-primary font-bold">钻石手员工</span>的公司。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队成员 -->
+    <section id="team" class="py-20 px-4 bg-gradient-to-b from-cream to-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">团队成员与核心贡献者</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    认识为DOG生态做出重要贡献的核心成员
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- 创始人 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                    <div class="relative">
+                        <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/b04cdc0aa2194787a5602fea151da9b0.png~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=GibHX6iG6xNWZMPw1uJnKam7zvA%3D" 
+                             alt="创始人" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-1">创始人</h3>
+                        <p class="text-gray-600 text-sm">中本中</p>
+                        <p class="text-gray-500 text-xs mt-3">产品部负责人</p>
+                    </div>
+                </div>
+                
+                <!-- 官推 -->
+                <a href="https://x.com/OKXDOG" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/ded618f4910048919cd663332d744feb.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=nfv8M7fJ9hs4jqIfKnhmWv397k0%3D" 
+                                 alt="官推" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">官推</h3>
+                            <p class="text-gray-600 text-sm">@OKXDOG</p>
+                            <p class="text-gray-500 text-xs mt-3">官方信息发布</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 基金会推特 -->
+                <a href="https://x.com/DOGxlayer" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/9b929e989f754996b399243eccfc26ad.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=Pwnud5sSnDkp9VyC0QnmAoqI9vw%3D" 
+                                 alt="基金会推特" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">基金会法哥</h3>
+                            <p class="text-gray-600 text-sm">@DOGxlayer</p>
+                            <p class="text-gray-500 text-xs mt-3">生态支持与发展</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 市场销售1 -->
+                <a href="https://x.com/LaoTieBro" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/869e41baaa26401499b3054c184bc6e9.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=%2FniKFOwTNXvOq1saj5tmcBXMsXw%3D" 
+                                 alt="市场销售" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">老铁</h3>
+                            <p class="text-gray-600 text-sm">@LaoTieBro</p>
+                            <p class="text-gray-500 text-xs mt-3">市场部负责人</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 市场销售2 -->
+                <a href="https://x.com/calerc20" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/664c6a4cb50f42ad8503d72ae11b2b95.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=qD1Nao5vRcHd160qXtG2YOremqA%3D" 
+                                 alt="市场销售" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Alpha 大拿</h3>
+                            <p class="text-gray-600 text-sm">@calerc20</p>
+                            <p class="text-gray-500 text-xs mt-3">销售部负责人</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 内容博主 -->
+                <a href="https://x.com/thlm_jimi" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/499ba8870ced405089ba9e4c82a57c76.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=zbTf3xvpnETbBzWSE%2F8wa5yL0I8%3D" 
+                                 alt="内容博主" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">几米</h3>
+                            <p class="text-gray-600 text-sm">@thlm_jimi</p>
+                            <p class="text-gray-500 text-xs mt-3">内容博主</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 冲推代表 -->
+                <a href="https://x.com/Cassie1656439" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/90306f6e516c40ad93d0653a109703b6.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=%2Fr39ibX81KHZxiItmBwZxS%2F0A0U%3D" 
+                                 alt="冲推代表" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">Cassie</h3>
+                            <p class="text-gray-600 text-sm">@Cassie1656439</p>
+                            <p class="text-gray-500 text-xs mt-3">冲推代表</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 形象代表 -->
+                <a href="https://x.com/yangfengzilin" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/5250dc07fdce4700894418936049d4d3.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=D10k%2F%2BsfKKjJ%2BJ8Mmv16Xg%2FX%2FjE%3D" 
+                                 alt="形象代表" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">琳琳</h3>
+                            <p class="text-gray-600 text-sm">@yangfengzilin</p>
+                            <p class="text-gray-500 text-xs mt-3">形象代表</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- LOGO设计 -->
+                <a href="https://x.com/YXuanSheng" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/f445af4b648148f5bcc7e8e0eaa9917e.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=tbf0Ppw9GgjB9%2FmHfiGwYGNUGAM%3D" 
+                                 alt="LOGO设计" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">YXuanSheng</h3>
+                            <p class="text-gray-600 text-sm">@YXuanSheng</p>
+                            <p class="text-gray-500 text-xs mt-3">LOGO设计师</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 夜间代表 -->
+                <a href="https://x.com/mmc7231?s=11" target="_blank" rel="noopener noreferrer">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group">
+                        <div class="relative">
+                            <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/1d79e9551804481ca6a6d39e4d1cc5dd.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=Yjke3nan2IchU42QuM9SW3e%2BzFM%3D" 
+                                 alt="夜间代表" 
+                                 class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fa fa-twitter text-white text-4xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-lg mb-1">mmc</h3>
+                            <p class="text-gray-600 text-sm">@mmc7231</p>
+                            <p class="text-gray-500 text-xs mt-3">夜间代表</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section id="stats" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">数据统计</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    短短30天，DOG已经取得了令人瞩目的成绩
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-cream rounded-xl p-8 shadow-md border border-gray-100 text-center">
+                    <div class="text-5xl font-bold text-primary mb-2">3500+</div>
+                    <p class="text-gray-700 text-lg">持币用户</p>
+                    <p class="text-gray-500 text-sm mt-4">一个月内快速增长的用户群体</p>
+                </div>
+                
+                <div class="bg-cream rounded-xl p-8 shadow-md border border-gray-100 text-center">
+                    <div class="text-5xl font-bold text-secondary mb-2">1200+</div>
+                    <p class="text-gray-700 text-lg">正式员工</p>
+                    <p class="text-gray-500 text-sm mt-4">持有DOG大于500万的地址数</p>
+                </div>
+                
+                <div class="bg-cream rounded-xl p-8 shadow-md border border-gray-100 text-center">
+                    <div class="text-5xl font-bold text-accent mb-2">700万+</div>
+                    <p class="text-gray-700 text-lg">流水(U)</p>
+                    <p class="text-gray-500 text-sm mt-4">短短30天产生的交易流水</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-light rounded-xl p-8 shadow-md border border-gray-100">
+                    <h3 class="text-xl font-bold mb-6">分配与流动性</h3>
+                    <canvas id="distributionChart" height="300"></canvas>
+                </div>
+                
+                <div class="bg-light rounded-xl p-8 shadow-md border border-gray-100">
+                    <h3 class="text-xl font-bold mb-6">矿机数量分布</h3>
+                    <canvas id="minerDistributionChart" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 购买部分 -->
+    <section id="buy" class="py-20 px-4 bg-gradient-to-b from-light to-cream">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">获取DOG矿机</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    加入DOG生态，成为创新链上矿机的持有者
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 max-w-4xl mx-auto">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-gradient-to-br from-primary to-primary/70 p-8 text-white flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-6">购买须知</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fa fa-info-circle mt-1 mr-3"></i>
+                                <span>DOG属于一级市场，代币价格波动极大。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-exclamation-triangle mt-1 mr-3"></i>
+                                <span>投资有风险，入市需谨慎。请对您自己的仓位负责，盈亏自负。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-lightbulb-o mt-1 mr-3"></i>
+                                <span>本文仅做DOG机制和现状分享，不作为投资建议。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle mt-1 mr-3"></i>
+                                <span>建议闲钱配置，一台矿机（500万DOG）足矣。</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-6">购买链接</h3>
+                        <a href="https://potatoswap.finance/swap?outputCurrency=0x903358faf7c6304afbd560e9e29b12ab1b8fddc5" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="block w-full bg-primary hover:bg-primary/90 text-white text-center px-6 py-4 rounded-md text-lg font-medium transition-all mb-6">
+                            PotatoSwap购买 <i class="fa fa-external-link ml-2"></i>
+                        </a>
+                        
+                        <h4 class="font-bold text-lg mb-3">合约地址</h4>
+                        <div class="bg-gray-100 p-4 rounded-lg text-sm font-mono overflow-x-auto mb-6">
+                            0x903358faf7c6304afbd560e9e29b12ab1b8fddc5
+                        </div>
+                        
+                        <button id="copy-button" class="text-secondary hover:text-secondary/80 text-sm font-medium flex items-center">
+                            <i class="fa fa-copy mr-2"></i> 复制合约地址
+                        </button>
+                        <div id="copy-message" class="hidden text-green-500 text-sm mt-2">
+                            地址已复制到剪贴板！
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 结语 -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">见证DOG的未来</h2>
+            <p class="text-lg text-gray-700 mb-10 leading-relaxed">
+                在10月11日币圈大暴跌的这一天，把这家公司分享给你，不是为了让你购买DOG矿机，而是想告诉你，在币圈发展到如今这个体量，在PVP盛行、阴谋盘速通盘fomo你的中文推特圈，在VC币土狗币到处浇给的当下，币圈仍有一些项目，坚持着web3早期那种追求创新、代码即法律、社区驱动的链上精神。
+            </p>
+            <p class="text-lg text-gray-700 mb-10 leading-relaxed">
+                这样一家公司能走到多远，我们不知道。但我们知道，相对于PVP，我更宁愿拿出风险可控的闲钱，去支持它的发展。
+            </p>
+            <p class="text-xl font-bold text-primary">
+                让我们一起见证DOG这个公司的未来吧。
+            </p>
+            <p class="text-gray-500 mt-6 text-sm">
+                利益相关：DOG矿机持有人
+            </p>
         </div>
     </section>
 
     <!-- 页脚 -->
-    <footer class="py-10 bg-dark text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-2 mb-6 md:mb-0">
-                    <img src="https://p3-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/924813a4dcda40f1bb22e9f9f01256dd.jpg~tplv-a9rns2rl98-24:720:720.image?rcl=2025101218371238454FA8F577FC82CC79&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760870232&x-signature=ij%2FA3wopn%2FLdkais9w7ujmJrCmE%3D" alt="DOG Logo" class="w-10 h-10 rounded-full">
-                    <span class="text-xl font-bold">DOG公司</span>
+    <footer class="bg-dark text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img class="h-8 w-8 rounded-full" src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/ded618f4910048919cd663332d744feb.jpg~tplv-a9rns2rl98-24:720:720.png?rcl=20251012200518AC13FCC7C89813956A04&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1760875518&x-signature=nfv8M7fJ9hs4jqIfKnhmWv397k0%3D" alt="DOG Logo">
+                        <span class="ml-2 text-xl font-bold">DOG团队</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        创新的链上矿机，让每个人都能参与到web3的革命中来。
+                    </p>
                 </div>
                 
-                <div class="flex space-x-6 mb-6 md:mb-0">
-                    <a href="https://x.com/OKXDOG" target="_blank" rel="noopener noreferrer" class="text-white hover:text-primary transition-colors">
-                        <i class="fa fa-twitter text-2xl"></i>
-                    </a>
-                    <a href="#" class="text-white hover:text-primary transition-colors">
-                        <i class="fa fa-telegram text-2xl"></i>
-                    </a>
-                    <a href="#" class="text-white hover:text-primary transition-colors">
-                        <i class="fa fa-discord text-2xl"></i>
-                    </a>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">关于我们</a></li>
+                        <li><a href="#miner" class="hover:text-white transition-colors">DOG矿机</a></li>
+                        <li><a href="#team" class="hover:text-white transition-colors">团队成员</a></li>
+                        <li><a href="#stats" class="hover:text-white transition-colors">数据统计</a></li>
+                        <li><a href="#buy" class="hover:text-white transition-colors">购买矿机</a></li>
+                    </ul>
                 </div>
                 
-                <div class="text-center md:text-right">
-                    <p>CA: 0x903358faf7c6304afbd560e9e29b12ab1b8fddc5</p>
-                    <p class="text-sm text-gray-400 mt-2">© 2025 DOG. 版权所有。</p>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">资源</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://potatoswap.finance/swap?outputCurrency=0x903358faf7c6304afbd560e9e29b12ab1b8fddc5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">PotatoSwap</a></li>
+                        <li><a href="https://x.com/OKXDOG" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">官方推特</a></li>
+                        <li><a href="https://x.com/DOGxlayer" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">基金会</a></li>
+                    </ul>
                 </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">联系我们</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fa fa-twitter mr-2"></i>
+                            <a href="https://x.com/OKXDOG" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@OKXDOG</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-globe mr-2"></i>
+                            <a href="https://potatoswap.finance/swap?outputCurrency=0x903358faf7c6304afbd560e9e29b12ab1b8fddc5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">PotatoSwap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2023 DOG团队. 本文仅做DOG机制和现状分享，不作为投资建议。投资有风险，入市需谨慎。</p>
             </div>
         </div>
     </footer>
 
-    <!-- 回到顶部按钮 -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary hover:bg-secondary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
         <i class="fa fa-arrow-up"></i>
     </button>
 
     <script>
-        // 回到顶部按钮
+        // 移动端菜单切换
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('bg-glass');
+            } else {
+                navbar.classList.remove('bg-white', 'shadow-md');
+                navbar.classList.add('bg-glass');
+            }
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动菜单
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // 返回顶部按钮
         const backToTopButton = document.getElementById('back-to-top');
         
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
+            if (window.scrollY > 300) {
                 backToTopButton.classList.remove('opacity-0', 'invisible');
                 backToTopButton.classList.add('opacity-100', 'visible');
             } else {
-                backToTopButton.classList.remove('opacity-100', 'visible');
                 backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
             }
         });
         
@@ -519,16 +909,96 @@
             });
         });
         
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        // 复制合约地址
+        const copyButton = document.getElementById('copy-button');
+        const copyMessage = document.getElementById('copy-message');
+        const contractAddress = '0x903358faf7c6304afbd560e9e29b12ab1b8fddc5';
+        
+        copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(contractAddress).then(() => {
+                copyMessage.classList.remove('hidden');
+                setTimeout(() => {
+                    copyMessage.classList.add('hidden');
+                }, 2000);
+            });
+        });
+        
+        // 图表初始化
+        window.addEventListener('load', () => {
+            // 分配与流动性图表
+            const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+            new Chart(distributionCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['分配给矿机持有者', '流动性底池补充', '黑洞销毁'],
+                    datasets: [{
+                        data: [14, 7, 48],
+                        backgroundColor: [
+                            '#FF5252',
+                            '#2196F3',
+                            '#FFC107'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    return `${label}: ${value}万U`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // 矿机数量分布图表
+            const minerCtx = document.getElementById('minerDistributionChart').getContext('2d');
+            new Chart(minerCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['0.1-1台', '1-5台', '5-10台', '10+台'],
+                    datasets: [{
+                        label: '矿机持有者数量',
+                        data: [2300, 800, 250, 150],
+                        backgroundColor: '#2196F3',
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                display: true,
+                                color: 'rgba(0, 0, 0, 0.05)'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
             });
         });
     </script>
 </body>
 </html>
+
+
