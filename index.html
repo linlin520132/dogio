@@ -17,6 +17,7 @@
                         dark: '#0F172A',
                         darker: '#0A0F1C',
                         light: '#E2E8F0',
+                        danger: '#EF4444'
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -36,20 +37,29 @@
                 background-image: radial-gradient(rgba(108, 92, 231, 0.1) 1px, transparent 1px);
                 background-size: 20px 20px;
             }
-            .animate-float {
-                animation: float 6s ease-in-out infinite;
-            }
-            @keyframes float {
-                0% { transform: translateY(0px); }
-                50% { transform: translateY(-20px); }
-                100% { transform: translateY(0px); }
-            }
             .card-hover {
                 transition: all 0.3s ease;
             }
             .card-hover:hover {
                 transform: translateY(-10px);
                 box-shadow: 0 20px 25px -5px rgba(108, 92, 231, 0.1), 0 10px 10px -5px rgba(108, 92, 231, 0.04);
+            }
+            .modal-backdrop {
+                backdrop-filter: blur(8px);
+                background-color: rgba(10, 15, 28, 0.7);
+            }
+            .animate-scale-in {
+                animation: scaleIn 0.3s ease-out;
+            }
+            @keyframes scaleIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.9);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
             }
         }
     </style>
@@ -59,9 +69,6 @@
     <nav class="fixed w-full z-50 bg-darker/80 backdrop-blur-md border-b border-primary/20">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <!-- <div class="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
-                    <i class="fa fa-paw text-darker text-xl font-bold"></i>
-                </div> -->
                 <img src="./9CC7AD3CC2590115FAE5FF84D02BCD74.png" style="width: 32px;">
                 <span class="text-xl font-bold text-white">DOG <span class="text-secondary"></span></span>
             </div>
@@ -92,12 +99,36 @@
                     <span class="zh">关于我们</span>
                     <span class="en hidden">About</span>
                 </a>
+                <!-- 新增：桌面端登录按钮 -->
+                <button id="desktop-login-btn" class="bg-primary/20 hover:bg-primary/30 text-secondary font-medium py-2 px-4 rounded-full transition-colors">
+                    <span class="zh">登录</span>
+                    <span class="en hidden">Login</span>
+                </button>
+                <!-- 登录后显示的用户信息（默认隐藏） -->
+                <div id="user-info" class="hidden items-center space-x-3">
+                    <span id="user-identity" class="text-light truncate max-w-[180px]"></span>
+                    <button id="logout-btn" class="text-light/70 hover:text-danger transition-colors">
+                        <i class="fa fa-sign-out"></i>
+                    </button>
+                </div>
             </div>
             
-            <!-- 语言切换 -->
+            <!-- 语言切换 + 移动端登录/用户信息 -->
             <div class="flex items-center space-x-4">
                 <button id="lang-zh" class="text-secondary font-medium">中文</button>
                 <button id="lang-en" class="text-light/60 hover:text-secondary transition-colors">English</button>
+                
+                <!-- 移动端登录按钮 -->
+                <button id="mobile-login-btn" class="md:hidden text-secondary">
+                    <i class="fa fa-user-circle text-xl"></i>
+                </button>
+                <!-- 移动端用户信息（默认隐藏） -->
+                <div id="mobile-user-info" class="hidden md:hidden items-center">
+                    <span id="mobile-user-identity" class="text-light text-sm truncate max-w-[80px]"></span>
+                    <button id="mobile-logout-btn" class="ml-2 text-light/70 hover:text-danger">
+                        <i class="fa fa-sign-out"></i>
+                    </button>
+                </div>
                 
                 <!-- 移动端菜单按钮 -->
                 <button id="menu-toggle" class="md:hidden text-light focus:outline-none">
@@ -137,7 +168,6 @@
         </div>
     </nav>
 
-    <!-- 英雄区域 -->
     <header class="pt-28 pb-20 md:pt-40 md:pb-32 bg-grid relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-darker"></div>
         <div class="container mx-auto px-4 relative z-10">
@@ -847,6 +877,73 @@
         </div>
     </section>
 
+    <!-- 登录模态框 -->
+    <div id="login-modal" class="fixed inset-0 z-50 hidden modal-backdrop flex items-center justify-center p-4">
+        <div class="bg-darker rounded-2xl max-w-md w-full border border-primary/20 shadow-2xl animate-scale-in">
+            <!-- 模态框头部 -->
+            <div class="flex justify-between items-center p-6 border-b border-primary/10">
+                <h3 class="text-2xl font-bold text-white">
+                    <span class="zh">连接钱包</span>
+                    <span class="en hidden">Connect Wallet</span>
+                </h3>
+                <button id="close-modal-btn" class="text-light/60 hover:text-light transition-colors">
+                    <i class="fa fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- 模态框内容 -->
+            <div class="p-6 space-y-4">
+                <p class="text-light/70 text-center mb-6">
+                    <span class="zh">选择钱包进行连接</span>
+                    <span class="en hidden">Choose a wallet to connect</span>
+                </p>
+                
+                <!-- OKX Wallet 按钮 -->
+                <button id="connect-okx-btn" class="w-full bg-dark hover:bg-primary/10 border border-primary/20 rounded-xl p-4 flex items-center justify-between transition-all group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center shadow-lg">
+                            <img src="https://web3.okx.com/cdn/assets/imgs/254/2056DB8D2D22F68E.png" alt="OKX Wallet" class="w-10 h-10">
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white font-semibold">OKX Wallet</div>
+                            <div class="text-light/60 text-sm">
+                                <span class="zh">推荐使用</span>
+                                <span class="en hidden">Recommended</span>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-right text-primary group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                
+                <!-- MetaMask 按钮 -->
+                <button id="connect-metamask-btn" class="w-full bg-dark hover:bg-primary/10 border border-primary/20 rounded-xl p-4 flex items-center justify-between transition-all group">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
+                            <i class="fa fa-firefox text-white text-2xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white font-semibold">MetaMask</div>
+                            <div class="text-light/60 text-sm">
+                                <span class="zh">通用钱包</span>
+                                <span class="en hidden">Universal Wallet</span>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-right text-primary group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                
+                <div class="text-center text-light/50 text-sm mt-6">
+                    <span class="zh">没有钱包？</span>
+                    <span class="en hidden">No wallet?</span>
+                    <a href="https://www.okx.com/web3" target="_blank" class="text-primary hover:text-secondary transition-colors">
+                        <span class="zh">下载 OKX Wallet</span>
+                        <span class="en hidden">Download OKX Wallet</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 页脚 -->
     <footer class="bg-darker border-t border-primary/20 py-12">
         <div class="container mx-auto px-4">
@@ -869,6 +966,7 @@
     </footer>
 
     <script>
+        // 原有功能代码保持不变
         // 移动端菜单切换
         document.getElementById('menu-toggle').addEventListener('click', function() {
             const mobileMenu = document.getElementById('mobile-menu');
@@ -950,7 +1048,7 @@
                 console.log('Ave.ai API 响应:', result);
                 
                 if (result.status === 1 && result.data && result.data.points && result.data.points.length > 0) {
-                    const klineData = result.data.points; // Ave.ai 返回的数据已经是时间顺序
+                    const klineData = result.data.points;
                     
                     const labels = klineData.map(item => {
                         const date = new Date(item.time * 1000);
@@ -971,7 +1069,7 @@
             }
         };
         
-        // 获取价格数据（优先使用 Ave.ai，失败则使用模拟数据）
+        // 获取价格数据（优先使用 Ave.ai，失败则使用真实历史数据）
         const fetchPriceData = async () => {
             // 如果配置了 API key，尝试使用 Ave.ai API
             if (AVE_AI_API_KEY && AVE_AI_API_KEY.trim() !== '') {
@@ -982,9 +1080,8 @@
                 }
             }
             
-            // 因为api有次数限制，且很可能因为跨越问题被禁掉
-            // 使用真实历史数据生成图表数据作为备用
-            console.log('📊 使用固定数据展示');
+            // 使用真实历史数据作为备用
+            console.log('📊 使用固定历史K线数据');
             return generateTrendData();
         };
         
@@ -1128,6 +1225,237 @@
         
         // 调用初始化函数
         initChart();
+        
+        // ========== OKX 钱包连接功能 ==========
+        let currentAccount = null;
+        const XLAYER_CHAIN_ID = '0xC4'; // 196 in hex
+        
+        // 页面加载时检查是否已连接
+        window.addEventListener('load', async () => {
+            const savedAccount = localStorage.getItem('connectedAccount');
+            const walletType = localStorage.getItem('walletType');
+            
+            if (savedAccount && walletType) {
+                try {
+                    const provider = walletType === 'okx' ? window.okxwallet : window.ethereum;
+                    
+                    if (provider) {
+                        const accounts = await provider.request({ method: 'eth_accounts' });
+                        if (accounts.length > 0 && accounts[0].toLowerCase() === savedAccount.toLowerCase()) {
+                            await updateLoginState(accounts[0]);
+                            console.log('✅ 自动重连成功:', accounts[0]);
+                        }
+                    }
+                } catch (error) {
+                    console.log('未检测到已连接的钱包');
+                }
+            }
+        });
+        
+        // 打开登录模态框
+        function openLoginModal() {
+            document.getElementById('login-modal').classList.remove('hidden');
+        }
+        
+        // 关闭登录模态框
+        function closeLoginModal() {
+            document.getElementById('login-modal').classList.add('hidden');
+        }
+        
+        // 连接 OKX 钱包
+        async function connectOKXWallet() {
+            try {
+                if (!window.okxwallet) {
+                    alert('请先安装 OKX Wallet 插件！\nPlease install OKX Wallet extension first!');
+                    window.open('https://www.okx.com/web3', '_blank');
+                    return;
+                }
+                
+                // 请求连接钱包
+                const accounts = await window.okxwallet.request({ 
+                    method: 'eth_requestAccounts' 
+                });
+                
+                if (accounts.length > 0) {
+                    const account = accounts[0];
+                    
+                    // 检查并切换到 XLayer 网络
+                    await switchToXLayer(window.okxwallet);
+                    
+                    // 更新登录状态
+                    await updateLoginState(account);
+                    
+                    // 保存到 localStorage
+                    localStorage.setItem('connectedAccount', account);
+                    localStorage.setItem('walletType', 'okx');
+                    
+                    // 关闭模态框
+                    closeLoginModal();
+                    
+                    console.log('✅ OKX Wallet 连接成功:', account);
+                }
+            } catch (error) {
+                console.error('❌ OKX Wallet 连接失败:', error);
+                alert('连接失败: ' + error.message);
+            }
+        }
+        
+        // 连接 MetaMask
+        async function connectMetaMask() {
+            try {
+                if (typeof window.ethereum === 'undefined') {
+                    alert('请先安装 MetaMask 插件！\nPlease install MetaMask extension first!');
+                    window.open('https://metamask.io/', '_blank');
+                    return;
+                }
+                
+                // 请求连接钱包
+                const accounts = await window.ethereum.request({ 
+                    method: 'eth_requestAccounts' 
+                });
+                
+                if (accounts.length > 0) {
+                    const account = accounts[0];
+                    
+                    // 检查并切换到 XLayer 网络
+                    await switchToXLayer(window.ethereum);
+                    
+                    // 更新登录状态
+                    await updateLoginState(account);
+                    
+                    // 保存到 localStorage
+                    localStorage.setItem('connectedAccount', account);
+                    localStorage.setItem('walletType', 'metamask');
+                    
+                    // 关闭模态框
+                    closeLoginModal();
+                    
+                    console.log('✅ MetaMask 连接成功:', account);
+                }
+            } catch (error) {
+                console.error('❌ MetaMask 连接失败:', error);
+                alert('连接失败: ' + error.message);
+            }
+        }
+        
+        // 切换到 XLayer 网络
+        async function switchToXLayer(provider) {
+            try {
+                await provider.request({
+                    method: 'wallet_switchEthereumChain',
+                    params: [{ chainId: XLAYER_CHAIN_ID }],
+                });
+            } catch (switchError) {
+                // 如果网络不存在，添加网络
+                if (switchError.code === 4902) {
+                    try {
+                        await provider.request({
+                            method: 'wallet_addEthereumChain',
+                            params: [{
+                                chainId: XLAYER_CHAIN_ID,
+                                chainName: 'X Layer Mainnet',
+                                nativeCurrency: {
+                                    name: 'OKB',
+                                    symbol: 'OKB',
+                                    decimals: 18
+                                },
+                                rpcUrls: ['https://rpc.xlayer.tech'],
+                                blockExplorerUrls: ['https://www.okx.com/web3/explorer/xlayer']
+                            }],
+                        });
+                    } catch (addError) {
+                        console.error('添加网络失败:', addError);
+                    }
+                }
+            }
+        }
+        
+        // 更新登录状态
+        async function updateLoginState(account) {
+            currentAccount = account;
+            
+            // 格式化地址显示
+            const shortAddress = `${account.slice(0, 6)}...${account.slice(-4)}`;
+            
+            // 隐藏登录按钮，显示用户信息
+            document.getElementById('desktop-login-btn').classList.add('hidden');
+            document.getElementById('user-info').classList.remove('hidden');
+            document.getElementById('user-info').classList.add('flex');
+            document.getElementById('user-identity').textContent = shortAddress;
+            
+            // 移动端
+            document.getElementById('mobile-login-btn').classList.add('hidden');
+            document.getElementById('mobile-user-info').classList.remove('hidden');
+            document.getElementById('mobile-user-info').classList.add('flex');
+            document.getElementById('mobile-user-identity').textContent = shortAddress;
+        }
+        
+        // 登出
+        function logout() {
+            currentAccount = null;
+            localStorage.removeItem('connectedAccount');
+            
+            // 显示登录按钮，隐藏用户信息
+            document.getElementById('desktop-login-btn').classList.remove('hidden');
+            document.getElementById('user-info').classList.add('hidden');
+            document.getElementById('user-info').classList.remove('flex');
+            
+            // 移动端
+            document.getElementById('mobile-login-btn').classList.remove('hidden');
+            document.getElementById('mobile-user-info').classList.add('hidden');
+            document.getElementById('mobile-user-info').classList.remove('flex');
+            
+            console.log('✅ 已登出');
+        }
+        
+        // 绑定事件监听器
+        document.getElementById('desktop-login-btn').addEventListener('click', openLoginModal);
+        document.getElementById('mobile-login-btn').addEventListener('click', openLoginModal);
+        document.getElementById('close-modal-btn').addEventListener('click', closeLoginModal);
+        document.getElementById('connect-okx-btn').addEventListener('click', connectOKXWallet);
+        document.getElementById('connect-metamask-btn').addEventListener('click', connectMetaMask);
+        document.getElementById('logout-btn').addEventListener('click', logout);
+        document.getElementById('mobile-logout-btn').addEventListener('click', logout);
+        
+        // 点击模态框背景关闭
+        document.getElementById('login-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLoginModal();
+            }
+        });
+        
+        // 监听账户变化
+        if (window.okxwallet) {
+            window.okxwallet.on('accountsChanged', function(accounts) {
+                if (accounts.length === 0) {
+                    logout();
+                } else {
+                    updateLoginState(accounts[0]);
+                    localStorage.setItem('connectedAccount', accounts[0]);
+                }
+            });
+            
+            window.okxwallet.on('chainChanged', function(chainId) {
+                console.log('网络已切换到:', chainId);
+                window.location.reload(); // 网络切换后刷新页面
+            });
+        }
+        
+        if (window.ethereum) {
+            window.ethereum.on('accountsChanged', function(accounts) {
+                if (accounts.length === 0) {
+                    logout();
+                } else {
+                    updateLoginState(accounts[0]);
+                    localStorage.setItem('connectedAccount', accounts[0]);
+                }
+            });
+            
+            window.ethereum.on('chainChanged', function(chainId) {
+                console.log('网络已切换到:', chainId);
+                window.location.reload();
+            });
+        }
         
         // 导航栏滚动效果
         window.addEventListener('scroll', function() {
