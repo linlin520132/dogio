@@ -784,9 +784,7 @@ app.listen(PORT, () => {
     console.log(`API地址: http://localhost:${PORT}`);
 });
 
-// HTTPS服务器配置（可选）
-// 如果需要HTTPS，请取消下面的注释并确保证书文件存在
-/*
+// 尝试启动HTTPS服务器
 const httpsPort = 3443;
 try {
     const sslKeyPath = path.join(__dirname, '148.135.52.253-key.pem');
@@ -804,14 +802,26 @@ try {
             console.log(`HTTPS服务器运行在端口 ${httpsPort}`);
             console.log(`HTTPS API地址: https://148.135.52.253:${httpsPort}`);
         });
+
+        // 在HTTPS服务器启动后启动定时更新任务
+        startScheduledUpdates();
+    } else {
+        console.log('SSL证书文件不存在，使用HTTP模式');
+        console.log('如需HTTPS，请运行以下命令生成证书：');
+        console.log('npm install -g mkcert');
+        console.log('mkcert -install');
+        console.log('mkcert 148.135.52.253');
+
+        // HTTP模式下也启动定时更新任务
+        startScheduledUpdates();
     }
 } catch (error) {
     console.error('HTTPS服务器启动失败:', error.message);
-}
-*/
+    console.log('将继续使用HTTP模式');
 
-// 启动定时更新任务（HTTP模式）
-startScheduledUpdates();
+    // 出错时也启动定时更新任务
+    startScheduledUpdates();
+}
 
 // 优雅关闭
 process.on('SIGINT', () => {

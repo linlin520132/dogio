@@ -211,10 +211,10 @@
 
 
     <script>
-        // 后端API配置 - 使用JSONP直接请求
+        // 后端API配置 - 使用HTTPS代理服务
         const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? 'http://localhost:3000'
-            : 'http://148.135.52.253:3000';  // 直接请求后端服务器
+            : 'https://cors-anywhere.herokuapp.com/http://148.135.52.253:3000';  // 使用HTTPS代理
 
         // DOM元素
         const balanceTableBody = document.getElementById('balance-table-body');
@@ -290,17 +290,19 @@
             document.getElementById('lang-zh').classList.add('text-light/60');
         });
 
-        // JSONP回调函数
-        function handleBalanceData(result) {
+        // 处理API响应的函数
+        function handleApiResponse(responseText) {
             try {
-                if (result.success && result.data) {
+                const response = JSON.parse(responseText);
+
+                if (response.success && response.data) {
                     // 更新统计信息
-                    updateStatistics(result.data);
+                    updateStatistics(response.data);
 
                     // 渲染表格HTML
-                    balanceTableBody.innerHTML = renderTableHTML(result.data.users);
+                    balanceTableBody.innerHTML = renderTableHTML(response.data.users);
 
-                    console.log(`余额数据已加载，最后更新时间: ${result.data.lastUpdate}`);
+                    console.log(`余额数据已加载，最后更新时间: ${response.data.lastUpdate}`);
                 } else {
                     throw new Error('后端API返回数据格式错误');
                 }
@@ -335,30 +337,25 @@
             `;
 
             try {
-                // 使用JSONP请求避免CORS问题
-                const script = document.createElement('script');
-                const callbackName = 'handleBalanceData';
-                const url = `${API_BASE_URL}/api/balances?callback=${callbackName}&t=${Date.now()}`;
+                const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
-                script.src = url;
-                script.onerror = function() {
-                    throw new Error('JSONP请求失败');
-                };
+                let apiUrl;
+                if (isLocalhost) {
+                    apiUrl = `${API_BASE_URL}/api/balances`;
+                } else {
+                    // 生产环境使用代理服务
+                    apiUrl = `${API_BASE_URL}/api/balances`;
+                }
 
-                // 设置超时
-                const timeout = setTimeout(() => {
-                    document.head.removeChild(script);
-                    throw new Error('请求超时');
-                }, 10000);
+                console.log(`请求API: ${apiUrl}`);
 
-                // 请求完成后清理
-                window.handleBalanceData = function(result) {
-                    clearTimeout(timeout);
-                    document.head.removeChild(script);
-                    handleBalanceData(result);
-                };
+                const response = await fetch(apiUrl);
+                const responseText = await response.text();
 
-                document.head.appendChild(script);
+                console.log('API响应:', responseText);
+
+                // 处理响应数据
+                handleApiResponse(responseText);
 
             } catch (error) {
                 console.error('加载余额数据失败:', error);
