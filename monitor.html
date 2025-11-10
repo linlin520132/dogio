@@ -293,7 +293,7 @@
             try {
                 const date = new Date(isoString);
                 // 转换为UTC+8
-                const utc8Time = new Date(date.getTime() + (8 * 60 * 60 * 1000));
+                const utc8Time = new Date(date.getTime());
 
                 // 格式化为本地化字符串
                 return utc8Time.toLocaleString('zh-CN', {
