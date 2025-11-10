@@ -266,46 +266,6 @@
 
 
     <script>
-        // 代理服务列表（按优先级排序）
-        const proxyServices = [
-            'https://api.allorigins.win/get?url=',  // 工作正常 ⭐
-            'https://corsproxy.org/?',  // 返回HTML页面
-            'https://thingproxy.freeboard.io/fetch/',  // DNS解析失败
-            'https://cors-anywhere.herokuapp.com/',  // 网络超时
-            'https://corsproxy.io/?',  // 403 Forbidden
-            'https://proxy.cors.sh/',  // 429 Too Many Requests
-        ];
-
-        // 当前使用的代理服务索引
-        let currentProxyIndex = 0;
-
-        // 获取当前代理服务URL
-        function getCurrentProxyUrl() {
-            const proxy = proxyServices[currentProxyIndex];
-            const targetUrl = 'http://148.135.52.253:3000/api/balances';
-
-            // 根据代理服务格式构建URL
-            if (proxy.includes('allorigins.win')) {
-                // api.allorigins.win 格式: base?url=encodeURIComponent(fullUrl)
-                return proxy + encodeURIComponent(targetUrl);
-            } else {
-                // 其他代理格式: base? + encodeURIComponent(targetUrl)
-                return proxy + encodeURIComponent(targetUrl);
-            }
-        }
-
-        // 切换到下一个代理服务
-        function switchToNextProxy() {
-            currentProxyIndex = (currentProxyIndex + 1) % proxyServices.length;
-            console.log(`切换到代理服务: ${proxyServices[currentProxyIndex]}`);
-            return getCurrentProxyUrl();
-        }
-
-        // 获取代理服务URL
-        function getProxyUrl() {
-            return getCurrentProxyUrl();
-        }
-
         // 缓存相关常量
         const CACHE_KEY = 'dog_balance_data';
         const CACHE_DURATION = 10 * 60 * 1000; // 10分钟
@@ -349,13 +309,7 @@
             }
         }
 
-        // 后端API配置 - 多种HTTPS代理服务备用
-        console.log('当前域名:', window.location.hostname);
-        // const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-        //     ? 'http://localhost:3000'
-        //     : getProxyUrl();  // 获取代理服务URL
-        const API_BASE_URL = getProxyUrl();  // 获取代理服务URL
-        console.log('API_BASE_URL:', API_BASE_URL);
+        const API_BASE_URL = 'https://leezf.top'; 
 
         // DOM元素
         const balanceTableBody = document.getElementById('balance-table-body');
