@@ -190,8 +190,8 @@
                                         <span class="en hidden">Total Current Balance</span>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px]">
-                                        <span class="zh">初始余额合计（填表统计）</span>
-                                        <span class="en hidden">Total Initial Balance</span>
+                                        <span class="zh">加入时初始总额</span>
+                                        <span class="en hidden">Initial Balance Total</span>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px]">
                                         <span class="zh">变化百分比</span>
@@ -267,11 +267,55 @@
             return getCurrentProxyUrl();
         }
 
+        // 缓存相关常量
+        const CACHE_KEY = 'dog_balance_data';
+        const CACHE_DURATION = 10 * 60 * 1000; // 10分钟
+
+        // 获取缓存的数据
+        function getCachedData() {
+            try {
+                const cached = localStorage.getItem(CACHE_KEY);
+                if (!cached) return null;
+
+                const { data, timestamp } = JSON.parse(cached);
+                const now = Date.now();
+
+                // 检查是否在10分钟内
+                if (now - timestamp < CACHE_DURATION) {
+                    console.log(`缓存数据有效，剩余时间: ${Math.round((CACHE_DURATION - (now - timestamp)) / 1000 / 60)} 分钟`);
+                    return data;
+                } else {
+                    console.log('缓存数据已过期');
+                    localStorage.removeItem(CACHE_KEY);
+                    return null;
+                }
+            } catch (error) {
+                console.error('读取缓存数据失败:', error);
+                localStorage.removeItem(CACHE_KEY);
+                return null;
+            }
+        }
+
+        // 缓存数据
+        function cacheData(data) {
+            try {
+                const cacheData = {
+                    data: data,
+                    timestamp: Date.now()
+                };
+                localStorage.setItem(CACHE_KEY, JSON.stringify(cacheData));
+                console.log('数据已缓存到本地存储');
+            } catch (error) {
+                console.error('缓存数据失败:', error);
+            }
+        }
+
         // 后端API配置 - 多种HTTPS代理服务备用
         console.log('当前域名:', window.location.hostname);
-        const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-            ? 'http://localhost:3000'
-            : getProxyUrl();  // 获取代理服务URL
+        // const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        //     ? 'http://localhost:3000'
+        //     : getProxyUrl();  // 获取代理服务URL
+        const API_BASE_URL = getProxyUrl();  // 获取代理服务URL
         console.log('API_BASE_URL:', API_BASE_URL);
 
         // DOM元素
@@ -286,10 +330,12 @@
         });
 
         // 更新统计信息
-        function updateStatistics(data) {
+        function updateStatistics(data, isFromCache = false) {
             // 更新上次更新时间 (UTC+8)
             if (data.lastUpdate) {
-                lastUpdateTimeEl.textContent = formatTimeToUTC8(data.lastUpdate);
+                const timeText = formatTimeToUTC8(data.lastUpdate);
+                lastUpdateTimeEl.textContent = isFromCache ? `${timeText} (缓存)` : timeText;
+                lastUpdateTimeEl.title = isFromCache ? '数据来自本地缓存' : '数据来自最新请求';
             }
 
             // 更新共识者总人数
@@ -354,8 +400,11 @@
                 const response = JSON.parse(responseText);
 
                 if (response.success && response.data) {
+                    // 缓存成功的数据
+                    cacheData(response);
+
                     // 更新统计信息
-                    updateStatistics(response.data);
+                    updateStatistics(response.data, false);
 
                     // 渲染表格HTML
                     balanceTableBody.innerHTML = renderTableHTML(response.data.users);
@@ -382,20 +431,27 @@
         // 全局注册JSONP回调函数
         window.handleBalanceData = handleBalanceData;
 
-        async function loadBalanceData() {
-            console.log('开始加载余额数据...');
+        // 强制刷新数据（不使用缓存）
+        async function loadFreshData() {
+            console.log('强制刷新数据，跳过缓存检查...');
 
             // 显示加载状态
             balanceTableBody.innerHTML = `
                 <tr>
                     <td colspan="6" class="text-center text-light/50 py-8">
                         <i class="fa fa-spinner fa-spin text-primary text-2xl mb-2"></i>
-                        <p class="zh">正在加载数据...</p>
-                        <p class="en hidden">Loading data...</p>
+                        <p class="zh">正在刷新数据...</p>
+                        <p class="en hidden">Refreshing data...</p>
                     </td>
                 </tr>
             `;
 
+            // 直接执行请求逻辑（复制loadBalanceData的请求部分）
+            await performDataRequest();
+        }
+
+        // 执行数据请求的通用逻辑
+        async function performDataRequest() {
             try {
                 const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
                 console.log('是否为localhost环境:', isLocalhost);
@@ -491,6 +547,37 @@
                     </tr>
                 `;
             }
+        }
+
+        async function loadBalanceData() {
+            console.log('开始加载余额数据...');
+
+            // 检查本地存储中的缓存数据
+            const cachedData = getCachedData();
+            if (cachedData) {
+                console.log('使用缓存数据，避免重复请求');
+
+                // 直接处理缓存数据
+                try {
+                    // 更新统计信息（标记为来自缓存）
+                    updateStatistics(cachedData.data, true);
+
+                    // 渲染表格HTML
+                    balanceTableBody.innerHTML = renderTableHTML(cachedData.data.users);
+
+                    console.log(`缓存数据已加载，最后更新时间: ${cachedData.data.lastUpdate}`);
+                } catch (error) {
+                    console.error('处理缓存数据失败:', error);
+                    // 如果缓存数据损坏，清除缓存并重新请求
+                    localStorage.removeItem(CACHE_KEY);
+                    console.log('缓存数据损坏，已清除，重新请求数据');
+                    loadFreshData(); // 重新调用，不检查缓存
+                }
+                return;
+            }
+
+            // 没有缓存数据，直接请求
+            await performDataRequest();
         }
 
         function renderTableHTML(users) {
