@@ -174,7 +174,7 @@
                                         <span class="en hidden">Total Current Balance</span>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium">
-                                        <span class="zh">初始余额合计</span>
+                                        <span class="zh">初始余额合计（填表统计）</span>
                                         <span class="en hidden">Total Initial Balance</span>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium">
@@ -211,10 +211,50 @@
 
 
     <script>
-        // 后端API配置 - 使用HTTPS代理服务
+        // 后端API配置 - 多种HTTPS代理服务备用
         const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? 'http://localhost:3000'
-            : 'https://corsproxy.org/?' + encodeURIComponent('http://148.135.52.253:3000');  // 使用HTTPS代理
+            : tryProxyServices();  // 尝试多个代理服务
+
+        // 代理服务列表（按优先级排序）
+        const proxyServices = [
+            'https://api.allorigins.win/get?url=',  // 工作正常 ⭐
+            'https://corsproxy.org/?',  // 返回HTML页面
+            'https://thingproxy.freeboard.io/fetch/',  // DNS解析失败
+            'https://cors-anywhere.herokuapp.com/',  // 网络超时
+            'https://corsproxy.io/?',  // 403 Forbidden
+            'https://proxy.cors.sh/',  // 429 Too Many Requests
+        ];
+
+        // 当前使用的代理服务索引
+        let currentProxyIndex = 0;
+
+        // 获取当前代理服务URL
+        function getCurrentProxyUrl() {
+            const proxy = proxyServices[currentProxyIndex];
+            const targetUrl = 'http://148.135.52.253:3000/api/balances';
+
+            // 根据代理服务格式构建URL
+            if (proxy.includes('allorigins.win')) {
+                // api.allorigins.win 格式: base?url=encodeURIComponent(fullUrl)
+                return proxy + encodeURIComponent(targetUrl);
+            } else {
+                // 其他代理格式: base? + encodeURIComponent(targetUrl)
+                return proxy + encodeURIComponent(targetUrl);
+            }
+        }
+
+        // 切换到下一个代理服务
+        function switchToNextProxy() {
+            currentProxyIndex = (currentProxyIndex + 1) % proxyServices.length;
+            console.log(`切换到代理服务: ${proxyServices[currentProxyIndex]}`);
+            return getCurrentProxyUrl();
+        }
+
+        // 尝试多个代理服务
+        function tryProxyServices() {
+            return getCurrentProxyUrl();
+        }
 
         // DOM元素
         const balanceTableBody = document.getElementById('balance-table-body');
@@ -344,13 +384,31 @@
                     apiUrl = `${API_BASE_URL}/api/balances`;
                 } else {
                     // 生产环境使用代理服务
-                    apiUrl = `${API_BASE_URL}/api/balances`;
+                    apiUrl = getCurrentProxyUrl();
                 }
 
                 console.log(`请求API: ${apiUrl}`);
 
-                const response = await fetch(apiUrl);
-                const responseText = await response.text();
+                const response = await fetch(apiUrl, {
+                    timeout: 10000, // 10秒超时
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                let responseText;
+                if (apiUrl.includes('allorigins.win')) {
+                    // allorigins.win 返回特殊的JSON格式
+                    const data = await response.json();
+                    responseText = data.contents;
+                } else {
+                    responseText = await response.text();
+                }
 
                 console.log('API响应:', responseText);
 
@@ -359,6 +417,44 @@
 
             } catch (error) {
                 console.error('加载余额数据失败:', error);
+
+                // 如果是生产环境且不是最后一个代理，尝试切换代理
+                if (!isLocalhost && currentProxyIndex < proxyServices.length - 1) {
+                    console.log('尝试切换到下一个代理服务...');
+                    const nextUrl = switchToNextProxy();
+
+                    try {
+                        console.log(`重试代理服务: ${nextUrl}`);
+                        const response = await fetch(nextUrl, {
+                            timeout: 10000,
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            }
+                        });
+
+                        if (!response.ok) {
+                            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                        }
+
+                        let responseText;
+                        if (nextUrl.includes('allorigins.win')) {
+                            const data = await response.json();
+                            responseText = data.contents;
+                        } else {
+                            responseText = await response.text();
+                        }
+
+                        console.log('重试成功:', responseText);
+                        handleApiResponse(responseText);
+                        return;
+
+                    } catch (retryError) {
+                        console.error('重试也失败:', retryError);
+                    }
+                }
+
+                // 所有代理都失败了
                 balanceTableBody.innerHTML = `
                     <tr>
                         <td colspan="6" class="text-center text-red-400 py-8">
@@ -366,6 +462,10 @@
                             <p class="zh">加载数据失败，请检查后端服务是否正常运行</p>
                             <p class="en hidden">Failed to load data, please check if the backend service is running</p>
                             <p class="text-sm mt-2">${error.message}</p>
+                            <p class="text-sm mt-1 text-light/60">
+                                <span class="zh">已尝试 ${proxyServices.length} 个代理服务</span>
+                                <span class="en hidden">Tried ${proxyServices.length} proxy services</span>
+                            </p>
                         </td>
                     </tr>
                 `;
