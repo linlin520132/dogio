@@ -519,9 +519,6 @@
             }
         }
 
-        // 全局注册JSONP回调函数
-        window.handleBalanceData = handleBalanceData;
-
         // 强制刷新数据（不使用缓存）
         async function loadFreshData() {
             console.log('强制刷新数据，跳过缓存检查...');
