@@ -541,20 +541,7 @@
         // 执行数据请求的通用逻辑
         async function performDataRequest() {
             try {
-                const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-                console.log('是否为localhost环境:', isLocalhost);
-
-                let apiUrl;
-                if (isLocalhost) {
-                    apiUrl = `${API_BASE_URL}/api/balances`;
-                } else {
-                    // 生产环境使用代理服务
-                    apiUrl = getCurrentProxyUrl();
-                }
-
-                console.log(`最终API URL: ${apiUrl}`);
-
-                const response = await fetch(apiUrl, {
+                const response = await fetch(`${API_BASE_URL}/api/balances`, {
                     timeout: 10000, // 10秒超时
                     headers: {
                         'Accept': 'application/json',
@@ -566,60 +553,10 @@
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }
 
-                let responseText;
-                if (apiUrl.includes('allorigins.win')) {
-                    // allorigins.win 返回特殊的JSON格式
-                    const data = await response.json();
-                    responseText = data.contents;
-                } else {
-                    responseText = await response.text();
-                }
-
-                console.log('API响应:', responseText);
-
                 // 处理响应数据
-                handleApiResponse(responseText);
+                handleApiResponse(await response.text());
 
             } catch (error) {
-                console.error('加载余额数据失败:', error);
-
-                // 如果是生产环境且不是最后一个代理，尝试切换代理
-                if (!isLocalhost && currentProxyIndex < proxyServices.length - 1) {
-                    console.log('尝试切换到下一个代理服务...');
-                    const nextUrl = switchToNextProxy();
-
-                    try {
-                        console.log(`重试代理服务: ${nextUrl}`);
-                        const response = await fetch(nextUrl, {
-                            timeout: 10000,
-                            headers: {
-                                'Accept': 'application/json',
-                                'Content-Type': 'application/json'
-                            }
-                        });
-
-                        if (!response.ok) {
-                            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                        }
-
-                        let responseText;
-                        if (nextUrl.includes('allorigins.win')) {
-                            const data = await response.json();
-                            responseText = data.contents;
-            } else {
-                            responseText = await response.text();
-                        }
-
-                        console.log('重试成功:', responseText);
-                        handleApiResponse(responseText);
-                        return;
-
-                    } catch (retryError) {
-                        console.error('重试也失败:', retryError);
-                    }
-                }
-
-                // 所有代理都失败了
                 balanceTableBody.innerHTML = `
                     <tr>
                         <td colspan="6" class="text-center text-red-400 py-8">
@@ -627,10 +564,6 @@
                             <p class="zh">加载数据失败，请检查后端服务是否正常运行</p>
                             <p class="en hidden">Failed to load data, please check if the backend service is running</p>
                             <p class="text-sm mt-2">${error.message}</p>
-                            <p class="text-sm mt-1 text-light/60">
-                                <span class="zh">已尝试 ${proxyServices.length} 个代理服务</span>
-                                <span class="en hidden">Tried ${proxyServices.length} proxy services</span>
-                            </p>
                         </td>
                     </tr>
                 `;
