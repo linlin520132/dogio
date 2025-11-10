@@ -214,7 +214,7 @@
         // 后端API配置 - 使用HTTPS代理服务
         const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? 'http://localhost:3000'
-            : 'https://cors-anywhere.herokuapp.com/http://148.135.52.253:3000';  // 使用HTTPS代理
+            : 'https://corsproxy.org/?' + encodeURIComponent('http://148.135.52.253:3000');  // 使用HTTPS代理
 
         // DOM元素
         const balanceTableBody = document.getElementById('balance-table-body');
