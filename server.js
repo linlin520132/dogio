@@ -721,6 +721,30 @@ const users = [
         "totalBalance": 0,
         "initialBalanceTotal": 438322123.05,
         "percentage": 0
+    },
+    {
+        "nickname": "星星之火",
+        "addresses": [
+            "0x8be8026CF67CA39ce6863796908ED68bf9eE948E"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 118478429,
+        "percentage": 0
+    },
+    {
+        "nickname": "Mojito",
+        "addresses": [
+            "0x5bc535157bd630410feb6b133ff5a4eead0f6da0"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 115680242,
+        "percentage": 0
     }
 ];
 
