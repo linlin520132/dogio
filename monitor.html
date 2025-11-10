@@ -211,10 +211,12 @@
 
 
     <script>
-        // 后端API配置
+        // 后端API配置 - 根据当前页面协议自动选择HTTP或HTTPS
         const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? 'http://localhost:3000'
-            : 'http://148.135.52.253:3000';
+            : window.location.protocol === 'https:'
+                ? 'https://148.135.52.253:3443'  // HTTPS使用3443端口
+                : 'http://148.135.52.253:3000';  // HTTP使用3000端口
 
         // DOM元素
         const balanceTableBody = document.getElementById('balance-table-body');

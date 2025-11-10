@@ -1,6 +1,9 @@
 require('dotenv').config();
 const express = require('express');
 const crypto = require('crypto');
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
 
 // 配置代理支持
 const { HttpsProxyAgent } = require('https-proxy-agent');
@@ -763,14 +766,49 @@ app.post('/api/update', async (req, res) => {
     }
 });
 
-// 启动服务器
+// 启动HTTP服务器
 app.listen(PORT, () => {
     console.log(`DOG余额监控服务器运行在端口 ${PORT}`);
     console.log(`API地址: http://localhost:${PORT}`);
-
-    // 启动定时更新任务
-    startScheduledUpdates();
 });
+
+// 尝试启动HTTPS服务器
+const httpsPort = 3443;
+try {
+    // 检查SSL证书文件是否存在
+    const sslKeyPath = path.join(__dirname, '148.135.52.253-key.pem');
+    const sslCertPath = path.join(__dirname, '148.135.52.253.pem');
+
+    if (fs.existsSync(sslKeyPath) && fs.existsSync(sslCertPath)) {
+        const httpsOptions = {
+            key: fs.readFileSync(sslKeyPath),
+            cert: fs.readFileSync(sslCertPath)
+        };
+
+        const httpsServer = https.createServer(httpsOptions, app);
+        httpsServer.listen(httpsPort, '0.0.0.0', () => {
+            console.log(`HTTPS服务器运行在端口 ${httpsPort}`);
+            console.log(`HTTPS API地址: https://148.135.52.253:${httpsPort}`);
+
+            // 在HTTPS服务器启动后启动定时更新任务
+            startScheduledUpdates();
+        });
+    } else {
+        console.log('SSL证书文件不存在，跳过HTTPS服务器启动');
+        console.log('请运行以下命令生成证书：');
+        console.log('mkcert -install');
+        console.log('mkcert 148.135.52.253');
+
+        // HTTP模式下也启动定时更新任务
+        startScheduledUpdates();
+    }
+} catch (error) {
+    console.error('HTTPS服务器启动失败:', error.message);
+    console.log('将继续使用HTTP服务器');
+
+    // 出错时也启动定时更新任务
+    startScheduledUpdates();
+}
 
 // 优雅关闭
 process.on('SIGINT', () => {
