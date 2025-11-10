@@ -211,11 +211,6 @@
 
 
     <script>
-        // 后端API配置 - 多种HTTPS代理服务备用
-        const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-            ? 'http://localhost:3000'
-            : tryProxyServices();  // 尝试多个代理服务
-
         // 代理服务列表（按优先级排序）
         const proxyServices = [
             'https://api.allorigins.win/get?url=',  // 工作正常 ⭐
@@ -251,10 +246,17 @@
             return getCurrentProxyUrl();
         }
 
-        // 尝试多个代理服务
-        function tryProxyServices() {
+        // 获取代理服务URL
+        function getProxyUrl() {
             return getCurrentProxyUrl();
         }
+
+        // 后端API配置 - 多种HTTPS代理服务备用
+        console.log('当前域名:', window.location.hostname);
+        const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? 'http://localhost:3000'
+            : getProxyUrl();  // 获取代理服务URL
+        console.log('API_BASE_URL:', API_BASE_URL);
 
         // DOM元素
         const balanceTableBody = document.getElementById('balance-table-body');
@@ -365,6 +367,8 @@
         window.handleBalanceData = handleBalanceData;
 
         async function loadBalanceData() {
+            console.log('开始加载余额数据...');
+
             // 显示加载状态
             balanceTableBody.innerHTML = `
                 <tr>
@@ -378,6 +382,7 @@
 
             try {
                 const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+                console.log('是否为localhost环境:', isLocalhost);
 
                 let apiUrl;
                 if (isLocalhost) {
@@ -387,7 +392,7 @@
                     apiUrl = getCurrentProxyUrl();
                 }
 
-                console.log(`请求API: ${apiUrl}`);
+                console.log(`最终API URL: ${apiUrl}`);
 
                 const response = await fetch(apiUrl, {
                     timeout: 10000, // 10秒超时
