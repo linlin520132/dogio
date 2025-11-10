@@ -719,7 +719,7 @@ const users = [
             0
         ],
         "totalBalance": 0,
-        "initialBalanceTotal": 43832212305,
+        "initialBalanceTotal": 438322123.05,
         "percentage": 0
     }
 ];
