@@ -722,7 +722,10 @@ app.use(express.json());
 // 获取余额数据API
 app.get('/api/balances', (req, res) => {
     const totalAddresses = users.reduce((sum, user) => sum + user.addresses.length, 0);
-    res.json({
+
+    // 检查是否是JSONP请求
+    const callback = req.query.callback;
+    const responseData = {
         success: true,
         data: {
             users: users,
@@ -731,7 +734,16 @@ app.get('/api/balances', (req, res) => {
             totalAddresses: totalAddresses,
             cachedAddresses: Object.keys(balanceCache).length
         }
-    });
+    };
+
+    if (callback) {
+        // JSONP响应
+        res.setHeader('Content-Type', 'application/javascript');
+        res.send(`${callback}(${JSON.stringify(responseData)});`);
+    } else {
+        // 普通JSON响应
+        res.json(responseData);
+    }
 });
 
 // 获取状态信息API
@@ -772,14 +784,16 @@ app.listen(PORT, () => {
     console.log(`API地址: http://localhost:${PORT}`);
 });
 
-// 尝试启动HTTPS服务器
+// HTTPS服务器配置（可选）
+// 如果需要HTTPS，请取消下面的注释并确保证书文件存在
+/*
 const httpsPort = 3443;
 try {
-    // 检查SSL证书文件是否存在
     const sslKeyPath = path.join(__dirname, '148.135.52.253-key.pem');
     const sslCertPath = path.join(__dirname, '148.135.52.253.pem');
 
     if (fs.existsSync(sslKeyPath) && fs.existsSync(sslCertPath)) {
+        const https = require('https');
         const httpsOptions = {
             key: fs.readFileSync(sslKeyPath),
             cert: fs.readFileSync(sslCertPath)
@@ -789,26 +803,15 @@ try {
         httpsServer.listen(httpsPort, '0.0.0.0', () => {
             console.log(`HTTPS服务器运行在端口 ${httpsPort}`);
             console.log(`HTTPS API地址: https://148.135.52.253:${httpsPort}`);
-
-            // 在HTTPS服务器启动后启动定时更新任务
-            startScheduledUpdates();
         });
-    } else {
-        console.log('SSL证书文件不存在，跳过HTTPS服务器启动');
-        console.log('请运行以下命令生成证书：');
-        console.log('mkcert -install');
-        console.log('mkcert 148.135.52.253');
-
-        // HTTP模式下也启动定时更新任务
-        startScheduledUpdates();
     }
 } catch (error) {
     console.error('HTTPS服务器启动失败:', error.message);
-    console.log('将继续使用HTTP服务器');
-
-    // 出错时也启动定时更新任务
-    startScheduledUpdates();
 }
+*/
+
+// 启动定时更新任务（HTTP模式）
+startScheduledUpdates();
 
 // 优雅关闭
 process.on('SIGINT', () => {

@@ -211,12 +211,10 @@
 
 
     <script>
-        // 后端API配置 - 根据当前页面协议自动选择HTTP或HTTPS
+        // 后端API配置 - 使用JSONP直接请求
         const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? 'http://localhost:3000'
-            : window.location.protocol === 'https:'
-                ? 'https://148.135.52.253:3443'  // HTTPS使用3443端口
-                : 'http://148.135.52.253:3000';  // HTTP使用3000端口
+            : 'http://148.135.52.253:3000';  // 直接请求后端服务器
 
         // DOM元素
         const balanceTableBody = document.getElementById('balance-table-body');
@@ -292,6 +290,38 @@
             document.getElementById('lang-zh').classList.add('text-light/60');
         });
 
+        // JSONP回调函数
+        function handleBalanceData(result) {
+            try {
+                if (result.success && result.data) {
+                    // 更新统计信息
+                    updateStatistics(result.data);
+
+                    // 渲染表格HTML
+                    balanceTableBody.innerHTML = renderTableHTML(result.data.users);
+
+                    console.log(`余额数据已加载，最后更新时间: ${result.data.lastUpdate}`);
+                } else {
+                    throw new Error('后端API返回数据格式错误');
+                }
+            } catch (error) {
+                console.error('处理余额数据失败:', error);
+                balanceTableBody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="text-center text-red-400 py-8">
+                            <i class="fa fa-exclamation-triangle text-2xl mb-2"></i>
+                            <p class="zh">加载数据失败，请检查后端服务是否正常运行</p>
+                            <p class="en hidden">Failed to load data, please check if the backend service is running</p>
+                            <p class="text-sm mt-2">${error.message}</p>
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        // 全局注册JSONP回调函数
+        window.handleBalanceData = handleBalanceData;
+
         async function loadBalanceData() {
             // 显示加载状态
             balanceTableBody.innerHTML = `
@@ -305,21 +335,31 @@
             `;
 
             try {
-                // 调用后端API获取余额数据
-                const response = await fetch(`${API_BASE_URL}/api/balances`);
-                const result = await response.json();
+                // 使用JSONP请求避免CORS问题
+                const script = document.createElement('script');
+                const callbackName = 'handleBalanceData';
+                const url = `${API_BASE_URL}/api/balances?callback=${callbackName}&t=${Date.now()}`;
 
-                if (result.success && result.data) {
-                    // 更新统计信息
-                    updateStatistics(result.data);
+                script.src = url;
+                script.onerror = function() {
+                    throw new Error('JSONP请求失败');
+                };
 
-                    // 渲染表格HTML
-                    balanceTableBody.innerHTML = renderTableHTML(result.data.users);
+                // 设置超时
+                const timeout = setTimeout(() => {
+                    document.head.removeChild(script);
+                    throw new Error('请求超时');
+                }, 10000);
 
-                    console.log(`余额数据已加载，最后更新时间: ${result.data.lastUpdate}`);
-                } else {
-                    throw new Error('后端API返回数据格式错误');
-                }
+                // 请求完成后清理
+                window.handleBalanceData = function(result) {
+                    clearTimeout(timeout);
+                    document.head.removeChild(script);
+                    handleBalanceData(result);
+                };
+
+                document.head.appendChild(script);
+
             } catch (error) {
                 console.error('加载余额数据失败:', error);
                 balanceTableBody.innerHTML = `
