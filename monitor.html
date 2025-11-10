@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="zh">深度共识者公示 - DOG Miner</title>
+    <title class="en hidden">Deep Consensus Monitor - DOG Miner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6C5CE7',
+                        secondary: '#00F5D4',
+                        dark: '#0F172A',
+                        darker: '#0A0F1C',
+                        light: '#E2E8F0',
+                        danger: '#EF4444',
+                        success: '#10B981',
+                        warning: '#F59E0B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .bg-grid {
+                background-image: radial-gradient(rgba(108, 92, 231, 0.1) 1px, transparent 1px);
+                background-size: 20px 20px;
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 25px -5px rgba(108, 92, 231, 0.1), 0 10px 10px -5px rgba(108, 92, 231, 0.04);
+            }
+            .modal-backdrop {
+                backdrop-filter: blur(8px);
+                background-color: rgba(10, 15, 28, 0.7);
+            }
+            .animate-scale-in {
+                animation: scaleIn 0.3s ease-out;
+            }
+            @keyframes scaleIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.9);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            .animate-pulse-green {
+                animation: pulseGreen 2s infinite;
+            }
+            @keyframes pulseGreen {
+                0%, 100% { background-color: rgba(16, 185, 129, 0.1); }
+                50% { background-color: rgba(16, 185, 129, 0.3); }
+            }
+            .animate-pulse-red {
+                animation: pulseRed 2s infinite;
+            }
+            @keyframes pulseRed {
+                0%, 100% { background-color: rgba(239, 68, 68, 0.1); }
+                50% { background-color: rgba(239, 68, 68, 0.3); }
+            }
+        }
+    </style>
+</head>
+<body class="bg-dark text-light antialiased">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full z-50 bg-darker/80 backdrop-blur-md border-b border-primary/20">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="./9CC7AD3CC2590115FAE5FF84D02BCD74.png" style="width: 32px;">
+                <span class="text-xl font-bold text-white">DOG</span>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <!-- 语言切换 -->
+                <button id="lang-zh" class="text-secondary font-medium">中文</button>
+                <button id="lang-en" class="text-light/60 hover:text-secondary transition-colors">English</button>
+
+                <a href="./index.html" class="text-light/60 hover:text-secondary transition-colors">
+                    <i class="fa fa-home mr-1"></i><span class="zh">主页</span><span class="en hidden">Home</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-28 pb-12 bg-grid relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-darker"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <h1 class="text-[clamp(2rem,5vw,3rem)] font-bold mb-4">
+                        <span class="zh bg-gradient-to-r from-primary to-secondary text-gradient">深度共识者公示</span>
+                        <span class="en hidden bg-gradient-to-r from-primary to-secondary text-gradient">Deep Consensus Monitor</span>
+                    </h1>
+                    <p class="text-light/70 max-w-2xl mx-auto zh">
+                        深度共识者自愿展示地址，接受查询DOG代币余额变化，及时掌握动态。
+                    </p>
+                    <p class="text-light/70 max-w-2xl mx-auto en hidden">
+                        Deep consensus participants voluntarily display their addresses for DOG token balance monitoring, keeping track of changes in real-time.
+                    </p>
+                    <p class="text-light/70 max-w-2xl mx-auto zh">
+                        （目前使用的okx官方接口，每10分钟查询一次。）
+                    </p>
+                    <p class="text-light/70 max-w-2xl mx-auto en hidden">
+                        (Currently using OKX official API, updated every 10 minutes.)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 用户余额监控 -->
+    <section class="py-8 bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="bg-darker rounded-2xl p-6 border border-primary/20">
+                    <!-- 统计信息 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
+                            <div class="text-sm text-light/60 mb-1 zh">上次更新时间 (UTC+8)</div>
+                            <div class="text-sm text-light/60 mb-1 en hidden">Last Update (UTC+8)</div>
+                            <div class="text-lg font-bold text-white" id="last-update-time">-</div>
+                        </div>
+                        <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
+                            <div class="text-sm text-light/60 mb-1 zh">当前深度共识者总人数</div>
+                            <div class="text-sm text-light/60 mb-1 en hidden">Total Deep Consensus Participants</div>
+                            <div class="text-lg font-bold text-secondary" id="total-users">-</div>
+                        </div>
+                        <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
+                            <div class="text-sm text-light/60 mb-1 zh">当前深度共识者总余额</div>
+                            <div class="text-sm text-light/60 mb-1 en hidden">Total Deep Consensus Balance</div>
+                            <div class="text-lg font-bold text-primary" id="total-balance">-</div>
+                        </div>
+                    </div>
+
+                    <!-- 用户余额表格 -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="border-b border-primary/20">
+                                    <th class="pb-3 text-light/80 font-medium">
+                                        <span class="zh">昵称</span>
+                                        <span class="en hidden">Nickname</span>
+                                    </th>
+                                    <th class="pb-3 text-light/80 font-medium">
+                                        <span class="zh">钱包地址</span>
+                                        <span class="en hidden">Wallet Address</span>
+                                    </th>
+                                    <th class="pb-3 text-light/80 font-medium">
+                                        <span class="zh">当前余额</span>
+                                        <span class="en hidden">Current Balance</span>
+                                    </th>
+                                    <th class="pb-3 text-light/80 font-medium">
+                                        <span class="zh">当前余额合计</span>
+                                        <span class="en hidden">Total Current Balance</span>
+                                    </th>
+                                    <th class="pb-3 text-light/80 font-medium">
+                                        <span class="zh">初始余额合计</span>
+                                        <span class="en hidden">Total Initial Balance</span>
+                                    </th>
+                                    <th class="pb-3 text-light/80 font-medium">
+                                        <span class="zh">变化百分比</span>
+                                        <span class="en hidden">Change %</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="balance-table-body">
+                                <tr>
+                                    <td colspan="6" class="text-center text-light/50 py-8">
+                            <i class="fa fa-info-circle text-2xl mb-2"></i>
+                                        <p class="zh">暂无用户数据，请在代码中配置用户列表</p>
+                                        <p class="en hidden">No user data available, please configure user list in the code</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-darker border-t border-primary/20 py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center text-light/60 text-sm">
+                <p class="zh">© 2025 DOG代币深度共识者公示系统. 数据来源于OKX API</p>
+                <p class="en hidden">© 2025 DOG Token Deep Consensus Monitor. Data sourced from OKX API</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // 后端API配置
+        const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? 'http://localhost:3000'
+            : 'http://148.135.52.253:3000';
+
+        // DOM元素
+        const balanceTableBody = document.getElementById('balance-table-body');
+        const lastUpdateTimeEl = document.getElementById('last-update-time');
+        const totalUsersEl = document.getElementById('total-users');
+        const totalBalanceEl = document.getElementById('total-balance');
+
+        // 页面加载时获取表格数据
+        window.addEventListener('load', () => {
+            loadBalanceData();
+        });
+
+        // 更新统计信息
+        function updateStatistics(data) {
+            // 更新上次更新时间 (UTC+8)
+            if (data.lastUpdate) {
+                lastUpdateTimeEl.textContent = formatTimeToUTC8(data.lastUpdate);
+            }
+
+            // 更新共识者总人数
+            if (data.totalUsers !== undefined) {
+                totalUsersEl.textContent = data.totalUsers;
+            }
+
+            // 计算并更新当前总余额
+            if (data.users && data.users.length > 0) {
+                const totalBalance = data.users.reduce((sum, user) => sum + (user.totalBalance || 0), 0);
+                totalBalanceEl.textContent = totalBalance.toLocaleString();
+            }
+        }
+
+        // 将时间格式化为UTC+8
+        function formatTimeToUTC8(isoString) {
+            try {
+                const date = new Date(isoString);
+                // 转换为UTC+8
+                const utc8Time = new Date(date.getTime() + (8 * 60 * 60 * 1000));
+
+                // 格式化为本地化字符串
+                return utc8Time.toLocaleString('zh-CN', {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                });
+            } catch (error) {
+                console.error('时间格式化失败:', error);
+                return isoString; // 返回原始字符串作为fallback
+            }
+        }
+
+        // 语言切换功能
+        document.getElementById('lang-zh').addEventListener('click', function() {
+            document.querySelectorAll('.zh').forEach(el => el.classList.remove('hidden'));
+            document.querySelectorAll('.en').forEach(el => el.classList.add('hidden'));
+            document.documentElement.lang = 'zh-CN';
+            document.getElementById('lang-zh').classList.add('text-secondary');
+            document.getElementById('lang-zh').classList.remove('text-light/60');
+            document.getElementById('lang-en').classList.remove('text-secondary');
+            document.getElementById('lang-en').classList.add('text-light/60');
+        });
+
+        document.getElementById('lang-en').addEventListener('click', function() {
+            document.querySelectorAll('.en').forEach(el => el.classList.remove('hidden'));
+            document.querySelectorAll('.zh').forEach(el => el.classList.add('hidden'));
+            document.documentElement.lang = 'en';
+            document.getElementById('lang-en').classList.add('text-secondary');
+            document.getElementById('lang-en').classList.remove('text-light/60');
+            document.getElementById('lang-zh').classList.remove('text-secondary');
+            document.getElementById('lang-zh').classList.add('text-light/60');
+        });
+
+        async function loadBalanceData() {
+            // 显示加载状态
+            balanceTableBody.innerHTML = `
+                <tr>
+                    <td colspan="6" class="text-center text-light/50 py-8">
+                        <i class="fa fa-spinner fa-spin text-primary text-2xl mb-2"></i>
+                        <p class="zh">正在加载数据...</p>
+                        <p class="en hidden">Loading data...</p>
+                    </td>
+                </tr>
+            `;
+
+            try {
+                // 调用后端API获取余额数据
+                const response = await fetch(`${API_BASE_URL}/api/balances`);
+                const result = await response.json();
+
+                if (result.success && result.data) {
+                    // 更新统计信息
+                    updateStatistics(result.data);
+
+                    // 渲染表格HTML
+                    balanceTableBody.innerHTML = renderTableHTML(result.data.users);
+
+                    console.log(`余额数据已加载，最后更新时间: ${result.data.lastUpdate}`);
+                } else {
+                    throw new Error('后端API返回数据格式错误');
+                }
+            } catch (error) {
+                console.error('加载余额数据失败:', error);
+                balanceTableBody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="text-center text-red-400 py-8">
+                            <i class="fa fa-exclamation-triangle text-2xl mb-2"></i>
+                            <p class="zh">加载数据失败，请检查后端服务是否正常运行</p>
+                            <p class="en hidden">Failed to load data, please check if the backend service is running</p>
+                            <p class="text-sm mt-2">${error.message}</p>
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        function renderTableHTML(users) {
+            if (!users || users.length === 0) {
+                return `
+                    <tr>
+                        <td colspan="6" class="text-center text-light/50 py-8">
+                            <i class="fa fa-info-circle text-2xl mb-2"></i>
+                            <p class="zh">暂无用户数据</p>
+                            <p class="en hidden">No user data available</p>
+                        </td>
+                    </tr>
+                `;
+            }
+
+            let tableHtml = '';
+
+            users.forEach((user) => {
+                // 地址列表HTML
+                const addressesHtml = user.addresses.map((address) => {
+                    const shortAddress = `${address.slice(0, 6)}...${address.slice(-4)}`;
+                    return `
+                        <div class="mb-1">
+                            <span class="text-light/70 font-mono text-sm">${shortAddress}</span>
+                            <button onclick="navigator.clipboard.writeText('${address}')" class="ml-1 text-primary hover:text-secondary" title="复制地址">
+                                <i class="fa fa-copy"></i>
+                            </button>
+                        </div>
+                    `;
+                }).join('');
+
+                // 余额列表HTML
+                const balancesHtml = user.currentBalances.map((balance) => {
+                    return `<div class="mb-1 text-white font-mono text-sm">${balance.toLocaleString()}</div>`;
+                }).join('');
+
+                // 百分比样式
+                let percentageClass = 'text-light/70';
+                let percentageIcon = '';
+
+                if (user.percentage > 0) {
+                    percentageClass = 'text-success';
+                    percentageIcon = '<i class="fa fa-arrow-up mr-1"></i>';
+                } else if (user.percentage < 0) {
+                    percentageClass = 'text-danger';
+                    percentageIcon = '<i class="fa fa-arrow-down mr-1"></i>';
+                }
+
+                tableHtml += `
+                    <tr class="border-b border-primary/10">
+                        <td class="py-3 text-white font-medium">${user.nickname}</td>
+                        <td class="py-3 text-light/70">${addressesHtml}</td>
+                        <td class="py-3 text-white font-mono">${balancesHtml}</td>
+                        <td class="py-3 text-white font-mono">${user.totalBalance.toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono">${user.initialBalanceTotal.toLocaleString()}</td>
+                        <td class="py-3"><span class="${percentageClass}">${percentageIcon}${user.percentage.toFixed(2)}%</span></td>
+                    </tr>
+                `;
+            });
+
+            return tableHtml;
+        }
+    </script>
+</body>
+</html>
