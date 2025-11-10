@@ -64,6 +64,22 @@
                     transform: scale(1);
                 }
             }
+            /* 表格移动端优化 */
+            @media (max-width: 768px) {
+                .table-container {
+                    font-size: 0.875rem;
+                }
+                .table-container th,
+                .table-container td {
+                    padding: 0.5rem 0.25rem;
+                }
+                .table-container .min-w-200px {
+                    min-width: 140px;
+                }
+                .table-container .text-sm {
+                    font-size: 0.75rem;
+                }
+            }
             .animate-pulse-green {
                 animation: pulseGreen 2s infinite;
             }
@@ -153,31 +169,31 @@
                     </div>
 
                     <!-- 用户余额表格 -->
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left">
+                    <div class="overflow-x-auto table-container">
+                        <table class="w-full text-left min-w-[800px]">
                             <thead>
                                 <tr class="border-b border-primary/20">
-                                    <th class="pb-3 text-light/80 font-medium">
+                                    <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px]">
                                         <span class="zh">昵称</span>
                                         <span class="en hidden">Nickname</span>
                                     </th>
-                                    <th class="pb-3 text-light/80 font-medium">
+                                    <th class="pb-3 text-light/80 font-medium min-w-[200px] w-[250px]">
                                         <span class="zh">钱包地址</span>
                                         <span class="en hidden">Wallet Address</span>
                                     </th>
-                                    <th class="pb-3 text-light/80 font-medium">
+                                    <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px]">
                                         <span class="zh">当前余额</span>
                                         <span class="en hidden">Current Balance</span>
                                     </th>
-                                    <th class="pb-3 text-light/80 font-medium">
+                                    <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px]">
                                         <span class="zh">当前余额合计</span>
                                         <span class="en hidden">Total Current Balance</span>
                                     </th>
-                                    <th class="pb-3 text-light/80 font-medium">
+                                    <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px]">
                                         <span class="zh">初始余额合计（填表统计）</span>
                                         <span class="en hidden">Total Initial Balance</span>
                                     </th>
-                                    <th class="pb-3 text-light/80 font-medium">
+                                    <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px]">
                                         <span class="zh">变化百分比</span>
                                         <span class="en hidden">Change %</span>
                                     </th>
@@ -525,12 +541,12 @@
 
                 tableHtml += `
                     <tr class="border-b border-primary/10">
-                        <td class="py-3 text-white font-medium">${user.nickname}</td>
-                        <td class="py-3 text-light/70">${addressesHtml}</td>
-                        <td class="py-3 text-white font-mono">${balancesHtml}</td>
-                        <td class="py-3 text-white font-mono">${user.totalBalance.toLocaleString()}</td>
-                        <td class="py-3 text-white font-mono">${user.initialBalanceTotal.toLocaleString()}</td>
-                        <td class="py-3"><span class="${percentageClass}">${percentageIcon}${user.percentage.toFixed(2)}%</span></td>
+                        <td class="py-3 text-white font-medium min-w-[100px] w-[120px] align-top">${user.nickname}</td>
+                        <td class="py-3 text-light/70 min-w-[200px] w-[250px] align-top">${addressesHtml}</td>
+                        <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-top">${balancesHtml}</td>
+                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-top">${user.totalBalance.toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-top">${user.initialBalanceTotal.toLocaleString()}</td>
+                        <td class="py-3 min-w-[100px] w-[120px] align-top"><span class="${percentageClass}">${percentageIcon}${user.percentage.toFixed(2)}%</span></td>
                     </tr>
                 `;
             });
