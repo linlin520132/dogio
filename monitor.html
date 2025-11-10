@@ -201,7 +201,7 @@
                                         <span class="en hidden">Current Balance</span>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="totalBalance">
-                                        <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
                                             <span>
                                                 <span class="zh">当前余额合计</span>
                                                 <span class="en hidden">Total Current Balance</span>
@@ -213,7 +213,7 @@
                                         </div>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="initialBalanceTotal">
-                                        <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
                                             <span>
                                                 <span class="zh">加入时初始总额</span>
                                                 <span class="en hidden">Initial Balance Total</span>
@@ -225,7 +225,7 @@
                                         </div>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium min-w-[100px] w-[120px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="percentage">
-                                        <div class="flex items-center justify-between">
+                                        <div class="flex items-center">
                                             <span>
                                                 <span class="zh">变化百分比</span>
                                                 <span class="en hidden">Change %</span>
@@ -745,7 +745,7 @@
                 const addressesHtml = user.addresses.map((address, index) => {
                     const shortAddress = `${address.slice(0, 6)}...${address.slice(-4)}`;
                     return `
-                        <div class="flex items-center justify-between mb-1 last:mb-0">
+                        <div class="flex items-center mb-1 last:mb-0">
                             <span class="text-light/70 font-mono text-sm">${shortAddress}</span>
                             <button onclick="navigator.clipboard.writeText('${address}')" class="ml-2 text-primary hover:text-secondary flex-shrink-0" title="复制地址">
                                 <i class="fa fa-copy text-xs"></i>
@@ -774,7 +774,7 @@
                 tableHtml += `
                     <tr class="border-b border-primary/10">
                         <td class="py-3 text-white font-medium min-w-[100px] w-[120px] align-middle">${user.nickname}</td>
-                        <td class="py-3 text-light/70 min-w-[200px] w-[250px] align-middle">${addressesHtml}</td>
+                        <td class="py-3 text-light/70 min-w-[120px] w-[150px] align-middle">${addressesHtml}</td>
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${balancesHtml}</td>
                         <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${user.totalBalance.toLocaleString()}</td>
                         <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${user.initialBalanceTotal.toLocaleString()}</td>
