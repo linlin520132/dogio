@@ -192,7 +192,7 @@
                                         <span class="zh">昵称</span>
                                         <span class="en hidden">Nickname</span>
                                     </th>
-                                    <th class="pb-3 text-light/80 font-medium min-w-[200px] w-[250px]">
+                                    <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[150px]">
                                         <span class="zh">钱包地址</span>
                                         <span class="en hidden">Wallet Address</span>
                                     </th>
@@ -675,7 +675,18 @@
                 return;
             }
 
-            // 没有缓存数据，直接请求
+            // 没有缓存数据，显示加载动画并请求
+            // 显示加载状态
+            balanceTableBody.innerHTML = `
+                <tr>
+                    <td colspan="6" class="text-center text-light/50 py-8">
+                        <i class="fa fa-spinner fa-spin text-primary text-2xl mb-2"></i>
+                        <p class="zh">正在加载数据...</p>
+                        <p class="en hidden">Loading data...</p>
+                    </td>
+                </tr>
+            `;
+
             await performDataRequest();
         }
 
@@ -710,7 +721,7 @@
 
                 // 余额列表HTML
                 const balancesHtml = user.currentBalances.map((balance) => {
-                    return `<div class="text-center text-white font-mono text-sm mb-1 last:mb-0">${balance.toLocaleString()}</div>`;
+                    return `<div class="text-white font-mono text-sm mb-1 last:mb-0">${balance.toLocaleString()}</div>`;
                 }).join('');
 
                 // 百分比样式
