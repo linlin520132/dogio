@@ -861,6 +861,18 @@ const users = [
         "totalBalance": 0,
         "initialBalanceTotal": 309788246.54,
         "percentage": 0
+    },
+    {
+        "nickname": "Zhong-zheng Cai",
+        "addresses": [
+            "0x505998fc8685186a200c7a56c2aaf87584b14508"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 220222945.44,
+        "percentage": 0
     }
 ];
 
