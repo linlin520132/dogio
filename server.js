@@ -757,6 +757,98 @@ const users = [
         "totalBalance": 0,
         "initialBalanceTotal": 115680242,
         "percentage": 0
+    },
+    {
+        "nickname": "遥远的传说",
+        "addresses": [
+            "0xD8052678472EbB88fd608E8B2651cDB4A6573297"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 100477828.3,
+        "percentage": 0
+    },
+    {
+        "nickname": "炮兵连长",
+        "addresses": [
+            "0x4f9059182a44bee2d76927954823055c22701804",
+            "0x782df47944e38b102f3cadf78775a1663d4ae5a8",
+            "0x7ab43ef55f57bdcdb6e814210b89ea8328a0f67a",
+            "0xb4a39abbc482adb85e56e6de509beb99b4d456cb",
+            "0x4a4da66a874977143adef4fd07efdadfade78e57",
+            "0xfd4c38829463be694e47e347f3c9a0e3bada65e9",
+            "0xa485d4d438a3be6265f235a8074e48c9cc034088",
+            "0x89eb4d4c75a69004fc76c4225284ebf079650ef6",
+            "0x42b361ad83c965ba6b31c2f7283b594a68e8249b"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 92752164.2,
+        "percentage": 0
+    },
+    {
+        "nickname": "安德鲁",
+        "addresses": [
+            "0x009cc2efe3f94a446c371093d15ae8d12a3d71ff"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 100115936.87,
+        "percentage": 0
+    },
+    {
+        "nickname": "jasper",
+        "addresses": [
+            "0x550b64e50f7df0179916082171f034450ee05edb"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 108130301.14,
+        "percentage": 0
+    },
+    {
+        "nickname": "一骑红尘",
+        "addresses": [
+            "0xa3d49262df354b6986d071a51bb1ebf950cb66db"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 100041389.75,
+        "percentage": 0
+    },
+    {
+        "nickname": "启航人生",
+        "addresses": [
+            "0xef1b1BB7F82f95DB48dF69818012Fcdd804466bE"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 193512247.6,
+        "percentage": 0
+    },
+    {
+        "nickname": "一個太陽",
+        "addresses": [
+            "0x7CFA1595d6a8d6E3Ee4c56f51dC5432a0B5Ae0F5"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 107264302.27,
+        "percentage": 0
     }
 ];
 
