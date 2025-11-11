@@ -849,6 +849,18 @@ const users = [
         "totalBalance": 0,
         "initialBalanceTotal": 107264302.27,
         "percentage": 0
+    },
+    {
+        "nickname": "神秘人",
+        "addresses": [
+            "0x239611ea0488b8a4bfe3b7dcd205baebd6c3a99f"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 309788246.54,
+        "percentage": 0
     }
 ];
 
