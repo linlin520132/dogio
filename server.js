@@ -35,6 +35,18 @@ app.use(cors({
 // 用户数据 - 新结构：地址数组、余额数组、合计、百分比
 const users = [
     {
+        "nickname": "OKX官方钱包",
+        "addresses": [
+            "0xa1d2c4533d867ce4623681f68df84d9cad73cb6b"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 131452001.01,
+        "percentage": 0
+    },
+    {
         "nickname": "吉姆熊猫",
         "addresses": [
             "0x4d6ae7eb9c767436fdc91ad1498d7c3ded176afc"
