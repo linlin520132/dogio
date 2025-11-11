@@ -345,7 +345,7 @@
             // 计算并更新当前总余额
             if (data.users && data.users.length > 0) {
                 const totalBalance = data.users.reduce((sum, user) => sum + (user.totalBalance || 0), 0);
-                totalBalanceEl.textContent = totalBalance.toLocaleString();
+                totalBalanceEl.textContent = Math.round(totalBalance).toLocaleString();
             }
         }
 
@@ -387,18 +387,18 @@
         function handleSort(field) {
             // 如果点击的是当前排序字段，则循环排序顺序
             if (currentSortField === field) {
-                // 循环: null -> asc -> desc -> null
+                // 循环: 无序 -> 倒序 -> 正序 -> 无序
                 if (currentSortOrder === null) {
-                    currentSortOrder = 'asc';
-                } else if (currentSortOrder === 'asc') {
                     currentSortOrder = 'desc';
+                } else if (currentSortOrder === 'desc') {
+                    currentSortOrder = 'asc';
                 } else {
                     currentSortOrder = null;
                 }
             } else {
-                // 点击新字段，开始升序排序
+                // 点击新字段，开始倒序排序（大值在前）
                 currentSortField = field;
-                currentSortOrder = 'asc';
+                currentSortOrder = 'desc';
             }
 
             // 更新UI
@@ -651,7 +651,7 @@
 
                 // 余额列表HTML
                 const balancesHtml = user.currentBalances.map((balance) => {
-                    return `<div class="text-white font-mono text-sm mb-1 last:mb-0">${balance.toLocaleString()}</div>`;
+                    return `<div class="text-white font-mono text-sm mb-1 last:mb-0">${Math.round(balance).toLocaleString()}</div>`;
                 }).join('');
 
                 // 百分比样式
@@ -671,8 +671,8 @@
                         <td class="py-3 text-white font-medium min-w-[100px] w-[120px] align-middle">${user.nickname}</td>
                         <td class="py-3 text-light/70 min-w-[120px] w-[150px] align-middle">${addressesHtml}</td>
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${balancesHtml}</td>
-                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${user.totalBalance.toLocaleString()}</td>
-                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${user.initialBalanceTotal.toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.totalBalance).toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.initialBalanceTotal).toLocaleString()}</td>
                         <td class="py-3 min-w-[100px] w-[120px] align-middle"><span class="${percentageClass}">${percentageIcon}${user.percentage.toFixed(2)}%</span></td>
                     </tr>
                 `;
