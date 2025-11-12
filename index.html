@@ -26,6 +26,11 @@
             }
         }
     </script>
+    <style>
+        html, body {
+            overflow-x: hidden;
+        }
+    </style>
     <style type="text/tailwindcss">
         @layer utilities {
             .text-gradient {
@@ -1362,12 +1367,8 @@
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
-                nav.classList.add('py-2');
-                nav.classList.remove('py-4');
                 nav.classList.add('shadow-lg');
             } else {
-                nav.classList.add('py-4');
-                nav.classList.remove('py-2');
                 nav.classList.remove('shadow-lg');
             }
         });

@@ -143,7 +143,7 @@
                         <span class="en hidden bg-gradient-to-r from-primary to-secondary text-gradient">Deep Consensus Monitor</span>
                     </h1>
                     <p class="text-light/70 max-w-2xl mx-auto zh">
-                        深度共识者自愿展示地址，接受查询DOG代币余额变化，及时掌握动态。
+                        深度共识者自愿展示地址，接受查询DOG代币持仓变化，及时掌握动态。
                     </p>
                     <p class="text-light/70 max-w-2xl mx-auto en hidden">
                         Deep consensus participants voluntarily display their addresses for DOG token balance monitoring, keeping track of changes in real-time.
@@ -159,7 +159,7 @@
         </div>
     </div>
 
-    <!-- 用户余额监控 -->
+    <!-- 用户持仓监控 -->
     <section class="py-8 bg-dark">
         <div class="container mx-auto px-4">
             <div class="max-w-6xl mx-auto">
@@ -177,13 +177,13 @@
                             <div class="text-lg font-bold text-secondary" id="total-users">-</div>
                         </div>
                         <div class="bg-dark/50 rounded-lg p-4 border border-primary/10">
-                            <div class="text-sm text-light/60 mb-1 zh">当前深度共识者总余额</div>
+                            <div class="text-sm text-light/60 mb-1 zh">当前深度共识者总持仓</div>
                             <div class="text-sm text-light/60 mb-1 en hidden">Total Deep Consensus Balance</div>
                             <div class="text-lg font-bold text-primary" id="total-balance">-</div>
                         </div>
                     </div>
 
-                    <!-- 用户余额表格 -->
+                    <!-- 用户持仓表格 -->
                     <div class="overflow-x-auto table-container">
                         <table class="w-full text-left min-w-[800px]">
                             <thead>
@@ -197,13 +197,13 @@
                                         <span class="en hidden">Wallet Address</span>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px]">
-                                        <span class="zh">当前余额</span>
+                                        <span class="zh">当前持仓</span>
                                         <span class="en hidden">Current Balance</span>
                                     </th>
                                     <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="totalBalance">
                                         <div class="flex items-center">
                                             <span>
-                                                <span class="zh">当前余额合计</span>
+                                                <span class="zh">当前持仓合计</span>
                                                 <span class="en hidden">Total Current Balance</span>
                                             </span>
                                             <div class="sort-icons flex flex-col ml-2">
@@ -342,7 +342,7 @@
                 totalUsersEl.textContent = data.totalUsers;
             }
 
-            // 计算并更新当前总余额
+            // 计算并更新当前总持仓
             if (data.users && data.users.length > 0) {
                 const totalBalance = data.users.reduce((sum, user) => sum + (user.totalBalance || 0), 0);
                 totalBalanceEl.textContent = Math.round(totalBalance).toLocaleString();
@@ -500,12 +500,12 @@
                     // 渲染表格HTML
                     balanceTableBody.innerHTML = renderTableHTML(response.data.users);
 
-                    console.log(`余额数据已加载，最后更新时间: ${response.data.lastUpdate}`);
+                    console.log(`持仓数据已加载，最后更新时间: ${response.data.lastUpdate}`);
                 } else {
                     throw new Error('后端API返回数据格式错误');
                 }
             } catch (error) {
-                console.error('处理余额数据失败:', error);
+                console.error('处理持仓数据失败:', error);
                 balanceTableBody.innerHTML = `
                     <tr>
                         <td colspan="6" class="text-center text-red-400 py-8">
@@ -571,7 +571,7 @@
         }
 
         async function loadBalanceData() {
-            console.log('开始加载余额数据...');
+            console.log('开始加载持仓数据...');
 
             // 检查本地存储中的缓存数据
             const cachedData = getCachedData();
@@ -649,7 +649,7 @@
                     `;
                 }).join('');
 
-                // 余额列表HTML
+                // 持仓列表HTML
                 const balancesHtml = user.currentBalances.map((balance) => {
                     return `<div class="text-white font-mono text-sm mb-1 last:mb-0">${Math.round(balance).toLocaleString()}</div>`;
                 }).join('');
