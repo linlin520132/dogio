@@ -885,6 +885,31 @@ const users = [
         "totalBalance": 0,
         "initialBalanceTotal": 255816946.36,
         "percentage": 0
+    },
+    {
+        "nickname": "黄药师",
+        "addresses": [
+            "0xcc70a7c49ac0a27ed3324ca9baa397c0ae1c1887"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 159285728.0,
+        "percentage": 0
+    }, 
+    {
+        "nickname": "貳大爺",
+        "addresses": [
+            "0xA029A47599Cebe487E2E69F61dc97058D449EAe4",
+            "0x80745ccFFB3C50f7CC558464414fc9A940384A36"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 118862385.9,
+        "percentage": 0
     }
 ];
 
