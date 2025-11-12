@@ -910,6 +910,30 @@ const users = [
         "totalBalance": 0,
         "initialBalanceTotal": 118862385.9,
         "percentage": 0
+    },
+    {
+        "nickname": "哪有赌狗天天输",
+        "addresses": [
+            "0x0e7e42f4ff895e8f8a3933ec8d6238b9f436be1f"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 688704606.9406,
+        "percentage": 0
+    },
+    {
+        "nickname": "齐天大圣",
+        "addresses": [
+            "0xe4f0fbd632ad310d146eaeac8624b4f81278d1e8"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 626317899.6,
+        "percentage": 0
     }
 ];
 
