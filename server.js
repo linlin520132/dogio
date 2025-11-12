@@ -873,6 +873,18 @@ const users = [
         "totalBalance": 0,
         "initialBalanceTotal": 220222945.44,
         "percentage": 0
+    },
+    {
+        "nickname": "云淡风轻",
+        "addresses": [
+            "0x4a4791dd6ed2ff2a3307ee34dad8e94a2c02c447"
+        ],
+        "currentBalances": [
+            0
+        ],
+        "totalBalance": 0,
+        "initialBalanceTotal": 255816946.36,
+        "percentage": 0
     }
 ];
 
