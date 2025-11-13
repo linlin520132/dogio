@@ -526,5 +526,564 @@
             "0xe4f0fbd632ad310d146eaeac8624b4f81278d1e8"
         ],
         "initialBalanceTotal": 626317899.6
+    },
+    {
+        "nickname": "不正经的正经人",
+        "addresses": [
+            "0xc3584c580db43929bc1ba6767b37ee51f79c8655"
+        ],
+        "initialBalanceTotal": 29501345
+    },
+    {
+        "nickname": "清",
+        "addresses": [
+            "0x17f9a381844980c2a7313f06cec717e7f0af0499"
+        ],
+        "initialBalanceTotal": 25910000
+    },
+    {
+        "nickname": "时迁",
+        "addresses": [
+            "0x48C2EBf1BE893edc50436065eE1C14c266195A7f"
+        ],
+        "initialBalanceTotal": 40000000
+    },
+    {
+        "nickname": "逗霸",
+        "addresses": [
+            "0x0588f6F728635BA9FB0DCB8eF1C01aB5A56f801c"
+        ],
+        "initialBalanceTotal": 20071225
+    },
+    {
+        "nickname": "细雨飞撒",
+        "addresses": [
+            "0xc51118dd63f361f8a706d8179a3b91e7712485dc"
+        ],
+        "initialBalanceTotal": 27592374
+    },
+    {
+        "nickname": "星辰大海",
+        "addresses": [
+            "0xd4Cb277D9Ac31908fbA1cdce2f6Ae956759b0266"
+        ],
+        "initialBalanceTotal": 22926678
+    },
+    {
+        "nickname": "汽修",
+        "addresses": [
+            "0x6684220508518560ba545148d4b2eb38b420934a"
+        ],
+        "initialBalanceTotal": 29049259
+    },
+    {
+        "nickname": "小财宝",
+        "addresses": [
+            "0x0ed0d8bd7b8dba9da5d210c6990a13e8cca7f3d7"
+        ],
+        "initialBalanceTotal": 29000000
+    },
+    {
+        "nickname": "天雨",
+        "addresses": [
+            "0x1747c3037ec12510610de0ebe7138c8b55d67f73"
+        ],
+        "initialBalanceTotal": 45000000
+    },
+    {
+        "nickname": "胡云飞",
+        "addresses": [
+            "0x217796F3fE056844e03c181Ab4E73b4B8629f30c"
+        ],
+        "initialBalanceTotal": 20184078
+    },
+    {
+        "nickname": "yoke",
+        "addresses": [
+            "0x3ec47b5db530883dc6db54064018cc3f6f1c9146"
+        ],
+        "initialBalanceTotal": 90000000
+    },
+    {
+        "nickname": "_",
+        "addresses": [
+            "0x3cdbfe41aa6621df033baedcc9b2f15f2616e005"
+        ],
+        "initialBalanceTotal": 22720000
+    },
+    {
+        "nickname": "公子",
+        "addresses": [
+            "0xbF7CDE95273cAC9a1796a5e0B97513088617e9Ee"
+        ],
+        "initialBalanceTotal": 53000000
+    },
+    {
+        "nickname": "魔虫",
+        "addresses": [
+            "0x2a5e034c80671b622cc3cf3c1fe4f08c00f36c48"
+        ],
+        "initialBalanceTotal": 20000000
+    },
+    {
+        "nickname": "草民吃藕",
+        "addresses": [
+            "0xfb31db250165f809997e3b67d6b769e15e1218d2"
+        ],
+        "initialBalanceTotal": 22398645
+    },
+    {
+        "nickname": "素雅",
+        "addresses": [
+            "0x85017f9f1860ad5e27a18566fbc7917f4fad2032"
+        ],
+        "initialBalanceTotal": 4100
+    },
+    {
+        "nickname": "城市/ht 日记",
+        "addresses": [
+            "0x751c303562ec9b4d9b7e9f90cd94506e40b0d62a"
+        ],
+        "initialBalanceTotal": 36577296
+    },
+    {
+        "nickname": "曾经的自己",
+        "addresses": [
+            "0xEA6a7cD780a941c0b9c2Dd7d1B5F7f4C51AA3dCA"
+        ],
+        "initialBalanceTotal": 51700000
+    },
+    {
+        "nickname": "风向决定发型d",
+        "addresses": [
+            "0x5f516B369CCe55352151E7E218A569e6C3D5a07e"
+        ],
+        "initialBalanceTotal": 33000000
+    },
+    {
+        "nickname": "小趴菜",
+        "addresses": [
+            "0xDF015F69988bF2395631415d6D9a121A7adf0B09"
+        ],
+        "initialBalanceTotal": 20000000
+    },
+    {
+        "nickname": "阳光",
+        "addresses": [
+            "0x8ACdc9BBFeE336e40B797bDE54a8C8205785F29d"
+        ],
+        "initialBalanceTotal": 51984440.5
+    },
+    {
+        "nickname": "u哥哥",
+        "addresses": [
+            "0x37f3f874c1aa4435d059ddc6a7fb81e8dd1cfd57"
+        ],
+        "initialBalanceTotal": 27000000
+    },
+    {
+        "nickname": "南方种植园",
+        "addresses": [
+            "0xf439bd457304a9f49ecffefb46450993d5bc5769"
+        ],
+        "initialBalanceTotal": 35000000
+    },
+    {
+        "nickname": "雪狼",
+        "addresses": [
+            "0xd69dc3f6e449f3679a9e0b904c28f8554140ca60"
+        ],
+        "initialBalanceTotal": 38000000
+    },
+    {
+        "nickname": "空调不够冷",
+        "addresses": [
+            "0x8342d572e84fdcf9a85a1b119b59b3ef4d8621ee"
+        ],
+        "initialBalanceTotal": 30000000
+    },
+    {
+        "nickname": "仙儿",
+        "addresses": [
+            "0xe5814c4063022DFE2B77eDd087DAb456D40c3a14"
+        ],
+        "initialBalanceTotal": 22249621.9321
+    },
+    {
+        "nickname": "ゅ 煙誮洅躾︵鈈濄橓間づ",
+        "addresses": [
+            "0xa73c95FEDa4C2dE3009dBA67B2d58981bF4AB073"
+        ],
+        "initialBalanceTotal": 50762682
+    },
+    {
+        "nickname": "打dog小兵3947068284",
+        "addresses": [
+            "0x45c63296173e9d737d43866ec78ae9163e700d15"
+        ],
+        "initialBalanceTotal": 21780000
+    },
+    {
+        "nickname": "仓位又不见了",
+        "addresses": [
+            "0xb76fbb9c4c9afc39a5e87f6dad848fb999146e46"
+        ],
+        "initialBalanceTotal": 40000000
+    },
+    {
+        "nickname": "我的未来不是梦",
+        "addresses": [
+            "0xefff2973f53cda207d690ed4de8f2963d471e707",
+            "0x800e2d7603d28e2d0bac5ef118a893158d2b87e7"
+        ],
+        "initialBalanceTotal": 32641670.4921
+    },
+    {
+        "nickname": "钻石DOG",
+        "addresses": [
+            "0xfbdd6e0a6fd057b3fee46244c7c2726f8a0aff1a",
+            "0x1aa8d6395F769989Cd5a64DAD562863BB1aBB0ff"
+        ],
+        "initialBalanceTotal": 23803093
+    },
+    {
+        "nickname": "喜乐人生",
+        "addresses": [
+            "0xee642b9ac75e47dc55b93a706782abab9a7e4a8e"
+        ],
+        "initialBalanceTotal": 20100000
+    },
+    {
+        "nickname": "27623",
+        "addresses": [
+            "0x7cf655b2ad3f0bab737fa141d2114dc0c5f95591"
+        ],
+        "initialBalanceTotal": 30000000
+    },
+    {
+        "nickname": "海纳百川",
+        "addresses": [
+            "0xFeaF3B125Ec4d8d905Cd4Ba53d3Cde34071cb505"
+        ],
+        "initialBalanceTotal": 40260000
+    },
+    {
+        "nickname": "一生平安",
+        "addresses": [
+            "0x7848400EcCb3D2bccf8D67421569643D06000570"
+        ],
+        "initialBalanceTotal": 56797.518
+    },
+    {
+        "nickname": "东财",
+        "addresses": [
+            "0x54585df5015ad49ab21c92d5fdd9f81f4c3f82e4"
+        ],
+        "initialBalanceTotal": 20639845
+    },
+    {
+        "nickname": "翡翠遗失在巴拉瑞",
+        "addresses": [
+            "0xDade000DCB6FD94db067ad10a1df5E6d8f825f36"
+        ],
+        "initialBalanceTotal": 21000000
+    },
+    {
+        "nickname": "啊真",
+        "addresses": [
+            "0x327a7b7d6fb90acb120b8153fb9011722e8bf1c6"
+        ],
+        "initialBalanceTotal": 20533334
+    },
+    {
+        "nickname": "天天好心情",
+        "addresses": [
+            "0xab5b0628F7f3c0CDdE9391abdF0Ff359C9B78636"
+        ],
+        "initialBalanceTotal": 31296418.3456
+    },
+    {
+        "nickname": ".",
+        "addresses": [
+            "0x46d5049855e821f113f2110326605822831e3933"
+        ],
+        "initialBalanceTotal": 29000000
+    },
+    {
+        "nickname": "永恒",
+        "addresses": [
+            "0x681c67Eafdee6B3080C84ed67b2d935655EA4B04"
+        ],
+        "initialBalanceTotal": 40000000
+    },
+    {
+        "nickname": "绅士",
+        "addresses": [
+            "0x923A9C9fa04685648cbb775116c20Db763D1af22"
+        ],
+        "initialBalanceTotal": 50000000
+    },
+    {
+        "nickname": "With Headphones",
+        "addresses": [
+            "0x3da1f6c028ebc007f7d2beb959d1b7ecf29c295e"
+        ],
+        "initialBalanceTotal": 41359845
+    },
+    {
+        "nickname": "欧阳锋",
+        "addresses": [
+            "0xbFe7ca9b5388D9f3693BBFdb13E24aB005FB8EFf"
+        ],
+        "initialBalanceTotal": 24000000
+    },
+    {
+        "nickname": "dog钻石手嬴荏",
+        "addresses": [
+            "0xCAf3a882E34A3a7fc08E868463556D0bde240b24"
+        ],
+        "initialBalanceTotal": 74000000
+    },
+    {
+        "nickname": "众鑫社区锁先生",
+        "addresses": [
+            "0x273A16f8968D3f1c31C98609eEDf26be91B89e7E",
+            "0xB1Ca2eDfBA5e18445B254e98cb7b5dcA128f6666"
+        ],
+        "initialBalanceTotal": 20270000
+    },
+    {
+        "nickname": "追梦少年",
+        "addresses": [
+            "0xe7c842cc81c3019894906476f9d8963881787caa"
+        ],
+        "initialBalanceTotal": 97554933
+    },
+    {
+        "nickname": "清宁",
+        "addresses": [
+            "0x22682a4fd1bc5aa023d3410fd6775f7a12834a66"
+        ],
+        "initialBalanceTotal": 49000000
+    },
+    {
+        "nickname": "838785300@qq.com",
+        "addresses": [
+            "0x30F07E7943669C09fd4bFf545BC6575358c26a92"
+        ],
+        "initialBalanceTotal": 95824000
+    },
+    {
+        "nickname": "布朗船长",
+        "addresses": [
+            "0x0e0a91b2c6a179841fe116f338c7a1e50bcd01c1"
+        ],
+        "initialBalanceTotal": 22850472
+    },
+    {
+        "nickname": "虚竹",
+        "addresses": [
+            "0xa7e86b6afc20249aA3dEB6760529c8dd890CE7fd"
+        ],
+        "initialBalanceTotal": 30601311
+    },
+    {
+        "nickname": "美心木门",
+        "addresses": [
+            "0x942916f487Bdfd9B9f8B7fc3f54D03919E867DFF"
+        ],
+        "initialBalanceTotal": 21172972
+    },
+    {
+        "nickname": "给生活加点糖",
+        "addresses": [
+            "0x5ce24AC37FCAFdf22F0CeEB097c0C266FAD13319"
+        ],
+        "initialBalanceTotal": 22950000
+    },
+    {
+        "nickname": "钇丞",
+        "addresses": [
+            "0x6A53FBf66c1c7FE95F6B740A9Ed4B81597712c3E"
+        ],
+        "initialBalanceTotal": 25000000
+    },
+    {
+        "nickname": "Nayo",
+        "addresses": [
+            "0x602860831839d07a5238206853bdafe95d187fc7",
+            "0x0721014678a4ad1bb8d07e244236542ec05056fc"
+        ],
+        "initialBalanceTotal": 33760446
+    },
+    {
+        "nickname": "未来不是梦",
+        "addresses": [
+            "0x4e9a53A24DCa47F2A13edB22C428Ce846B782300"
+        ],
+        "initialBalanceTotal": 20914636.2
+    },
+    {
+        "nickname": "丑到拖网速",
+        "addresses": [
+            "0x096c1ddf82adfb08ce348e2f8a12900671706edb"
+        ],
+        "initialBalanceTotal": 62546510
+    },
+    {
+        "nickname": "子玲",
+        "addresses": [
+            "0xF8155361cFF0A4b3073cF5CafF2bA4e7B610570E"
+        ],
+        "initialBalanceTotal": 24786625
+    },
+    {
+        "nickname": "天",
+        "addresses": [
+            "0x407df78644b3f815868385886a40f3ea8e659ff0"
+        ],
+        "initialBalanceTotal": 24000000
+    },
+    {
+        "nickname": "王梓【RWA】）",
+        "addresses": [
+            "0x2A8db2bD281687B43f532e95791C824A7681f9C4"
+        ],
+        "initialBalanceTotal": 24371135
+    },
+    {
+        "nickname": "追梦人",
+        "addresses": [
+            "0x21e79e6b92a6d06ee05ed915800aad024f75690c",
+            "0x37f060170b552d6664ba546be166cc85bb02ebbe"
+        ],
+        "initialBalanceTotal": 20930930.193
+    },
+    {
+        "nickname": "转运丹",
+        "addresses": [
+            "0x58a5483e35F0E67F367E30811Efc3bF0c2ecE4C9"
+        ],
+        "initialBalanceTotal": 21196455
+    },
+    {
+        "nickname": "张幸英",
+        "addresses": [
+            "0x736646b6feb11874c515757ce377ddfc7e9c666b"
+        ],
+        "initialBalanceTotal": 29565814
+    },
+    {
+        "nickname": "静慈",
+        "addresses": [
+            "0x288EDeb44D61d6429516095A829b4dD974196f21"
+        ],
+        "initialBalanceTotal": 21926838
+    },
+    {
+        "nickname": "双旗协议赣州脐橙大叔",
+        "addresses": [
+            "0xB22982aF7467Caa163D03f75f20951Db21c89976"
+        ],
+        "initialBalanceTotal": 45262963
+    },
+    {
+        "nickname": "魔力仙-大兴钢厂",
+        "addresses": [
+            "0x17364cDB1A15DF7Bb892a7Ecbb19f0723379D5F3"
+        ],
+        "initialBalanceTotal": 22000000
+    },
+    {
+        "nickname": "有若",
+        "addresses": [
+            "0x7ed2E03E45E0E16d268BC01B39053E166b29DdB1"
+        ],
+        "initialBalanceTotal": 21307781
+    },
+    {
+        "nickname": "三好",
+        "addresses": [
+            "0xA6b47715466269c6835fC834A87ed447bA26FbF6"
+        ],
+        "initialBalanceTotal": 20000000
+    },
+    {
+        "nickname": "得信",
+        "addresses": [
+            "0x0878d43fF64014eeA652d8A3Bb24DE2BB89af105"
+        ],
+        "initialBalanceTotal": 27986507
+    },
+    {
+        "nickname": "百",
+        "addresses": [
+            "0x7f17bec72dc1b938dd6e0b3af6442bc1e9d89017"
+        ],
+        "initialBalanceTotal": 26000000
+    },
+    {
+        "nickname": "虹姐",
+        "addresses": [
+            "0xe4E89fa69b8b83De7C2003dE576fA5ACcAc59AFb"
+        ],
+        "initialBalanceTotal": 25000000
+    },
+    {
+        "nickname": "快乐",
+        "addresses": [
+            "0xb329b0cb142957F790cdBa44F88b77C500015a7d"
+        ],
+        "initialBalanceTotal": 87113239.3
+    },
+    {
+        "nickname": "Mr丶張",
+        "addresses": [
+            "0x66db43f3672dee8629f042e08c639efd9de4dd0d"
+        ],
+        "initialBalanceTotal": 30000000
+    },
+    {
+        "nickname": "max",
+        "addresses": [
+            "0xf74b48963280acbf44f2c34a920d364e3e790fb1"
+        ],
+        "initialBalanceTotal": 57220000
+    },
+    {
+        "nickname": "嘟嘟",
+        "addresses": [
+            "0x17b7210d8a802fc6a536936aa40ccf9db920605c"
+        ],
+        "initialBalanceTotal": 21900000
+    },
+    {
+        "nickname": "千与千寻",
+        "addresses": [
+            "0xc878db43b55ced1261c5f000bee169b5a69c98bf"
+        ],
+        "initialBalanceTotal": 20780000
+    },
+    {
+        "nickname": "Foever",
+        "addresses": [
+            "0x98e5b334601f3ca477f4738c1f0ca108c1f9de7f",
+            "0xF3C135FC7e014b26F64c4f074569d59078EfE488"
+        ],
+        "initialBalanceTotal": 20000000
+    },
+    {
+        "nickname": "玄",
+        "addresses": [
+            "0x859b301d442258be0006468ebb4de69cb8736bd2"
+        ],
+        "initialBalanceTotal": 59165033.8135
+    },
+    {
+        "nickname": "皇总",
+        "addresses": [
+            "0xd1e6245B3EF1D2c5d51263E2d379F9e87FF04B5B"
+        ],
+        "initialBalanceTotal": 41765271.55
     }
 ]
