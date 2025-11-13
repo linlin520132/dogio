@@ -677,7 +677,8 @@
     {
         "nickname": "u哥哥",
         "addresses": [
-            "0x37f3f874c1aa4435d059ddc6a7fb81e8dd1cfd57"
+            "0x37f3f874c1aa4435d059ddc6a7fb81e8dd1cfd57",
+            "0x8b8723c57c708c142713eac92e0033ddc8bb3da4"
         ],
         "initialBalanceTotal": 27000000
     },

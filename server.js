@@ -33,7 +33,7 @@ app.use(cors({
 }));
 
 // 用户数据 - 新结构：地址数组、余额数组、合计、百分比
-const users = require('./users.json');
+let users = require('./users.json');
 
 // DOG代币合约地址
 const DOG_CONTRACT = '0x903358faf7c6304afbd560e9e29b12ab1b8fddc5';
@@ -59,6 +59,56 @@ if (!OKX_CONFIG.apiKey || !OKX_CONFIG.apiSecret || !OKX_CONFIG.apiPassphrase) {
 let balanceCache = {};
 let lastUpdateTime = null;
 let isUpdating = false;
+
+// 缓存文件路径
+const CACHE_FILE = path.join(__dirname, 'balance-cache.json');
+
+// 从文件加载缓存数据
+function loadCacheFromFile() {
+    try {
+        if (fs.existsSync(CACHE_FILE)) {
+            const cacheData = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+            balanceCache = cacheData.balanceCache || {};
+            lastUpdateTime = cacheData.lastUpdateTime || null;
+            
+            // 直接覆盖整个 users 数组
+            if (cacheData.users && Array.isArray(cacheData.users)) {
+                users = cacheData.users;
+                console.log(`✅ 已从文件加载缓存数据，最后更新时间: ${lastUpdateTime || '未知'}`);
+                console.log(`   缓存地址数: ${Object.keys(balanceCache).length}`);
+                console.log(`   用户数据: ${users.length} 个用户`);
+            } else {
+                console.log(`✅ 已从文件加载缓存数据，最后更新时间: ${lastUpdateTime || '未知'}`);
+                console.log(`   缓存地址数: ${Object.keys(balanceCache).length}`);
+                console.log(`   ⚠️  缓存文件中没有用户数据，使用 users.json 中的基础数据`);
+            }
+            return true;
+        } else {
+            console.log('📝 缓存文件不存在，将创建新缓存');
+            return false;
+        }
+    } catch (error) {
+        console.error('❌ 加载缓存文件失败:', error.message);
+        return false;
+    }
+}
+
+// 保存缓存数据到文件
+function saveCacheToFile() {
+    try {
+        const cacheData = {
+            balanceCache: balanceCache,
+            lastUpdateTime: lastUpdateTime,
+            users: users, // 直接保存完整的 users 数组
+            savedAt: new Date().toISOString()
+        };
+        
+        fs.writeFileSync(CACHE_FILE, JSON.stringify(cacheData, null, 2), 'utf8');
+        console.log(`💾 缓存数据已保存到文件: ${CACHE_FILE}`);
+    } catch (error) {
+        console.error('❌ 保存缓存文件失败:', error.message);
+    }
+}
 
 // 创建OKX API签名
 function createSignature(method, requestPath, body = '') {
@@ -191,6 +241,9 @@ async function updateAllBalances() {
         balanceCache = newCache;
         lastUpdateTime = new Date().toISOString();
 
+        // 保存到文件
+        saveCacheToFile();
+
         const duration = Math.round((Date.now() - startTime) / 1000);
         const totalAddresses = users.reduce((sum, user) => sum + user.addresses.length, 0);
         console.log(`余额数据更新完成，耗时 ${duration} 秒，共处理 ${users.length} 个用户，${totalAddresses} 个地址`);
@@ -281,6 +334,9 @@ app.post('/api/update', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`DOG余额监控服务器运行在端口 ${PORT}`);
     console.log(`API地址: http://localhost:${PORT}`);
+    
+    // 启动时加载缓存
+    loadCacheFromFile();
 });
 
 // 尝试启动HTTPS服务器
@@ -320,6 +376,11 @@ try {
 
     // 出错时也启动定时更新任务
     startScheduledUpdates();
+}
+
+// 如果HTTP服务器先启动，确保加载缓存
+if (!fs.existsSync(CACHE_FILE)) {
+    console.log('⚠️  首次启动，缓存文件不存在，将在首次更新后创建');
 }
 
 // 优雅关闭
