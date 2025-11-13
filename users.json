@@ -1080,5 +1080,27 @@
             "0x2a1c993644cd484c2a5b8d0a91a9dfbf1051aa10"
         ],
         "initialBalanceTotal": 40099533.03
+    },
+    {
+        "nickname": "未来(๑]؂[๑）都是晴天",
+        "addresses": [
+            "0xcf18c19f2d34824f227e4c6900f962b186ebcabb"
+        ],
+        "initialBalanceTotal": 59806199.9428
+    },
+    {
+        "nickname": "美心木门",
+        "addresses": [
+            "0x2f7427D2007aC9b1F449aAB67498E0caa579eeeC",
+            "0x62F42b066f0C88e4668a56015CDF5204FFdc063B"
+        ],
+        "initialBalanceTotal": 21190777.8431
+    },
+    {
+        "nickname": "時來運轉^",
+        "addresses": [
+            "0xe004f6435d8e223917c2bf6a86b8cf9b19847aec"
+        ],
+        "initialBalanceTotal": 402843191.4623
     }
 ]
