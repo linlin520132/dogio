@@ -1102,5 +1102,33 @@
             "0xe004f6435d8e223917c2bf6a86b8cf9b19847aec"
         ],
         "initialBalanceTotal": 402843191.4623
+    },
+    {
+        "nickname": "小猪佩奇，你佩我",
+        "addresses": [
+            "0x1cca692040370eca92c81002d1cee9ef9d3ccec0"
+        ],
+        "initialBalanceTotal": 101569355.72108
+    },
+    {
+        "nickname": "小满",
+        "addresses": [
+            "0x32119297c4555fbe5370a1f529c13c7cdd6634e7"
+        ],
+        "initialBalanceTotal": 41920277.028529
+    },
+    {
+        "nickname": "林国志",
+        "addresses": [
+            "0xd2896d4b96c7492F9Fe10254Ed0CEE061C956Faa"
+        ],
+        "initialBalanceTotal": 20372573.54759615
+    },
+    {
+        "nickname": "勇哥",
+        "addresses": [
+            "0x2EBF1A9bF511335A3E6935f8492cA00716Ca532f"
+        ],
+        "initialBalanceTotal": 26432943.43794717
     }
 ]
