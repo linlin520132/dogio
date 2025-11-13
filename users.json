@@ -1073,5 +1073,12 @@
             "0xd1e6245B3EF1D2c5d51263E2d379F9e87FF04B5B"
         ],
         "initialBalanceTotal": 41765271.55
+    },
+    {
+        "nickname": "二爷",
+        "addresses": [
+            "0x2a1c993644cd484c2a5b8d0a91a9dfbf1051aa10"
+        ],
+        "initialBalanceTotal": 40099533.03
     }
 ]
