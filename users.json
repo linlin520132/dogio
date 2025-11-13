@@ -637,7 +637,7 @@
         "addresses": [
             "0x85017f9f1860ad5e27a18566fbc7917f4fad2032"
         ],
-        "initialBalanceTotal": 4100
+        "initialBalanceTotal": 41000000
     },
     {
         "nickname": "城市/ht 日记",
@@ -772,7 +772,7 @@
         "addresses": [
             "0x7848400EcCb3D2bccf8D67421569643D06000570"
         ],
-        "initialBalanceTotal": 56797.518
+        "initialBalanceTotal": 56797518
     },
     {
         "nickname": "东财",
