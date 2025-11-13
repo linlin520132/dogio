@@ -877,7 +877,8 @@
     {
         "nickname": "布朗船长",
         "addresses": [
-            "0x0e0a91b2c6a179841fe116f338c7a1e50bcd01c1"
+            "0x0e0a91b2c6a179841fe116f338c7a1e50bcd01c1",
+            "0xb3502f30ba7ac2ff5293453d6f0880e9ae581424"
         ],
         "initialBalanceTotal": 22850472
     },
