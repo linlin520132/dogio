@@ -33,7 +33,10 @@ app.use(cors({
 }));
 
 // 用户数据 - 新结构：地址数组、余额数组、合计、百分比
-let users = require('./users.json');
+// 基础数据源（从 users.json 加载，不会被缓存覆盖）
+const baseUsers = require('./users.json');
+// 运行时数据（可能包含缓存数据）
+let users = [...baseUsers];
 
 // DOG代币合约地址
 const DOG_CONTRACT = '0x903358faf7c6304afbd560e9e29b12ab1b8fddc5';
@@ -71,13 +74,47 @@ function loadCacheFromFile() {
             balanceCache = cacheData.balanceCache || {};
             lastUpdateTime = cacheData.lastUpdateTime || null;
             
-            // 直接覆盖整个 users 数组
+            // 从缓存恢复运行时数据，但以 users.json 为准
             if (cacheData.users && Array.isArray(cacheData.users)) {
-                users = cacheData.users;
+                // 创建缓存用户映射
+                const cachedUserMap = new Map();
+                cacheData.users.forEach(cachedUser => {
+                    cachedUserMap.set(cachedUser.nickname, cachedUser);
+                });
+                
+                // 基于 users.json 重建 users 数组，并恢复缓存中的运行时数据
+                users = baseUsers.map(baseUser => {
+                    const cachedUser = cachedUserMap.get(baseUser.nickname);
+                    if (cachedUser) {
+                        // 恢复运行时数据，但保留 users.json 中的基础数据
+                        return {
+                            ...baseUser,
+                            currentBalances: cachedUser.currentBalances || [],
+                            totalBalance: cachedUser.totalBalance || 0,
+                            percentage: cachedUser.percentage || 0
+                        };
+                    } else {
+                        // 新用户，使用默认值
+                        return {
+                            ...baseUser,
+                            currentBalances: [],
+                            totalBalance: 0,
+                            percentage: 0
+                        };
+                    }
+                });
+                
                 console.log(`✅ 已从文件加载缓存数据，最后更新时间: ${lastUpdateTime || '未知'}`);
                 console.log(`   缓存地址数: ${Object.keys(balanceCache).length}`);
-                console.log(`   用户数据: ${users.length} 个用户`);
+                console.log(`   用户数据: ${users.length} 个用户（基于 users.json）`);
             } else {
+                // 没有缓存，使用 users.json 的基础数据
+                users = baseUsers.map(user => ({
+                    ...user,
+                    currentBalances: [],
+                    totalBalance: 0,
+                    percentage: 0
+                }));
                 console.log(`✅ 已从文件加载缓存数据，最后更新时间: ${lastUpdateTime || '未知'}`);
                 console.log(`   缓存地址数: ${Object.keys(balanceCache).length}`);
                 console.log(`   ⚠️  缓存文件中没有用户数据，使用 users.json 中的基础数据`);
@@ -188,12 +225,52 @@ async function updateAllBalances() {
     }
 
     console.log('开始更新所有余额数据...');
+    console.log('📋 使用 users.json 作为数据源');
     isUpdating = true;
     const startTime = Date.now();
 
     try {
+        // 重新从 users.json 加载基础数据，确保使用最新的用户列表
+        // 清除 require 缓存，强制重新加载
+        delete require.cache[require.resolve('./users.json')];
+        const currentBaseUsers = require('./users.json');
+        
+        // 如果 users.json 有更新，同步到 users 数组
+        if (currentBaseUsers.length !== baseUsers.length) {
+            console.log(`⚠️  检测到 users.json 有变化，用户数量: ${baseUsers.length} -> ${currentBaseUsers.length}`);
+        }
+        
         const newCache = {};
+        
+        // 保存当前的 users 数组（用于恢复运行时数据）
+        const previousUsers = [...users];
+        const previousUserMap = new Map();
+        previousUsers.forEach(u => previousUserMap.set(u.nickname, u));
+        
+        // 基于 users.json 重建 users 数组，确保地址和初始余额是最新的
+        users = currentBaseUsers.map(baseUser => {
+            // 查找之前 users 数组中对应的用户（用于保留运行时数据）
+            const existingUser = previousUserMap.get(baseUser.nickname);
+            if (existingUser) {
+                // 保留运行时数据，但更新基础数据（地址和初始余额）
+                return {
+                    ...baseUser,
+                    currentBalances: existingUser.currentBalances || [],
+                    totalBalance: existingUser.totalBalance || 0,
+                    percentage: existingUser.percentage || 0
+                };
+            } else {
+                // 新用户，使用默认值
+                return {
+                    ...baseUser,
+                    currentBalances: [],
+                    totalBalance: 0,
+                    percentage: 0
+                };
+            }
+        });
 
+        // 使用 users.json 中的数据作为数据源
         for (let i = 0; i < users.length; i++) {
             const user = users[i];
             let totalBalance = 0;
