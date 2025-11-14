@@ -1053,6 +1053,13 @@
         "initialBalanceTotal": 20780000
     },
     {
+        "nickname": "123",
+        "addresses": [
+            "0xa0fd6ae87161c0d6604c824c681ffa32be5ce338"
+        ],
+        "initialBalanceTotal": 20674568.8
+    },
+    {
         "nickname": "东财",
         "addresses": [
             "0x54585df5015ad49ab21c92d5fdd9f81f4c3f82e4"
