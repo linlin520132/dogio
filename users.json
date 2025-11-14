@@ -647,6 +647,13 @@
         "initialBalanceTotal": 50762682
     },
     {
+        "nickname": "金马影帝",
+        "addresses": [
+            "0xcEf0b9c76CA29A58220A761ae37D12885C230505"
+        ],
+        "initialBalanceTotal": 50053651
+    },
+    {
         "nickname": "绅士",
         "addresses": [
             "0x923A9C9fa04685648cbb775116c20Db763D1af22"
