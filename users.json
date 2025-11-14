@@ -1124,6 +1124,14 @@
         "initialBalanceTotal": 20071225
     },
     {
+        "nickname": "追逐",
+        "addresses": [
+            "0x8ad837f28e41C1Ee9f71930E1D3D5DeeaC4e2f06",
+            "0xe8e67897a0389b82d988630a2ec5de9e0fa07323"
+        ],
+        "initialBalanceTotal": 20023059.08
+    },
+    {
         "nickname": "魔虫",
         "addresses": [
             "0x2a5e034c80671b622cc3cf3c1fe4f08c00f36c48"
