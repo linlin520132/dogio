@@ -435,6 +435,13 @@
         "initialBalanceTotal": 100477828.3
     },
     {
+        "nickname": "赢在选择",
+        "addresses": [
+            "0x30F07E7943669C09fd4bFf545BC6575358c"
+        ],
+        "initialBalanceTotal": 100285424.9551
+    },
+    {
         "nickname": "香香",
         "addresses": [
             "0xA9bb36C922cD1312D0495054F374EF4CbDcd21A0",
@@ -929,6 +936,13 @@
             "0x1aa8d6395F769989Cd5a64DAD562863BB1aBB0ff"
         ],
         "initialBalanceTotal": 23803093
+    },
+    {
+        "nickname": "寒冰",
+        "addresses": [
+            "0x7d51c88e306ecc6ba812cc1bc52c9c040b1ebdf7"
+        ],
+        "initialBalanceTotal": 23561975.2
     },
     {
         "nickname": "给生活加点糖",
