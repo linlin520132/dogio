@@ -533,13 +533,6 @@
         "initialBalanceTotal": 97554933
     },
     {
-        "nickname": "838785300@qq.com",
-        "addresses": [
-            "0x30F07E7943669C09fd4bFf545BC6575358c26a92"
-        ],
-        "initialBalanceTotal": 95824000
-    },
-    {
         "nickname": "观明",
         "addresses": [
             "0x3e36e49d20b695a09b503ab3c5860b875f762838",
@@ -708,13 +701,6 @@
             "0xFeaF3B125Ec4d8d905Cd4Ba53d3Cde34071cb505"
         ],
         "initialBalanceTotal": 40260000
-    },
-    {
-        "nickname": "二爷",
-        "addresses": [
-            "0x2a1c993644cd484c2a5b8d0a91a9dfbf1051aa10"
-        ],
-        "initialBalanceTotal": 40099533.03
     },
     {
         "nickname": "时迁",
@@ -1159,5 +1145,15 @@
             "0xF3C135FC7e014b26F64c4f074569d59078EfE488"
         ],
         "initialBalanceTotal": 20000000
-    }
+    },
+    {
+        "nickname": "小雨滴",
+        "addresses": [
+            "0x1c7bb3f9A4899E05D82B96b8346A1ed606C5A37E",
+            "0xb852431e7B98531f68964204F6c2f23512D82388",
+            "0x0Af9D6160093864a971bb07941eBbfa06902d539",
+            "0xcD2a576218a86e0B9B5956D35A82f4909160BaB7"
+        ],
+        "initialBalanceTotal": 21373976.9876
+    },
 ]
