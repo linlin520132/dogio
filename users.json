@@ -1081,6 +1081,13 @@
         "initialBalanceTotal": 20914636.2
     },
     {
+        "nickname": "Leon",
+        "addresses": [
+            "0x7a1f9493256b40f6273ff9271fe7a736e68c845b"
+        ],
+        "initialBalanceTotal": 20838717.2253
+    },
+    {
         "nickname": "千与千寻",
         "addresses": [
             "0xc878db43b55ced1261c5f000bee169b5a69c98bf"
