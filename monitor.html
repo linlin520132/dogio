@@ -642,9 +642,11 @@
         // 执行数据请求的通用逻辑（从本地文件读取JSON）
         async function performDataRequest() {
             try {
-                console.log('正在加载数据:', GITHUB_DATA_URL);
+                // 添加时间戳防止浏览器缓存
+                const url = `${GITHUB_DATA_URL}?t=${Date.now()}`;
+                console.log('正在加载数据:', url);
                 
-                const response = await fetch(GITHUB_DATA_URL);
+                const response = await fetch(url);
 
                 if (!response.ok) {
                     if (response.status === 404) {
