@@ -1143,10 +1143,10 @@
         ],
         "initialBalanceTotal": 45262963,
         "currentBalances": [
-          43477922.81907931
+          43495662.18073146
         ],
-        "totalBalance": 43477922.81907931,
-        "percentage": -3.9437104038476014
+        "totalBalance": 43495662.18073146,
+        "percentage": -3.9045186221426547
       },
       {
         "nickname": "天雨",
@@ -2051,7 +2051,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T20:02:07.710Z",
+    "lastUpdate": "2025-11-15T20:29:13.268Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
