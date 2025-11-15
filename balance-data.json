@@ -1485,10 +1485,10 @@
         ],
         "initialBalanceTotal": 26432943.43794717,
         "currentBalances": [
-          26474473.022934012
+          25000000.022934012
         ],
-        "totalBalance": 26474473.022934012,
-        "percentage": 0.1571129794316559
+        "totalBalance": 25000000.022934012,
+        "percentage": -5.421051266489003
       },
       {
         "nickname": "卡卡",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T13:59:44.234Z",
+    "lastUpdate": "2025-11-15T14:20:38.465Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
