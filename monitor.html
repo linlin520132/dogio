@@ -364,50 +364,8 @@
 
 
     <script>
-        // 缓存相关常量
-        const CACHE_KEY = 'dog_balance_data';
-        const CACHE_DURATION = 10 * 60 * 1000; // 10分钟
-
-        // 获取缓存的数据
-        function getCachedData() {
-            try {
-                const cached = localStorage.getItem(CACHE_KEY);
-                if (!cached) return null;
-
-                const { data, timestamp } = JSON.parse(cached);
-                const now = Date.now();
-
-                // 检查是否在10分钟内
-                if (now - timestamp < CACHE_DURATION) {
-                    console.log(`缓存数据有效，剩余时间: ${Math.round((CACHE_DURATION - (now - timestamp)) / 1000 / 60)} 分钟`);
-                    return data;
-                } else {
-                    console.log('缓存数据已过期');
-                    localStorage.removeItem(CACHE_KEY);
-                    return null;
-                }
-            } catch (error) {
-                console.error('读取缓存数据失败:', error);
-                localStorage.removeItem(CACHE_KEY);
-                return null;
-            }
-        }
-
-        // 缓存数据
-        function cacheData(data) {
-            try {
-                const cacheData = {
-                    data: data,
-                    timestamp: Date.now()
-                };
-                localStorage.setItem(CACHE_KEY, JSON.stringify(cacheData));
-                console.log('数据已缓存到本地存储');
-            } catch (error) {
-                console.error('缓存数据失败:', error);
-            }
-        }
-
-        const API_BASE_URL = 'https://dogapi.leezf.top'; 
+        // 数据源配置 - 使用相对路径直接引入根目录的 balance-data.json
+        const GITHUB_DATA_URL = './balance-data.json';
 
         // DOM元素
         const balanceTableBodyLarge = document.getElementById('balance-table-body-large');
@@ -473,12 +431,11 @@
         }
 
         // 更新统计信息
-        function updateStatistics(data, isFromCache = false) {
+        function updateStatistics(data) {
             // 更新上次更新时间 (UTC+8)
             if (data.lastUpdate) {
                 const timeText = formatTimeToUTC8(data.lastUpdate);
-                lastUpdateTimeEl.textContent = isFromCache ? `${timeText} (缓存)` : timeText;
-                lastUpdateTimeEl.title = isFromCache ? '数据来自本地缓存' : '数据来自最新请求';
+                lastUpdateTimeEl.textContent = timeText;
             }
 
             // 更新共识者总人数
@@ -653,11 +610,8 @@
                     sortState.small = { field: null, order: null };
                     updateSortIcons();
 
-                    // 缓存成功的数据
-                    cacheData(response);
-
                     // 更新统计信息
-                    updateStatistics(response.data, false);
+                    updateStatistics(response.data);
 
                     // 渲染两个表格
                     renderSortedTable('large');
@@ -685,53 +639,44 @@
             }
         }
 
-        // 强制刷新数据（不使用缓存）
-        async function loadFreshData() {
-            console.log('强制刷新数据，跳过缓存检查...');
-
-            // 显示加载状态
-            const loadingHtml = `
-                <tr>
-                    <td colspan="6" class="text-center text-light/50 py-8">
-                        <i class="fa fa-spinner fa-spin text-primary text-2xl mb-2"></i>
-                        <p class="zh">正在刷新数据...</p>
-                        <p class="en hidden">Refreshing data...</p>
-                    </td>
-                </tr>
-            `;
-            balanceTableBodyLarge.innerHTML = loadingHtml;
-            balanceTableBodySmall.innerHTML = loadingHtml;
-
-            // 直接执行请求逻辑（复制loadBalanceData的请求部分）
-            await performDataRequest();
-        }
-
-        // 执行数据请求的通用逻辑
+        // 执行数据请求的通用逻辑（从本地文件读取JSON）
         async function performDataRequest() {
             try {
-                const response = await fetch(`${API_BASE_URL}/api/balances`, {
-                    timeout: 10000, // 10秒超时
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    }
-                });
+                console.log('正在加载数据:', GITHUB_DATA_URL);
+                
+                const response = await fetch(GITHUB_DATA_URL);
 
                 if (!response.ok) {
+                    if (response.status === 404) {
+                        throw new Error('数据文件未找到，请确认 balance-data.json 文件是否存在');
+                    }
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }
 
-                // 处理响应数据
-                handleApiResponse(await response.text());
+                const jsonData = await response.json();
+                
+                // 验证数据格式
+                if (!jsonData.success || !jsonData.data) {
+                    throw new Error('数据格式错误：缺少 success 或 data 字段');
+                }
+
+                // 处理响应数据（转换为字符串格式以兼容现有处理函数）
+                handleApiResponse(JSON.stringify(jsonData));
 
             } catch (error) {
+                console.error('加载数据失败:', error);
+                
+                const errorMessage = error.message || '未知错误';
+                
                 const errorHtml = `
                     <tr>
                         <td colspan="6" class="text-center text-red-400 py-8">
                             <i class="fa fa-exclamation-triangle text-2xl mb-2"></i>
-                            <p class="zh">加载数据失败，请检查后端服务是否正常运行</p>
-                            <p class="en hidden">Failed to load data, please check if the backend service is running</p>
-                            <p class="text-sm mt-2">${error.message}</p>
+                            <p class="zh">加载数据失败</p>
+                            <p class="en hidden">Failed to load data</p>
+                            <p class="text-sm mt-2">${errorMessage}</p>
+                            <p class="text-xs mt-2 text-light/50 zh">提示：请确认 balance-data.json 文件在根目录下</p>
+                            <p class="text-xs mt-2 text-light/50 en hidden">Tip: Please ensure balance-data.json exists in the root directory</p>
                         </td>
                     </tr>
                 `;
@@ -743,49 +688,6 @@
         async function loadBalanceData() {
             console.log('开始加载持仓数据...');
 
-            // 检查本地存储中的缓存数据
-            const cachedData = getCachedData();
-            if (cachedData) {
-                console.log('使用缓存数据，避免重复请求');
-
-                // 直接处理缓存数据
-                try {
-                    const allUsers = cachedData.data.users;
-                    const threshold = 100000000; // 1亿
-
-                    // 将用户数据分成两组
-                    usersLarge = allUsers.filter(user => (user.totalBalance || 0) >= threshold);
-                    usersSmall = allUsers.filter(user => (user.totalBalance || 0) < threshold);
-
-                    // 更新 tab 计数
-                    tabLargeCount.textContent = `(${usersLarge.length})`;
-                    tabSmallCount.textContent = `(${usersSmall.length})`;
-
-                    // 重置排序状态
-                    sortState.large = { field: null, order: null };
-                    sortState.small = { field: null, order: null };
-                    updateSortIcons();
-
-                    // 更新统计信息（标记为来自缓存）
-                    updateStatistics(cachedData.data, true);
-
-                    // 渲染两个表格
-                    renderSortedTable('large');
-                    renderSortedTable('small');
-
-                    console.log(`缓存数据已加载，最后更新时间: ${cachedData.data.lastUpdate}`);
-                    console.log(`持仓≥1亿: ${usersLarge.length}人，持仓<1亿: ${usersSmall.length}人`);
-                } catch (error) {
-                    console.error('处理缓存数据失败:', error);
-                    // 如果缓存数据损坏，清除缓存并重新请求
-                    localStorage.removeItem(CACHE_KEY);
-                    console.log('缓存数据损坏，已清除，重新请求数据');
-                    loadFreshData(); // 重新调用，不检查缓存
-                }
-                return;
-            }
-
-            // 没有缓存数据，显示加载动画并请求
             // 显示加载状态
             const loadingHtml = `
                 <tr>
