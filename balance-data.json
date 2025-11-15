@@ -45,10 +45,10 @@
         ],
         "initialBalanceTotal": 626317899.6,
         "currentBalances": [
-          627830775.5676813
+          628086935.8546041
         ],
-        "totalBalance": 627830775.5676813,
-        "percentage": 0.24155081128089934
+        "totalBalance": 628086935.8546041,
+        "percentage": 0.2824502150958646
       },
       {
         "nickname": "小狗旺旺",
@@ -2051,7 +2051,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T17:45:17.315Z",
+    "lastUpdate": "2025-11-15T18:00:09.498Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
