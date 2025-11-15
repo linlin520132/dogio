@@ -960,13 +960,6 @@
         "initialBalanceTotal": 22850472
     },
     {
-        "nickname": "_",
-        "addresses": [
-            "0x3cdbfe41aa6621df033baedcc9b2f15f2616e005"
-        ],
-        "initialBalanceTotal": 22720000
-    },
-    {
         "nickname": "草民吃藕",
         "addresses": [
             "0xfb31db250165f809997e3b67d6b769e15e1218d2"
@@ -1014,6 +1007,13 @@
             "0x45c63296173e9d737d43866ec78ae9163e700d15"
         ],
         "initialBalanceTotal": 21780000
+    },
+    {
+        "nickname": "渔夫",
+        "addresses": [
+            "0x7c7dc603fa553168933605728c40d14b1680b010"
+        ],
+        "initialBalanceTotal": 21699222.1648
     },
     {
         "nickname": "有若",

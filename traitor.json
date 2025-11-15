@@ -1,0 +1,37 @@
+[
+    {
+        "nickname": "二爷",
+        "addresses": [
+            "0x2a1c993644cd484c2a5b8d0a91a9dfbf1051aa10"
+        ],
+        "initialBalanceTotal": 40099533.03
+    },
+    {
+        "nickname": "_",
+        "addresses": [
+            "0x3cdbfe41aa6621df033baedcc9b2f15f2616e005"
+        ],
+        "initialBalanceTotal": 22720000
+    },
+    {
+        "nickname": "公子",
+        "addresses": [
+            "0xbF7CDE95273cAC9a1796a5e0B97513088617e9Ee"
+        ],
+        "initialBalanceTotal": 53000000
+    },
+    {
+        "nickname": "启航人生",
+        "addresses": [
+            "0xef1b1BB7F82f95DB48dF69818012Fcdd804466bE"
+        ],
+        "initialBalanceTotal": 193512247.6
+    },
+    {
+        "nickname": "听风",
+        "addresses": [
+            "0xb31bb9be6619a7d67cf2a796117ce6487a66d726"
+        ],
+        "initialBalanceTotal": 101047917
+    }
+]
