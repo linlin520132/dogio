@@ -41,6 +41,9 @@ jobs:
       
       - name: Commit and push changes
         run: |
+          # 先拉取最新代码，避免冲突
+          git pull --rebase || git pull
+          # 检查是否有变更
           git add balance-data.json
           if git diff --staged --quiet; then
             echo "没有数据变更，跳过提交"
