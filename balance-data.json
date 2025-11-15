@@ -657,10 +657,10 @@
         ],
         "initialBalanceTotal": 103121334,
         "currentBalances": [
-          104252403.38814667
+          104294939.25386646
         ],
-        "totalBalance": 104252403.38814667,
-        "percentage": 1.0968335496383985
+        "totalBalance": 104294939.25386646,
+        "percentage": 1.1380819160722493
       },
       {
         "nickname": "@野火（蒙）",
@@ -789,10 +789,10 @@
         ],
         "initialBalanceTotal": 100041389.75,
         "currentBalances": [
-          100379931.79415949
+          100420887.65859038
         ],
-        "totalBalance": 100379931.79415949,
-        "percentage": 0.3384019804257936
+        "totalBalance": 100420887.65859038,
+        "percentage": 0.37934090034007784
       },
       {
         "nickname": "DOG王",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T16:46:45.280Z",
+    "lastUpdate": "2025-11-15T17:00:27.560Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
