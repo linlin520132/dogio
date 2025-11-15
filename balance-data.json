@@ -1533,10 +1533,10 @@
         ],
         "initialBalanceTotal": 25000000,
         "currentBalances": [
-          45348043.21005518
+          50313616.72333153
         ],
-        "totalBalance": 45348043.21005518,
-        "percentage": 81.39217284022072
+        "totalBalance": 50313616.72333153,
+        "percentage": 101.25446689332614
       },
       {
         "nickname": "虹姐",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T10:23:36.745Z",
+    "lastUpdate": "2025-11-15T10:41:58.480Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
