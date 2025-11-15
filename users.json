@@ -142,13 +142,6 @@
         "initialBalanceTotal": 200000000
     },
     {
-        "nickname": "启航人生",
-        "addresses": [
-            "0xef1b1BB7F82f95DB48dF69818012Fcdd804466bE"
-        ],
-        "initialBalanceTotal": 193512247.6
-    },
-    {
         "nickname": "leezerofly",
         "addresses": [
             "0x82ba6bf0a655344e6c8863af13188658a4894bd2",
@@ -400,13 +393,6 @@
             "0x1cca692040370eca92c81002d1cee9ef9d3ccec0"
         ],
         "initialBalanceTotal": 101569355.72108
-    },
-    {
-        "nickname": "听风",
-        "addresses": [
-            "0xb31bb9be6619a7d67cf2a796117ce6487a66d726"
-        ],
-        "initialBalanceTotal": 101047917
     },
     {
         "nickname": "memecoin",
