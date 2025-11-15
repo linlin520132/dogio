@@ -317,10 +317,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          145399947.20925245
+          150676706.95907626
         ],
-        "totalBalance": 145399947.20925245,
-        "percentage": 3.8571051494660336
+        "totalBalance": 150676706.95907626,
+        "percentage": 7.62621925648304
       },
       {
         "nickname": "韭菜人生",
@@ -1275,10 +1275,10 @@
         ],
         "initialBalanceTotal": 36577296,
         "currentBalances": [
-          41004644.742776595
+          41032141.72124192
         ],
-        "totalBalance": 41004644.742776595,
-        "percentage": 12.104089768627498
+        "totalBalance": 41032141.72124192,
+        "percentage": 12.17926475823123
       },
       {
         "nickname": "南方种植园",
@@ -2001,10 +2001,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          20000000
+          20030303.021020602
         ],
-        "totalBalance": 20000000,
-        "percentage": 0
+        "totalBalance": 20030303.021020602,
+        "percentage": 0.15151510510301217
       },
       {
         "nickname": "Foever",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T10:41:58.480Z",
+    "lastUpdate": "2025-11-15T10:53:46.258Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
