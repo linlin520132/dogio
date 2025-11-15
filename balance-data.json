@@ -412,11 +412,11 @@
         ],
         "initialBalanceTotal": 118862385.9,
         "currentBalances": [
-          54558207.65270841,
+          54580467.86464797,
           64607616.857096285
         ],
-        "totalBalance": 119165824.5098047,
-        "percentage": 0.25528564609158655
+        "totalBalance": 119188084.72174425,
+        "percentage": 0.2740133636710453
       },
       {
         "nickname": "繁星社区~甘",
@@ -437,10 +437,10 @@
         ],
         "initialBalanceTotal": 118478429,
         "currentBalances": [
-          119002593.27596174
+          119051147.34438977
         ],
-        "totalBalance": 119002593.27596174,
-        "percentage": 0.44241325647704344
+        "totalBalance": 119051147.34438977,
+        "percentage": 0.48339461387504257
       },
       {
         "nickname": "东风（叶军民）",
@@ -514,11 +514,11 @@
         ],
         "initialBalanceTotal": 110261409,
         "currentBalances": [
-          20725730.056677256,
+          20734186.330508694,
           90293165.25129056
         ],
-        "totalBalance": 111018895.30796781,
-        "percentage": 0.686991318937174
+        "totalBalance": 111027351.58179925,
+        "percentage": 0.6946606149384993
       },
       {
         "nickname": "我",
@@ -1815,10 +1815,10 @@
         ],
         "initialBalanceTotal": 21000000,
         "currentBalances": [
-          21211116.53462977
+          21219770.8502653
         ],
-        "totalBalance": 21211116.53462977,
-        "percentage": 1.0053168315703316
+        "totalBalance": 21219770.8502653,
+        "percentage": 1.046527858406199
       },
       {
         "nickname": "追梦人",
@@ -2051,7 +2051,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T18:00:09.498Z",
+    "lastUpdate": "2025-11-15T18:30:20.738Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
