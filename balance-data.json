@@ -1179,10 +1179,10 @@
         ],
         "initialBalanceTotal": 41765271.55,
         "currentBalances": [
-          41830890.21333583
+          41847957.57170098
         ],
-        "totalBalance": 41830890.21333583,
-        "percentage": 0.15711298143308725
+        "totalBalance": 41847957.57170098,
+        "percentage": 0.19797793389657903
       },
       {
         "nickname": "With Headphones",
@@ -1976,11 +1976,11 @@
         ],
         "initialBalanceTotal": 20023059.08,
         "currentBalances": [
-          11992284.189310929,
+          11997177.14307863,
           8070247.187488218
         ],
-        "totalBalance": 20062531.376799148,
-        "percentage": 0.19713419733439339
+        "totalBalance": 20067424.33056685,
+        "percentage": 0.22157079190344853
       },
       {
         "nickname": "魔虫",
@@ -2051,7 +2051,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T20:29:13.268Z",
+    "lastUpdate": "2025-11-15T20:43:21.293Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
