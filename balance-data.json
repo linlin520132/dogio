@@ -317,10 +317,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          150676706.95907626
+          150680616.07487226
         ],
-        "totalBalance": 150676706.95907626,
-        "percentage": 7.62621925648304
+        "totalBalance": 150680616.07487226,
+        "percentage": 7.62901148205161
       },
       {
         "nickname": "韭菜人生",
@@ -777,10 +777,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          100792570.98657018
+          100819408.04275401
         ],
-        "totalBalance": 100792570.98657018,
-        "percentage": 0.6758505565889878
+        "totalBalance": 100819408.04275401,
+        "percentage": 0.7026565347607525
       },
       {
         "nickname": "一骑红尘",
@@ -975,10 +975,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          94246695.81992225
+          94298081.97997136
         ],
-        "totalBalance": 94246695.81992225,
-        "percentage": 8.188716866969102
+        "totalBalance": 94298081.97997136,
+        "percentage": 8.247704640196254
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -1964,11 +1964,11 @@
         ],
         "initialBalanceTotal": 20023059.08,
         "currentBalances": [
-          11979328.401478006,
+          11992284.189310929,
           8070247.187488218
         ],
-        "totalBalance": 20049575.588966224,
-        "percentage": 0.1324298592951369
+        "totalBalance": 20062531.376799148,
+        "percentage": 0.19713419733439339
       },
       {
         "nickname": "魔虫",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T12:40:59.326Z",
+    "lastUpdate": "2025-11-15T13:08:48.463Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
