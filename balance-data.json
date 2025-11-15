@@ -1663,18 +1663,6 @@
         "percentage": 0.24155134197543537
       },
       {
-        "nickname": "_",
-        "addresses": [
-          "0x3cdbfe41aa6621df033baedcc9b2f15f2616e005"
-        ],
-        "initialBalanceTotal": 22720000,
-        "currentBalances": [
-          0
-        ],
-        "totalBalance": 0,
-        "percentage": -100
-      },
-      {
         "nickname": "草民吃藕",
         "addresses": [
           "0xfb31db250165f809997e3b67d6b769e15e1218d2"
@@ -1759,6 +1747,18 @@
         "percentage": 0.3384475821758303
       },
       {
+        "nickname": "渔夫",
+        "addresses": [
+          "0x7c7dc603fa553168933605728c40d14b1680b010"
+        ],
+        "initialBalanceTotal": 21699222.1648,
+        "currentBalances": [
+          21699222.164886177
+        ],
+        "totalBalance": 21699222.164886177,
+        "percentage": 3.971439152050073e-10
+      },
+      {
         "nickname": "有若",
         "addresses": [
           "0x7ed2E03E45E0E16d268BC01B39053E166b29DdB1"
@@ -1829,10 +1829,10 @@
         ],
         "initialBalanceTotal": 20914636.2,
         "currentBalances": [
-          21015401.87870295
+          21019526.377616994
         ],
-        "totalBalance": 21015401.87870295,
-        "percentage": 0.4817950345363907
+        "totalBalance": 21019526.377616994,
+        "percentage": 0.5015156688070664
       },
       {
         "nickname": "Leon",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T11:33:16.442Z",
+    "lastUpdate": "2025-11-15T11:45:06.481Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
