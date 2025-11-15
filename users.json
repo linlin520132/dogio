@@ -72,6 +72,13 @@
         "initialBalanceTotal": 302072896
     },
     {
+        "nickname": "光",
+        "addresses": [
+            "0x83e31de2cdbe3099eb7b8c7e6b6e10a284efb100"
+        ],
+        "initialBalanceTotal": 298158269
+    },
+    {
         "nickname": "道哥币赢",
         "addresses": [
             "0xb05db08b8067ee5007d7bbb7690afd391048b4cf",
@@ -993,6 +1000,13 @@
             "0x17364cDB1A15DF7Bb892a7Ecbb19f0723379D5F3"
         ],
         "initialBalanceTotal": 22000000
+    },
+    {
+        "nickname": "卫东",
+        "addresses": [
+            "0x25A5D14ED1a08fa65E50C711CA60De260d339dA4"
+        ],
+        "initialBalanceTotal": 21933408
     },
     {
         "nickname": "静慈",
