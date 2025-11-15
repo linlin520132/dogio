@@ -952,6 +952,13 @@
         "initialBalanceTotal": 22926678
     },
     {
+        "nickname": "是以前",
+        "addresses": [
+            "0xe53052a6a96515e5f7740869bcd58415987c1fbb"
+        ],
+        "initialBalanceTotal": 22866522.69653
+    },
+    {
         "nickname": "布朗船长",
         "addresses": [
             "0x0e0a91b2c6a179841fe116f338c7a1e50bcd01c1",
