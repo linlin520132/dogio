@@ -1729,10 +1729,10 @@
         ],
         "initialBalanceTotal": 21926838,
         "currentBalances": [
-          21982688.71257589
+          21991657.83621093
         ],
-        "totalBalance": 21982688.71257589,
-        "percentage": 0.25471393812409304
+        "totalBalance": 21991657.83621093,
+        "percentage": 0.2956187126065731
       },
       {
         "nickname": "嘟嘟",
@@ -2051,7 +2051,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T19:18:57.779Z",
+    "lastUpdate": "2025-11-15T19:30:23.581Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
