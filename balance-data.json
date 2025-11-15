@@ -705,10 +705,10 @@
         ],
         "initialBalanceTotal": 101047917,
         "currentBalances": [
-          101613111.93478821
+          31613111.934788212
         ],
-        "totalBalance": 101613111.93478821,
-        "percentage": 0.559333583084362
+        "totalBalance": 31613111.934788212,
+        "percentage": -68.71473171011708
       },
       {
         "nickname": "memecoin",
@@ -2075,7 +2075,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T09:22:34.430Z",
+    "lastUpdate": "2025-11-15T09:36:28.446Z",
     "totalUsers": 163,
     "totalAddresses": 221
   }
