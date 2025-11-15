@@ -711,10 +711,10 @@
         ],
         "initialBalanceTotal": 101000000,
         "currentBalances": [
-          102604923.31853306
+          102646786.9983968
         ],
-        "totalBalance": 102604923.31853306,
-        "percentage": 1.5890329886465968
+        "totalBalance": 102646786.9983968,
+        "percentage": 1.630482176630494
       },
       {
         "nickname": "代号火麒麟",
@@ -1131,10 +1131,10 @@
         ],
         "initialBalanceTotal": 49000000,
         "currentBalances": [
-          49118413.23217868
+          49138453.96180901
         ],
-        "totalBalance": 49118413.23217868,
-        "percentage": 0.24165965750751142
+        "totalBalance": 49138453.96180901,
+        "percentage": 0.28255910573267207
       },
       {
         "nickname": "双旗协议赣州脐橙大叔",
@@ -1669,10 +1669,10 @@
         "initialBalanceTotal": 22850472,
         "currentBalances": [
           12912539.296380935,
-          9993128.325382786
+          9997205.606584512
         ],
-        "totalBalance": 22905667.62176372,
-        "percentage": 0.24155134197543537
+        "totalBalance": 22909744.90296545,
+        "percentage": 0.259394654803843
       },
       {
         "nickname": "草民吃藕",
@@ -2051,7 +2051,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T21:26:29.789Z",
+    "lastUpdate": "2025-11-15T21:40:46.037Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
