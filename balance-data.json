@@ -801,10 +801,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          100772788.87523839
+          100792570.98657018
         ],
-        "totalBalance": 100772788.87523839,
-        "percentage": 0.6560913534588432
+        "totalBalance": 100792570.98657018,
+        "percentage": 0.6758505565889878
       },
       {
         "nickname": "一骑红尘",
@@ -1023,10 +1023,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          70096925.53538695
+          71178432.7672943
         ],
-        "totalBalance": 70096925.53538695,
-        "percentage": 12.071681594044096
+        "totalBalance": 71178432.7672943,
+        "percentage": 13.800806419565701
       },
       {
         "nickname": "jason",
@@ -1095,10 +1095,10 @@
         ],
         "initialBalanceTotal": 53000000,
         "currentBalances": [
-          53507806.383156545
+          0
         ],
-        "totalBalance": 53507806.383156545,
-        "percentage": 0.958125251238765
+        "totalBalance": 0,
+        "percentage": -100
       },
       {
         "nickname": "阳光",
@@ -2075,7 +2075,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T09:36:28.446Z",
+    "lastUpdate": "2025-11-15T09:50:22.581Z",
     "totalUsers": 163,
     "totalAddresses": 221
   }
