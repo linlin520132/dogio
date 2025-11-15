@@ -249,18 +249,6 @@
         "percentage": 0.6598927249787748
       },
       {
-        "nickname": "启航人生",
-        "addresses": [
-          "0xef1b1BB7F82f95DB48dF69818012Fcdd804466bE"
-        ],
-        "initialBalanceTotal": 193512247.6,
-        "currentBalances": [
-          0
-        ],
-        "totalBalance": 0,
-        "percentage": -100
-      },
-      {
         "nickname": "leezerofly",
         "addresses": [
           "0x82ba6bf0a655344e6c8863af13188658a4894bd2",
@@ -329,10 +317,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          145354509.10547227
+          145377865.05523166
         ],
-        "totalBalance": 145354509.10547227,
-        "percentage": 3.8246493610516192
+        "totalBalance": 145377865.05523166,
+        "percentage": 3.841332182308329
       },
       {
         "nickname": "韭菜人生",
@@ -699,18 +687,6 @@
         "percentage": -0.7289810531726383
       },
       {
-        "nickname": "听风",
-        "addresses": [
-          "0xb31bb9be6619a7d67cf2a796117ce6487a66d726"
-        ],
-        "initialBalanceTotal": 101047917,
-        "currentBalances": [
-          31613111.934788212
-        ],
-        "totalBalance": 31613111.934788212,
-        "percentage": -68.71473171011708
-      },
-      {
         "nickname": "memecoin",
         "addresses": [
           "0x7855F676b7B2A370FB7E6eD74Bde705fdc890230",
@@ -775,10 +751,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          100481959.7322556
+          100494887.71215737
         ],
-        "totalBalance": 100481959.7322556,
-        "percentage": 0.19597541441698632
+        "totalBalance": 100494887.71215737,
+        "percentage": 0.20886659965907295
       },
       {
         "nickname": "香香",
@@ -1023,10 +999,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          71178432.7672943
+          73771051.13445218
         ],
-        "totalBalance": 71178432.7672943,
-        "percentage": 13.800806419565701
+        "totalBalance": 73771051.13445218,
+        "percentage": 17.94591118585542
       },
       {
         "nickname": "jason",
@@ -2075,8 +2051,8 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T09:50:22.581Z",
-    "totalUsers": 163,
-    "totalAddresses": 221
+    "lastUpdate": "2025-11-15T10:00:06.747Z",
+    "totalUsers": 161,
+    "totalAddresses": 219
   }
 }
