@@ -85,10 +85,10 @@
         ],
         "initialBalanceTotal": 402843191.4623,
         "currentBalances": [
-          403476110.40285933
+          403640732.0815495
         ],
-        "totalBalance": 403476110.40285933,
-        "percentage": 0.15711297943546335
+        "totalBalance": 403640732.0815495,
+        "percentage": 0.19797793189813917
       },
       {
         "nickname": "树藤与海岛",
@@ -195,10 +195,10 @@
         ],
         "initialBalanceTotal": 220222945.44,
         "currentBalances": [
-          220968184.23561034
+          221058341.13087153
         ],
-        "totalBalance": 220968184.23561034,
-        "percentage": 0.3384019744724464
+        "totalBalance": 221058341.13087153,
+        "percentage": 0.37934089438429625
       },
       {
         "nickname": "2025国泰民安",
@@ -923,10 +923,10 @@
         "initialBalanceTotal": 94539367,
         "currentBalances": [
           57651339.65710195,
-          39463145.64573791
+          39479246.94421655
         ],
-        "totalBalance": 97114485.30283986,
-        "percentage": 2.723858202731419
+        "totalBalance": 97130586.60131851,
+        "percentage": 2.7408895188800115
       },
       {
         "nickname": "炮兵连长",
@@ -1399,10 +1399,10 @@
         ],
         "initialBalanceTotal": 29565814,
         "currentBalances": [
-          29624006.932134245
+          29636093.778480187
         ],
-        "totalBalance": 29624006.932134245,
-        "percentage": 0.19682506334594607
+        "totalBalance": 29636093.778480187,
+        "percentage": 0.23770621867602584
       },
       {
         "nickname": "不正经的正经人",
@@ -1607,10 +1607,10 @@
         "initialBalanceTotal": 23803093,
         "currentBalances": [
           10808875.803615509,
-          13079176.512363695
+          13084512.92742728
         ],
-        "totalBalance": 23888052.315979205,
-        "percentage": 0.35692553055691156
+        "totalBalance": 23893388.731042787,
+        "percentage": 0.3793445290609394
       },
       {
         "nickname": "柚子哥",
@@ -2001,10 +2001,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          20030303.021020602
+          20038475.554717086
         ],
-        "totalBalance": 20030303.021020602,
-        "percentage": 0.15151510510301217
+        "totalBalance": 20038475.554717086,
+        "percentage": 0.1923777735854313
       },
       {
         "nickname": "Foever",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T16:27:50.670Z",
+    "lastUpdate": "2025-11-15T16:46:45.280Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
