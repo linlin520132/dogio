@@ -1071,10 +1071,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52251955.517613016
+          52330405.477727115
         ],
-        "totalBalance": 52251955.517613016,
-        "percentage": 0.5146059379306315
+        "totalBalance": 52330405.477727115,
+        "percentage": 0.6655164014453808
       },
       {
         "nickname": "曾经的自己",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T11:23:21.915Z",
+    "lastUpdate": "2025-11-15T11:33:16.442Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
