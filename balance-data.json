@@ -330,11 +330,11 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          91313218.22006525,
+          91420054.43082432,
           49772648.6186174
         ],
-        "totalBalance": 141085866.83868265,
-        "percentage": 0.7756191704876082
+        "totalBalance": 141192703.04944173,
+        "percentage": 0.8519307496012322
       },
       {
         "nickname": "羽辰",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T13:36:25.283Z",
+    "lastUpdate": "2025-11-15T13:49:38.676Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
