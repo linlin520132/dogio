@@ -987,10 +987,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          85557452.74903278
+          85567395.71250494
         ],
-        "totalBalance": 85557452.74903278,
-        "percentage": 15.618179390584839
+        "totalBalance": 85567395.71250494,
+        "percentage": 15.631615827709375
       },
       {
         "nickname": "丑到拖网速",
@@ -1155,10 +1155,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          45563473.577656426
+          45586942.05249556
         ],
-        "totalBalance": 45563473.577656426,
-        "percentage": 1.252163505903168
+        "totalBalance": 45586942.05249556,
+        "percentage": 1.304315672212359
       },
       {
         "nickname": "小满",
@@ -1167,10 +1167,10 @@
         ],
         "initialBalanceTotal": 41920277.028529,
         "currentBalances": [
-          42035432.51035017
+          42113425.621588126
         ],
-        "totalBalance": 42035432.51035017,
-        "percentage": 0.2747011469957486
+        "totalBalance": 42113425.621588126,
+        "percentage": 0.4607521866510437
       },
       {
         "nickname": "皇总",
@@ -1914,11 +1914,11 @@
         ],
         "initialBalanceTotal": 20270000,
         "currentBalances": [
-          10282086.412100704,
+          10288039.793437118,
           10107841.80919259
         ],
-        "totalBalance": 20389928.221293293,
-        "percentage": 0.5916537804306509
+        "totalBalance": 20395881.602629706,
+        "percentage": 0.6210241866290392
       },
       {
         "nickname": "胡云飞",
@@ -2039,7 +2039,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T13:08:48.463Z",
+    "lastUpdate": "2025-11-15T13:36:25.283Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
