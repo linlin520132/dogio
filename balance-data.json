@@ -487,10 +487,10 @@
         ],
         "initialBalanceTotal": 115680242,
         "currentBalances": [
-          116146978.524564
+          116192026.86441147
         ],
-        "totalBalance": 116146978.524564,
-        "percentage": 0.40347125532811207
+        "totalBalance": 116192026.86441147,
+        "percentage": 0.44241337635814526
       },
       {
         "nickname": "慕兮",
@@ -1789,10 +1789,10 @@
         ],
         "initialBalanceTotal": 21780000,
         "currentBalances": [
-          21845241.06855409
+          21853713.883397896
         ],
-        "totalBalance": 21845241.06855409,
-        "percentage": 0.29954576930251825
+        "totalBalance": 21853713.883397896,
+        "percentage": 0.3384475821758303
       },
       {
         "nickname": "有若",
@@ -2025,10 +2025,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          20309505.560609877
+          20317382.73072873
         ],
-        "totalBalance": 20309505.560609877,
-        "percentage": 1.5475278030493855
+        "totalBalance": 20317382.73072873,
+        "percentage": 1.586913653643653
       },
       {
         "nickname": "三好",
@@ -2075,7 +2075,7 @@
         "percentage": 1.5512394408584966
       }
     ],
-    "lastUpdate": "2025-11-15T07:34:20.607Z",
+    "lastUpdate": "2025-11-15T07:44:50.686Z",
     "totalUsers": 163,
     "totalAddresses": 221
   }
