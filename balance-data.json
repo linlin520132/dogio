@@ -1005,18 +1005,6 @@
         "percentage": 18.0433753109219
       },
       {
-        "nickname": "jason",
-        "addresses": [
-          "0x4f2ed8049add863ad72a58a7dad8a0c8c292cf46"
-        ],
-        "initialBalanceTotal": 60661477.2273,
-        "currentBalances": [
-          0
-        ],
-        "totalBalance": 0,
-        "percentage": -100
-      },
-      {
         "nickname": "未来(๑]؂[๑）都是晴天",
         "addresses": [
           "0xcf18c19f2d34824f227e4c6900f962b186ebcabb"
@@ -2051,8 +2039,8 @@
         "percentage": 1.592673208754014
       }
     ],
-    "lastUpdate": "2025-11-16T05:42:33.689Z",
-    "totalUsers": 161,
-    "totalAddresses": 219
+    "lastUpdate": "2025-11-16T05:52:35.160Z",
+    "totalUsers": 160,
+    "totalAddresses": 218
   }
 }
