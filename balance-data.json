@@ -97,10 +97,10 @@
         ],
         "initialBalanceTotal": 354034708,
         "currentBalances": [
-          358073988.69319296
+          358224041.74211836
         ],
-        "totalBalance": 358073988.69319296,
-        "percentage": 1.1409278813400858
+        "totalBalance": 358224041.74211836,
+        "percentage": 1.1833115927487987
       },
       {
         "nickname": "神秘人",
@@ -1107,10 +1107,10 @@
         ],
         "initialBalanceTotal": 50053651,
         "currentBalances": [
-          50145993.56826253
+          50167007.54711581
         ],
-        "totalBalance": 50145993.56826253,
-        "percentage": 0.18448717809322712
+        "totalBalance": 50167007.54711581,
+        "percentage": 0.22647008729854734
       },
       {
         "nickname": "绅士",
@@ -1227,10 +1227,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          40735455.58716697
+          40752526.023733795
         ],
-        "totalBalance": 40735455.58716697,
-        "percentage": 1.838638967917431
+        "totalBalance": 40752526.023733795,
+        "percentage": 1.8813150593344867
       },
       {
         "nickname": "仓位又不见了",
@@ -1239,10 +1239,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          45773794.17987775
+          45792975.96239884
         ],
-        "totalBalance": 45773794.17987775,
-        "percentage": 14.434485449694376
+        "totalBalance": 45792975.96239884,
+        "percentage": 14.482439905997104
       },
       {
         "nickname": "永恒",
@@ -1251,10 +1251,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          41546753.91188157
+          41564164.32786901
         ],
-        "totalBalance": 41546753.91188157,
-        "percentage": 3.8668847797039336
+        "totalBalance": 41564164.32786901,
+        "percentage": 3.9104108196725322
       },
       {
         "nickname": "雪狼",
@@ -1287,10 +1287,10 @@
         ],
         "initialBalanceTotal": 35000000,
         "currentBalances": [
-          35576920.913412794
+          35591829.63513792
         ],
-        "totalBalance": 35576920.913412794,
-        "percentage": 1.6483454668936983
+        "totalBalance": 35591829.63513792,
+        "percentage": 1.69094181467978
       },
       {
         "nickname": "Nayo",
@@ -1473,10 +1473,10 @@
         "initialBalanceTotal": 27000000,
         "currentBalances": [
           14361835.212012917,
-          13688546.272222575
+          13694282.539497947
         ],
-        "totalBalance": 28050381.48423549,
-        "percentage": 3.8903017934647837
+        "totalBalance": 28056117.751510866,
+        "percentage": 3.911547227818022
       },
       {
         "nickname": "勇哥",
@@ -1593,10 +1593,10 @@
         ],
         "initialBalanceTotal": 24000000,
         "currentBalances": [
-          24302485.546599004
+          24312669.64867813
         ],
-        "totalBalance": 24302485.546599004,
-        "percentage": 1.2603564441625184
+        "totalBalance": 24312669.64867813,
+        "percentage": 1.3027902028255476
       },
       {
         "nickname": "钻石DOG",
@@ -1606,11 +1606,11 @@
         ],
         "initialBalanceTotal": 23803093,
         "currentBalances": [
-          10813395.71700996,
+          10817927.135230243,
           13089984.436797455
         ],
-        "totalBalance": 23903380.153807417,
-        "percentage": 0.42131984195254185
+        "totalBalance": 23907911.5720277,
+        "percentage": 0.44035694028376127
       },
       {
         "nickname": "柚子哥",
@@ -1631,10 +1631,10 @@
         ],
         "initialBalanceTotal": 22950000,
         "currentBalances": [
-          23031966.87556113
+          23041618.559183944
         ],
-        "totalBalance": 23031966.87556113,
-        "percentage": 0.35715414187855904
+        "totalBalance": 23041618.559183944,
+        "percentage": 0.3992094082089064
       },
       {
         "nickname": "星辰大海",
@@ -2051,7 +2051,7 @@
         "percentage": 1.6351558954604943
       }
     ],
-    "lastUpdate": "2025-11-16T16:48:32.666Z",
+    "lastUpdate": "2025-11-16T17:00:14.246Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
