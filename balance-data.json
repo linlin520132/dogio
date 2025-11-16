@@ -751,10 +751,10 @@
         ],
         "initialBalanceTotal": 100477828.3,
         "currentBalances": [
-          100400346.91978508
+          100442420.28630763
         ],
-        "totalBalance": 100400346.91978508,
-        "percentage": -0.07711291289415208
+        "totalBalance": 100442420.28630763,
+        "percentage": -0.03523962877327047
       },
       {
         "nickname": "赢在选择",
@@ -777,10 +777,10 @@
         "initialBalanceTotal": 100177579,
         "currentBalances": [
           47964210.691089995,
-          56025129.40270834
+          56048607.068634294
         ],
-        "totalBalance": 103989340.09379834,
-        "percentage": 3.8050042053804667
+        "totalBalance": 104012817.75972429,
+        "percentage": 3.828440253805983
       },
       {
         "nickname": "安德鲁",
@@ -789,10 +789,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          100935163.92373009
+          100977461.40852036
         ],
-        "totalBalance": 100935163.92373009,
-        "percentage": 0.8182783674030313
+        "totalBalance": 100977461.40852036,
+        "percentage": 0.8605268706010671
       },
       {
         "nickname": "一骑红尘",
@@ -1485,10 +1485,10 @@
         ],
         "initialBalanceTotal": 26432943.43794717,
         "currentBalances": [
-          25020658.671499267
+          25031143.728326436
         ],
-        "totalBalance": 25020658.671499267,
-        "percentage": -5.342896336018424
+        "totalBalance": 25031143.728326436,
+        "percentage": -5.3032297099698225
       },
       {
         "nickname": "卡卡",
@@ -1693,10 +1693,10 @@
         ],
         "initialBalanceTotal": 22249621.9321,
         "currentBalances": [
-          22411446.3855881
+          22420838.03638423
         ],
-        "totalBalance": 22411446.3855881,
-        "percentage": 0.7273132729263548
+        "totalBalance": 22420838.03638423,
+        "percentage": 0.7695236566568792
       },
       {
         "nickname": "魔力仙-大兴钢厂",
@@ -2051,7 +2051,7 @@
         "percentage": 1.6855321941494548
       }
     ],
-    "lastUpdate": "2025-11-16T21:00:04.649Z",
+    "lastUpdate": "2025-11-16T21:21:20.079Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
