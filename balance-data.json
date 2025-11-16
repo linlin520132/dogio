@@ -1816,11 +1816,11 @@
         ],
         "initialBalanceTotal": 20930930.193,
         "currentBalances": [
-          10741952.602166627,
+          10690952.602166627,
           10353011.679690897
         ],
-        "totalBalance": 21094964.281857524,
-        "percentage": 0.7836923029459175
+        "totalBalance": 21043964.281857524,
+        "percentage": 0.5400337577702421
       },
       {
         "nickname": "未来不是梦",
@@ -2039,7 +2039,7 @@
         "percentage": 1.6351558954604943
       }
     ],
-    "lastUpdate": "2025-11-16T11:19:07.922Z",
+    "lastUpdate": "2025-11-16T11:31:51.466Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
