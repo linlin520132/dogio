@@ -545,6 +545,18 @@
         "percentage": 1.593602739129866
       },
       {
+        "nickname": "郁姐",
+        "addresses": [
+          "0x953525b75b33aa0c5fffb743e1dcfad1cdfaa956"
+        ],
+        "initialBalanceTotal": 108236377,
+        "currentBalances": [
+          108236377.37106517
+        ],
+        "totalBalance": 108236377.37106517,
+        "percentage": 3.4282852018673e-7
+      },
+      {
         "nickname": "jasper",
         "addresses": [
           "0x550b64e50f7df0179916082171f034450ee05edb"
@@ -1191,10 +1203,10 @@
         ],
         "initialBalanceTotal": 41000000,
         "currentBalances": [
-          41722846.31199088
+          41633958.31199088
         ],
-        "totalBalance": 41722846.31199088,
-        "percentage": 1.7630397853436084
+        "totalBalance": 41633958.31199088,
+        "percentage": 1.5462397853436085
       },
       {
         "nickname": "海纳百川",
@@ -1263,10 +1275,10 @@
         ],
         "initialBalanceTotal": 36577296,
         "currentBalances": [
-          41066048.46503877
+          41006048.46503877
         ],
-        "totalBalance": 41066048.46503877,
-        "percentage": 12.271963638424143
+        "totalBalance": 41006048.46503877,
+        "percentage": 12.107927455979166
       },
       {
         "nickname": "南方种植园",
@@ -1631,10 +1643,10 @@
         ],
         "initialBalanceTotal": 22926678,
         "currentBalances": [
-          23093201.94840794
+          22993201.94840794
         ],
-        "totalBalance": 23093201.94840794,
-        "percentage": 0.7263326523273044
+        "totalBalance": 22993201.94840794,
+        "percentage": 0.2901595617469769
       },
       {
         "nickname": "是以前",
@@ -2039,8 +2051,8 @@
         "percentage": 1.6351558954604943
       }
     ],
-    "lastUpdate": "2025-11-16T11:31:51.466Z",
-    "totalUsers": 160,
-    "totalAddresses": 218
+    "lastUpdate": "2025-11-16T11:43:43.258Z",
+    "totalUsers": 161,
+    "totalAddresses": 219
   }
 }
