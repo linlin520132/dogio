@@ -243,10 +243,10 @@
         ],
         "initialBalanceTotal": 200000000,
         "currentBalances": [
-          201486145.23767868
+          201570579.21323627
         ],
-        "totalBalance": 201486145.23767868,
-        "percentage": 0.7430726188393385
+        "totalBalance": 201570579.21323627,
+        "percentage": 0.7852896066181362
       },
       {
         "nickname": "leezerofly",
@@ -475,10 +475,10 @@
         ],
         "initialBalanceTotal": 115680242,
         "currentBalances": [
-          116288041.67428645
+          116336772.87442325
         ],
-        "totalBalance": 116288041.67428645,
-        "percentage": 0.5254135570415343
+        "totalBalance": 116336772.87442325,
+        "percentage": 0.5675393334872609
       },
       {
         "nickname": "慕兮",
@@ -515,10 +515,10 @@
         "initialBalanceTotal": 110261409,
         "currentBalances": [
           20751549.097890694,
-          90367778.64197294
+          90405647.80068879
         ],
-        "totalBalance": 111119327.73986363,
-        "percentage": 0.7780770694338163
+        "totalBalance": 111157196.89857948,
+        "percentage": 0.8124219586015613
       },
       {
         "nickname": "我",
@@ -1829,10 +1829,10 @@
         "initialBalanceTotal": 20930930.193,
         "currentBalances": [
           10690952.602166627,
-          10353011.679690897
+          10357350.171223799
         ],
-        "totalBalance": 21043964.281857524,
-        "percentage": 0.5400337577702421
+        "totalBalance": 21048302.773390427,
+        "percentage": 0.5607614153224808
       },
       {
         "nickname": "未来不是梦",
@@ -1927,10 +1927,10 @@
         "initialBalanceTotal": 20270000,
         "currentBalances": [
           10300856.100641055,
-          10116194.3832525
+          10120433.635079388
         ],
-        "totalBalance": 20417050.483893555,
-        "percentage": 0.7254587266578918
+        "totalBalance": 20421289.73572044,
+        "percentage": 0.7463726478561458
       },
       {
         "nickname": "胡云飞",
@@ -1939,10 +1939,10 @@
         ],
         "initialBalanceTotal": 20184078,
         "currentBalances": [
-          20269116.815935157
+          20277610.710697956
         ],
-        "totalBalance": 20269116.815935157,
-        "percentage": 0.42131632633978744
+        "totalBalance": 20277610.710697956,
+        "percentage": 0.46339848021770613
       },
       {
         "nickname": "喜乐人生",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7071947511079013
       }
     ],
-    "lastUpdate": "2025-11-16T22:22:42.130Z",
+    "lastUpdate": "2025-11-16T22:40:58.864Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
