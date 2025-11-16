@@ -999,10 +999,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          85361895.93015519
+          85261895.93015519
         ],
-        "totalBalance": 85361895.93015519,
-        "percentage": 15.35391341912863
+        "totalBalance": 85261895.93015519,
+        "percentage": 15.218778283993498
       },
       {
         "nickname": "丑到拖网速",
@@ -1569,10 +1569,10 @@
         ],
         "initialBalanceTotal": 24371135,
         "currentBalances": [
-          24457584.636088293
+          24465022.76147899
         ],
-        "totalBalance": 24457584.636088293,
-        "percentage": 0.35472141977914873
+        "totalBalance": 24465022.76147899,
+        "percentage": 0.3852416454095811
       },
       {
         "nickname": "欧阳锋",
@@ -2051,7 +2051,7 @@
         "percentage": 1.6351558954604943
       }
     ],
-    "lastUpdate": "2025-11-16T13:28:22.079Z",
+    "lastUpdate": "2025-11-16T13:44:40.645Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
