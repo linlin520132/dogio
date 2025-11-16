@@ -343,10 +343,10 @@
         ],
         "initialBalanceTotal": 131000000,
         "currentBalances": [
-          132797601.66746943
+          132853251.29757214
         ],
-        "totalBalance": 132797601.66746943,
-        "percentage": 1.3722150133354405
+        "totalBalance": 132853251.29757214,
+        "percentage": 1.4146956470016303
       },
       {
         "nickname": "zhengch",
@@ -462,11 +462,11 @@
         ],
         "initialBalanceTotal": 116268461,
         "currentBalances": [
-          14745127.938264143,
+          14751306.97241294,
           102313134.41469148
         ],
-        "totalBalance": 117058262.35295562,
-        "percentage": 0.6792911389406148
+        "totalBalance": 117064441.38710442,
+        "percentage": 0.6846055931749384
       },
       {
         "nickname": "Mojito",
@@ -957,7 +957,7 @@
         "currentBalances": [
           15129188.964053284,
           15222577.540064935,
-          10385882.053683933,
+          10390234.319743866,
           10385215.034202402,
           10485698.115235604,
           10363981.175433483,
@@ -965,8 +965,8 @@
           10379114.107216747,
           10385271.39530083
         ],
-        "totalBalance": 103118064.63376486,
-        "percentage": 11.175912199108406
+        "totalBalance": 103122416.8998248,
+        "percentage": 11.180604559763786
       },
       {
         "nickname": "yoke",
@@ -1263,10 +1263,10 @@
         ],
         "initialBalanceTotal": 38000000,
         "currentBalances": [
-          38660093.05949039
+          38676293.802963786
         ],
-        "totalBalance": 38660093.05949039,
-        "percentage": 1.7370869986589215
+        "totalBalance": 38676293.802963786,
+        "percentage": 1.779720534115226
       },
       {
         "nickname": "城市/ht 日记",
@@ -1363,10 +1363,10 @@
         ],
         "initialBalanceTotal": 30000000,
         "currentBalances": [
-          30394695.565118905
+          30407432.644283324
         ],
-        "totalBalance": 30394695.565118905,
-        "percentage": 1.3156518837296838
+        "totalBalance": 30407432.644283324,
+        "percentage": 1.3581088142777482
       },
       {
         "nickname": "27623",
@@ -1569,10 +1569,10 @@
         ],
         "initialBalanceTotal": 24371135,
         "currentBalances": [
-          24475274.975751203
+          24482794.046917573
         ],
-        "totalBalance": 24475274.975751203,
-        "percentage": 0.4273086819764551
+        "totalBalance": 24482794.046917573,
+        "percentage": 0.45816104550556475
       },
       {
         "nickname": "欧阳锋",
@@ -1581,10 +1581,10 @@
         ],
         "initialBalanceTotal": 24000000,
         "currentBalances": [
-          24611465.333572093
+          24621778.915480964
         ],
-        "totalBalance": 24611465.333572093,
-        "percentage": 2.5477722232170557
+        "totalBalance": 24621778.915480964,
+        "percentage": 2.590745481170683
       },
       {
         "nickname": "天",
@@ -1802,11 +1802,11 @@
         ],
         "initialBalanceTotal": 21190777.8431,
         "currentBalances": [
-          10905793.265293172,
+          10910363.403259292,
           10411836.038527912
         ],
-        "totalBalance": 21317629.303821083,
-        "percentage": 0.5986163493398499
+        "totalBalance": 21322199.441787206,
+        "percentage": 0.6201829855433932
       },
       {
         "nickname": "翡翠遗失在巴拉瑞",
@@ -1977,10 +1977,10 @@
         "initialBalanceTotal": 20023059.08,
         "currentBalances": [
           12007223.55592819,
-          8076916.003501343
+          8080300.6835130425
         ],
-        "totalBalance": 20084139.559429534,
-        "percentage": 0.3050506877370487
+        "totalBalance": 20087524.23944123,
+        "percentage": 0.32195459836416107
       },
       {
         "nickname": "魔虫",
@@ -2051,7 +2051,7 @@
         "percentage": 1.6751061398543476
       }
     ],
-    "lastUpdate": "2025-11-16T18:31:09.111Z",
+    "lastUpdate": "2025-11-16T18:51:47.091Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
