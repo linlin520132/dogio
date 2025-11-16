@@ -269,10 +269,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          175872766.28387356
+          175946466.8196208
         ],
-        "totalBalance": 175872766.28387356,
-        "percentage": 0.6424306299315677
+        "totalBalance": 175946466.8196208,
+        "percentage": 0.6846054430823263
       },
       {
         "nickname": "黄药师",
@@ -591,14 +591,14 @@
         ],
         "initialBalanceTotal": 107990248,
         "currentBalances": [
-          19331522.956942752,
+          19339623.94738511,
           21467783.05706373,
           23585241.68132614,
           25718512.962324984,
           19359470.518777087
         ],
-        "totalBalance": 109462531.17643468,
-        "percentage": 1.3633482686646676
+        "totalBalance": 109470632.16687705,
+        "percentage": 1.3708498631071262
       },
       {
         "nickname": "一個太陽",
@@ -1326,11 +1326,11 @@
         ],
         "initialBalanceTotal": 32641670.4921,
         "currentBalances": [
-          17158947.59686245,
+          17166138.156591896,
           15679798.335068662
         ],
-        "totalBalance": 32838745.931931112,
-        "percentage": 0.6037541487921342
+        "totalBalance": 32845936.491660558,
+        "percentage": 0.625782922506966
       },
       {
         "nickname": "天天好心情",
@@ -1643,10 +1643,10 @@
         ],
         "initialBalanceTotal": 22926678,
         "currentBalances": [
-          22993201.94840794
+          23002837.387355927
         ],
-        "totalBalance": 22993201.94840794,
-        "percentage": 0.2901595617469769
+        "totalBalance": 23002837.387355927,
+        "percentage": 0.3321867535973915
       },
       {
         "nickname": "是以前",
@@ -1853,10 +1853,10 @@
         ],
         "initialBalanceTotal": 20838717.2253,
         "currentBalances": [
-          20864026.321813885
+          20872769.516967133
         ],
-        "totalBalance": 20864026.321813885,
-        "percentage": 0.12145227674167285
+        "totalBalance": 20872769.516967133,
+        "percentage": 0.1634087707941598
       },
       {
         "nickname": "千与千寻",
@@ -2051,7 +2051,7 @@
         "percentage": 1.6751061398543476
       }
     ],
-    "lastUpdate": "2025-11-16T19:22:25.288Z",
+    "lastUpdate": "2025-11-16T19:32:08.460Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
