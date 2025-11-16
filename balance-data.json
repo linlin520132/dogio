@@ -109,10 +109,10 @@
         ],
         "initialBalanceTotal": 309788246.54,
         "currentBalances": [
-          312490207.1506272
+          312621158.0429648
         ],
-        "totalBalance": 312490207.1506272,
-        "percentage": 0.8721959728314922
+        "totalBalance": 312621158.0429648,
+        "percentage": 0.9144670705249005
       },
       {
         "nickname": "闲云",
@@ -183,10 +183,10 @@
         ],
         "initialBalanceTotal": 243000000,
         "currentBalances": [
-          245175994.98376015
+          245278737.45244625
         ],
-        "totalBalance": 245175994.98376015,
-        "percentage": 0.8954711867325713
+        "totalBalance": 245278737.45244625,
+        "percentage": 0.9377520380437252
       },
       {
         "nickname": "Zhong-zheng Cai",
@@ -317,10 +317,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          150891089.1531469
+          150954320.96751502
         ],
-        "totalBalance": 150891089.1531469,
-        "percentage": 7.779349395104923
+        "totalBalance": 150954320.96751502,
+        "percentage": 7.824514976796444
       },
       {
         "nickname": "韭菜人生",
@@ -739,10 +739,10 @@
         "currentBalances": [
           35972454.95458002,
           45925855.94163289,
-          28882158.43894398
+          28894261.680369377
         ],
-        "totalBalance": 110780469.33515689,
-        "percentage": 9.901259261068342
+        "totalBalance": 110792572.57658228,
+        "percentage": 9.913266445022106
       },
       {
         "nickname": "遥远的传说",
@@ -1619,10 +1619,10 @@
         ],
         "initialBalanceTotal": 23561975.2,
         "currentBalances": [
-          23609602.138883248
+          23619495.88402174
         ],
-        "totalBalance": 23609602.138883248,
-        "percentage": 0.2021347466796787
+        "totalBalance": 23619495.88402174,
+        "percentage": 0.24412505120428593
       },
       {
         "nickname": "给生活加点糖",
@@ -1828,11 +1828,11 @@
         ],
         "initialBalanceTotal": 20930930.193,
         "currentBalances": [
-          10690952.602166627,
+          10695432.709866509,
           10357350.171223799
         ],
-        "totalBalance": 21048302.773390427,
-        "percentage": 0.5607614153224808
+        "totalBalance": 21052782.881090306,
+        "percentage": 0.582165660898613
       },
       {
         "nickname": "未来不是梦",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7071947511079013
       }
     ],
-    "lastUpdate": "2025-11-16T23:43:01.546Z",
+    "lastUpdate": "2025-11-16T23:53:43.066Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
