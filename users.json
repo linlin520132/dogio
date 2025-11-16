@@ -313,6 +313,13 @@
         "initialBalanceTotal": 110000000
     },
     {
+        "nickname": "郁姐",
+        "addresses": [
+            "0x953525b75b33aa0c5fffb743e1dcfad1cdfaa956"
+        ],
+        "initialBalanceTotal": 108236377
+    },
+    {
         "nickname": "jasper",
         "addresses": [
             "0x550b64e50f7df0179916082171f034450ee05edb"
