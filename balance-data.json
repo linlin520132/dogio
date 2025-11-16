@@ -133,10 +133,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          300207245.25772077
+          300247877.64554745
         ],
-        "totalBalance": 300207245.25772077,
-        "percentage": 0.68721094490952
+        "totalBalance": 300247877.64554745,
+        "percentage": 0.7008387366065133
       },
       {
         "nickname": "道哥币赢",
@@ -669,10 +669,10 @@
         ],
         "initialBalanceTotal": 102286355,
         "currentBalances": [
-          104192871.37037759
+          104348314.200566
         ],
-        "totalBalance": 104192871.37037759,
-        "percentage": 1.8639009771905406
+        "totalBalance": 104348314.200566,
+        "percentage": 2.0158692726571337
       },
       {
         "nickname": "小猪佩奇，你佩我",
@@ -1143,10 +1143,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          45630419.32039714
+          45634290.87415155
         ],
-        "totalBalance": 45630419.32039714,
-        "percentage": 1.4009318231047525
+        "totalBalance": 45634290.87415155,
+        "percentage": 1.4095352758923338
       },
       {
         "nickname": "小满",
@@ -2039,7 +2039,7 @@
         "percentage": 1.6351558954604943
       }
     ],
-    "lastUpdate": "2025-11-16T09:00:05.206Z",
+    "lastUpdate": "2025-11-16T09:23:06.992Z",
     "totalUsers": 160,
     "totalAddresses": 218
   }
