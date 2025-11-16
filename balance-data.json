@@ -539,10 +539,10 @@
         ],
         "initialBalanceTotal": 110000000,
         "currentBalances": [
-          111752963.01304285
+          111777808.41908306
         ],
-        "totalBalance": 111752963.01304285,
-        "percentage": 1.593602739129866
+        "totalBalance": 111777808.41908306,
+        "percentage": 1.61618947189369
       },
       {
         "nickname": "郁姐",
@@ -1313,10 +1313,10 @@
         ],
         "initialBalanceTotal": 33000000,
         "currentBalances": [
-          33574197.73176959
+          33588267.200354174
         ],
-        "totalBalance": 33574197.73176959,
-        "percentage": 1.73999312657452
+        "totalBalance": 33588267.200354174,
+        "percentage": 1.7826278798611328
       },
       {
         "nickname": "我的未来不是梦",
@@ -1387,10 +1387,10 @@
         ],
         "initialBalanceTotal": 30000000,
         "currentBalances": [
-          30101023.31582833
+          30113637.329878327
         ],
-        "totalBalance": 30101023.31582833,
-        "percentage": 0.336744386094436
+        "totalBalance": 30113637.329878327,
+        "percentage": 0.37879109959442164
       },
       {
         "nickname": "张幸英",
@@ -1423,10 +1423,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          29240106.879127823
+          29252360.12099029
         ],
-        "totalBalance": 29240106.879127823,
-        "percentage": 0.6569801974219818
+        "totalBalance": 29252360.12099029,
+        "percentage": 0.6991611076561066
       },
       {
         "nickname": "小财宝",
@@ -2051,7 +2051,7 @@
         "percentage": 1.6351558954604943
       }
     ],
-    "lastUpdate": "2025-11-16T16:00:00.374Z",
+    "lastUpdate": "2025-11-16T16:25:52.176Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
