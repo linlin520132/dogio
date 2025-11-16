@@ -133,10 +133,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          299937773.1734703
+          300081761.01720446
         ],
-        "totalBalance": 299937773.1734703,
-        "percentage": 0.5968320715835381
+        "totalBalance": 300081761.01720446,
+        "percentage": 0.6451244916519365
       },
       {
         "nickname": "道哥币赢",
@@ -317,10 +317,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          150749604.3565583
+          150790819.41651362
         ],
-        "totalBalance": 150749604.3565583,
-        "percentage": 7.678288826113066
+        "totalBalance": 150790819.41651362,
+        "percentage": 7.707728154652586
       },
       {
         "nickname": "韭菜人生",
@@ -330,11 +330,11 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          91457354.58921865,
-          49792956.28184007
+          91577438.92481393,
+          49858982.192643
         ],
-        "totalBalance": 141250310.8710587,
-        "percentage": 0.893079193613359
+        "totalBalance": 141436421.1174569,
+        "percentage": 1.026015083897795
       },
       {
         "nickname": "羽辰",
@@ -1011,10 +1011,10 @@
         ],
         "initialBalanceTotal": 60661477.2273,
         "currentBalances": [
-          30000000
+          0
         ],
-        "totalBalance": 30000000,
-        "percentage": -50.54522017723162
+        "totalBalance": 0,
+        "percentage": -100
       },
       {
         "nickname": "未来(๑]؂[๑）都是晴天",
@@ -1155,10 +1155,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          45605541.91190122
+          45611346.16808882
         ],
-        "totalBalance": 45605541.91190122,
-        "percentage": 1.3456486931138238
+        "totalBalance": 45611346.16808882,
+        "percentage": 1.3585470401973858
       },
       {
         "nickname": "小满",
@@ -2051,7 +2051,7 @@
         "percentage": 1.592673208754014
       }
     ],
-    "lastUpdate": "2025-11-16T01:47:30.006Z",
+    "lastUpdate": "2025-11-16T03:14:04.075Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
