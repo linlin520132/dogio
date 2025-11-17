@@ -1753,10 +1753,10 @@
         ],
         "initialBalanceTotal": 21699222.1648,
         "currentBalances": [
-          21749511.00560726
+          21759136.93029628
         ],
-        "totalBalance": 21749511.00560726,
-        "percentage": 0.2317541173841546
+        "totalBalance": 21759136.93029628,
+        "percentage": 0.2761148074398374
       },
       {
         "nickname": "有若",
@@ -2015,7 +2015,7 @@
         "percentage": 1.7495881267177569
       }
     ],
-    "lastUpdate": "2025-11-17T16:38:37.049Z",
+    "lastUpdate": "2025-11-17T16:59:27.830Z",
     "totalUsers": 158,
     "totalAddresses": 216
   }
