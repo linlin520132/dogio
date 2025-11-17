@@ -1351,10 +1351,10 @@
         ],
         "initialBalanceTotal": 30601311,
         "currentBalances": [
-          30726244.77913636
+          30740452.806954335
         ],
-        "totalBalance": 30726244.77913636,
-        "percentage": 0.40826283271445357
+        "totalBalance": 30740452.806954335,
+        "percentage": 0.45469230698755164
       },
       {
         "nickname": "空调不够冷",
@@ -2015,7 +2015,7 @@
         "percentage": 1.7495881267177569
       }
     ],
-    "lastUpdate": "2025-11-17T20:27:58.919Z",
+    "lastUpdate": "2025-11-17T20:44:50.933Z",
     "totalUsers": 158,
     "totalAddresses": 216
   }
