@@ -1963,10 +1963,10 @@
         ],
         "initialBalanceTotal": 20071225,
         "currentBalances": [
-          20155789.028452672
+          20164235.432527576
         ],
-        "totalBalance": 20155789.028452672,
-        "percentage": 0.42131971741969937
+        "totalBalance": 20164235.432527576,
+        "percentage": 0.4634018727186589
       },
       {
         "nickname": "追逐",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7071947511079013
       }
     ],
-    "lastUpdate": "2025-11-16T23:53:43.066Z",
+    "lastUpdate": "2025-11-17T00:03:20.244Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
