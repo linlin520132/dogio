@@ -85,10 +85,10 @@
         ],
         "initialBalanceTotal": 402843191.4623,
         "currentBalances": [
-          404147125.60229945
+          404976866.6292814
         ],
-        "totalBalance": 404147125.60229945,
-        "percentage": 0.32368280453400133
+        "totalBalance": 404976866.6292814,
+        "percentage": 0.5296540222601922
       },
       {
         "nickname": "树藤与海岛",
@@ -371,10 +371,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          120947852.9351733
+          120965850.11207902
         ],
-        "totalBalance": 120947852.9351733,
-        "percentage": 0.7898774459777524
+        "totalBalance": 120965850.11207902,
+        "percentage": 0.8048750933991868
       },
       {
         "nickname": "城",
@@ -413,10 +413,10 @@
         "initialBalanceTotal": 118862385.9,
         "currentBalances": [
           54648942.60738175,
-          64688671.30965069
+          64188671.30965069
         ],
-        "totalBalance": 119337613.91703245,
-        "percentage": 0.3998136276956935
+        "totalBalance": 118837613.91703245,
+        "percentage": -0.02084089325650624
       },
       {
         "nickname": "繁星社区~甘",
@@ -987,10 +987,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          94489494.88600978
+          94523285.84361863
         ],
-        "totalBalance": 94489494.88600978,
-        "percentage": 8.467433475418686
+        "totalBalance": 94523285.84361863,
+        "percentage": 8.50622316787
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -1155,10 +1155,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          45683674.60188871
+          45688588.34145867
         ],
-        "totalBalance": 45683674.60188871,
-        "percentage": 1.5192768930860194
+        "totalBalance": 45688588.34145867,
+        "percentage": 1.5301963143526018
       },
       {
         "nickname": "小满",
@@ -1699,18 +1699,6 @@
         "percentage": 0.8115261942045591
       },
       {
-        "nickname": "魔力仙-大兴钢厂",
-        "addresses": [
-          "0x17364cDB1A15DF7Bb892a7Ecbb19f0723379D5F3"
-        ],
-        "initialBalanceTotal": 22000000,
-        "currentBalances": [
-          0
-        ],
-        "totalBalance": 0,
-        "percentage": -100
-      },
-      {
         "nickname": "卫东",
         "addresses": [
           "0x25A5D14ED1a08fa65E50C711CA60De260d339dA4"
@@ -1871,18 +1859,6 @@
         "percentage": 0.35025858764577017
       },
       {
-        "nickname": "123",
-        "addresses": [
-          "0xa0fd6ae87161c0d6604c824c681ffa32be5ce338"
-        ],
-        "initialBalanceTotal": 20674568.8,
-        "currentBalances": [
-          0
-        ],
-        "totalBalance": 0,
-        "percentage": -100
-      },
-      {
         "nickname": "东财",
         "addresses": [
           "0x54585df5015ad49ab21c92d5fdd9f81f4c3f82e4"
@@ -1905,18 +1881,6 @@
         ],
         "totalBalance": 20721267.235840462,
         "percentage": 0.9152592357405872
-      },
-      {
-        "nickname": "林国志",
-        "addresses": [
-          "0xd2896d4b96c7492F9Fe10254Ed0CEE061C956Faa"
-        ],
-        "initialBalanceTotal": 20372573.54759615,
-        "currentBalances": [
-          0
-        ],
-        "totalBalance": 0,
-        "percentage": -100
       },
       {
         "nickname": "众鑫社区锁先生",
@@ -2051,8 +2015,8 @@
         "percentage": 1.7495881267177569
       }
     ],
-    "lastUpdate": "2025-11-17T15:02:48.376Z",
-    "totalUsers": 161,
-    "totalAddresses": 219
+    "lastUpdate": "2025-11-17T15:33:54.259Z",
+    "totalUsers": 158,
+    "totalAddresses": 216
   }
 }
