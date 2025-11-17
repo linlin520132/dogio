@@ -371,10 +371,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          120965850.11207902
+          121021785.55670533
         ],
-        "totalBalance": 120965850.11207902,
-        "percentage": 0.8048750933991868
+        "totalBalance": 121021785.55670533,
+        "percentage": 0.8514879639211048
       },
       {
         "nickname": "城",
@@ -1071,10 +1071,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52445077.04709843
+          52469328.01297328
         ],
-        "totalBalance": 52445077.04709843,
-        "percentage": 0.8861046549080931
+        "totalBalance": 52469328.01297328,
+        "percentage": 0.9327550865403249
       },
       {
         "nickname": "曾经的自己",
@@ -2015,7 +2015,7 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-17T23:23:20.641Z",
+    "lastUpdate": "2025-11-17T23:38:03.691Z",
     "totalUsers": 158,
     "totalAddresses": 216
   }
