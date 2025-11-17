@@ -371,10 +371,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          120942598.77797255
+          120947852.9351733
         ],
-        "totalBalance": 120942598.77797255,
-        "percentage": 0.785498981643791
+        "totalBalance": 120947852.9351733,
+        "percentage": 0.7898774459777524
       },
       {
         "nickname": "城",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7495881267177569
       }
     ],
-    "lastUpdate": "2025-11-17T11:36:20.713Z",
+    "lastUpdate": "2025-11-17T11:49:40.820Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
