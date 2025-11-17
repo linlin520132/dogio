@@ -681,10 +681,10 @@
         ],
         "initialBalanceTotal": 102286355,
         "currentBalances": [
-          104435554.45431401
+          104487103.89059737
         ],
-        "totalBalance": 104435554.45431401,
-        "percentage": 2.10115948927304
+        "totalBalance": 104487103.89059737,
+        "percentage": 2.151556667159929
       },
       {
         "nickname": "小猪佩奇，你佩我",
@@ -1143,10 +1143,10 @@
         ],
         "initialBalanceTotal": 45262963,
         "currentBalances": [
-          43550230.31461494
+          43607775.09398848
         ],
-        "totalBalance": 43550230.31461494,
-        "percentage": -3.7839605979508306
+        "totalBalance": 43607775.09398848,
+        "percentage": -3.656826235638886
       },
       {
         "nickname": "天雨",
@@ -1926,11 +1926,11 @@
         ],
         "initialBalanceTotal": 20270000,
         "currentBalances": [
-          10305149.681472246,
-          10124652.01260397
+          10312017.29204558,
+          10131634.396214241
         ],
-        "totalBalance": 20429801.694076218,
-        "percentage": 0.788365535649816
+        "totalBalance": 20443651.68825982,
+        "percentage": 0.8566930846562475
       },
       {
         "nickname": "胡云飞",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7495881267177569
       }
     ],
-    "lastUpdate": "2025-11-17T14:51:56.615Z",
+    "lastUpdate": "2025-11-17T15:02:48.376Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
