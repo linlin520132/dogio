@@ -981,13 +981,6 @@
         "initialBalanceTotal": 22249621.9321
     },
     {
-        "nickname": "魔力仙-大兴钢厂",
-        "addresses": [
-            "0x17364cDB1A15DF7Bb892a7Ecbb19f0723379D5F3"
-        ],
-        "initialBalanceTotal": 22000000
-    },
-    {
         "nickname": "卫东",
         "addresses": [
             "0x25A5D14ED1a08fa65E50C711CA60De260d339dA4"
@@ -1081,13 +1074,6 @@
         "initialBalanceTotal": 20780000
     },
     {
-        "nickname": "123",
-        "addresses": [
-            "0xa0fd6ae87161c0d6604c824c681ffa32be5ce338"
-        ],
-        "initialBalanceTotal": 20674568.8
-    },
-    {
         "nickname": "东财",
         "addresses": [
             "0x54585df5015ad49ab21c92d5fdd9f81f4c3f82e4"
@@ -1100,13 +1086,6 @@
             "0x327a7b7d6fb90acb120b8153fb9011722e8bf1c6"
         ],
         "initialBalanceTotal": 20533334
-    },
-    {
-        "nickname": "林国志",
-        "addresses": [
-            "0xd2896d4b96c7492F9Fe10254Ed0CEE061C956Faa"
-        ],
-        "initialBalanceTotal": 20372573.54759615
     },
     {
         "nickname": "众鑫社区锁先生",

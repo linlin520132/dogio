@@ -28,11 +28,32 @@
         "initialBalanceTotal": 193512247.6
     },
     {
+        "nickname": "魔力仙-大兴钢厂",
+        "addresses": [
+            "0x17364cDB1A15DF7Bb892a7Ecbb19f0723379D5F3"
+        ],
+        "initialBalanceTotal": 22000000
+    },
+    {
         "nickname": "jason",
         "qq": "8204439",
         "addresses": [
             "0x4f2ed8049add863ad72a58a7dad8a0c8c292cf46"
         ],
         "initialBalanceTotal": 60661477.2273
+    },
+    {
+        "nickname": "123",
+        "addresses": [
+            "0xa0fd6ae87161c0d6604c824c681ffa32be5ce338"
+        ],
+        "initialBalanceTotal": 20674568.8
+    },
+    {
+        "nickname": "林国志",
+        "addresses": [
+            "0xd2896d4b96c7492F9Fe10254Ed0CEE061C956Faa"
+        ],
+        "initialBalanceTotal": 20372573.54759615
     }
 ]
