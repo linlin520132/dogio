@@ -269,10 +269,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          175946466.8196208
+          176019804.44999555
         ],
-        "totalBalance": 175946466.8196208,
-        "percentage": 0.6846054430823263
+        "totalBalance": 176019804.44999555,
+        "percentage": 0.7265725852016578
       },
       {
         "nickname": "黄药师",
@@ -1327,10 +1327,10 @@
         "initialBalanceTotal": 32641670.4921,
         "currentBalances": [
           17173293.30962137,
-          15686369.048443567
+          15692907.407275042
         ],
-        "totalBalance": 32859662.35806494,
-        "percentage": 0.6678330571889596
+        "totalBalance": 32866200.716896415,
+        "percentage": 0.6878637686473663
       },
       {
         "nickname": "天天好心情",
@@ -1669,10 +1669,10 @@
         "initialBalanceTotal": 22850472,
         "currentBalances": [
           12928625.069154762,
-          10005577.247151943
+          10009747.750482311
         ],
-        "totalBalance": 22934202.316306703,
-        "percentage": 0.36642707558383386
+        "totalBalance": 22938372.819637075,
+        "percentage": 0.38467835428990294
       },
       {
         "nickname": "草民吃藕",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7071947511079013
       }
     ],
-    "lastUpdate": "2025-11-17T07:54:28.807Z",
+    "lastUpdate": "2025-11-17T08:04:31.689Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
