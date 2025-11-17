@@ -1155,10 +1155,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          45688588.34145867
+          45695453.40675627
         ],
-        "totalBalance": 45688588.34145867,
-        "percentage": 1.5301963143526018
+        "totalBalance": 45695453.40675627,
+        "percentage": 1.5454520150139266
       },
       {
         "nickname": "小满",
@@ -2015,7 +2015,7 @@
         "percentage": 1.7495881267177569
       }
     ],
-    "lastUpdate": "2025-11-17T17:23:37.975Z",
+    "lastUpdate": "2025-11-17T17:43:16.354Z",
     "totalUsers": 158,
     "totalAddresses": 216
   }
