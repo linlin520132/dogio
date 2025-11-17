@@ -1251,10 +1251,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          41564164.32786901
+          41607427.56316793
         ],
-        "totalBalance": 41564164.32786901,
-        "percentage": 3.9104108196725322
+        "totalBalance": 41607427.56316793,
+        "percentage": 4.018568907919824
       },
       {
         "nickname": "雪狼",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7071947511079013
       }
     ],
-    "lastUpdate": "2025-11-17T04:06:18.057Z",
+    "lastUpdate": "2025-11-17T04:41:57.246Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
