@@ -1815,10 +1815,10 @@
         ],
         "initialBalanceTotal": 21000000,
         "currentBalances": [
-          21237540.245181486
+          21287325.74108958
         ],
-        "totalBalance": 21237540.245181486,
-        "percentage": 1.131144024673743
+        "totalBalance": 21287325.74108958,
+        "percentage": 1.3682178147122797
       },
       {
         "nickname": "追梦人",
@@ -1877,10 +1877,10 @@
         ],
         "initialBalanceTotal": 20674568.8,
         "currentBalances": [
-          20725040.653129112
+          20735138.653129112
         ],
-        "totalBalance": 20725040.653129112,
-        "percentage": 0.24412530010836905
+        "totalBalance": 20735138.653129112,
+        "percentage": 0.292967914905733
       },
       {
         "nickname": "东财",
@@ -2051,7 +2051,7 @@
         "percentage": 1.7071947511079013
       }
     ],
-    "lastUpdate": "2025-11-17T02:12:02.816Z",
+    "lastUpdate": "2025-11-17T03:36:41.310Z",
     "totalUsers": 161,
     "totalAddresses": 219
   }
