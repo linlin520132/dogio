@@ -963,10 +963,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          85559600.05392364
+          85571963.60471886
         ],
-        "totalBalance": 85559600.05392364,
-        "percentage": 15.621081153950861
+        "totalBalance": 85571963.60471886,
+        "percentage": 15.637788655025492
       },
       {
         "nickname": "丑到拖网速",
@@ -1411,10 +1411,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          29389358.247151967
+          30336462.51900349
         ],
-        "totalBalance": 29389358.247151967,
-        "percentage": 1.1707673753467072
+        "totalBalance": 30336462.51900349,
+        "percentage": 4.431106208263322
       },
       {
         "nickname": "小财宝",
@@ -1916,11 +1916,11 @@
         ],
         "initialBalanceTotal": 20023059.08,
         "currentBalances": [
-          12038019.387261098,
+          12048180.65821362,
           8091681.903106181
         ],
-        "totalBalance": 20129701.29036728,
-        "percentage": 0.532596992004086
+        "totalBalance": 20139862.5613198,
+        "percentage": 0.5833448368359907
       },
       {
         "nickname": "魔虫",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T12:04:09.737Z",
+    "lastUpdate": "2025-11-18T13:02:16.325Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
