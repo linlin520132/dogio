@@ -147,10 +147,10 @@
         "initialBalanceTotal": 282000000,
         "currentBalances": [
           180467962.42564732,
-          104891846.74882275
+          104940360.62519212
         ],
-        "totalBalance": 285359809.17447007,
-        "percentage": 1.1914216930744919
+        "totalBalance": 285408323.0508394,
+        "percentage": 1.208625195333129
       },
       {
         "nickname": "云淡风轻",
@@ -317,10 +317,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          161114770.0095259
+          161133016.15410307
         ],
-        "totalBalance": 161114770.0095259,
-        "percentage": 15.081978578232782
+        "totalBalance": 161133016.15410307,
+        "percentage": 15.09501153864505
       },
       {
         "nickname": "韭菜人生",
@@ -765,10 +765,10 @@
         ],
         "initialBalanceTotal": 100041389.75,
         "currentBalances": [
-          100646542.62301913
+          100693092.98967926
         ],
-        "totalBalance": 100646542.62301913,
-        "percentage": 0.6049025053844067
+        "totalBalance": 100693092.98967926,
+        "percentage": 0.6514336129354521
       },
       {
         "nickname": "DOG王",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T22:10:45.632Z",
+    "lastUpdate": "2025-11-18T22:25:38.043Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
