@@ -999,10 +999,10 @@
         ],
         "initialBalanceTotal": 59165033.8135,
         "currentBalances": [
-          109664804.56707418
+          109729563.35759813
         ],
-        "totalBalance": 109664804.56707418,
-        "percentage": 85.35408077811556
+        "totalBalance": 109729563.35759813,
+        "percentage": 85.46353527572994
       },
       {
         "nickname": "max",
@@ -1351,10 +1351,10 @@
         ],
         "initialBalanceTotal": 30000000,
         "currentBalances": [
-          30473814.318975594
+          30511174.994759984
         ],
-        "totalBalance": 30473814.318975594,
-        "percentage": 1.5793810632519796
+        "totalBalance": 30511174.994759984,
+        "percentage": 1.7039166491999478
       },
       {
         "nickname": "27623",
@@ -1619,10 +1619,10 @@
         ],
         "initialBalanceTotal": 22926678,
         "currentBalances": [
-          23035237.214271393
+          23091438.409052927
         ],
-        "totalBalance": 23035237.214271393,
-        "percentage": 0.4735060799972533
+        "totalBalance": 23091438.409052927,
+        "percentage": 0.7186405682189415
       },
       {
         "nickname": "是以前",
@@ -1753,10 +1753,10 @@
         ],
         "initialBalanceTotal": 21196455,
         "currentBalances": [
-          21509723.654622804
+          21558802.07827095
         ],
-        "totalBalance": 21509723.654622804,
-        "percentage": 1.477929468030406
+        "totalBalance": 21558802.07827095,
+        "percentage": 1.7094701839102313
       },
       {
         "nickname": "美心木门",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T13:02:16.325Z",
+    "lastUpdate": "2025-11-18T13:40:35.611Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
