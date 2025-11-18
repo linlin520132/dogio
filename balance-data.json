@@ -727,10 +727,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          100839710.62402222
+          100922216.06848429
         ],
-        "totalBalance": 100839710.62402222,
-        "percentage": 0.5527081020700482
+        "totalBalance": 100922216.06848429,
+        "percentage": 0.6349787256417341
       },
       {
         "nickname": "香香",
@@ -898,11 +898,11 @@
         ],
         "initialBalanceTotal": 94539367,
         "currentBalances": [
-          57798863.35659824,
+          57845638.281967655,
           39607649.54702939
         ],
-        "totalBalance": 97406512.90362763,
-        "percentage": 3.032753438710494
+        "totalBalance": 97453287.82899705,
+        "percentage": 3.082230103145334
       },
       {
         "nickname": "炮兵连长",
@@ -1399,10 +1399,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          29278085.158691406
+          29373830.30144437
         ],
-        "totalBalance": 29278085.158691406,
-        "percentage": 0.787717713182998
+        "totalBalance": 29373830.30144437,
+        "percentage": 1.117313530938501
       },
       {
         "nickname": "小财宝",
@@ -1979,7 +1979,7 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-18T05:00:19.004Z",
+    "lastUpdate": "2025-11-18T05:25:01.238Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
