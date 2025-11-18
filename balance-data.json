@@ -1515,18 +1515,6 @@
         "percentage": 101.6823864691625
       },
       {
-        "nickname": "虹姐",
-        "addresses": [
-          "0xe4E89fa69b8b83De7C2003dE576fA5ACcAc59AFb"
-        ],
-        "initialBalanceTotal": 25000000,
-        "currentBalances": [
-          11824.26473063029
-        ],
-        "totalBalance": 11824.26473063029,
-        "percentage": -99.95270294107749
-      },
-      {
         "nickname": "子玲",
         "addresses": [
           "0xF8155361cFF0A4b3073cF5CafF2bA4e7B610570E"
@@ -1545,10 +1533,10 @@
         ],
         "initialBalanceTotal": 24371135,
         "currentBalances": [
-          24508059.91918973
+          24526067.022863243
         ],
-        "totalBalance": 24508059.91918973,
-        "percentage": 0.5618323446557938
+        "totalBalance": 24526067.022863243,
+        "percentage": 0.635719357605802
       },
       {
         "nickname": "欧阳锋",
@@ -1916,11 +1904,11 @@
         ],
         "initialBalanceTotal": 20023059.08,
         "currentBalances": [
-          12017782.918570533,
+          12031659.067654919,
           8087406.641420711
         ],
-        "totalBalance": 20105189.559991244,
-        "percentage": 0.41017948188187653
+        "totalBalance": 20119065.70907563,
+        "percentage": 0.47948032661766243
       },
       {
         "nickname": "魔虫",
@@ -1991,8 +1979,8 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-18T01:46:01.401Z",
-    "totalUsers": 156,
-    "totalAddresses": 214
+    "lastUpdate": "2025-11-18T02:50:16.138Z",
+    "totalUsers": 155,
+    "totalAddresses": 213
   }
 }
