@@ -133,10 +133,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          301291840.5953804
+          302490732.5649049
         ],
-        "totalBalance": 301291840.5953804,
-        "percentage": 1.050975914869034
+        "totalBalance": 302490732.5649049,
+        "percentage": 1.4530750998238886
       },
       {
         "nickname": "道哥币赢",
@@ -987,10 +987,10 @@
         ],
         "initialBalanceTotal": 59806199.9428,
         "currentBalances": [
-          60135524.39603941
+          60307189.95922319
         ],
-        "totalBalance": 60135524.39603941,
-        "percentage": 0.550652697470136
+        "totalBalance": 60307189.95922319,
+        "percentage": 0.8376890972881513
       },
       {
         "nickname": "玄",
@@ -1929,10 +1929,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          20385459.23126986
+          20414792.893153474
         ],
-        "totalBalance": 20385459.23126986,
-        "percentage": 1.9272961563492939
+        "totalBalance": 20414792.893153474,
+        "percentage": 2.073964465767369
       },
       {
         "nickname": "三好",
@@ -1979,7 +1979,7 @@
         "percentage": 2.066790168159045
       }
     ],
-    "lastUpdate": "2025-11-18T06:57:03.582Z",
+    "lastUpdate": "2025-11-18T07:23:46.977Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
