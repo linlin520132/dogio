@@ -62,5 +62,12 @@
             "0x1Cca692040370eca92C81002d1Cee9Ef9D3CCeC0"
         ],
         "initialBalanceTotal": 108000000
+    },
+    {
+        "nickname": "虹姐",
+        "addresses": [
+            "0xe4E89fa69b8b83De7C2003dE576fA5ACcAc59AFb"
+        ],
+        "initialBalanceTotal": 25000000
     }
 ]
