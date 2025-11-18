@@ -159,10 +159,10 @@
         ],
         "initialBalanceTotal": 255816946.36,
         "currentBalances": [
-          257239749.67742077
+          257358726.4882974
         ],
-        "totalBalance": 257239749.67742077,
-        "percentage": 0.5561802443761884
+        "totalBalance": 257358726.4882974,
+        "percentage": 0.6026888172325021
       },
       {
         "nickname": "旺旺",
@@ -861,10 +861,10 @@
         "initialBalanceTotal": 100000000,
         "currentBalances": [
           30122117.722384557,
-          70539820.36080763
+          70572445.96737452
         ],
-        "totalBalance": 100661938.08319218,
-        "percentage": 0.6619380831921846
+        "totalBalance": 100694563.68975908,
+        "percentage": 0.6945636897590757
       },
       {
         "nickname": "跑步二十天",
@@ -1327,10 +1327,10 @@
         ],
         "initialBalanceTotal": 31296418.3456,
         "currentBalances": [
-          31591548.25516027
+          31606159.767054398
         ],
-        "totalBalance": 31591548.25516027,
-        "percentage": 0.9430149683622168
+        "totalBalance": 31606159.767054398,
+        "percentage": 0.9897024574313404
       },
       {
         "nickname": "虚竹",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T23:35:51.498Z",
+    "lastUpdate": "2025-11-18T23:49:31.575Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
