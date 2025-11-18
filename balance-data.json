@@ -45,10 +45,10 @@
         ],
         "initialBalanceTotal": 626317899.6,
         "currentBalances": [
-          629498304.9280411
+          629789456.2795197
         ],
-        "totalBalance": 629498304.9280411,
-        "percentage": 0.5077940978650384
+        "totalBalance": 629789456.2795197,
+        "percentage": 0.554280291484049
       },
       {
         "nickname": "小狗旺旺",
@@ -412,11 +412,11 @@
         ],
         "initialBalanceTotal": 118862385.9,
         "currentBalances": [
-          54703115.192526355,
+          54728416.11199461,
           64252300.468714625
         ],
-        "totalBalance": 118955415.66124098,
-        "percentage": 0.07826677929823893
+        "totalBalance": 118980716.58070923,
+        "percentage": 0.09955267161537594
       },
       {
         "nickname": "繁星社区~甘",
@@ -437,10 +437,10 @@
         ],
         "initialBalanceTotal": 118478429,
         "currentBalances": [
-          119318666.21467234
+          119373852.68722208
         ],
-        "totalBalance": 119318666.21467234,
-        "percentage": 0.7091900371774359
+        "totalBalance": 119373852.68722208,
+        "percentage": 0.7557693791011345
       },
       {
         "nickname": "东风（叶军民）",
@@ -502,11 +502,11 @@
         ],
         "initialBalanceTotal": 110261409,
         "currentBalances": [
-          20780777.952908773,
+          20790389.339529514,
           90532985.45437029
         ],
-        "totalBalance": 111313763.40727906,
-        "percentage": 0.9544177031866691
+        "totalBalance": 111323374.7938998,
+        "percentage": 0.9631346121287134
       },
       {
         "nickname": "我",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T23:22:17.748Z",
+    "lastUpdate": "2025-11-18T23:35:51.498Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
