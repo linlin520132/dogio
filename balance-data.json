@@ -1173,6 +1173,18 @@
         "percentage": 1.7417389476338176
       },
       {
+        "nickname": "可乐",
+        "addresses": [
+          "0x48ec8991cd72d7b63a4ba6f0e550cb2e8782948c"
+        ],
+        "initialBalanceTotal": 40010261.12,
+        "currentBalances": [
+          40010261.12878137
+        ],
+        "totalBalance": 40010261.12878137,
+        "percentage": 2.1947803525917042e-8
+      },
+      {
         "nickname": "海纳百川",
         "addresses": [
           "0xFeaF3B125Ec4d8d905Cd4Ba53d3Cde34071cb505"
@@ -1303,10 +1315,10 @@
         "initialBalanceTotal": 32641670.4921,
         "currentBalances": [
           17181234.359066993,
-          20292985.851922613
+          20492953.608912453
         ],
-        "totalBalance": 37474220.21098961,
-        "percentage": 14.804848054756242
+        "totalBalance": 37674187.967979446,
+        "percentage": 15.41746301586319
       },
       {
         "nickname": "天天好心情",
@@ -1979,8 +1991,8 @@
         "percentage": 2.066790168159045
       }
     ],
-    "lastUpdate": "2025-11-18T07:40:50.718Z",
-    "totalUsers": 155,
-    "totalAddresses": 213
+    "lastUpdate": "2025-11-18T07:51:32.325Z",
+    "totalUsers": 156,
+    "totalAddresses": 214
   }
 }
