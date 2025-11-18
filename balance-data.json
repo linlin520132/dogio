@@ -657,10 +657,10 @@
         ],
         "initialBalanceTotal": 102286355,
         "currentBalances": [
-          104590680.21361414
+          104720975.33483048
         ],
-        "totalBalance": 104590680.21361414,
-        "percentage": 2.252817801176057
+        "totalBalance": 104720975.33483048,
+        "percentage": 2.380200501650956
       },
       {
         "nickname": "memecoin",
@@ -753,10 +753,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          101272643.2277276
+          101297534.02861568
         ],
-        "totalBalance": 101272643.2277276,
-        "percentage": 1.1553668615513022
+        "totalBalance": 101297534.02861568,
+        "percentage": 1.1802288382417836
       },
       {
         "nickname": "一骑红尘",
@@ -1766,11 +1766,11 @@
         ],
         "initialBalanceTotal": 21190777.8431,
         "currentBalances": [
-          10925730.806849457,
-          10426501.259163082
+          10947324.706529792,
+          10447120.391877426
         ],
-        "totalBalance": 21352232.06601254,
-        "percentage": 0.7619079587732568
+        "totalBalance": 21394445.098407216,
+        "percentage": 0.9611126916397407
       },
       {
         "nickname": "翡翠遗失在巴拉瑞",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T13:40:35.611Z",
+    "lastUpdate": "2025-11-18T13:56:05.469Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
