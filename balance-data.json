@@ -257,10 +257,10 @@
         "initialBalanceTotal": 186210563,
         "currentBalances": [
           136984135.87836662,
-          50399652.19919587
+          50422962.709703945
         ],
-        "totalBalance": 187383788.07756248,
-        "percentage": 0.6300529135731582
+        "totalBalance": 187407098.58807057,
+        "percentage": 0.6425712745793972
       },
       {
         "nickname": "吉姆熊猫",
@@ -975,10 +975,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          74149114.19785437
+          74183409.15089972
         ],
-        "totalBalance": 74149114.19785437,
-        "percentage": 18.55036227897347
+        "totalBalance": 74183409.15089972,
+        "percentage": 18.605193400718477
       },
       {
         "nickname": "未来(๑]؂[๑）都是晴天",
@@ -1288,11 +1288,11 @@
         ],
         "initialBalanceTotal": 33760446,
         "currentBalances": [
-          27806932.838804234,
+          27819793.915654022,
           6245094.672596603
         ],
-        "totalBalance": 34052027.511400834,
-        "percentage": 0.8636779010586345
+        "totalBalance": 34064888.58825062,
+        "percentage": 0.9017730045705621
       },
       {
         "nickname": "风向决定发型d",
@@ -1967,10 +1967,10 @@
         "initialBalanceTotal": 20000000,
         "currentBalances": [
           14668666.173058338,
-          7337224.882314424
+          7340618.44656053
         ],
-        "totalBalance": 22005891.055372763,
-        "percentage": 10.029455276863818
+        "totalBalance": 22009284.61961887,
+        "percentage": 10.046423098094353
       },
       {
         "nickname": "小雨滴",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T22:46:27.808Z",
+    "lastUpdate": "2025-11-18T22:59:53.808Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
