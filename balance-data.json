@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          885334239.4155562
+          898266219.3262569
         ],
-        "totalBalance": 885334239.4155562,
-        "percentage": 3.790649403933903
+        "totalBalance": 898266219.3262569,
+        "percentage": 5.306708010112177
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -256,11 +256,11 @@
         ],
         "initialBalanceTotal": 186210563,
         "currentBalances": [
-          136825267.93979678,
-          50313576.009032235
+          136911759.94532195,
+          50373023.40871839
         ],
-        "totalBalance": 187138843.948829,
-        "percentage": 0.49851143451459046
+        "totalBalance": 187284783.35404032,
+        "percentage": 0.5768847570909953
       },
       {
         "nickname": "吉姆熊猫",
@@ -305,10 +305,10 @@
         ],
         "initialBalanceTotal": 149000000,
         "currentBalances": [
-          150745440.19037122
+          150799000.92970958
         ],
-        "totalBalance": 150745440.19037122,
-        "percentage": 1.1714363693766545
+        "totalBalance": 150799000.92970958,
+        "percentage": 1.2073831743017338
       },
       {
         "nickname": "斯奈夫",
@@ -753,10 +753,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          101141102.44645876
+          101175855.12703374
         ],
-        "totalBalance": 101141102.44645876,
-        "percentage": 1.0239784079431071
+        "totalBalance": 101175855.12703374,
+        "percentage": 1.058690844006218
       },
       {
         "nickname": "一骑红尘",
@@ -951,10 +951,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          94597227.69813628
+          94637167.68275551
         ],
-        "totalBalance": 94597227.69813628,
-        "percentage": 8.591103325136352
+        "totalBalance": 94637167.68275551,
+        "percentage": 8.636951677166618
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -963,10 +963,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          85436960.74346812
+          85468496.76612136
         ],
-        "totalBalance": 85436960.74346812,
-        "percentage": 15.455352356038002
+        "totalBalance": 85468496.76612136,
+        "percentage": 15.497968602866699
       },
       {
         "nickname": "丑到拖网速",
@@ -999,10 +999,10 @@
         ],
         "initialBalanceTotal": 59165033.8135,
         "currentBalances": [
-          108631854.32820074
+          109606862.8754921
         ],
-        "totalBalance": 108631854.32820074,
-        "percentage": 83.60820120652687
+        "totalBalance": 109606862.8754921,
+        "percentage": 85.25614845585116
       },
       {
         "nickname": "max",
@@ -1841,10 +1841,10 @@
         ],
         "initialBalanceTotal": 20533334,
         "currentBalances": [
-          20730848.892936107
+          24160668.32549139
         ],
-        "totalBalance": 20730848.892936107,
-        "percentage": 0.9619231486523658
+        "totalBalance": 24160668.32549139,
+        "percentage": 17.665588673964937
       },
       {
         "nickname": "众鑫社区锁先生",
@@ -1979,7 +1979,7 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-18T05:46:44.580Z",
+    "lastUpdate": "2025-11-18T05:59:49.577Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
