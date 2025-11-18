@@ -133,10 +133,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          301090710.85535395
+          301163381.1724471
         ],
-        "totalBalance": 301090710.85535395,
-        "percentage": 0.9835185404010885
+        "totalBalance": 301163381.1724471,
+        "percentage": 1.007891608213987
       },
       {
         "nickname": "道哥币赢",
@@ -243,10 +243,10 @@
         ],
         "initialBalanceTotal": 200000000,
         "currentBalances": [
-          201747843.91011027
+          202900538.61841628
         ],
-        "totalBalance": 201747843.91011027,
-        "percentage": 0.8739219550551325
+        "totalBalance": 202900538.61841628,
+        "percentage": 1.4502693092081398
       },
       {
         "nickname": "leezerofly",
@@ -317,10 +317,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          160914413.3764755
+          160935283.98947948
         ],
-        "totalBalance": 160914413.3764755,
-        "percentage": 14.938866697482508
+        "totalBalance": 160935283.98947948,
+        "percentage": 14.95377427819963
       },
       {
         "nickname": "韭菜人生",
@@ -475,10 +475,10 @@
         ],
         "initialBalanceTotal": 115680242,
         "currentBalances": [
-          116439081.46955344
+          1e-18
         ],
-        "totalBalance": 116439081.46955344,
-        "percentage": 0.6559801885212523
+        "totalBalance": 1e-18,
+        "percentage": -100
       },
       {
         "nickname": "慕兮",
@@ -1131,10 +1131,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          45716583.30003887
+          45735238.819975846
         ],
-        "totalBalance": 45716583.30003887,
-        "percentage": 1.5924073334197038
+        "totalBalance": 45735238.819975846,
+        "percentage": 1.633864044390768
       },
       {
         "nickname": "小满",
@@ -1143,10 +1143,10 @@
         ],
         "initialBalanceTotal": 41920277.028529,
         "currentBalances": [
-          42569225.999270804
+          44681854.311947726
         ],
-        "totalBalance": 42569225.999270804,
-        "percentage": 1.5480550624704992
+        "totalBalance": 44681854.311947726,
+        "percentage": 6.5876885344515275
       },
       {
         "nickname": "皇总",
@@ -1979,7 +1979,7 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-18T03:55:13.450Z",
+    "lastUpdate": "2025-11-18T04:27:56.033Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
