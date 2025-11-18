@@ -55,5 +55,12 @@
             "0xd2896d4b96c7492F9Fe10254Ed0CEE061C956Faa"
         ],
         "initialBalanceTotal": 20372573.54759615
+    },
+    {
+        "nickname": "像风像雨又像雾",
+        "addresses": [
+            "0x1Cca692040370eca92C81002d1Cee9Ef9D3CCeC0"
+        ],
+        "initialBalanceTotal": 108000000
     }
 ]

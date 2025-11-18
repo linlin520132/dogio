@@ -327,13 +327,6 @@
         "initialBalanceTotal": 108130301.14
     },
     {
-        "nickname": "像风像雨又像雾",
-        "addresses": [
-            "0x1Cca692040370eca92C81002d1Cee9Ef9D3CCeC0"
-        ],
-        "initialBalanceTotal": 108000000
-    },
-    {
         "nickname": "老铁Bro",
         "addresses": [
             "0x49c7824ff4a75b549bf4a8d3bf5e3abc75eb17e8",
@@ -393,13 +386,6 @@
             "0x1ac9acbaffe938b4cb7fbb0eb88f641cfb690837"
         ],
         "initialBalanceTotal": 102286355
-    },
-    {
-        "nickname": "小猪佩奇，你佩我",
-        "addresses": [
-            "0x1cca692040370eca92c81002d1cee9ef9d3ccec0"
-        ],
-        "initialBalanceTotal": 101569355.72108
     },
     {
         "nickname": "memecoin",
