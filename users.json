@@ -675,6 +675,13 @@
         "initialBalanceTotal": 41000000
     },
     {
+        "nickname": "可乐",
+        "addresses": [
+            "0x48ec8991cd72d7b63a4ba6f0e550cb2e8782948c"
+        ],
+        "initialBalanceTotal": 40010261.12
+    },
+    {
         "nickname": "海纳百川",
         "addresses": [
             "0xFeaF3B125Ec4d8d905Cd4Ba53d3Cde34071cb505"
