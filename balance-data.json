@@ -898,11 +898,11 @@
         ],
         "initialBalanceTotal": 94539367,
         "currentBalances": [
-          57876217.33554854,
+          57909220.672429174,
           39690500.97172054
         ],
-        "totalBalance": 97566718.30726908,
-        "percentage": 3.2022123728299148
+        "totalBalance": 97599721.64414972,
+        "percentage": 3.2371219961201145
       },
       {
         "nickname": "炮兵连长",
@@ -1866,11 +1866,11 @@
         ],
         "initialBalanceTotal": 20270000,
         "currentBalances": [
-          10322239.42276052,
-          10141677.71637372
+          10331744.683304023,
+          10154006.131898167
         ],
-        "totalBalance": 20463917.13913424,
-        "percentage": 0.9566706420041411
+        "totalBalance": 20485750.81520219,
+        "percentage": 1.0643848801292128
       },
       {
         "nickname": "胡云飞",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T10:28:21.126Z",
+    "lastUpdate": "2025-11-18T10:51:18.855Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
