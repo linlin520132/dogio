@@ -133,10 +133,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          301083854.4657779
+          301090710.85535395
         ],
-        "totalBalance": 301083854.4657779,
-        "percentage": 0.9812189598464144
+        "totalBalance": 301090710.85535395,
+        "percentage": 0.9835185404010885
       },
       {
         "nickname": "道哥币赢",
@@ -449,10 +449,10 @@
         ],
         "initialBalanceTotal": 118000000,
         "currentBalances": [
-          120997827.83555551
+          121072620.76986796
         ],
-        "totalBalance": 120997827.83555551,
-        "percentage": 2.540532064030092
+        "totalBalance": 121072620.76986796,
+        "percentage": 2.60391590666776
       },
       {
         "nickname": "Cassie",
@@ -1521,10 +1521,10 @@
         ],
         "initialBalanceTotal": 24786625,
         "currentBalances": [
-          24954051.62545396
+          25008632.9596192
         ],
-        "totalBalance": 24954051.62545396,
-        "percentage": 0.6754716523688085
+        "totalBalance": 25008632.9596192,
+        "percentage": 0.8956764368654535
       },
       {
         "nickname": "王梓【RWA】）",
@@ -1979,7 +1979,7 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-18T03:08:53.751Z",
+    "lastUpdate": "2025-11-18T03:55:13.450Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
