@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          898266219.3262569
+          901136471.6705643
         ],
-        "totalBalance": 898266219.3262569,
-        "percentage": 5.306708010112177
+        "totalBalance": 901136471.6705643,
+        "percentage": 5.643197147780104
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -727,10 +727,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          100922216.06848429
+          100952405.41865069
         ],
-        "totalBalance": 100922216.06848429,
-        "percentage": 0.6349787256417341
+        "totalBalance": 100952405.41865069,
+        "percentage": 0.6650821531137837
       },
       {
         "nickname": "香香",
@@ -951,10 +951,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          94637167.68275551
+          94662363.59708712
         ],
-        "totalBalance": 94637167.68275551,
-        "percentage": 8.636951677166618
+        "totalBalance": 94662363.59708712,
+        "percentage": 8.665874851800073
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -963,10 +963,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          85468496.76612136
+          85493821.19136542
         ],
-        "totalBalance": 85468496.76612136,
-        "percentage": 15.497968602866699
+        "totalBalance": 85493821.19136542,
+        "percentage": 15.532190799142462
       },
       {
         "nickname": "丑到拖网速",
@@ -975,10 +975,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          73927907.66239792
+          74109937.31587388
         ],
-        "totalBalance": 73927907.66239792,
-        "percentage": 18.196695007280056
+        "totalBalance": 74109937.31587388,
+        "percentage": 18.487725879307856
       },
       {
         "nickname": "未来(๑]؂[๑）都是晴天",
@@ -1035,10 +1035,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52469328.01297328
+          52531592.46269116
         ],
-        "totalBalance": 52469328.01297328,
-        "percentage": 0.9327550865403249
+        "totalBalance": 52531592.46269116,
+        "percentage": 1.0525302521841282
       },
       {
         "nickname": "曾经的自己",
@@ -1632,11 +1632,11 @@
         ],
         "initialBalanceTotal": 22850472,
         "currentBalances": [
-          12939994.728421638,
+          13141170.86158062,
           10014376.326981394
         ],
-        "totalBalance": 22954371.05540303,
-        "percentage": 0.4546910689767433
+        "totalBalance": 23155547.188562013,
+        "percentage": 1.3350935970250994
       },
       {
         "nickname": "草民吃藕",
@@ -1669,10 +1669,10 @@
         ],
         "initialBalanceTotal": 21933408,
         "currentBalances": [
-          21988569.41900717
+          30193482.366895586
         ],
-        "totalBalance": 21988569.41900717,
-        "percentage": 0.25149497518657815
+        "totalBalance": 30193482.366895586,
+        "percentage": 37.65978532335507
       },
       {
         "nickname": "静慈",
@@ -1693,10 +1693,10 @@
         ],
         "initialBalanceTotal": 21900000,
         "currentBalances": [
-          22060988.0487938
+          22040988.0487938
         ],
-        "totalBalance": 22060988.0487938,
-        "percentage": 0.7351052456337908
+        "totalBalance": 22040988.0487938,
+        "percentage": 0.6437810447205488
       },
       {
         "nickname": "打dog小兵3947068284",
@@ -1705,10 +1705,10 @@
         ],
         "initialBalanceTotal": 21780000,
         "currentBalances": [
-          21900180.58855873
+          22066190.103401832
         ],
-        "totalBalance": 21900180.58855873,
-        "percentage": 0.5517933358986673
+        "totalBalance": 22066190.103401832,
+        "percentage": 1.3140041478504696
       },
       {
         "nickname": "渔夫",
@@ -1970,16 +1970,16 @@
         ],
         "initialBalanceTotal": 21373976.9876,
         "currentBalances": [
-          5369915.6932348935,
-          5756995.467405582,
-          5306356.234914812,
-          5324722.550318385
+          5378458.954577951,
+          5775333.668284605,
+          5322073.25518635,
+          5339866.364475389
         ],
-        "totalBalance": 21757989.94587367,
-        "percentage": 1.7966378390715714
+        "totalBalance": 21815732.242524292,
+        "percentage": 2.066790168159045
       }
     ],
-    "lastUpdate": "2025-11-18T05:59:49.577Z",
+    "lastUpdate": "2025-11-18T06:34:09.794Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
