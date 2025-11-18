@@ -269,13 +269,6 @@
         "initialBalanceTotal": 116268461
     },
     {
-        "nickname": "Mojito",
-        "addresses": [
-            "0x5bc535157bd630410feb6b133ff5a4eead0f6da0"
-        ],
-        "initialBalanceTotal": 115680242
-    },
-    {
         "nickname": "慕兮",
         "addresses": [
             "0x92498505a053c3a74d52ff76194ec2249412ab45"
@@ -729,6 +722,13 @@
             "0xf439bd457304a9f49ecffefb46450993d5bc5769"
         ],
         "initialBalanceTotal": 35000000
+    },
+    {
+        "nickname": "暂停的失忆",
+        "addresses": [
+            "0xc06433b647fF520e5782D33D3e7b7b4D0D405B97"
+        ],
+        "initialBalanceTotal": 33237400
     },
     {
         "nickname": "Nayo",
