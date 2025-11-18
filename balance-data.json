@@ -469,18 +469,6 @@
         "percentage": 0.7731493983275263
       },
       {
-        "nickname": "Mojito",
-        "addresses": [
-          "0x5bc535157bd630410feb6b133ff5a4eead0f6da0"
-        ],
-        "initialBalanceTotal": 115680242,
-        "currentBalances": [
-          1e-18
-        ],
-        "totalBalance": 1e-18,
-        "percentage": -100
-      },
-      {
         "nickname": "慕兮",
         "addresses": [
           "0x92498505a053c3a74d52ff76194ec2249412ab45"
@@ -1269,6 +1257,18 @@
         "percentage": 1.7803706095265703
       },
       {
+        "nickname": "暂停的失忆",
+        "addresses": [
+          "0xc06433b647fF520e5782D33D3e7b7b4D0D405B97"
+        ],
+        "initialBalanceTotal": 33237400,
+        "currentBalances": [
+          33237405.82295243
+        ],
+        "totalBalance": 33237405.82295243,
+        "percentage": 0.00001751927777351807
+      },
+      {
         "nickname": "Nayo",
         "addresses": [
           "0x602860831839d07a5238206853bdafe95d187fc7",
@@ -1979,7 +1979,7 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-18T04:49:18.952Z",
+    "lastUpdate": "2025-11-18T05:00:19.004Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
