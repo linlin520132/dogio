@@ -805,10 +805,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          102299018.43637641
+          102532972.94701503
         ],
-        "totalBalance": 102299018.43637641,
-        "percentage": 2.2990184363764077
+        "totalBalance": 102532972.94701503,
+        "percentage": 2.532972947015032
       },
       {
         "nickname": "上官允禾",
@@ -817,10 +817,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          102044881.14393394
+          102203070.15543093
         ],
-        "totalBalance": 102044881.14393394,
-        "percentage": 2.044881143933937
+        "totalBalance": 102203070.15543093,
+        "percentage": 2.203070155430928
       },
       {
         "nickname": "小雨",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T13:56:05.469Z",
+    "lastUpdate": "2025-11-18T14:24:26.615Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
