@@ -85,10 +85,10 @@
         ],
         "initialBalanceTotal": 402843191.4623,
         "currentBalances": [
-          405840792.49678355
+          406028499.2694556
         ],
-        "totalBalance": 405840792.49678355,
-        "percentage": 0.7441111325730528
+        "totalBalance": 406028499.2694556,
+        "percentage": 0.7907066259685576
       },
       {
         "nickname": "树藤与海岛",
@@ -195,10 +195,10 @@
         ],
         "initialBalanceTotal": 220222945.44,
         "currentBalances": [
-          221555079.54125243
+          221657551.7168411
         ],
-        "totalBalance": 221555079.54125243,
-        "percentage": 0.6049024994152474
+        "totalBalance": 221657551.7168411,
+        "percentage": 0.6514336069635234
       },
       {
         "nickname": "2025国泰民安",
@@ -645,10 +645,10 @@
         ],
         "initialBalanceTotal": 103121334,
         "currentBalances": [
-          104529299.56830066
+          104577645.76176961
         ],
-        "totalBalance": 104529299.56830066,
-        "percentage": 1.3653484819161323
+        "totalBalance": 104577645.76176961,
+        "percentage": 1.4122313058611204
       },
       {
         "nickname": "@野火（蒙）",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1207459362701773
       }
     ],
-    "lastUpdate": "2025-11-18T20:28:30.816Z",
+    "lastUpdate": "2025-11-18T21:50:12.039Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
