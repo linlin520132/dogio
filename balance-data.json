@@ -305,10 +305,10 @@
         ],
         "initialBalanceTotal": 149000000,
         "currentBalances": [
-          150524478.00041345
+          150745440.19037122
         ],
-        "totalBalance": 150524478.00041345,
-        "percentage": 1.0231395975929178
+        "totalBalance": 150745440.19037122,
+        "percentage": 1.1714363693766545
       },
       {
         "nickname": "斯奈夫",
@@ -1071,10 +1071,10 @@
         ],
         "initialBalanceTotal": 50762682,
         "currentBalances": [
-          51042763.96578382
+          51439500.46753595
         ],
-        "totalBalance": 51042763.96578382,
-        "percentage": 0.5517477697175646
+        "totalBalance": 51439500.46753595,
+        "percentage": 1.3332992680251807
       },
       {
         "nickname": "金马影帝",
@@ -1717,10 +1717,10 @@
         ],
         "initialBalanceTotal": 21699222.1648,
         "currentBalances": [
-          21832584.905426413
+          21834937.15232906
         ],
-        "totalBalance": 21832584.905426413,
-        "percentage": 0.6145968717844249
+        "totalBalance": 21834937.15232906,
+        "percentage": 0.6254371078296789
       },
       {
         "nickname": "有若",
@@ -1793,10 +1793,10 @@
         ],
         "initialBalanceTotal": 20914636.2,
         "currentBalances": [
-          21083477.59681208
+          21093082.873544388
         ],
-        "totalBalance": 21083477.59681208,
-        "percentage": 0.8072882320185006
+        "totalBalance": 21093082.873544388,
+        "percentage": 0.8532143320015686
       },
       {
         "nickname": "Leon",
@@ -1979,7 +1979,7 @@
         "percentage": 1.7966378390715714
       }
     ],
-    "lastUpdate": "2025-11-18T04:27:56.033Z",
+    "lastUpdate": "2025-11-18T04:49:18.952Z",
     "totalUsers": 155,
     "totalAddresses": 213
   }
