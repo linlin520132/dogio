@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 330618632.98678726,
-    "totalTransactions": 126,
+    "totalTransferred": 344295118.2403942,
+    "totalTransactions": 130,
     "usersInvolved": 35,
-    "poolTotalRecords": 506,
+    "poolTotalRecords": 515,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -46,6 +46,11 @@
       "nickname": "遥远的传说",
       "totalAmount": 10804133.408299,
       "transactionCount": 2
+    },
+    {
+      "nickname": "老铁Bro",
+      "totalAmount": 10200248.875473775,
+      "transactionCount": 12
     },
     {
       "nickname": "☁️",
@@ -93,6 +98,11 @@
       "transactionCount": 4
     },
     {
+      "nickname": "素雅",
+      "totalAmount": 5629469.194426,
+      "transactionCount": 6
+    },
+    {
       "nickname": "星辰大海",
       "totalAmount": 2937769.0446289997,
       "transactionCount": 2
@@ -100,11 +110,6 @@
     {
       "nickname": "城市/ht 日记",
       "totalAmount": 2848604.9650541474,
-      "transactionCount": 4
-    },
-    {
-      "nickname": "素雅",
-      "totalAmount": 2003547.5305569998,
       "transactionCount": 4
     },
     {
@@ -153,11 +158,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "老铁Bro",
-      "totalAmount": 149685.28573584123,
-      "transactionCount": 10
-    },
-    {
       "nickname": "貳大爺",
       "totalAmount": 127170.05530533422,
       "transactionCount": 2
@@ -183,5 +183,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-19T18:00:46.172Z"
+  "queryTime": "2025-11-19T18:36:10.229Z"
 }
