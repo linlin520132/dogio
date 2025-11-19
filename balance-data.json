@@ -330,11 +330,11 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          91923652.85714668,
+          70670745.66444236,
           50018676.76825887
         ],
-        "totalBalance": 141942329.62540555,
-        "percentage": 1.3873783038611072
+        "totalBalance": 120689422.43270123,
+        "percentage": -13.793269690927692
       },
       {
         "nickname": "羽辰",
@@ -645,10 +645,10 @@
         ],
         "initialBalanceTotal": 103121334,
         "currentBalances": [
-          104628988.11187719
+          94602572.52406736
         ],
-        "totalBalance": 104628988.11187719,
-        "percentage": 1.462019597106054
+        "totalBalance": 94602572.52406736,
+        "percentage": -8.260910856654204
       },
       {
         "nickname": "@野火（蒙）",
@@ -1167,10 +1167,10 @@
         ],
         "initialBalanceTotal": 41000000,
         "currentBalances": [
-          41808986.93725527
+          39785244.44425527
         ],
-        "totalBalance": 41808986.93725527,
-        "percentage": 1.973138871354319
+        "totalBalance": 39785244.44425527,
+        "percentage": -2.962818428645683
       },
       {
         "nickname": "可乐",
@@ -1991,7 +1991,7 @@
         "percentage": 2.218137466428492
       }
     ],
-    "lastUpdate": "2025-11-19T13:27:11.050Z",
+    "lastUpdate": "2025-11-19T13:53:27.211Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
