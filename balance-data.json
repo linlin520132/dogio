@@ -861,10 +861,10 @@
         "initialBalanceTotal": 100000000,
         "currentBalances": [
           0,
-          70607093.47930129
+          0
         ],
-        "totalBalance": 70607093.47930129,
-        "percentage": -29.392906520698713
+        "totalBalance": 0,
+        "percentage": -100
       },
       {
         "nickname": "跑步二十天",
@@ -1991,7 +1991,7 @@
         "percentage": 2.218137466428492
       }
     ],
-    "lastUpdate": "2025-11-19T17:23:13.288Z",
+    "lastUpdate": "2025-11-19T17:38:27.813Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
