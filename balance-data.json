@@ -97,10 +97,10 @@
         ],
         "initialBalanceTotal": 354034708,
         "currentBalances": [
-          354070721.3206693
+          347186810.633065
         ],
-        "totalBalance": 354070721.3206693,
-        "percentage": 0.010172257085396668
+        "totalBalance": 347186810.633065,
+        "percentage": -1.93424464104661
       },
       {
         "nickname": "神秘人",
@@ -489,10 +489,10 @@
         "initialBalanceTotal": 111491843,
         "currentBalances": [
           67864962.02784242,
-          43488965.10324052
+          31140229.696652785
         ],
-        "totalBalance": 111353927.13108294,
-        "percentage": -0.12370041180237992
+        "totalBalance": 99005191.7244952,
+        "percentage": -11.199609710913826
       },
       {
         "nickname": "吴坚不摧",
@@ -765,10 +765,10 @@
         ],
         "initialBalanceTotal": 100041389.75,
         "currentBalances": [
-          94115632.18219134
+          96021567.34442303
         ],
-        "totalBalance": 94115632.18219134,
-        "percentage": -5.92330592629403
+        "totalBalance": 96021567.34442303,
+        "percentage": -4.018159299488314
       },
       {
         "nickname": "DOG王",
@@ -1991,7 +1991,7 @@
         "percentage": 2.218137466428492
       }
     ],
-    "lastUpdate": "2025-11-19T15:46:25.278Z",
+    "lastUpdate": "2025-11-19T16:00:46.626Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
