@@ -133,10 +133,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          300247156.06220293
+          300234039.4780826
         ],
-        "totalBalance": 300247156.06220293,
-        "percentage": 0.7005967230789533
+        "totalBalance": 300234039.4780826,
+        "percentage": 0.696197521217363
       },
       {
         "nickname": "道哥币赢",
@@ -1251,10 +1251,10 @@
         ],
         "initialBalanceTotal": 36577296,
         "currentBalances": [
-          41170693.03768751
+          41149190.94025583
         ],
-        "totalBalance": 41170693.03768751,
-        "percentage": 12.558055241938906
+        "totalBalance": 41149190.94025583,
+        "percentage": 12.499269875651356
       },
       {
         "nickname": "南方种植园",
@@ -1991,7 +1991,7 @@
         "percentage": 2.1679781416003108
       }
     ],
-    "lastUpdate": "2025-11-19T06:02:07.267Z",
+    "lastUpdate": "2025-11-19T06:41:42.942Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
