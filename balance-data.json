@@ -133,10 +133,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          300300242.4758114
+          293676881.86625284
         ],
-        "totalBalance": 300300242.4758114,
-        "percentage": 0.7184014996449493
+        "totalBalance": 293676881.86625284,
+        "percentage": -1.503022924293661
       },
       {
         "nickname": "道哥币赢",
@@ -330,11 +330,11 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          70670745.66444236,
+          91500720.00401185,
           50018676.76825887
         ],
-        "totalBalance": 120689422.43270123,
-        "percentage": -13.793269690927692
+        "totalBalance": 141519396.77227074,
+        "percentage": 1.0852834087648136
       },
       {
         "nickname": "羽辰",
@@ -475,10 +475,10 @@
         ],
         "initialBalanceTotal": 115532138,
         "currentBalances": [
-          116598012.72172953
+          102341817.2240637
         ],
-        "totalBalance": 116598012.72172953,
-        "percentage": 0.9225785484291236
+        "totalBalance": 102341817.2240637,
+        "percentage": -11.41701435139745
       },
       {
         "nickname": "以马内利",
@@ -885,10 +885,10 @@
         ],
         "initialBalanceTotal": 97554933,
         "currentBalances": [
-          98729557.26340617
+          98674779.38587417
         ],
-        "totalBalance": 98729557.26340617,
-        "percentage": 1.204064445829892
+        "totalBalance": 98674779.38587417,
+        "percentage": 1.1479136435613841
       },
       {
         "nickname": "观明",
@@ -1792,11 +1792,11 @@
         ],
         "initialBalanceTotal": 20930930.193,
         "currentBalances": [
-          10740019.473921433,
+          10264222.463988619,
           10394514.75739795
         ],
-        "totalBalance": 21134534.231319383,
-        "percentage": 0.9727424268390843
+        "totalBalance": 20658737.221386567,
+        "percentage": -1.3004341856935895
       },
       {
         "nickname": "未来不是梦",
@@ -1991,7 +1991,7 @@
         "percentage": 2.218137466428492
       }
     ],
-    "lastUpdate": "2025-11-19T13:53:27.211Z",
+    "lastUpdate": "2025-11-19T14:03:32.779Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
