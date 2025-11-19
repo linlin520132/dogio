@@ -1351,10 +1351,10 @@
         ],
         "initialBalanceTotal": 30000000,
         "currentBalances": [
-          30540273.196035583
+          30552605.372911718
         ],
-        "totalBalance": 30540273.196035583,
-        "percentage": 1.800910653451942
+        "totalBalance": 30552605.372911718,
+        "percentage": 1.8420179097057257
       },
       {
         "nickname": "27623",
@@ -1991,7 +1991,7 @@
         "percentage": 2.218137466428492
       }
     ],
-    "lastUpdate": "2025-11-19T16:00:46.626Z",
+    "lastUpdate": "2025-11-19T16:33:10.836Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
