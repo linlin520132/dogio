@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 344295118.2403942,
-    "totalTransactions": 130,
+    "totalTransferred": 344354280.4976659,
+    "totalTransactions": 134,
     "usersInvolved": 35,
-    "poolTotalRecords": 515,
+    "poolTotalRecords": 524,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -64,8 +64,8 @@
     },
     {
       "nickname": "光",
-      "totalAmount": 9327373.221902452,
-      "transactionCount": 20
+      "totalAmount": 9382787.519231804,
+      "transactionCount": 22
     },
     {
       "nickname": "zhengch",
@@ -129,8 +129,8 @@
     },
     {
       "nickname": "吉姆熊猫",
-      "totalAmount": 793326.9949325167,
-      "transactionCount": 4
+      "totalAmount": 797074.9548748354,
+      "transactionCount": 6
     },
     {
       "nickname": "追梦人",
@@ -183,5 +183,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-19T22:42:54.459Z"
+  "queryTime": "2025-11-19T22:53:35.787Z"
 }
