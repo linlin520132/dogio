@@ -248,6 +248,18 @@
                                             <span class="zh">当前持仓</span>
                                             <span class="en hidden">Current Balance</span>
                                         </th>
+                                        <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolAddedAmount" data-tab="large">
+                                            <div class="flex items-center">
+                                                <span>
+                                                    <span class="zh">加池子数量</span>
+                                                    <span class="en hidden">Pool AddedAmount</span>
+                                                </span>
+                                                <div class="sort-icons flex flex-col ml-2">
+                                                    <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
+                                                    <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
+                                                </div>
+                                            </div>
+                                        </th>
                                         <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="totalBalance" data-tab="large">
                                             <div class="flex items-center">
                                                 <span>
@@ -288,7 +300,7 @@
                                 </thead>
                                 <tbody id="balance-table-body-large">
                                     <tr>
-                                        <td colspan="6" class="text-center text-light/50 py-8">
+                                        <td colspan="7" class="text-center text-light/50 py-8">
                                             <i class="fa fa-info-circle text-2xl mb-2"></i>
                                             <p class="zh">暂无用户数据</p>
                                             <p class="en hidden">No user data available</p>
@@ -316,6 +328,18 @@
                                         <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px]">
                                             <span class="zh">当前持仓</span>
                                             <span class="en hidden">Current Balance</span>
+                                        </th>
+                                        <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolAddedAmount" data-tab="small">
+                                            <div class="flex items-center">
+                                                <span>
+                                                    <span class="zh">加池子数量</span>
+                                                    <span class="en hidden">Pool AddedAmount</span>
+                                                </span>
+                                                <div class="sort-icons flex flex-col ml-2">
+                                                    <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
+                                                    <i class="fa fa-chevron-down text-xs opacity-30 sort-down"></i>
+                                                </div>
+                                            </div>
                                         </th>
                                         <th class="pb-3 text-light/80 font-medium min-w-[130px] w-[150px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="totalBalance" data-tab="small">
                                             <div class="flex items-center">
@@ -357,7 +381,7 @@
                                 </thead>
                                 <tbody id="balance-table-body-small">
                                     <tr>
-                                        <td colspan="6" class="text-center text-light/50 py-8">
+                                        <td colspan="7" class="text-center text-light/50 py-8">
                                             <i class="fa fa-info-circle text-2xl mb-2"></i>
                                             <p class="zh">暂无用户数据</p>
                                             <p class="en hidden">No user data available</p>
@@ -417,6 +441,9 @@
         // 用户数据分组
         let usersLarge = []; // 持仓≥1亿
         let usersSmall = []; // 持仓<1亿
+
+        // 转账数据
+        let poolTransferData = {}; // 加池子DOG数量数据
 
         // 页面加载时获取表格数据
         window.addEventListener('load', () => {
@@ -588,7 +615,7 @@
                     const otherTabNameEn = tab === 'large' ? 'Balance ≥20M' : 'Balance ≥100M';
                     emptyHtml = `
                         <tr>
-                            <td colspan="6" class="text-center text-light/50 py-8">
+                            <td colspan="7" class="text-center text-light/50 py-8">
                                 <i class="fa fa-info-circle text-2xl mb-2"></i>
                                 <p class="zh">当前Tab未找到结果，请切换到"<span class="text-secondary">${otherTabName}</span>"Tab查看</p>
                                 <p class="en hidden">No results in current tab, please switch to "<span class="text-secondary">${otherTabNameEn}</span>" tab</p>
@@ -599,7 +626,7 @@
                     // 两个Tab都没有结果
                     emptyHtml = `
                         <tr>
-                            <td colspan="6" class="text-center text-light/50 py-8">
+                            <td colspan="7" class="text-center text-light/50 py-8">
                                 <i class="fa fa-info-circle text-2xl mb-2"></i>
                                 <p class="zh">该昵称或地址不在公示名单</p>
                                 <p class="en hidden">This nickname or address is not in the public list</p>
@@ -616,15 +643,38 @@
                 return;
             }
 
+            // 更新每个用户的百分比和加池子数量（基于调整后的持仓合计）
+            usersToRender.forEach(user => {
+                const poolAddedAmount = poolTransferData[user.nickname] || 0;
+                const adjustedTotalBalance = user.totalBalance + poolAddedAmount;
+
+                // 添加poolAddedAmount字段用于排序
+                user.poolAddedAmount = poolAddedAmount;
+
+                if (user.initialBalanceTotal > 0) {
+                    user.adjustedPercentage = ((adjustedTotalBalance - user.initialBalanceTotal) / user.initialBalanceTotal) * 100;
+                } else {
+                    user.adjustedPercentage = 0;
+                }
+            });
+
             // 如果有排序，应用排序
             if (state.field && state.order) {
                 usersToRender.sort((a, b) => {
-                    let aValue = a[state.field];
-                    let bValue = b[state.field];
+                    let aValue, bValue;
 
-                    // 确保数值比较
-                    if (typeof aValue === 'string') aValue = parseFloat(aValue) || 0;
-                    if (typeof bValue === 'string') bValue = parseFloat(bValue) || 0;
+                    // 特殊处理百分比字段，使用调整后的百分比
+                    if (state.field === 'percentage') {
+                        aValue = a.adjustedPercentage || 0;
+                        bValue = b.adjustedPercentage || 0;
+                    } else {
+                        aValue = a[state.field];
+                        bValue = b[state.field];
+
+                        // 确保数值比较
+                        if (typeof aValue === 'string') aValue = parseFloat(aValue) || 0;
+                        if (typeof bValue === 'string') bValue = parseFloat(bValue) || 0;
+                    }
 
                     if (state.order === 'asc') {
                         return aValue - bValue;
@@ -795,7 +845,7 @@
                 console.error('处理持仓数据失败:', error);
                 const errorHtml = `
                     <tr>
-                        <td colspan="6" class="text-center text-red-400 py-8">
+                        <td colspan="7" class="text-center text-red-400 py-8">
                             <i class="fa fa-exclamation-triangle text-2xl mb-2"></i>
                             <p class="zh">加载数据失败，请检查后端服务是否正常运行</p>
                             <p class="en hidden">Failed to load data, please check if the backend service is running</p>
@@ -831,6 +881,9 @@
                     throw new Error('数据格式错误：缺少 success 或 data 字段');
                 }
 
+                // 同时加载转账数据
+                await loadPoolTransferData();
+
                 // 处理响应数据（转换为字符串格式以兼容现有处理函数）
                 handleApiResponse(JSON.stringify(jsonData));
 
@@ -841,7 +894,7 @@
                 
                 const errorHtml = `
                     <tr>
-                        <td colspan="6" class="text-center text-red-400 py-8">
+                        <td colspan="7" class="text-center text-red-400 py-8">
                             <i class="fa fa-exclamation-triangle text-2xl mb-2"></i>
                             <p class="zh">加载数据失败</p>
                             <p class="en hidden">Failed to load data</p>
@@ -856,13 +909,42 @@
             }
         }
 
+        // 加载转账数据
+        async function loadPoolTransferData() {
+            try {
+                console.log('正在加载转账数据...');
+                const response = await fetch('./pool-transfer-stats-simple.json');
+
+                if (!response.ok) {
+                    console.warn('转账数据文件不存在，将使用默认值');
+                    poolTransferData = {};
+                    return;
+                }
+
+                const data = await response.json();
+                poolTransferData = {};
+
+                // 将转账数据按昵称索引，便于快速查找
+                if (data.userDetails) {
+                    data.userDetails.forEach(user => {
+                        poolTransferData[user.nickname] = user.totalAmount || 0;
+                    });
+                }
+
+                console.log('转账数据加载完成，涉及用户数:', Object.keys(poolTransferData).length);
+            } catch (error) {
+                console.warn('加载转账数据失败:', error);
+                poolTransferData = {};
+            }
+        }
+
         async function loadBalanceData() {
             console.log('开始加载持仓数据...');
 
             // 显示加载状态
             const loadingHtml = `
                 <tr>
-                    <td colspan="6" class="text-center text-light/50 py-8">
+                    <td colspan="7" class="text-center text-light/50 py-8">
                         <i class="fa fa-spinner fa-spin text-primary text-2xl mb-2"></i>
                         <p class="zh">正在加载数据...</p>
                         <p class="en hidden">Loading data...</p>
@@ -879,7 +961,7 @@
             if (!users || users.length === 0) {
                 return `
                     <tr>
-                        <td colspan="6" class="text-center text-light/50 py-8">
+                        <td colspan="7" class="text-center text-light/50 py-8">
                             <i class="fa fa-info-circle text-2xl mb-2"></i>
                             <p class="zh">暂无用户数据</p>
                             <p class="en hidden">No user data available</p>
@@ -909,14 +991,20 @@
                     return `<div class="text-white font-mono text-sm mb-1 last:mb-0">${Math.round(balance).toLocaleString()}</div>`;
                 }).join('');
 
+                // 加池子的DOG数量
+                const poolAddedAmount = poolTransferData[user.nickname] || 0;
+
+                // 重新计算当前持仓合计（包含加池子的DOG数量）
+                const adjustedTotalBalance = user.totalBalance + poolAddedAmount;
+
                 // 百分比样式
                 let percentageClass = 'text-light/70';
                 let percentageIcon = '';
 
-                if (user.percentage > 0) {
+                if (user.adjustedPercentage > 0) {
                     percentageClass = 'text-success';
                     percentageIcon = '<i class="fa fa-arrow-up mr-1"></i>';
-                } else if (user.percentage < 0) {
+                } else if (user.adjustedPercentage < 0) {
                     percentageClass = 'text-danger';
                     percentageIcon = '<i class="fa fa-arrow-down mr-1"></i>';
                 }
@@ -926,9 +1014,10 @@
                         <td class="py-3 text-white font-medium min-w-[100px] w-[120px] align-middle">${user.nickname}</td>
                         <td class="py-3 text-light/70 min-w-[120px] w-[150px] align-middle">${addressesHtml}</td>
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${balancesHtml}</td>
-                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.totalBalance).toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${Math.round(poolAddedAmount).toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(adjustedTotalBalance).toLocaleString()}</td>
                         <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.initialBalanceTotal).toLocaleString()}</td>
-                        <td class="py-3 min-w-[100px] w-[120px] align-middle"><span class="${percentageClass}">${percentageIcon}${user.percentage.toFixed(2)}%</span></td>
+                        <td class="py-3 min-w-[100px] w-[120px] align-middle"><span class="${percentageClass}">${percentageIcon}${user.adjustedPercentage.toFixed(2)}%</span></td>
                     </tr>
                 `;
             });

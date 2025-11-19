@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
       
       - name: Install dependencies
@@ -38,17 +38,25 @@ jobs:
           OKX_API_SECRET: ${{ secrets.OKX_API_SECRET }}
           OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
         run: node update-and-push.js
-      
+
+      - name: Update pool transfer data
+        env:
+          OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
+          OKX_API_SECRET: ${{ secrets.OKX_API_SECRET }}
+          OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
+          USE_PROXY: false  # GitHub Actions环境不需要代理
+        run: node query-pool-transfers.js
+
       - name: Commit and push changes
         run: |
           # 先拉取最新代码，避免冲突
           git pull --rebase || git pull
           # 检查是否有变更
-          git add balance-data.json
+          git add balance-data.json pool-transactions-cache.json pool-transfer-stats.json pool-transfer-stats-simple.json
           if git diff --staged --quiet; then
             echo "没有数据变更，跳过提交"
           else
-            git commit -m "Auto update balance data - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+            git commit -m "Auto update balance and pool transfer data - $(date +'%Y-%m-%d %H:%M:%S UTC')"
             git push
             echo "✅ 数据已更新并推送到GitHub"
           fi
