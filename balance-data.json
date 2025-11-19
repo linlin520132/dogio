@@ -358,11 +358,11 @@
         "initialBalanceTotal": 125545211,
         "currentBalances": [
           62401045.31618398,
-          31672294.38788898,
+          28774636.674929723,
           27215397.99940577
         ],
-        "totalBalance": 121288737.70347872,
-        "percentage": -3.3903908103044063
+        "totalBalance": 118391079.99051946,
+        "percentage": -5.698449946832728
       },
       {
         "nickname": "沙漠绿洲",
@@ -805,10 +805,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          102699898.29571716
+          100168828.59307888
         ],
-        "totalBalance": 102699898.29571716,
-        "percentage": 2.6998982957171647
+        "totalBalance": 100168828.59307888,
+        "percentage": 0.1688285930788815
       },
       {
         "nickname": "上官允禾",
@@ -1215,10 +1215,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          45954553.40374137
+          45158697.287606716
         ],
-        "totalBalance": 45954553.40374137,
-        "percentage": 14.886383509353418
+        "totalBalance": 45158697.287606716,
+        "percentage": 12.89674321901679
       },
       {
         "nickname": "永恒",
@@ -1991,7 +1991,7 @@
         "percentage": 2.218137466428492
       }
     ],
-    "lastUpdate": "2025-11-19T14:52:20.496Z",
+    "lastUpdate": "2025-11-19T15:02:41.612Z",
     "totalUsers": 156,
     "totalAddresses": 214
   }
