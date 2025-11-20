@@ -1,16 +1,16 @@
 {
   "summary": {
-    "totalTransferred": 577827812.3895658,
-    "totalTransactions": 194,
-    "usersInvolved": 47,
-    "poolTotalRecords": 694,
+    "totalTransferred": 603630886.7827413,
+    "totalTransactions": 216,
+    "usersInvolved": 51,
+    "poolTotalRecords": 752,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
     {
       "nickname": "哈密瓜",
-      "totalAmount": 113451311.01487525,
-      "transactionCount": 8
+      "totalAmount": 118164844.88458152,
+      "transactionCount": 10
     },
     {
       "nickname": "狂飚",
@@ -68,6 +68,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "南方种植园",
+      "totalAmount": 11363884.01384137,
+      "transactionCount": 8
+    },
+    {
       "nickname": "大白",
       "totalAmount": 11244417.51956199,
       "transactionCount": 4
@@ -103,6 +108,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "观明",
+      "totalAmount": 9629264.609853208,
+      "transactionCount": 2
+    },
+    {
       "nickname": "光",
       "totalAmount": 9443180.011890039,
       "transactionCount": 24
@@ -124,18 +134,13 @@
     },
     {
       "nickname": "吉姆熊猫",
-      "totalAmount": 6236557.271882298,
-      "transactionCount": 14
+      "totalAmount": 6271595.578539178,
+      "transactionCount": 16
     },
     {
       "nickname": "memecoin",
       "totalAmount": 5875773.695221078,
       "transactionCount": 2
-    },
-    {
-      "nickname": "南方种植园",
-      "totalAmount": 5741866.369559092,
-      "transactionCount": 6
     },
     {
       "nickname": "我",
@@ -146,6 +151,11 @@
       "nickname": "素雅",
       "totalAmount": 5629469.194426,
       "transactionCount": 6
+    },
+    {
+      "nickname": "天雨",
+      "totalAmount": 5015120.425460434,
+      "transactionCount": 4
     },
     {
       "nickname": "逗霸",
@@ -193,24 +203,29 @@
       "transactionCount": 2
     },
     {
+      "nickname": "追梦人",
+      "totalAmount": 874495.6590215686,
+      "transactionCount": 4
+    },
+    {
       "nickname": "仓位又不见了",
       "totalAmount": 862927.2068920817,
       "transactionCount": 4
     },
     {
       "nickname": "真善美",
-      "totalAmount": 525371.546877731,
-      "transactionCount": 2
-    },
-    {
-      "nickname": "追梦人",
-      "totalAmount": 471049.0398324857,
-      "transactionCount": 2
+      "totalAmount": 678598.0245984483,
+      "transactionCount": 4
     },
     {
       "nickname": "墨白",
       "totalAmount": 254513.291419,
       "transactionCount": 2
+    },
+    {
+      "nickname": "城",
+      "totalAmount": 224950.14359639,
+      "transactionCount": 4
     },
     {
       "nickname": "喜乐人生",
@@ -241,7 +256,12 @@
       "nickname": "追梦少年",
       "totalAmount": 54231.25008168486,
       "transactionCount": 2
+    },
+    {
+      "nickname": "渔夫",
+      "totalAmount": 6476.296709882455,
+      "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T11:49:44.976Z"
+  "queryTime": "2025-11-20T14:59:38.152Z"
 }
