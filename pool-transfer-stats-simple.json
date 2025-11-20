@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 539394806.0223627,
-    "totalTransactions": 182,
+    "totalTransferred": 545022162.1150217,
+    "totalTransactions": 184,
     "usersInvolved": 44,
-    "poolTotalRecords": 657,
+    "poolTotalRecords": 662,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -48,6 +48,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "以马内利",
+      "totalAmount": 18878223.68540386,
+      "transactionCount": 8
+    },
+    {
       "nickname": "斯奈夫",
       "totalAmount": 15446684.957730735,
       "transactionCount": 6
@@ -56,11 +61,6 @@
       "nickname": "慕兮",
       "totalAmount": 14113932.722699175,
       "transactionCount": 2
-    },
-    {
-      "nickname": "以马内利",
-      "totalAmount": 13250867.592744863,
-      "transactionCount": 6
     },
     {
       "nickname": "大白",
@@ -228,5 +228,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T10:00:18.459Z"
+  "queryTime": "2025-11-20T10:27:18.432Z"
 }
