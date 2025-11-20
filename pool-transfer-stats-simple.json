@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 444382538.4003623,
-    "totalTransactions": 164,
+    "totalTransferred": 446638886.62828106,
+    "totalTransactions": 168,
     "usersInvolved": 41,
-    "poolTotalRecords": 595,
+    "poolTotalRecords": 609,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -63,6 +63,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "zhengch",
+      "totalAmount": 10389095.584409434,
+      "transactionCount": 8
+    },
+    {
       "nickname": "老铁Bro",
       "totalAmount": 10200248.875473775,
       "transactionCount": 12
@@ -81,11 +86,6 @@
       "nickname": "光",
       "totalAmount": 9382787.519231804,
       "transactionCount": 22
-    },
-    {
-      "nickname": "zhengch",
-      "totalAmount": 8229433.749613255,
-      "transactionCount": 6
     },
     {
       "nickname": "东风（叶军民）",
@@ -114,8 +114,8 @@
     },
     {
       "nickname": "南方种植园",
-      "totalAmount": 5645179.976436581,
-      "transactionCount": 4
+      "totalAmount": 5741866.369559092,
+      "transactionCount": 6
     },
     {
       "nickname": "素雅",
@@ -213,5 +213,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T04:26:29.620Z"
+  "queryTime": "2025-11-20T04:48:23.000Z"
 }

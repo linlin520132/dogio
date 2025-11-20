@@ -359,10 +359,10 @@
         "currentBalances": [
           62432100.651159085,
           28788957.04370238,
-          27228942.376700573
+          25047511.230441805
         ],
-        "totalBalance": 118450000.07156205,
-        "percentage": -5.651518581969605
+        "totalBalance": 116268568.92530328,
+        "percentage": -7.389084777353013
       },
       {
         "nickname": "沙漠绿洲",
@@ -753,10 +753,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          101499674.81606919
+          110797214.28806917
         ],
-        "totalBalance": 101499674.81606919,
-        "percentage": 1.3821355413833436
+        "totalBalance": 110797214.28806917,
+        "percentage": 10.668908219815942
       },
       {
         "nickname": "一骑红尘",
@@ -1249,10 +1249,10 @@
         ],
         "initialBalanceTotal": 35000000,
         "currentBalances": [
-          24237026.552457202
+          24139365.564062744
         ],
-        "totalBalance": 24237026.552457202,
-        "percentage": -30.751352707265134
+        "totalBalance": 24139365.564062744,
+        "percentage": -31.03038410267787
       },
       {
         "nickname": "暂停的失忆",
@@ -1977,7 +1977,7 @@
         "percentage": 2.2690087055794788
       }
     ],
-    "lastUpdate": "2025-11-20T04:26:16.123Z",
+    "lastUpdate": "2025-11-20T04:48:07.134Z",
     "totalUsers": 155,
     "totalAddresses": 212
   }
