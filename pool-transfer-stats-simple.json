@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 746761742.7689328,
-    "totalTransactions": 260,
+    "totalTransferred": 746803506.0693114,
+    "totalTransactions": 262,
     "usersInvolved": 58,
-    "poolTotalRecords": 815,
+    "poolTotalRecords": 820,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -144,8 +144,8 @@
     },
     {
       "nickname": "光",
-      "totalAmount": 9443180.011890039,
-      "transactionCount": 24
+      "totalAmount": 9484943.312268522,
+      "transactionCount": 26
     },
     {
       "nickname": "树藤与海岛",
@@ -298,5 +298,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T22:50:29.161Z"
+  "queryTime": "2025-11-20T23:00:32.404Z"
 }
