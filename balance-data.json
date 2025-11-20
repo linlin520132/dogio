@@ -577,10 +577,10 @@
         ],
         "initialBalanceTotal": 107264302.27,
         "currentBalances": [
-          108476641.84168309
+          108677048.4187776
         ],
-        "totalBalance": 108476641.84168309,
-        "percentage": 1.1302358249918572
+        "totalBalance": 108677048.4187776,
+        "percentage": 1.3170701891310632
       },
       {
         "nickname": "小K",
@@ -1999,7 +1999,7 @@
         "percentage": 2.318455043079379
       }
     ],
-    "lastUpdate": "2025-11-20T22:40:11.302Z",
+    "lastUpdate": "2025-11-20T22:50:07.824Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
