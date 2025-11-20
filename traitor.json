@@ -84,5 +84,12 @@
             "0xf2f38c4eefbe10e4e57ca90e7d55539abc459816"
         ],
         "initialBalanceTotal": 100000000
+    },
+    {
+        "nickname": "神秘人",
+        "addresses": [
+            "0x239611ea0488b8a4bfe3b7dcd205baebd6c3a99f"
+        ],
+        "initialBalanceTotal": 309788246.54
     }
 ]

@@ -58,13 +58,6 @@
         "initialBalanceTotal": 354034708
     },
     {
-        "nickname": "神秘人",
-        "addresses": [
-            "0x239611ea0488b8a4bfe3b7dcd205baebd6c3a99f"
-        ],
-        "initialBalanceTotal": 309788246.54
-    },
-    {
         "nickname": "闲云",
         "addresses": [
             "0x6f58b15911cd025e0ee807704579480fb89b8a1c"
@@ -355,7 +348,8 @@
         "nickname": "无鱼",
         "addresses": [
             "0x6d46361ed4fbc6cc69766a8f61ab7765cf765ca2",
-            "0x98519325a97536de1f048673001fdefbf2c03009"
+            "0x98519325a97536de1f048673001fdefbf2c03009",
+            "0xf8fb3beccb0261af3acaec171235807981cbeb1b"
         ],
         "initialBalanceTotal": 105940786
     },
