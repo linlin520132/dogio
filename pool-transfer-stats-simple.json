@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 583506367.8844689,
-    "totalTransactions": 206,
+    "totalTransferred": 589128385.528751,
+    "totalTransactions": 208,
     "usersInvolved": 49,
-    "poolTotalRecords": 727,
+    "poolTotalRecords": 735,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -66,6 +66,11 @@
       "nickname": "上官允禾",
       "totalAmount": 12047889.130399,
       "transactionCount": 2
+    },
+    {
+      "nickname": "南方种植园",
+      "totalAmount": 11363884.01384137,
+      "transactionCount": 8
     },
     {
       "nickname": "大白",
@@ -131,11 +136,6 @@
       "nickname": "memecoin",
       "totalAmount": 5875773.695221078,
       "transactionCount": 2
-    },
-    {
-      "nickname": "南方种植园",
-      "totalAmount": 5741866.369559092,
-      "transactionCount": 6
     },
     {
       "nickname": "我",
@@ -253,5 +253,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T13:25:54.565Z"
+  "queryTime": "2025-11-20T13:50:51.395Z"
 }
