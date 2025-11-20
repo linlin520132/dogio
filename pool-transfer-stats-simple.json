@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 545022162.1150217,
-    "totalTransactions": 184,
-    "usersInvolved": 44,
-    "poolTotalRecords": 662,
+    "totalTransferred": 558041105.0683528,
+    "totalTransactions": 188,
+    "usersInvolved": 46,
+    "poolTotalRecords": 678,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -60,6 +60,11 @@
     {
       "nickname": "慕兮",
       "totalAmount": 14113932.722699175,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "上官允禾",
+      "totalAmount": 12047889.130399,
       "transactionCount": 2
     },
     {
@@ -178,6 +183,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "我",
+      "totalAmount": 971053.8229321464,
+      "transactionCount": 2
+    },
+    {
       "nickname": "仓位又不见了",
       "totalAmount": 862927.2068920817,
       "transactionCount": 4
@@ -228,5 +238,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T10:27:18.432Z"
+  "queryTime": "2025-11-20T10:49:47.228Z"
 }
