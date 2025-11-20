@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 432580361.78119224,
-    "totalTransactions": 158,
+    "totalTransferred": 434834304.43501854,
+    "totalTransactions": 160,
     "usersInvolved": 41,
-    "poolTotalRecords": 574,
+    "poolTotalRecords": 578,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -138,6 +138,11 @@
       "transactionCount": 4
     },
     {
+      "nickname": "金马影帝",
+      "totalAmount": 2421944.6114283595,
+      "transactionCount": 4
+    },
+    {
       "nickname": "小趴菜",
       "totalAmount": 2067685.7418307231,
       "transactionCount": 2
@@ -183,11 +188,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "金马影帝",
-      "totalAmount": 168001.9576020821,
-      "transactionCount": 2
-    },
-    {
       "nickname": "时迁",
       "totalAmount": 156716.92834971295,
       "transactionCount": 2
@@ -213,5 +213,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T02:08:18.673Z"
+  "queryTime": "2025-11-20T03:21:35.463Z"
 }
