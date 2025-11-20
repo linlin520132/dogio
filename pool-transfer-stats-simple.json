@@ -1,16 +1,16 @@
 {
   "summary": {
-    "totalTransferred": 589128385.528751,
-    "totalTransactions": 208,
+    "totalTransferred": 593995145.8761781,
+    "totalTransactions": 212,
     "usersInvolved": 49,
-    "poolTotalRecords": 735,
+    "poolTotalRecords": 744,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
     {
       "nickname": "哈密瓜",
-      "totalAmount": 113451311.01487525,
-      "transactionCount": 8
+      "totalAmount": 118164844.88458152,
+      "transactionCount": 10
     },
     {
       "nickname": "狂飚",
@@ -209,8 +209,8 @@
     },
     {
       "nickname": "真善美",
-      "totalAmount": 525371.546877731,
-      "transactionCount": 2
+      "totalAmount": 678598.0245984483,
+      "transactionCount": 4
     },
     {
       "nickname": "墨白",
@@ -253,5 +253,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T14:00:17.248Z"
+  "queryTime": "2025-11-20T14:25:49.849Z"
 }
