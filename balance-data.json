@@ -61,10 +61,10 @@
         "currentBalances": [
           162002779.703485,
           164845793.42148775,
-          142464059.43792632
+          142409292.6589655
         ],
-        "totalBalance": 469312632.5628991,
-        "percentage": -2.8911468620548946
+        "totalBalance": 469257865.7839383,
+        "percentage": -2.902479050293471
       },
       {
         "nickname": "狂飚",
@@ -481,10 +481,10 @@
         "initialBalanceTotal": 111491843,
         "currentBalances": [
           67931565.16402628,
-          25483964.484922305
+          19511543.052922305
         ],
-        "totalBalance": 93415529.64894858,
-        "percentage": -16.213126328041255
+        "totalBalance": 87443108.21694858,
+        "percentage": -21.569949994504455
       },
       {
         "nickname": "吴坚不摧",
@@ -815,10 +815,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          100267134.96403693
+          105164498.514464
         ],
-        "totalBalance": 100267134.96403693,
-        "percentage": 0.2671349640369266
+        "totalBalance": 105164498.514464,
+        "percentage": 5.1644985144640065
       },
       {
         "nickname": "上官允禾",
@@ -1999,7 +1999,7 @@
         "percentage": 2.318455043079379
       }
     ],
-    "lastUpdate": "2025-11-20T23:37:29.745Z",
+    "lastUpdate": "2025-11-20T23:50:54.242Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
