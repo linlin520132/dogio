@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 349500410.9528724,
-    "totalTransactions": 138,
-    "usersInvolved": 35,
-    "poolTotalRecords": 532,
+    "totalTransferred": 432580361.78119224,
+    "totalTransactions": 158,
+    "usersInvolved": 41,
+    "poolTotalRecords": 574,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -11,6 +11,11 @@
       "nickname": "哈密瓜",
       "totalAmount": 108158939.06113291,
       "transactionCount": 6
+    },
+    {
+      "nickname": "哪有赌狗天天输",
+      "totalAmount": 48373620.26415378,
+      "transactionCount": 2
     },
     {
       "nickname": "齐天大圣",
@@ -21,6 +26,11 @@
       "nickname": "韭菜人生",
       "totalAmount": 20925557.884618804,
       "transactionCount": 2
+    },
+    {
+      "nickname": "leezerofly",
+      "totalAmount": 20220519.821077503,
+      "transactionCount": 4
     },
     {
       "nickname": "小狗旺旺",
@@ -89,8 +99,8 @@
     },
     {
       "nickname": "吉姆熊猫",
-      "totalAmount": 5943205.410081319,
-      "transactionCount": 10
+      "totalAmount": 6230433.189063589,
+      "transactionCount": 12
     },
     {
       "nickname": "memecoin",
@@ -108,6 +118,16 @@
       "transactionCount": 6
     },
     {
+      "nickname": "逗霸",
+      "totalAmount": 4800338.987900999,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "Cassie",
+      "totalAmount": 4491728.336807049,
+      "transactionCount": 4
+    },
+    {
       "nickname": "星辰大海",
       "totalAmount": 2937769.0446289997,
       "transactionCount": 2
@@ -118,13 +138,28 @@
       "transactionCount": 4
     },
     {
+      "nickname": "小趴菜",
+      "totalAmount": 2067685.7418307231,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "大白",
+      "totalAmount": 1702307.6370369378,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "汽修",
+      "totalAmount": 1484613.0750429998,
+      "transactionCount": 4
+    },
+    {
       "nickname": "虚竹",
       "totalAmount": 1338951.0629150718,
       "transactionCount": 4
     },
     {
-      "nickname": "汽修",
-      "totalAmount": 1009734.150189,
+      "nickname": "打dog小兵3947068284",
+      "totalAmount": 1016931.2839425333,
       "transactionCount": 2
     },
     {
@@ -138,11 +173,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "Cassie",
-      "totalAmount": 452895.8556375919,
-      "transactionCount": 2
-    },
-    {
       "nickname": "墨白",
       "totalAmount": 254513.291419,
       "transactionCount": 2
@@ -150,6 +180,11 @@
     {
       "nickname": "喜乐人生",
       "totalAmount": 171389.92830370937,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "金马影帝",
+      "totalAmount": 168001.9576020821,
       "transactionCount": 2
     },
     {
@@ -173,15 +208,10 @@
       "transactionCount": 2
     },
     {
-      "nickname": "leezerofly",
-      "totalAmount": 70394.05023041635,
-      "transactionCount": 2
-    },
-    {
       "nickname": "追梦少年",
       "totalAmount": 54231.25008168486,
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T00:03:28.266Z"
+  "queryTime": "2025-11-20T02:08:18.673Z"
 }
