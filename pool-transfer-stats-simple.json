@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 446638886.62828106,
-    "totalTransactions": 168,
-    "usersInvolved": 41,
-    "poolTotalRecords": 609,
+    "totalTransferred": 516635109.8962377,
+    "totalTransactions": 170,
+    "usersInvolved": 42,
+    "poolTotalRecords": 619,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -11,6 +11,11 @@
       "nickname": "哈密瓜",
       "totalAmount": 108158939.06113291,
       "transactionCount": 6
+    },
+    {
+      "nickname": "狂飚",
+      "totalAmount": 69996223.26795663,
+      "transactionCount": 2
     },
     {
       "nickname": "哪有赌狗天天输",
@@ -213,5 +218,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T05:00:00.247Z"
+  "queryTime": "2025-11-20T05:24:33.761Z"
 }
