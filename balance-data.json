@@ -589,10 +589,10 @@
         ],
         "initialBalanceTotal": 106896928,
         "currentBalances": [
-          107989013.21865918
+          107217358.17845808
         ],
-        "totalBalance": 107989013.21865918,
-        "percentage": 1.021624511659659
+        "totalBalance": 107217358.17845808,
+        "percentage": 0.29975620857699453
       },
       {
         "nickname": "小小",
@@ -971,10 +971,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          74334350.08582383
+          74422329.69768094
         ],
-        "totalBalance": 74334350.08582383,
-        "percentage": 18.846519311507283
+        "totalBalance": 74422329.69768094,
+        "percentage": 18.987182014921274
       },
       {
         "nickname": "未来(๑]؂[๑）都是晴天",
@@ -1801,10 +1801,10 @@
         ],
         "initialBalanceTotal": 20914636.2,
         "currentBalances": [
-          21172333.61346222
+          21177999.46982805
         ],
-        "totalBalance": 21172333.61346222,
-        "percentage": 1.2321391153924142
+        "totalBalance": 21177999.46982805,
+        "percentage": 1.2592295046855817
       },
       {
         "nickname": "Leon",
@@ -1999,7 +1999,7 @@
         "percentage": 2.318455043079379
       }
     ],
-    "lastUpdate": "2025-11-20T16:00:36.947Z",
+    "lastUpdate": "2025-11-20T16:33:36.189Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
