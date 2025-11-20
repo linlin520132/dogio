@@ -1507,10 +1507,10 @@
         ],
         "initialBalanceTotal": 25000000,
         "currentBalances": [
-          50763614.59568663
+          57426712.87059797
         ],
-        "totalBalance": 50763614.59568663,
-        "percentage": 103.05445838274652
+        "totalBalance": 57426712.87059797,
+        "percentage": 129.7068514823919
       },
       {
         "nickname": "子玲",
@@ -1989,7 +1989,7 @@
         "percentage": 2.2690087055794788
       }
     ],
-    "lastUpdate": "2025-11-20T09:46:02.728Z",
+    "lastUpdate": "2025-11-20T10:00:01.911Z",
     "totalUsers": 156,
     "totalAddresses": 213
   }
