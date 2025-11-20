@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 529101465.70684904,
-    "totalTransactions": 176,
-    "usersInvolved": 43,
-    "poolTotalRecords": 634,
+    "totalTransferred": 539394806.0223627,
+    "totalTransactions": 182,
+    "usersInvolved": 44,
+    "poolTotalRecords": 648,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -35,6 +35,11 @@
     {
       "nickname": "leezerofly",
       "totalAmount": 20220519.821077503,
+      "transactionCount": 4
+    },
+    {
+      "nickname": "2025国泰民安",
+      "totalAmount": 19534919.272074148,
       "transactionCount": 4
     },
     {
@@ -74,8 +79,8 @@
     },
     {
       "nickname": "老铁Bro",
-      "totalAmount": 10200248.875473775,
-      "transactionCount": 12
+      "totalAmount": 10252986.554041885,
+      "transactionCount": 14
     },
     {
       "nickname": "☁️",
@@ -85,11 +90,6 @@
     {
       "nickname": "锋人院",
       "totalAmount": 9926361.431931734,
-      "transactionCount": 2
-    },
-    {
-      "nickname": "2025国泰民安",
-      "totalAmount": 9819688.182006354,
       "transactionCount": 2
     },
     {
@@ -183,6 +183,11 @@
       "transactionCount": 4
     },
     {
+      "nickname": "真善美",
+      "totalAmount": 525371.546877731,
+      "transactionCount": 2
+    },
+    {
       "nickname": "追梦人",
       "totalAmount": 471049.0398324857,
       "transactionCount": 2
@@ -223,5 +228,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T08:00:45.410Z"
+  "queryTime": "2025-11-20T08:35:08.619Z"
 }

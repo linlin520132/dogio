@@ -209,10 +209,10 @@
         "initialBalanceTotal": 205343380,
         "currentBalances": [
           94114116.36010708,
-          101175890.82176206
+          91362732.29326934
         ],
-        "totalBalance": 195290007.18186915,
-        "percentage": -4.895883577123768
+        "totalBalance": 185476848.6533764,
+        "percentage": -9.674785399277834
       },
       {
         "nickname": "屁屁",
@@ -567,14 +567,14 @@
         ],
         "initialBalanceTotal": 107990248,
         "currentBalances": [
-          9227285.162704661,
+          9174015.899940914,
           21525410.270810794,
           23637708.926301792,
           25786906.073356334,
           19404680.75915962
         ],
-        "totalBalance": 99581991.1923332,
-        "percentage": -7.7861260284047065
+        "totalBalance": 99528721.92956945,
+        "percentage": -7.835453873974386
       },
       {
         "nickname": "一個太陽",
@@ -1871,6 +1871,18 @@
         "percentage": 0.7509646307523505
       },
       {
+        "nickname": "真善美",
+        "addresses": [
+          "0xafd4b7762b4c7f70fe022c0db9564d2d33ec1e40"
+        ],
+        "initialBalanceTotal": 20173002,
+        "currentBalances": [
+          20173002.74386461
+        ],
+        "totalBalance": 20173002.74386461,
+        "percentage": 0.000003687426446451581
+      },
+      {
         "nickname": "喜乐人生",
         "addresses": [
           "0xee642b9ac75e47dc55b93a706782abab9a7e4a8e"
@@ -1977,8 +1989,8 @@
         "percentage": 2.2690087055794788
       }
     ],
-    "lastUpdate": "2025-11-20T08:00:30.153Z",
-    "totalUsers": 155,
-    "totalAddresses": 212
+    "lastUpdate": "2025-11-20T08:34:51.423Z",
+    "totalUsers": 156,
+    "totalAddresses": 213
   }
 }
