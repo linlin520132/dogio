@@ -515,10 +515,10 @@
         ],
         "initialBalanceTotal": 110000000,
         "currentBalances": [
-          114236369.10809791
+          108467860.55035844
         ],
-        "totalBalance": 114236369.10809791,
-        "percentage": 3.8512446437253733
+        "totalBalance": 108467860.55035844,
+        "percentage": -1.3928540451286868
       },
       {
         "nickname": "小柒柒",
@@ -1989,7 +1989,7 @@
         "percentage": 2.2690087055794788
       }
     ],
-    "lastUpdate": "2025-11-20T10:49:30.512Z",
+    "lastUpdate": "2025-11-20T10:59:39.177Z",
     "totalUsers": 156,
     "totalAddresses": 213
   }
