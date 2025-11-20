@@ -257,10 +257,10 @@
         "initialBalanceTotal": 186210563,
         "currentBalances": [
           116758586.44913635,
-          50472824.32439697
+          50528441.91548275
         ],
-        "totalBalance": 167231410.7735333,
-        "percentage": -10.19230698876448
+        "totalBalance": 167287028.3646191,
+        "percentage": -10.162438870549408
       },
       {
         "nickname": "吉姆熊猫",
@@ -527,10 +527,10 @@
         ],
         "initialBalanceTotal": 110000000,
         "currentBalances": [
-          112371105.4177334
+          112400158.19881211
         ],
-        "totalBalance": 112371105.4177334,
-        "percentage": 2.155550379757637
+        "totalBalance": 112400158.19881211,
+        "percentage": 2.181961998920102
       },
       {
         "nickname": "郁姐",
@@ -1045,10 +1045,10 @@
         ],
         "initialBalanceTotal": 50762682,
         "currentBalances": [
-          51541414.32740207
+          51620039.329195075
         ],
-        "totalBalance": 51541414.32740207,
-        "percentage": 1.5340645858744621
+        "totalBalance": 51620039.329195075,
+        "percentage": 1.6889519927159775
       },
       {
         "nickname": "金马影帝",
@@ -1093,10 +1093,10 @@
         ],
         "initialBalanceTotal": 45262963,
         "currentBalances": [
-          43714376.93413136
+          43810036.582392484
         ],
-        "totalBalance": 43714376.93413136,
-        "percentage": -3.421309528208832
+        "totalBalance": 43810036.582392484,
+        "percentage": -3.2099675348419323
       },
       {
         "nickname": "天雨",
@@ -1421,10 +1421,10 @@
         ],
         "initialBalanceTotal": 27986507,
         "currentBalances": [
-          28211337.815966412
+          28286032.70692262
         ],
-        "totalBalance": 28211337.815966412,
-        "percentage": 0.8033543305937123
+        "totalBalance": 28286032.70692262,
+        "percentage": 1.0702504136104607
       },
       {
         "nickname": "细雨飞撒",
@@ -1977,7 +1977,7 @@
         "percentage": 2.2690087055794788
       }
     ],
-    "lastUpdate": "2025-11-20T05:54:38.984Z",
+    "lastUpdate": "2025-11-20T06:33:12.754Z",
     "totalUsers": 155,
     "totalAddresses": 212
   }
