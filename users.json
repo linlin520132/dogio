@@ -490,14 +490,6 @@
         "initialBalanceTotal": 100000000
     },
     {
-        "nickname": "会飞的小猪",
-        "addresses": [
-            "0x45d0db9b652b64a557d5f5251dfcd559ff9cb3fb",
-            "0xf2f38c4eefbe10e4e57ca90e7d55539abc459816"
-        ],
-        "initialBalanceTotal": 100000000
-    },
-    {
         "nickname": "跑步二十天",
         "addresses": [
             "0xd65d8de84ce7d92dd97511910233bc10731d8fd0"

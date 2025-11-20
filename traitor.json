@@ -76,5 +76,13 @@
             "0x5bc535157bd630410feb6b133ff5a4eead0f6da0"
         ],
         "initialBalanceTotal": 115680242
+    },
+    {
+        "nickname": "会飞的小猪",
+        "addresses": [
+            "0x45d0db9b652b64a557d5f5251dfcd559ff9cb3fb",
+            "0xf2f38c4eefbe10e4e57ca90e7d55539abc459816"
+        ],
+        "initialBalanceTotal": 100000000
     }
 ]

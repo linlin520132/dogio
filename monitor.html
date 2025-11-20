@@ -594,7 +594,38 @@
         // 渲染排序后的表格
         function renderSortedTable(tab = currentTab) {
             const state = sortState[tab];
-            let usersToRender = tab === 'large' ? [...usersLarge] : [...usersSmall];
+            // 获取所有用户，然后基于调整后的持仓合计重新分组
+            let allUsers = [...usersLarge, ...usersSmall];
+            const threshold = 100000000; // 1亿
+
+            // 重新计算每个用户的调整后余额
+            allUsers.forEach(user => {
+                const poolAddedAmount = poolTransferData[user.nickname] || 0;
+                user.adjustedTotalBalance = user.totalBalance + poolAddedAmount;
+            });
+
+            // 基于调整后的余额重新分组
+            let usersToRender;
+            let largeCount = 0;
+            let smallCount = 0;
+
+            allUsers.forEach(user => {
+                if (user.adjustedTotalBalance >= threshold) {
+                    largeCount++;
+                } else {
+                    smallCount++;
+                }
+            });
+
+            if (tab === 'large') {
+                usersToRender = allUsers.filter(user => user.adjustedTotalBalance >= threshold);
+            } else {
+                usersToRender = allUsers.filter(user => user.adjustedTotalBalance < threshold);
+            }
+
+            // 更新Tab计数
+            tabLargeCount.textContent = `(${largeCount})`;
+            tabSmallCount.textContent = `(${smallCount})`;
 
             // 如果有搜索关键词，先过滤
             if (searchKeyword.trim()) {
@@ -932,6 +963,10 @@
                 }
 
                 console.log('转账数据加载完成，涉及用户数:', Object.keys(poolTransferData).length);
+
+                // 转账数据加载完成后，重新渲染表格以应用新的分组逻辑
+                renderSortedTable('large');
+                renderSortedTable('small');
             } catch (error) {
                 console.warn('加载转账数据失败:', error);
                 poolTransferData = {};
