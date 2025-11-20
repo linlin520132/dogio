@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 434834304.43501854,
-    "totalTransactions": 160,
+    "totalTransferred": 434840428.5178372,
+    "totalTransactions": 162,
     "usersInvolved": 41,
-    "poolTotalRecords": 578,
+    "poolTotalRecords": 591,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -99,8 +99,8 @@
     },
     {
       "nickname": "吉姆熊猫",
-      "totalAmount": 6230433.189063589,
-      "transactionCount": 12
+      "totalAmount": 6236557.271882298,
+      "transactionCount": 14
     },
     {
       "nickname": "memecoin",
@@ -213,5 +213,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T03:21:35.463Z"
+  "queryTime": "2025-11-20T03:56:08.902Z"
 }
