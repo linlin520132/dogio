@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 712615384.7885926,
-    "totalTransactions": 248,
-    "usersInvolved": 56,
-    "poolTotalRecords": 773,
+    "totalTransferred": 722900458.9724418,
+    "totalTransactions": 254,
+    "usersInvolved": 57,
+    "poolTotalRecords": 787,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -34,8 +34,8 @@
     },
     {
       "nickname": "韭菜人生",
-      "totalAmount": 23259224.915612184,
-      "transactionCount": 4
+      "totalAmount": 31745429.00424824,
+      "transactionCount": 6
     },
     {
       "nickname": "leezerofly",
@@ -213,6 +213,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "仓位又不见了",
+      "totalAmount": 1897842.7321712924,
+      "transactionCount": 6
+    },
+    {
       "nickname": "汽修",
       "totalAmount": 1484613.0750429998,
       "transactionCount": 4
@@ -233,9 +238,9 @@
       "transactionCount": 4
     },
     {
-      "nickname": "仓位又不见了",
-      "totalAmount": 862927.2068920817,
-      "transactionCount": 4
+      "nickname": "小K",
+      "totalAmount": 763954.5699340971,
+      "transactionCount": 2
     },
     {
       "nickname": "真善美",
@@ -288,5 +293,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T15:48:22.677Z"
+  "queryTime": "2025-11-20T16:00:56.301Z"
 }
