@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 519281777.5248427,
-    "totalTransactions": 174,
-    "usersInvolved": 42,
-    "poolTotalRecords": 629,
+    "totalTransferred": 529101465.70684904,
+    "totalTransactions": 176,
+    "usersInvolved": 43,
+    "poolTotalRecords": 634,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -85,6 +85,11 @@
     {
       "nickname": "锋人院",
       "totalAmount": 9926361.431931734,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "2025国泰民安",
+      "totalAmount": 9819688.182006354,
       "transactionCount": 2
     },
     {
@@ -218,5 +223,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T07:39:02.291Z"
+  "queryTime": "2025-11-20T07:50:19.098Z"
 }
