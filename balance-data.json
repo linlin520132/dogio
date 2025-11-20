@@ -589,10 +589,10 @@
         ],
         "initialBalanceTotal": 106896928,
         "currentBalances": [
-          107217358.17845808
+          102418593.19482078
         ],
-        "totalBalance": 107217358.17845808,
-        "percentage": 0.29975620857699453
+        "totalBalance": 102418593.19482078,
+        "percentage": -4.189395232367411
       },
       {
         "nickname": "小小",
@@ -1762,11 +1762,11 @@
         ],
         "initialBalanceTotal": 21190777.8431,
         "currentBalances": [
-          10968519.085495934,
-          10467346.358917417
+          10976967.631657114,
+          10475457.944944328
         ],
-        "totalBalance": 21435865.44441335,
-        "percentage": 1.1565767105295413
+        "totalBalance": 21452425.576601442,
+        "percentage": 1.234724536488111
       },
       {
         "nickname": "翡翠遗失在巴拉瑞",
@@ -1999,7 +1999,7 @@
         "percentage": 2.318455043079379
       }
     ],
-    "lastUpdate": "2025-11-20T16:33:36.189Z",
+    "lastUpdate": "2025-11-20T16:57:01.902Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
