@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 732401942.8358027,
-    "totalTransactions": 258,
+    "totalTransferred": 746761742.7689328,
+    "totalTransactions": 260,
     "usersInvolved": 58,
-    "poolTotalRecords": 796,
+    "poolTotalRecords": 801,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -50,6 +50,11 @@
     {
       "nickname": "2025国泰民安",
       "totalAmount": 19534919.272074148,
+      "transactionCount": 4
+    },
+    {
+      "nickname": "清雅",
+      "totalAmount": 19110406.462688997,
       "transactionCount": 4
     },
     {
@@ -193,11 +198,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "清雅",
-      "totalAmount": 4750606.529558999,
-      "transactionCount": 2
-    },
-    {
       "nickname": "Cassie",
       "totalAmount": 4491728.336807049,
       "transactionCount": 4
@@ -298,5 +298,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T17:37:20.338Z"
+  "queryTime": "2025-11-20T17:51:20.287Z"
 }
