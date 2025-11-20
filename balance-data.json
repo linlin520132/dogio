@@ -398,11 +398,11 @@
         ],
         "initialBalanceTotal": 119725915,
         "currentBalances": [
-          55449907.91113048,
+          55464344.002229676,
           66324797.829192884
         ],
-        "totalBalance": 121774705.74032336,
-        "percentage": 1.711234147029375
+        "totalBalance": 121789141.83142257,
+        "percentage": 1.7232917630427527
       },
       {
         "nickname": "貳大爺",
@@ -1977,7 +1977,7 @@
         "percentage": 2.2690087055794788
       }
     ],
-    "lastUpdate": "2025-11-20T05:44:04.676Z",
+    "lastUpdate": "2025-11-20T05:54:38.984Z",
     "totalUsers": 155,
     "totalAddresses": 212
   }
