@@ -498,9 +498,12 @@
                 totalUsersEl.textContent = data.totalUsers;
             }
 
-            // 计算并更新当前总持仓
+            // 计算并更新当前总持仓（包含加池子的DOG数量）
             if (data.users && data.users.length > 0) {
-                const totalBalance = data.users.reduce((sum, user) => sum + (user.totalBalance || 0), 0);
+                const totalBalance = data.users.reduce((sum, user) => {
+                    const poolAddedAmount = poolTransferData[user.nickname] || 0;
+                    return sum + (user.totalBalance || 0) + poolAddedAmount;
+                }, 0);
                 totalBalanceEl.textContent = Math.round(totalBalance).toLocaleString();
             }
         }
