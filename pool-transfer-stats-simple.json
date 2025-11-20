@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 603630886.7827413,
-    "totalTransactions": 216,
-    "usersInvolved": 51,
-    "poolTotalRecords": 752,
+    "totalTransferred": 693070475.2419378,
+    "totalTransactions": 236,
+    "usersInvolved": 53,
+    "poolTotalRecords": 757,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -16,6 +16,11 @@
       "nickname": "狂飚",
       "totalAmount": 69996223.26795663,
       "transactionCount": 2
+    },
+    {
+      "nickname": "吴坚不摧",
+      "totalAmount": 49317749.67447042,
+      "transactionCount": 8
     },
     {
       "nickname": "哪有赌狗天天输",
@@ -38,6 +43,11 @@
       "transactionCount": 4
     },
     {
+      "nickname": "貳大爺",
+      "totalAmount": 19966233.378077,
+      "transactionCount": 4
+    },
+    {
       "nickname": "2025国泰民安",
       "totalAmount": 19534919.272074148,
       "transactionCount": 4
@@ -51,6 +61,11 @@
       "nickname": "以马内利",
       "totalAmount": 18878223.68540386,
       "transactionCount": 8
+    },
+    {
+      "nickname": "东风（叶军民）",
+      "totalAmount": 17662743.504035,
+      "transactionCount": 10
     },
     {
       "nickname": "斯奈夫",
@@ -103,6 +118,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "无鱼",
+      "totalAmount": 9801204.651604,
+      "transactionCount": 2
+    },
+    {
       "nickname": "旺旺",
       "totalAmount": 9754445.352154927,
       "transactionCount": 2
@@ -116,11 +136,6 @@
       "nickname": "光",
       "totalAmount": 9443180.011890039,
       "transactionCount": 24
-    },
-    {
-      "nickname": "东风（叶军民）",
-      "totalAmount": 7483989.026308,
-      "transactionCount": 4
     },
     {
       "nickname": "树藤与海岛",
@@ -218,14 +233,14 @@
       "transactionCount": 4
     },
     {
+      "nickname": "城",
+      "totalAmount": 527766.4762195951,
+      "transactionCount": 6
+    },
+    {
       "nickname": "墨白",
       "totalAmount": 254513.291419,
       "transactionCount": 2
-    },
-    {
-      "nickname": "城",
-      "totalAmount": 224950.14359639,
-      "transactionCount": 4
     },
     {
       "nickname": "喜乐人生",
@@ -235,11 +250,6 @@
     {
       "nickname": "时迁",
       "totalAmount": 156716.92834971295,
-      "transactionCount": 2
-    },
-    {
-      "nickname": "貳大爺",
-      "totalAmount": 127170.05530533422,
       "transactionCount": 2
     },
     {
@@ -263,5 +273,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T14:59:38.152Z"
+  "queryTime": "2025-11-20T15:25:16.644Z"
 }
