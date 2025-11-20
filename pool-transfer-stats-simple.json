@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 693070475.2419378,
-    "totalTransactions": 236,
-    "usersInvolved": 53,
-    "poolTotalRecords": 757,
+    "totalTransferred": 712615384.7885926,
+    "totalTransactions": 248,
+    "usersInvolved": 56,
+    "poolTotalRecords": 773,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -34,8 +34,8 @@
     },
     {
       "nickname": "韭菜人生",
-      "totalAmount": 20925557.884618804,
-      "transactionCount": 2
+      "totalAmount": 23259224.915612184,
+      "transactionCount": 4
     },
     {
       "nickname": "leezerofly",
@@ -83,6 +83,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "zhengch",
+      "totalAmount": 11760995.08171638,
+      "transactionCount": 10
+    },
+    {
       "nickname": "南方种植园",
       "totalAmount": 11363884.01384137,
       "transactionCount": 8
@@ -98,11 +103,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "zhengch",
-      "totalAmount": 10389095.584409434,
-      "transactionCount": 8
-    },
-    {
       "nickname": "老铁Bro",
       "totalAmount": 10252986.554041885,
       "transactionCount": 14
@@ -115,6 +115,11 @@
     {
       "nickname": "锋人院",
       "totalAmount": 9926361.431931734,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "DOG王",
+      "totalAmount": 9863316.194720056,
       "transactionCount": 2
     },
     {
@@ -156,6 +161,11 @@
       "nickname": "memecoin",
       "totalAmount": 5875773.695221078,
       "transactionCount": 2
+    },
+    {
+      "nickname": "成成",
+      "totalAmount": 5854662.087321212,
+      "transactionCount": 4
     },
     {
       "nickname": "我",
@@ -253,6 +263,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "LV",
+      "totalAmount": 121364.73631344123,
+      "transactionCount": 2
+    },
+    {
       "nickname": "如果 爱",
       "totalAmount": 74798.28000809246,
       "transactionCount": 2
@@ -273,5 +288,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T15:25:16.644Z"
+  "queryTime": "2025-11-20T15:48:22.677Z"
 }
