@@ -183,10 +183,10 @@
         ],
         "initialBalanceTotal": 243000000,
         "currentBalances": [
-          244261354.43101248
+          234623059.8420104
         ],
-        "totalBalance": 244261354.43101248,
-        "percentage": 0.5190758975360006
+        "totalBalance": 234623059.8420104,
+        "percentage": -3.447300476538927
       },
       {
         "nickname": "Zhong-zheng Cai",
@@ -1249,10 +1249,10 @@
         ],
         "initialBalanceTotal": 35000000,
         "currentBalances": [
-          24337026.552457202
+          24237026.552457202
         ],
-        "totalBalance": 24337026.552457202,
-        "percentage": -30.46563842155085
+        "totalBalance": 24237026.552457202,
+        "percentage": -30.751352707265134
       },
       {
         "nickname": "暂停的失忆",
@@ -1977,7 +1977,7 @@
         "percentage": 2.2690087055794788
       }
     ],
-    "lastUpdate": "2025-11-20T03:55:54.959Z",
+    "lastUpdate": "2025-11-20T04:26:16.123Z",
     "totalUsers": 155,
     "totalAddresses": 212
   }
