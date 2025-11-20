@@ -1081,6 +1081,13 @@
         "initialBalanceTotal": 20184078
     },
     {
+        "nickname": "真善美",
+        "addresses": [
+            "0xafd4b7762b4c7f70fe022c0db9564d2d33ec1e40"
+        ],
+        "initialBalanceTotal": 20173002
+    },
+    {
         "nickname": "喜乐人生",
         "addresses": [
             "0xee642b9ac75e47dc55b93a706782abab9a7e4a8e"
