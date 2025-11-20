@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 577827812.3895658,
-    "totalTransactions": 194,
-    "usersInvolved": 47,
-    "poolTotalRecords": 694,
+    "totalTransferred": 583378408.9713653,
+    "totalTransactions": 202,
+    "usersInvolved": 49,
+    "poolTotalRecords": 719,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -148,6 +148,11 @@
       "transactionCount": 6
     },
     {
+      "nickname": "天雨",
+      "totalAmount": 5015120.425460434,
+      "transactionCount": 4
+    },
+    {
       "nickname": "逗霸",
       "totalAmount": 4800338.987900999,
       "transactionCount": 2
@@ -193,6 +198,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "追梦人",
+      "totalAmount": 874495.6590215686,
+      "transactionCount": 4
+    },
+    {
       "nickname": "仓位又不见了",
       "totalAmount": 862927.2068920817,
       "transactionCount": 4
@@ -200,11 +210,6 @@
     {
       "nickname": "真善美",
       "totalAmount": 525371.546877731,
-      "transactionCount": 2
-    },
-    {
-      "nickname": "追梦人",
-      "totalAmount": 471049.0398324857,
       "transactionCount": 2
     },
     {
@@ -220,6 +225,11 @@
     {
       "nickname": "时迁",
       "totalAmount": 156716.92834971295,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "城",
+      "totalAmount": 132029.5371498531,
       "transactionCount": 2
     },
     {
@@ -243,5 +253,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T12:00:02.160Z"
+  "queryTime": "2025-11-20T12:45:06.076Z"
 }
