@@ -359,7 +359,8 @@
     {
         "nickname": "成成",
         "addresses": [
-            "0x983191d9Ad653C0fD00DCA01AA6fa9165bA3Abfc"
+            "0x983191d9Ad653C0fD00DCA01AA6fa9165bA3Abfc",
+            "0xbE2A9850f49B763782384990C4B3f73Ab489ab49"
         ],
         "initialBalanceTotal": 105736479
     },
