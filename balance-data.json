@@ -947,10 +947,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          95073448.80284609
+          95098213.47324486
         ],
-        "totalBalance": 95073448.80284609,
-        "percentage": 9.137772360218147
+        "totalBalance": 95098213.47324486,
+        "percentage": 9.166200496512662
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4175168118806734
       }
     ],
-    "lastUpdate": "2025-11-21T15:23:03.837Z",
+    "lastUpdate": "2025-11-21T15:36:13.264Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
