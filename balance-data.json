@@ -775,10 +775,10 @@
         ],
         "initialBalanceTotal": 100041389.75,
         "currentBalances": [
-          96162904.33211842
+          92814174.33211842
         ],
-        "totalBalance": 96162904.33211842,
-        "percentage": -3.8768807866162
+        "totalBalance": 92814174.33211842,
+        "percentage": -7.224225329078436
       },
       {
         "nickname": "DOG王",
@@ -1999,7 +1999,7 @@
         "percentage": 2.3685953691361057
       }
     ],
-    "lastUpdate": "2025-11-21T05:49:44.975Z",
+    "lastUpdate": "2025-11-21T06:00:19.830Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
