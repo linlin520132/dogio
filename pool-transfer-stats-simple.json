@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 760752760.6657157,
-    "totalTransactions": 276,
+    "totalTransferred": 767919034.6282024,
+    "totalTransactions": 282,
     "usersInvolved": 59,
-    "poolTotalRecords": 849,
+    "poolTotalRecords": 870,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -148,6 +148,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "清",
+      "totalAmount": 6765031.648522518,
+      "transactionCount": 4
+    },
+    {
       "nickname": "树藤与海岛",
       "totalAmount": 6677180.595648999,
       "transactionCount": 2
@@ -239,8 +244,8 @@
     },
     {
       "nickname": "打dog小兵3947068284",
-      "totalAmount": 1016931.2839425333,
-      "transactionCount": 2
+      "totalAmount": 1319740.029580603,
+      "transactionCount": 4
     },
     {
       "nickname": "追梦人",
@@ -259,8 +264,8 @@
     },
     {
       "nickname": "墨白",
-      "totalAmount": 254513.291419,
-      "transactionCount": 2
+      "totalAmount": 426098.029558,
+      "transactionCount": 4
     },
     {
       "nickname": "努力赚钱",
@@ -288,11 +293,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "清",
-      "totalAmount": 73151.16981259137,
-      "transactionCount": 2
-    },
-    {
       "nickname": "追梦少年",
       "totalAmount": 54231.25008168486,
       "transactionCount": 2
@@ -303,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-21T00:00:50.656Z"
+  "queryTime": "2025-11-21T01:45:10.525Z"
 }
