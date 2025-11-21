@@ -257,10 +257,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          170280545.0450201
+          163739536.21060875
         ],
-        "totalBalance": 170280545.0450201,
-        "percentage": -2.5576938122467516
+        "totalBalance": 163739536.21060875,
+        "percentage": -6.300757856650631
       },
       {
         "nickname": "黄药师",
@@ -427,10 +427,10 @@
         ],
         "initialBalanceTotal": 118478429,
         "currentBalances": [
-          120104933.0372173
+          107318374.8012173
         ],
-        "totalBalance": 120104933.0372173,
-        "percentage": 1.372827147477879
+        "totalBalance": 107318374.8012173,
+        "percentage": -9.419481920023347
       },
       {
         "nickname": "东风（叶军民）",
@@ -1999,7 +1999,7 @@
         "percentage": 2.3685953691361057
       }
     ],
-    "lastUpdate": "2025-11-21T05:04:24.725Z",
+    "lastUpdate": "2025-11-21T05:33:36.058Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }

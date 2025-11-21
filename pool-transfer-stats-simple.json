@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 806065745.5357492,
-    "totalTransactions": 292,
-    "usersInvolved": 60,
-    "poolTotalRecords": 902,
+    "totalTransferred": 825200391.5001924,
+    "totalTransactions": 296,
+    "usersInvolved": 61,
+    "poolTotalRecords": 910,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -85,6 +85,16 @@
     {
       "nickname": "慕兮",
       "totalAmount": 14113932.722699175,
+      "transactionCount": 2
+    },
+    {
+      "nickname": "吉姆熊猫",
+      "totalAmount": 12747314.314343434,
+      "transactionCount": 18
+    },
+    {
+      "nickname": "星星之火",
+      "totalAmount": 12658927.228639001,
       "transactionCount": 2
     },
     {
@@ -171,11 +181,6 @@
       "nickname": "一骑红尘",
       "totalAmount": 6560769.759182643,
       "transactionCount": 4
-    },
-    {
-      "nickname": "吉姆熊猫",
-      "totalAmount": 6271595.578539178,
-      "transactionCount": 16
     },
     {
       "nickname": "memecoin",
@@ -308,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-21T05:04:48.196Z"
+  "queryTime": "2025-11-21T05:34:00.257Z"
 }
