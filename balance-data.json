@@ -1689,10 +1689,10 @@
         ],
         "initialBalanceTotal": 21926838,
         "currentBalances": [
-          22112651.231134046
+          22118798.8668683
         ],
-        "totalBalance": 22112651.231134046,
-        "percentage": 0.847423742237918
+        "totalBalance": 22118798.8668683,
+        "percentage": 0.8754607794717073
       },
       {
         "nickname": "嘟嘟",
@@ -1937,10 +1937,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          24874309.06835723
+          25048617.378357228
         ],
-        "totalBalance": 24874309.06835723,
-        "percentage": 24.371545341786145
+        "totalBalance": 25048617.378357228,
+        "percentage": 25.243086891786138
       },
       {
         "nickname": "小趴菜",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4175168118806734
       }
     ],
-    "lastUpdate": "2025-11-21T15:59:45.288Z",
+    "lastUpdate": "2025-11-21T16:29:41.133Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
