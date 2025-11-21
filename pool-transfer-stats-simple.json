@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 825200391.5001924,
-    "totalTransactions": 296,
+    "totalTransferred": 828515697.4205325,
+    "totalTransactions": 298,
     "usersInvolved": 61,
-    "poolTotalRecords": 910,
+    "poolTotalRecords": 915,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -148,6 +148,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "一骑红尘",
+      "totalAmount": 9876075.679522643,
+      "transactionCount": 6
+    },
+    {
       "nickname": "DOG王",
       "totalAmount": 9863316.194720056,
       "transactionCount": 2
@@ -176,11 +181,6 @@
       "nickname": "树藤与海岛",
       "totalAmount": 6677180.595648999,
       "transactionCount": 2
-    },
-    {
-      "nickname": "一骑红尘",
-      "totalAmount": 6560769.759182643,
-      "transactionCount": 4
     },
     {
       "nickname": "memecoin",
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-21T05:34:00.257Z"
+  "queryTime": "2025-11-21T05:50:08.434Z"
 }
