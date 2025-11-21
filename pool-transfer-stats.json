@@ -3,7 +3,7 @@
     "totalTransferred": 901382141.7358747,
     "totalTransactions": 308,
     "usersInvolved": 61,
-    "poolTotalRecords": 974,
+    "poolTotalRecords": 978,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -6288,6 +6288,82 @@
     }
   ],
   "poolTransfers": [
+    {
+      "txId": "0x6a1d7615945cc065de6af29f171c1673b7d49ce2ff416543f1fb2adb8b8d4e25",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x20213e359bc039114cd762d165ddf12755112b94f84fb2eef0c8f89018e6cabf",
+      "height": "44977938",
+      "transactionTime": "1763746974000",
+      "from": "0x6392b37404e5c2609a19445bf91b71e699a3f98f",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "1.242992",
+      "transactionSymbol": "USD₮0",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0x6a1d7615945cc065de6af29f171c1673b7d49ce2ff416543f1fb2adb8b8d4e25",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x20213e359bc039114cd762d165ddf12755112b94f84fb2eef0c8f89018e6cabf",
+      "height": "44977938",
+      "transactionTime": "1763746974000",
+      "from": "0x6392b37404e5c2609a19445bf91b71e699a3f98f",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "63590.18343013288",
+      "transactionSymbol": "DOG",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x903358faf7c6304afbd560e9e29b12ab1b8fddc5",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0x6a1d7615945cc065de6af29f171c1673b7d49ce2ff416543f1fb2adb8b8d4e25",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x20213e359bc039114cd762d165ddf12755112b94f84fb2eef0c8f89018e6cabf",
+      "height": "44977938",
+      "transactionTime": "1763746974000",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "63590.18343013288",
+      "transactionSymbol": "DIVIDEND_TRACKER",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0xc8113a5afc37a8c9772bd22c4fbf79a07f1a48a0",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0x6a1d7615945cc065de6af29f171c1673b7d49ce2ff416543f1fb2adb8b8d4e25",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x20213e359bc039114cd762d165ddf12755112b94f84fb2eef0c8f89018e6cabf",
+      "height": "44977938",
+      "transactionTime": "1763746974000",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "63590.18343013288",
+      "transactionSymbol": "DIVIDEND_TRACKER",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x942916f487bdfd9b9f8b7fc3f54d03919e867dff",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
     {
       "txId": "0x7022a59884c564d7a6c87e80f2044e03e666cc6d864e801edffc97131ad3085b",
       "methodId": "0xe8e33700",
@@ -24795,5 +24871,5 @@
       "l1OriginHash": ""
     }
   ],
-  "queryTime": "2025-11-21T17:25:40.496Z"
+  "queryTime": "2025-11-21T17:45:08.917Z"
 }
