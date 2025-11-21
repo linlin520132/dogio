@@ -305,10 +305,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          145897057.2492512
+          145905606.4728335
         ],
-        "totalBalance": 145897057.2492512,
-        "percentage": 4.212183749465134
+        "totalBalance": 145905606.4728335,
+        "percentage": 4.218290337738225
       },
       {
         "nickname": "韭菜人生",
@@ -1999,7 +1999,7 @@
         "percentage": 2.3685953691361057
       }
     ],
-    "lastUpdate": "2025-11-21T06:00:19.830Z",
+    "lastUpdate": "2025-11-21T06:36:41.089Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
