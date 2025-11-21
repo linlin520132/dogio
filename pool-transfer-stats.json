@@ -3,7 +3,7 @@
     "totalTransferred": 806065745.5357492,
     "totalTransactions": 292,
     "usersInvolved": 60,
-    "poolTotalRecords": 897,
+    "poolTotalRecords": 902,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -5977,6 +5977,101 @@
     }
   ],
   "poolTransfers": [
+    {
+      "txId": "0xaa597d6c7d76b0ec154f3464e7e671ab3b1b27d52e2512486d987970384f2c7e",
+      "methodId": "0xe8e33700",
+      "blockHash": "0xd016ab7f507e7858249105af73da059ba714bb19f4d03b9b1aa6423906f15599",
+      "height": "44932359",
+      "transactionTime": "1763701395000",
+      "from": "0x97bbaa519ee28f8cb36fe7d9a4e4683998fc8200",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "97.701924",
+      "transactionSymbol": "USD₮0",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0xaa597d6c7d76b0ec154f3464e7e671ab3b1b27d52e2512486d987970384f2c7e",
+      "methodId": "0xe8e33700",
+      "blockHash": "0xd016ab7f507e7858249105af73da059ba714bb19f4d03b9b1aa6423906f15599",
+      "height": "44932359",
+      "transactionTime": "1763701395000",
+      "from": "0x97bbaa519ee28f8cb36fe7d9a4e4683998fc8200",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "5275192.853799514",
+      "transactionSymbol": "DOG",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x903358faf7c6304afbd560e9e29b12ab1b8fddc5",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0xaa597d6c7d76b0ec154f3464e7e671ab3b1b27d52e2512486d987970384f2c7e",
+      "methodId": "0xe8e33700",
+      "blockHash": "0xd016ab7f507e7858249105af73da059ba714bb19f4d03b9b1aa6423906f15599",
+      "height": "44932359",
+      "transactionTime": "1763701395000",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "5275192.853799514",
+      "transactionSymbol": "DIVIDEND_TRACKER",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0xc8113a5afc37a8c9772bd22c4fbf79a07f1a48a0",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0xaa597d6c7d76b0ec154f3464e7e671ab3b1b27d52e2512486d987970384f2c7e",
+      "methodId": "0xe8e33700",
+      "blockHash": "0xd016ab7f507e7858249105af73da059ba714bb19f4d03b9b1aa6423906f15599",
+      "height": "44932359",
+      "transactionTime": "1763701395000",
+      "from": "0xc8113a5afc37a8c9772bd22c4fbf79a07f1a48a0",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": true,
+      "isToContract": true,
+      "amount": "0.000422355384089317",
+      "transactionSymbol": "WOKB",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0xe538905cf8410324e03a5a23c1c177a474d59b2b",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0xaa597d6c7d76b0ec154f3464e7e671ab3b1b27d52e2512486d987970384f2c7e",
+      "methodId": "0xe8e33700",
+      "blockHash": "0xd016ab7f507e7858249105af73da059ba714bb19f4d03b9b1aa6423906f15599",
+      "height": "44932359",
+      "transactionTime": "1763701395000",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "5275192.853799514",
+      "transactionSymbol": "DIVIDEND_TRACKER",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x942916f487bdfd9b9f8b7fc3f54d03919e867dff",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
     {
       "txId": "0x1a82fb4ff99abe0eb55d5804d375bc85fe52d48d32fb8c6b5b3b8fa8f05bd93c",
       "methodId": "0xe8e33700",
@@ -23021,5 +23116,5 @@
       "l1OriginHash": ""
     }
   ],
-  "queryTime": "2025-11-21T04:54:50.436Z"
+  "queryTime": "2025-11-21T05:04:48.196Z"
 }

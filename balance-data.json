@@ -427,10 +427,10 @@
         ],
         "initialBalanceTotal": 118478429,
         "currentBalances": [
-          107618539.5432817
+          120104933.0372173
         ],
-        "totalBalance": 107618539.5432817,
-        "percentage": -9.166132222025238
+        "totalBalance": 120104933.0372173,
+        "percentage": 1.372827147477879
       },
       {
         "nickname": "东风（叶军民）",
@@ -1999,7 +1999,7 @@
         "percentage": 2.3685953691361057
       }
     ],
-    "lastUpdate": "2025-11-21T04:54:26.898Z",
+    "lastUpdate": "2025-11-21T05:04:24.725Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
