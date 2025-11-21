@@ -789,12 +789,12 @@
         ],
         "initialBalanceTotal": 100000500,
         "currentBalances": [
-          44792092.29269455,
+          44866383.3869624,
           5932145.812761284,
-          43415224.87512771
+          43490483.06720087
         ],
-        "totalBalance": 94139462.98058355,
-        "percentage": -5.861007714377879
+        "totalBalance": 94289012.26692456,
+        "percentage": -5.711459175779561
       },
       {
         "nickname": "山河",
@@ -1055,10 +1055,10 @@
         ],
         "initialBalanceTotal": 50762682,
         "currentBalances": [
-          51670305.46117896
+          51692375.970980994
         ],
-        "totalBalance": 51670305.46117896,
-        "percentage": 1.7879738134777008
+        "totalBalance": 51692375.970980994,
+        "percentage": 1.8314516379985486
       },
       {
         "nickname": "金马影帝",
@@ -1775,10 +1775,10 @@
         ],
         "initialBalanceTotal": 21000000,
         "currentBalances": [
-          21369046.852077767
+          21425020.661760025
         ],
-        "totalBalance": 21369046.852077767,
-        "percentage": 1.7573659622750821
+        "totalBalance": 21425020.661760025,
+        "percentage": 2.023907913142975
       },
       {
         "nickname": "追梦人",
@@ -1999,7 +1999,7 @@
         "percentage": 2.3685953691361057
       }
     ],
-    "lastUpdate": "2025-11-21T08:04:46.712Z",
+    "lastUpdate": "2025-11-21T08:42:22.205Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
