@@ -763,10 +763,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          100929075.00884432
+          101488901.76235375
         ],
-        "totalBalance": 100929075.00884432,
-        "percentage": 0.8121965036397418
+        "totalBalance": 101488901.76235375,
+        "percentage": 1.3713749631455088
       },
       {
         "nickname": "一骑红尘",
@@ -1862,11 +1862,11 @@
         ],
         "initialBalanceTotal": 20270000,
         "currentBalances": [
-          10356820.068690166,
-          10178650.141673407
+          10364731.654381936,
+          10186312.643323617
         ],
-        "totalBalance": 20535470.210363574,
-        "percentage": 1.3096705000669677
+        "totalBalance": 20551044.297705553,
+        "percentage": 1.3865036887299136
       },
       {
         "nickname": "胡云飞",
@@ -1999,7 +1999,7 @@
         "percentage": 2.3685953691361057
       }
     ],
-    "lastUpdate": "2025-11-21T06:36:41.089Z",
+    "lastUpdate": "2025-11-21T07:00:34.828Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
