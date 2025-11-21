@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 849715817.2757344,
-    "totalTransactions": 304,
+    "totalTransferred": 901327186.3151526,
+    "totalTransactions": 306,
     "usersInvolved": 61,
-    "poolTotalRecords": 938,
+    "poolTotalRecords": 942,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -13,14 +13,14 @@
       "transactionCount": 16
     },
     {
+      "nickname": "吴坚不摧",
+      "totalAmount": 100929118.71388899,
+      "transactionCount": 10
+    },
+    {
       "nickname": "狂飚",
       "totalAmount": 69996223.26795663,
       "transactionCount": 2
-    },
-    {
-      "nickname": "吴坚不摧",
-      "totalAmount": 49317749.67447042,
-      "transactionCount": 8
     },
     {
       "nickname": "哪有赌狗天天输",
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-21T13:22:47.900Z"
+  "queryTime": "2025-11-21T13:47:19.468Z"
 }
