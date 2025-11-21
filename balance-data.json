@@ -59,12 +59,12 @@
         ],
         "initialBalanceTotal": 483285115,
         "currentBalances": [
-          162002779.703485,
+          161945327.3448329,
           164845793.42148775,
           142409292.6589655
         ],
-        "totalBalance": 469257865.7839383,
-        "percentage": -2.902479050293471
+        "totalBalance": 469200413.4252862,
+        "percentage": -2.914366931146602
       },
       {
         "nickname": "狂飚",
@@ -1999,7 +1999,7 @@
         "percentage": 2.318455043079379
       }
     ],
-    "lastUpdate": "2025-11-20T23:50:54.242Z",
+    "lastUpdate": "2025-11-21T00:00:28.787Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }

@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 760503044.7281063,
-    "totalTransactions": 272,
-    "usersInvolved": 58,
-    "poolTotalRecords": 841,
+    "totalTransferred": 760752760.6657157,
+    "totalTransactions": 276,
+    "usersInvolved": 59,
+    "poolTotalRecords": 849,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -64,8 +64,8 @@
     },
     {
       "nickname": "小狗旺旺",
-      "totalAmount": 19032421.977377042,
-      "transactionCount": 6
+      "totalAmount": 19089929.47892646,
+      "transactionCount": 8
     },
     {
       "nickname": "东风（叶军民）",
@@ -263,6 +263,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "努力赚钱",
+      "totalAmount": 192208.43605999998,
+      "transactionCount": 2
+    },
+    {
       "nickname": "喜乐人生",
       "totalAmount": 171389.92830370937,
       "transactionCount": 2
@@ -298,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-20T23:51:15.219Z"
+  "queryTime": "2025-11-21T00:00:50.656Z"
 }
