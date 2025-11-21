@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 828515697.4205325,
-    "totalTransactions": 298,
+    "totalTransferred": 823494479.1690055,
+    "totalTransactions": 302,
     "usersInvolved": 61,
-    "poolTotalRecords": 915,
+    "poolTotalRecords": 926,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -43,6 +43,11 @@
       "transactionCount": 10
     },
     {
+      "nickname": "清雅",
+      "totalAmount": 23860912.992248997,
+      "transactionCount": 5
+    },
+    {
       "nickname": "leezerofly",
       "totalAmount": 20220519.821077503,
       "transactionCount": 4
@@ -50,16 +55,6 @@
     {
       "nickname": "貳大爺",
       "totalAmount": 19966233.378077,
-      "transactionCount": 4
-    },
-    {
-      "nickname": "2025国泰民安",
-      "totalAmount": 19534919.272074148,
-      "transactionCount": 4
-    },
-    {
-      "nickname": "清雅",
-      "totalAmount": 19110406.462688997,
       "transactionCount": 4
     },
     {
@@ -89,8 +84,8 @@
     },
     {
       "nickname": "吉姆熊猫",
-      "totalAmount": 12747314.314343434,
-      "transactionCount": 18
+      "totalAmount": 12747325.617266433,
+      "transactionCount": 19
     },
     {
       "nickname": "星星之火",
@@ -99,8 +94,8 @@
     },
     {
       "nickname": "光",
-      "totalAmount": 12166594.775753561,
-      "transactionCount": 28
+      "totalAmount": 12214245.351780932,
+      "transactionCount": 30
     },
     {
       "nickname": "上官允禾",
@@ -168,6 +163,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "2025国泰民安",
+      "totalAmount": 9715437.403037792,
+      "transactionCount": 3
+    },
+    {
       "nickname": "观明",
       "totalAmount": 9629264.609853208,
       "transactionCount": 2
@@ -219,8 +219,8 @@
     },
     {
       "nickname": "逗霸",
-      "totalAmount": 4800338.987900999,
-      "transactionCount": 2
+      "totalAmount": 4800434.1969,
+      "transactionCount": 3
     },
     {
       "nickname": "Cassie",
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-21T07:44:30.805Z"
+  "queryTime": "2025-11-21T07:54:54.439Z"
 }
