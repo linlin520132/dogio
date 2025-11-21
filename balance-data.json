@@ -1937,10 +1937,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          24653406.902780883
+          24701920.862780884
         ],
-        "totalBalance": 24653406.902780883,
-        "percentage": 23.267034513904413
+        "totalBalance": 24701920.862780884,
+        "percentage": 23.50960431390442
       },
       {
         "nickname": "小趴菜",
@@ -1999,7 +1999,7 @@
         "percentage": 2.3685953691361057
       }
     ],
-    "lastUpdate": "2025-11-21T09:59:55.509Z",
+    "lastUpdate": "2025-11-21T10:25:12.229Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
