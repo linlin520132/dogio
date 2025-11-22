@@ -839,10 +839,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          80228255.30106163
+          80228254.30106163
         ],
-        "totalBalance": 80228255.30106163,
-        "percentage": -19.77174469893837
+        "totalBalance": 80228254.30106163,
+        "percentage": -19.77174569893837
       },
       {
         "nickname": "墨白",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T05:40:08.954Z",
+    "lastUpdate": "2025-11-22T05:50:42.322Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
