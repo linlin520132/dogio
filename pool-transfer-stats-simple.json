@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 920646456.3670543,
-    "totalTransactions": 324,
+    "totalTransferred": 920905159.7242726,
+    "totalTransactions": 328,
     "usersInvolved": 61,
-    "poolTotalRecords": 1019,
+    "poolTotalRecords": 1032,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -39,8 +39,8 @@
     },
     {
       "nickname": "以马内利",
-      "totalAmount": 24791038.186082862,
-      "transactionCount": 10
+      "totalAmount": 24791060.502081864,
+      "transactionCount": 11
     },
     {
       "nickname": "leezerofly",
@@ -118,14 +118,14 @@
       "transactionCount": 10
     },
     {
+      "nickname": "大白",
+      "totalAmount": 11503098.56078123,
+      "transactionCount": 7
+    },
+    {
       "nickname": "南方种植园",
       "totalAmount": 11363884.01384137,
       "transactionCount": 8
-    },
-    {
-      "nickname": "大白",
-      "totalAmount": 11244417.51956199,
-      "transactionCount": 4
     },
     {
       "nickname": "遥远的传说",
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T05:00:19.403Z"
+  "queryTime": "2025-11-22T05:22:56.420Z"
 }
