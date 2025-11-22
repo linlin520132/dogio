@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1091760996.4642031,
-    "totalTransactions": 352,
+    "totalTransferred": 1094619276.6427622,
+    "totalTransactions": 354,
     "usersInvolved": 62,
-    "poolTotalRecords": 1144,
+    "poolTotalRecords": 1148,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -98,6 +98,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "遥远的传说",
+      "totalAmount": 13662413.586857999,
+      "transactionCount": 4
+    },
+    {
       "nickname": "吉姆熊猫",
       "totalAmount": 12813123.853062402,
       "transactionCount": 20
@@ -135,11 +140,6 @@
     {
       "nickname": "繁星社区~甘",
       "totalAmount": 11001048.048685132,
-      "transactionCount": 2
-    },
-    {
-      "nickname": "遥远的传说",
-      "totalAmount": 10804133.408299,
       "transactionCount": 2
     },
     {
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T14:50:05.188Z"
+  "queryTime": "2025-11-22T15:00:31.597Z"
 }
