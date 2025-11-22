@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 920904939.1688606,
-    "totalTransactions": 326,
+    "totalTransferred": 923916292.4054095,
+    "totalTransactions": 328,
     "usersInvolved": 61,
-    "poolTotalRecords": 1071,
+    "poolTotalRecords": 1075,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -178,6 +178,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "素雅",
+      "totalAmount": 8640822.430975001,
+      "transactionCount": 8
+    },
+    {
       "nickname": "清",
       "totalAmount": 6765031.648522518,
       "transactionCount": 4
@@ -205,11 +210,6 @@
     {
       "nickname": "真善美",
       "totalAmount": 5631856.662224423,
-      "transactionCount": 6
-    },
-    {
-      "nickname": "素雅",
-      "totalAmount": 5629469.194426,
       "transactionCount": 6
     },
     {
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T06:55:51.598Z"
+  "queryTime": "2025-11-22T07:22:12.972Z"
 }
