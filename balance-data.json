@@ -318,11 +318,11 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          59590262.092274845,
-          50140040.47857916
+          25530080.771127727,
+          21752080.807980467
         ],
-        "totalBalance": 109730302.57085401,
-        "percentage": -21.621212449389997
+        "totalBalance": 47282161.57910819,
+        "percentage": -66.22702744349415
       },
       {
         "nickname": "羽辰",
@@ -737,10 +737,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          102918532.61063826
+          102924742.81599271
         ],
-        "totalBalance": 102918532.61063826,
-        "percentage": 2.6256134993865374
+        "totalBalance": 102924742.81599271,
+        "percentage": 2.631806029714083
       },
       {
         "nickname": "香香",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T13:35:46.142Z",
+    "lastUpdate": "2025-11-22T13:49:48.120Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
