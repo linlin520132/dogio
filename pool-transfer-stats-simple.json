@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1005450935.0671202,
-    "totalTransactions": 342,
+    "totalTransferred": 1029837975.9752592,
+    "totalTransactions": 344,
     "usersInvolved": 62,
-    "poolTotalRecords": 1123,
+    "poolTotalRecords": 1128,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -36,6 +36,11 @@
       "nickname": "齐天大圣",
       "totalAmount": 47982140.53068432,
       "transactionCount": 2
+    },
+    {
+      "nickname": "清雅",
+      "totalAmount": 43497447.370828,
+      "transactionCount": 6
     },
     {
       "nickname": "leezerofly",
@@ -71,11 +76,6 @@
       "nickname": "小狗旺旺",
       "totalAmount": 19243327.238607876,
       "transactionCount": 14
-    },
-    {
-      "nickname": "清雅",
-      "totalAmount": 19110406.462688997,
-      "transactionCount": 4
     },
     {
       "nickname": "斯奈夫",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T11:55:06.541Z"
+  "queryTime": "2025-11-22T12:39:49.255Z"
 }

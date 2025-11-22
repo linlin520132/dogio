@@ -121,10 +121,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          291385988.5124966
+          291474522.55125165
         ],
-        "totalBalance": 291385988.5124966,
-        "percentage": -2.2713710105096596
+        "totalBalance": 291474522.55125165,
+        "percentage": -2.2416773719424667
       },
       {
         "nickname": "道哥币赢",
@@ -244,11 +244,11 @@
         ],
         "initialBalanceTotal": 186210563,
         "currentBalances": [
-          117157927.95649873,
+          99122659.96384476,
           50625847.37037983
         ],
-        "totalBalance": 167783775.32687855,
-        "percentage": -9.89567260645759
+        "totalBalance": 149748507.33422458,
+        "percentage": -19.58108878376326
       },
       {
         "nickname": "吉姆熊猫",
@@ -372,11 +372,11 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          51416359.506420515,
-          70495400.44056177
+          51465438.57165406,
+          70561068.26604357
         ],
-        "totalBalance": 121911759.9469823,
-        "percentage": 1.5931332891519119
+        "totalBalance": 122026506.83769763,
+        "percentage": 1.6887556980813543
       },
       {
         "nickname": "如果 爱",
@@ -667,10 +667,10 @@
         ],
         "initialBalanceTotal": 101701252,
         "currentBalances": [
-          82725162.87730028
+          58092202.791300274
         ],
-        "totalBalance": 82725162.87730028,
-        "percentage": -18.6586583247763
+        "totalBalance": 58092202.791300274,
+        "percentage": -42.87955983934173
       },
       {
         "nickname": "memecoin",
@@ -1031,10 +1031,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52811293.90376169
+          52840173.390586115
         ],
-        "totalBalance": 52811293.90376169,
-        "percentage": 1.5905786343159594
+        "totalBalance": 52840173.390586115,
+        "percentage": 1.646132731939503
       },
       {
         "nickname": "曾经的自己",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T11:54:31.324Z",
+    "lastUpdate": "2025-11-22T12:39:14.667Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
