@@ -1127,10 +1127,10 @@
         ],
         "initialBalanceTotal": 41920277.028529,
         "currentBalances": [
-          44948723.44112861
+          50634910.821310185
         ],
-        "totalBalance": 44948723.44112861,
-        "percentage": 7.2242996164805575
+        "totalBalance": 50634910.821310185,
+        "percentage": 20.788588269229244
       },
       {
         "nickname": "皇总",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T11:44:04.767Z",
+    "lastUpdate": "2025-11-22T11:54:31.324Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
