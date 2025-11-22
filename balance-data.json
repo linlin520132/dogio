@@ -159,10 +159,10 @@
         ],
         "initialBalanceTotal": 250000000,
         "currentBalances": [
-          243222741.01456687
+          243347739.32879966
         ],
-        "totalBalance": 243222741.01456687,
-        "percentage": -2.7109035941732524
+        "totalBalance": 243347739.32879966,
+        "percentage": -2.660904268480134
       },
       {
         "nickname": "大白",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T08:59:50.459Z",
+    "lastUpdate": "2025-11-22T09:22:48.945Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
