@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          963946050.954362
+          964428255.8844056
         ],
-        "totalBalance": 963946050.954362,
-        "percentage": 13.00657103802603
+        "totalBalance": 964428255.8844056,
+        "percentage": 13.063101510481316
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -59,12 +59,12 @@
         ],
         "initialBalanceTotal": 483285115,
         "currentBalances": [
-          162130633.27117357,
+          162211737.59293208,
           164974571.87693462,
           142559330.9834951
         ],
-        "totalBalance": 469664536.13160324,
-        "percentage": -2.818331962985609
+        "totalBalance": 469745640.45336175,
+        "percentage": -2.801550084288909
       },
       {
         "nickname": "狂飚",
@@ -97,10 +97,10 @@
         ],
         "initialBalanceTotal": 354034708,
         "currentBalances": [
-          347706301.1520355
+          347880237.9532255
         ],
-        "totalBalance": 347706301.1520355,
-        "percentage": -1.7875102934722789
+        "totalBalance": 347880237.9532255,
+        "percentage": -1.7383804208186577
       },
       {
         "nickname": "闲云",
@@ -216,13 +216,13 @@
         "currentBalances": [
           19055427.328203246,
           41431999.26518793,
-          36989176.87999757,
+          37007680.36723332,
           13537343.320865465,
           21809740.884388536,
           62513945.05241725
         ],
-        "totalBalance": 195337632.73105997,
-        "percentage": -2.3311836344700154
+        "totalBalance": 195356136.21829575,
+        "percentage": -2.321931890852124
       },
       {
         "nickname": "焚石",
@@ -359,10 +359,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          121558349.17337875
+          121619157.59227453
         ],
-        "totalBalance": 121558349.17337875,
-        "percentage": 1.298624311148959
+        "totalBalance": 121619157.59227453,
+        "percentage": 1.3492979935621099
       },
       {
         "nickname": "城",
@@ -372,11 +372,11 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          51465438.57165406,
+          51491183.67241103,
           70561068.26604357
         ],
-        "totalBalance": 122026506.83769763,
-        "percentage": 1.6887556980813543
+        "totalBalance": 122052251.9384546,
+        "percentage": 1.7102099487121651
       },
       {
         "nickname": "如果 爱",
@@ -402,11 +402,11 @@
         "initialBalanceTotal": 118862385.9,
         "currentBalances": [
           55282337.95903085,
-          64469625.640178256,
+          64501875.962995574,
           0
         ],
-        "totalBalance": 119751963.5992091,
-        "percentage": 0.748409761821123
+        "totalBalance": 119784213.92202643,
+        "percentage": 0.7755422500116748
       },
       {
         "nickname": "繁星社区~甘",
@@ -415,10 +415,10 @@
         ],
         "initialBalanceTotal": 118710390,
         "currentBalances": [
-          109784439.65972747
+          109839358.2913185
         ],
-        "totalBalance": 109784439.65972747,
-        "percentage": -7.519097814666881
+        "totalBalance": 109839358.2913185,
+        "percentage": -7.472835114669824
       },
       {
         "nickname": "星星之火",
@@ -455,10 +455,10 @@
         "initialBalanceTotal": 116268461,
         "currentBalances": [
           14822049.082423747,
-          98257585.60038598
+          98306738.03183563
         ],
-        "totalBalance": 113079634.68280973,
-        "percentage": -2.742640858719438
+        "totalBalance": 113128787.11425938,
+        "percentage": -2.700365910700945
       },
       {
         "nickname": "慕兮",
@@ -467,10 +467,10 @@
         ],
         "initialBalanceTotal": 115532138,
         "currentBalances": [
-          102590136.12135838
+          102641455.87038644
         ],
-        "totalBalance": 102590136.12135838,
-        "percentage": -11.202079440996426
+        "totalBalance": 102641455.87038644,
+        "percentage": -11.15765911785824
       },
       {
         "nickname": "以马内利",
@@ -545,10 +545,10 @@
         ],
         "initialBalanceTotal": 108130301.14,
         "currentBalances": [
-          109152333.27250406
+          109206935.69883037
         ],
-        "totalBalance": 109152333.27250406,
-        "percentage": 0.9451856896068391
+        "totalBalance": 109206935.69883037,
+        "percentage": 0.995682567679535
       },
       {
         "nickname": "老铁Bro",
@@ -564,11 +564,11 @@
           9204395.257539442,
           21595343.604635343,
           23724864.55386654,
-          25868110.79995557,
+          25881051.07866339,
           19442087.844848905
         ],
-        "totalBalance": 99834802.06084579,
-        "percentage": -7.552020752053655
+        "totalBalance": 99847742.33955362,
+        "percentage": -7.540037930504962
       },
       {
         "nickname": "一個太陽",
@@ -616,11 +616,11 @@
         "initialBalanceTotal": 105940786,
         "currentBalances": [
           43820539.62503149,
-          53332793.528784536,
+          53359472.756265275,
           0
         ],
-        "totalBalance": 97153333.15381603,
-        "percentage": -8.294683452871466
+        "totalBalance": 97180012.38129677,
+        "percentage": -8.269500302464465
       },
       {
         "nickname": "成成",
@@ -631,10 +631,10 @@
         "initialBalanceTotal": 105736479,
         "currentBalances": [
           107360085.86281092,
-          6092874.41703127
+          6095922.320053562
         ],
-        "totalBalance": 113452960.2798422,
-        "percentage": 7.297842100305041
+        "totalBalance": 113456008.18286449,
+        "percentage": 7.3007246466609566
       },
       {
         "nickname": "锋人院",
@@ -655,10 +655,10 @@
         ],
         "initialBalanceTotal": 102286355,
         "currentBalances": [
-          105149644.41774991
+          105202244.53668849
         ],
-        "totalBalance": 105149644.41774991,
-        "percentage": 2.7992877620381638
+        "totalBalance": 105202244.53668849,
+        "percentage": 2.850712137203923
       },
       {
         "nickname": "清雅",
@@ -685,10 +685,10 @@
           20837059.23691889,
           32574176.11394904,
           18837214.58703559,
-          23113918.84905131
+          23125481.36918468
         ],
-        "totalBalance": 95362368.78695484,
-        "percentage": -5.5818130822229355
+        "totalBalance": 95373931.3070882,
+        "percentage": -5.570365042486934
       },
       {
         "nickname": "旷谷",
@@ -712,11 +712,11 @@
         "initialBalanceTotal": 100800000,
         "currentBalances": [
           36144966.26971398,
-          46146100.28740099,
+          46169184.43929812,
           29047351.85455722
         ],
-        "totalBalance": 111338418.41167219,
-        "percentage": 10.454780170309713
+        "totalBalance": 111361502.56356932,
+        "percentage": 10.477681114652105
       },
       {
         "nickname": "遥远的传说",
@@ -763,10 +763,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          101649524.08347112
+          101711584.00700541
         ],
-        "totalBalance": 101649524.08347112,
-        "percentage": 1.5318112794194487
+        "totalBalance": 101711584.00700541,
+        "percentage": 1.5937993359412324
       },
       {
         "nickname": "一骑红尘",
@@ -839,10 +839,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          80228254.30106163
+          80268387.72939454
         ],
-        "totalBalance": 80228254.30106163,
-        "percentage": -19.77174569893837
+        "totalBalance": 80268387.72939454,
+        "percentage": -19.73161227060546
       },
       {
         "nickname": "墨白",
@@ -919,14 +919,14 @@
           15349977.637651606,
           10473035.360152137,
           10476850.920221904,
-          10572947.63976273,
+          10578236.657205084,
           10450201.26302674,
           10467842.908942176,
-          10465448.268416682,
+          10470683.51031134,
           10472012.000323523
         ],
-        "totalBalance": 103984338.72160843,
-        "percentage": 12.109878641094205
+        "totalBalance": 103994862.98094544,
+        "percentage": 12.121225286671462
       },
       {
         "nickname": "yoke",
@@ -959,10 +959,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          85996860.88476628
+          86039880.004193
         ],
-        "totalBalance": 85996860.88476628,
-        "percentage": 16.21197416860308
+        "totalBalance": 86039880.004193,
+        "percentage": 16.270108113774313
       },
       {
         "nickname": "丑到拖网速",
@@ -983,10 +983,10 @@
         ],
         "initialBalanceTotal": 59806199.9428,
         "currentBalances": [
-          60529926.85290021
+          60560206.37851758
         ],
-        "totalBalance": 60529926.85290021,
-        "percentage": 1.2101202062535246
+        "totalBalance": 60560206.37851758,
+        "percentage": 1.2607496153220428
       },
       {
         "nickname": "玄",
@@ -1031,10 +1031,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52840173.390586115
+          52866606.189484015
         ],
-        "totalBalance": 52840173.390586115,
-        "percentage": 1.646132731939503
+        "totalBalance": 52866606.189484015,
+        "percentage": 1.6969802521660593
       },
       {
         "nickname": "曾经的自己",
@@ -1067,10 +1067,10 @@
         ],
         "initialBalanceTotal": 50053651,
         "currentBalances": [
-          48463353.05495544
+          48487596.39071723
         ],
-        "totalBalance": 48463353.05495544,
-        "percentage": -3.1771867052106995
+        "totalBalance": 48487596.39071723,
+        "percentage": -3.128752005089038
       },
       {
         "nickname": "绅士",
@@ -1199,10 +1199,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          40730410.92436692
+          40750785.92868483
         ],
-        "totalBalance": 40730410.92436692,
-        "percentage": 1.8260273109173029
+        "totalBalance": 40750785.92868483,
+        "percentage": 1.8769648217120767
       },
       {
         "nickname": "仓位又不见了",
@@ -1211,10 +1211,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          44221412.68056447
+          44203118.81902013
         ],
-        "totalBalance": 44221412.68056447,
-        "percentage": 10.553531701411178
+        "totalBalance": 44203118.81902013,
+        "percentage": 10.507797047550325
       },
       {
         "nickname": "永恒",
@@ -1223,10 +1223,10 @@
         ],
         "initialBalanceTotal": 40000000,
         "currentBalances": [
-          41882489.9263242
+          41903441.24730839
         ],
-        "totalBalance": 41882489.9263242,
-        "percentage": 4.7062248158105096
+        "totalBalance": 41903441.24730839,
+        "percentage": 4.758603118270971
       },
       {
         "nickname": "雪狼",
@@ -1259,10 +1259,10 @@
         ],
         "initialBalanceTotal": 35000000,
         "currentBalances": [
-          24176605.416652095
+          24188699.53572866
         ],
-        "totalBalance": 24176605.416652095,
-        "percentage": -30.923984523851157
+        "totalBalance": 24188699.53572866,
+        "percentage": -30.889429897918113
       },
       {
         "nickname": "暂停的失忆",
@@ -1271,10 +1271,10 @@
         ],
         "initialBalanceTotal": 33237400,
         "currentBalances": [
-          33367456.873001132
+          33384148.628925905
         ],
-        "totalBalance": 33367456.873001132,
-        "percentage": 0.3912967711106529
+        "totalBalance": 33384148.628925905,
+        "percentage": 0.44151657147040574
       },
       {
         "nickname": "Nayo",
@@ -1359,10 +1359,10 @@
         ],
         "initialBalanceTotal": 30000000,
         "currentBalances": [
-          30258051.804392334
+          30273188.109727208
         ],
-        "totalBalance": 30258051.804392334,
-        "percentage": 0.8601726813077801
+        "totalBalance": 30273188.109727208,
+        "percentage": 0.9106270324240252
       },
       {
         "nickname": "张幸英",
@@ -1395,10 +1395,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          26726707.805088174
+          26740077.588858426
         ],
-        "totalBalance": 26726707.805088174,
-        "percentage": -7.995216659095594
+        "totalBalance": 26740077.588858426,
+        "percentage": -7.949192133064649
       },
       {
         "nickname": "小财宝",
@@ -1445,10 +1445,10 @@
         "initialBalanceTotal": 27000000,
         "currentBalances": [
           14454565.965389915,
-          13759955.529948216
+          13766838.818060815
         ],
-        "totalBalance": 28214521.49533813,
-        "percentage": 4.498227760511595
+        "totalBalance": 28221404.78345073,
+        "percentage": 4.523721420187889
       },
       {
         "nickname": "勇哥",
@@ -1517,10 +1517,10 @@
         ],
         "initialBalanceTotal": 24786625,
         "currentBalances": [
-          25106486.534413993
+          25119045.81775872
         ],
-        "totalBalance": 25106486.534413993,
-        "percentage": 1.290460215596086
+        "totalBalance": 25119045.81775872,
+        "percentage": 1.3411298139973489
       },
       {
         "nickname": "王梓【RWA】）",
@@ -1553,10 +1553,10 @@
         ],
         "initialBalanceTotal": 24000000,
         "currentBalances": [
-          24429264.71067228
+          24441485.22018022
         ],
-        "totalBalance": 24429264.71067228,
-        "percentage": 1.788602961134507
+        "totalBalance": 24441485.22018022,
+        "percentage": 1.8395217507509203
       },
       {
         "nickname": "钻石DOG",
@@ -1566,11 +1566,11 @@
         ],
         "initialBalanceTotal": 23803093,
         "currentBalances": [
-          10869806.130964015,
+          10875243.6490697,
           13158271.167446766
         ],
-        "totalBalance": 24028077.29841078,
-        "percentage": 0.9451893432957672
+        "totalBalance": 24033514.816516466,
+        "percentage": 0.9680330892983801
       },
       {
         "nickname": "柚子哥",
@@ -1591,10 +1591,10 @@
         ],
         "initialBalanceTotal": 22950000,
         "currentBalances": [
-          23152118.104613323
+          23163699.733564388
         ],
-        "totalBalance": 23152118.104613323,
-        "percentage": 0.8806889089905132
+        "totalBalance": 23163699.733564388,
+        "percentage": 0.9311535231563748
       },
       {
         "nickname": "星辰大海",
@@ -1615,10 +1615,10 @@
         ],
         "initialBalanceTotal": 22866522.69653,
         "currentBalances": [
-          23004805.081810668
+          23016313.018810004
         ],
-        "totalBalance": 23004805.081810668,
-        "percentage": 0.6047372707947987
+        "totalBalance": 23016313.018810004,
+        "percentage": 0.655063842753561
       },
       {
         "nickname": "布朗船长",
@@ -1825,10 +1825,10 @@
         ],
         "initialBalanceTotal": 20639845,
         "currentBalances": [
-          21252140.843481794
+          21262772.026708867
         ],
-        "totalBalance": 21252140.843481794,
-        "percentage": 2.9665719073074146
+        "totalBalance": 21262772.026708867,
+        "percentage": 3.0180799647907595
       },
       {
         "nickname": "啊真",
@@ -1837,10 +1837,10 @@
         ],
         "initialBalanceTotal": 20533334,
         "currentBalances": [
-          24309493.547860123
+          24321654.142972305
         ],
-        "totalBalance": 24309493.547860123,
-        "percentage": 18.39038681131921
+        "totalBalance": 24321654.142972305,
+        "percentage": 18.44961048689076
       },
       {
         "nickname": "众鑫社区锁先生",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T14:21:31.773Z",
+    "lastUpdate": "2025-11-22T14:37:48.722Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
