@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          910778440.2495267
+          918521931.9288576
         ],
-        "totalBalance": 910778440.2495267,
-        "percentage": 6.773556887400556
+        "totalBalance": 918521931.9288576,
+        "percentage": 7.681351926009093
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -257,10 +257,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          163829081.2275981
+          163881285.2894597
         ],
-        "totalBalance": 163829081.2275981,
-        "percentage": -6.249516107566748
+        "totalBalance": 163881285.2894597,
+        "percentage": -6.2196425587193565
       },
       {
         "nickname": "黄药师",
@@ -359,10 +359,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          121536743.29661563
+          121558349.17337875
         ],
-        "totalBalance": 121536743.29661563,
-        "percentage": 1.2806194138463587
+        "totalBalance": 121558349.17337875,
+        "percentage": 1.298624311148959
       },
       {
         "nickname": "城",
@@ -667,10 +667,10 @@
         ],
         "initialBalanceTotal": 101701252,
         "currentBalances": [
-          82687632.1260131
+          82725162.87730028
         ],
-        "totalBalance": 82687632.1260131,
-        "percentage": -18.695561264070673
+        "totalBalance": 82725162.87730028,
+        "percentage": -18.6586583247763
       },
       {
         "nickname": "memecoin",
@@ -1163,10 +1163,10 @@
         ],
         "initialBalanceTotal": 41000000,
         "currentBalances": [
-          36210414.75409057
+          42276370.88719302
         ],
-        "totalBalance": 36210414.75409057,
-        "percentage": -11.681915233925439
+        "totalBalance": 42276370.88719302,
+        "percentage": 3.1130997248610166
       },
       {
         "nickname": "可乐",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T06:35:31.414Z",
+    "lastUpdate": "2025-11-22T06:55:16.538Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
