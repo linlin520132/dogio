@@ -183,10 +183,10 @@
         ],
         "initialBalanceTotal": 220222945.44,
         "currentBalances": [
-          222304461.2022777
+          220304461.2022777
         ],
-        "totalBalance": 222304461.2022777,
-        "percentage": 0.9451856881302153
+        "totalBalance": 220304461.2022777,
+        "percentage": 0.03701510853686298
       },
       {
         "nickname": "2025国泰民安",
@@ -737,10 +737,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          102663553.15260798
+          102889907.94813588
         ],
-        "totalBalance": 102663553.15260798,
-        "percentage": 2.3713597450204933
+        "totalBalance": 102889907.94813588,
+        "percentage": 2.597070306280267
       },
       {
         "nickname": "香香",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T04:32:25.506Z",
+    "lastUpdate": "2025-11-22T04:48:00.974Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
