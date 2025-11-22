@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 918386834.8182753,
-    "totalTransactions": 322,
+    "totalTransferred": 920646456.3670543,
+    "totalTransactions": 324,
     "usersInvolved": 61,
-    "poolTotalRecords": 1009,
+    "poolTotalRecords": 1014,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -233,6 +233,11 @@
       "transactionCount": 4
     },
     {
+      "nickname": "汽修",
+      "totalAmount": 3744234.623822,
+      "transactionCount": 6
+    },
+    {
       "nickname": "星辰大海",
       "totalAmount": 2937769.0446289997,
       "transactionCount": 2
@@ -256,11 +261,6 @@
       "nickname": "仓位又不见了",
       "totalAmount": 1897842.7321712924,
       "transactionCount": 6
-    },
-    {
-      "nickname": "汽修",
-      "totalAmount": 1484613.0750429998,
-      "transactionCount": 4
     },
     {
       "nickname": "虚竹",
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T04:02:34.214Z"
+  "queryTime": "2025-11-22T04:32:56.333Z"
 }

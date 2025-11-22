@@ -1115,10 +1115,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          35744135.22828081
+          35749841.057983026
         ],
-        "totalBalance": 35744135.22828081,
-        "percentage": -20.568588381598193
+        "totalBalance": 35749841.057983026,
+        "percentage": -20.55590876003772
       },
       {
         "nickname": "小满",
@@ -1407,10 +1407,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          28936094.619831976
+          26653690.997831978
         ],
-        "totalBalance": 28936094.619831976,
-        "percentage": -0.38956029882904913
+        "totalBalance": 26653690.997831978,
+        "percentage": -8.246571804699123
       },
       {
         "nickname": "小财宝",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T04:02:02.192Z",
+    "lastUpdate": "2025-11-22T04:32:25.506Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
