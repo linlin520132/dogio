@@ -1247,10 +1247,10 @@
         ],
         "initialBalanceTotal": 36577296,
         "currentBalances": [
-          35411897.934641376
+          35366937.65031613
         ],
-        "totalBalance": 35411897.934641376,
-        "percentage": -3.1861241611698796
+        "totalBalance": 35366937.65031613,
+        "percentage": -3.3090427178757915
       },
       {
         "nickname": "南方种植园",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T09:49:35.116Z",
+    "lastUpdate": "2025-11-22T09:59:50.239Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }

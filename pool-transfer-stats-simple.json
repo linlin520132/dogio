@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 987231519.3605927,
-    "totalTransactions": 336,
+    "totalTransferred": 987276030.7720758,
+    "totalTransactions": 338,
     "usersInvolved": 62,
-    "poolTotalRecords": 1109,
+    "poolTotalRecords": 1113,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -249,8 +249,8 @@
     },
     {
       "nickname": "城市/ht 日记",
-      "totalAmount": 2848604.9650541474,
-      "transactionCount": 4
+      "totalAmount": 2893116.3765371507,
+      "transactionCount": 6
     },
     {
       "nickname": "金马影帝",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T09:50:10.379Z"
+  "queryTime": "2025-11-22T10:00:25.509Z"
 }
