@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1091662703.0606577,
-    "totalTransactions": 348,
+    "totalTransferred": 1091720984.7123222,
+    "totalTransactions": 350,
     "usersInvolved": 62,
-    "poolTotalRecords": 1136,
+    "poolTotalRecords": 1140,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -293,6 +293,11 @@
       "transactionCount": 4
     },
     {
+      "nickname": "时迁",
+      "totalAmount": 214998.58001426747,
+      "transactionCount": 4
+    },
+    {
       "nickname": "努力赚钱",
       "totalAmount": 192208.43605999998,
       "transactionCount": 2
@@ -300,11 +305,6 @@
     {
       "nickname": "喜乐人生",
       "totalAmount": 171389.92830370937,
-      "transactionCount": 2
-    },
-    {
-      "nickname": "时迁",
-      "totalAmount": 156716.92834971295,
       "transactionCount": 2
     },
     {
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T14:00:44.454Z"
+  "queryTime": "2025-11-22T14:22:09.217Z"
 }
