@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1091864110.296343,
-    "totalTransactions": 353,
+    "totalTransferred": 1091760996.4642031,
+    "totalTransactions": 352,
     "usersInvolved": 62,
-    "poolTotalRecords": 1145,
+    "poolTotalRecords": 1144,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -229,8 +229,8 @@
     },
     {
       "nickname": "逗霸",
-      "totalAmount": 5006568.641179999,
-      "transactionCount": 5
+      "totalAmount": 4903454.80904,
+      "transactionCount": 4
     },
     {
       "nickname": "Cassie",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T14:38:25.921Z"
+  "queryTime": "2025-11-22T14:50:05.188Z"
 }
