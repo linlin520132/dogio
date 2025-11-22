@@ -737,10 +737,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          102976229.94886722
+          103099613.57540704
         ],
-        "totalBalance": 102976229.94886722,
-        "percentage": 2.6831466237211936
+        "totalBalance": 103099613.57540704,
+        "percentage": 2.8061790849139023
       },
       {
         "nickname": "香香",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5174140004088885
       }
     ],
-    "lastUpdate": "2025-11-22T20:47:29.584Z",
+    "lastUpdate": "2025-11-22T20:59:38.134Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
