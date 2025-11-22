@@ -1095,6 +1095,25 @@
       "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
       "isFromContract": false,
       "isToContract": true,
+      "amount": "380",
+      "transactionSymbol": "USD₮0",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0xfe3ff0a1660ba9007efd9e454a8fc6c7b28c69f64c2c20798b3bdaa6918a1b68",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x5ca89be572b482e8d763417aaa43475237c996a4c26a8ed1d64b56c9ba3fdbce",
+      "height": "45019922",
+      "transactionTime": "1763788958000",
+      "from": "0xfd59e609b557dabc2728579ca1d00e2559fe5ea6",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
       "amount": "21970704.716691773",
       "transactionSymbol": "DOG",
       "txFee": "",
@@ -2165,6 +2184,25 @@
       "state": "success",
       "tokenId": "",
       "tokenContractAddress": "0x942916f487bdfd9b9f8b7fc3f54d03919e867dff",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0x7022a59884c564d7a6c87e80f2044e03e666cc6d864e801edffc97131ad3085b",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x81027b3c0ee77b866dd254dd9afeb00af5a46674ac0325816e1bd152937c9ee5",
+      "height": "44972262",
+      "transactionTime": "1763741298000",
+      "from": "0x7e09ea4d451506acd462e8307cea27685a003cf5",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "0.583309",
+      "transactionSymbol": "USD₮0",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
       "challengeStatus": "",
       "l1OriginHash": ""
     },
@@ -20675,6 +20713,6 @@
       "l1OriginHash": ""
     }
   ],
-  "cacheTime": "2025-11-22T07:50:11.058Z",
-  "totalRecords": 1088
+  "cacheTime": "2025-11-22T08:00:24.272Z",
+  "totalRecords": 1090
 }
