@@ -3,7 +3,7 @@
     "totalTransferred": 923916292.4054095,
     "totalTransactions": 328,
     "usersInvolved": 61,
-    "poolTotalRecords": 1075,
+    "poolTotalRecords": 1088,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T07:35:23.462Z"
+  "queryTime": "2025-11-22T07:50:11.081Z"
 }
