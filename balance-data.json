@@ -244,11 +244,11 @@
         ],
         "initialBalanceTotal": 186210563,
         "currentBalances": [
-          99172245.1405943,
+          99212897.75634944,
           50702734.39940082
         ],
-        "totalBalance": 149874979.53999513,
-        "percentage": -19.513169862444844
+        "totalBalance": 149915632.15575027,
+        "percentage": -19.491338331998772
       },
       {
         "nickname": "吉姆熊猫",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5174140004088885
       }
     ],
-    "lastUpdate": "2025-11-22T19:01:21.023Z",
+    "lastUpdate": "2025-11-22T19:22:05.577Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
