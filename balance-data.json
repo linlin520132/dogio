@@ -667,10 +667,10 @@
         ],
         "initialBalanceTotal": 101701252,
         "currentBalances": [
-          58092202.791300274
+          58104948.424547024
         ],
-        "totalBalance": 58092202.791300274,
-        "percentage": -42.87955983934173
+        "totalBalance": 58104948.424547024,
+        "percentage": -42.86702741422788
       },
       {
         "nickname": "memecoin",
@@ -827,10 +827,10 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          90167288.58094425
+          90228066.46409959
         ],
-        "totalBalance": 90167288.58094425,
-        "percentage": -9.832711419055745
+        "totalBalance": 90228066.46409959,
+        "percentage": -9.771933535900414
       },
       {
         "nickname": "小雨",
@@ -947,10 +947,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          95143376.89668228
+          95191020.56063023
         ],
-        "totalBalance": 95143376.89668228,
-        "percentage": 9.218044996614287
+        "totalBalance": 95191020.56063023,
+        "percentage": 9.272736642029836
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -1689,10 +1689,10 @@
         ],
         "initialBalanceTotal": 21900000,
         "currentBalances": [
-          22143668.0949824
+          22180328.556138568
         ],
-        "totalBalance": 22143668.0949824,
-        "percentage": 1.1126397031159843
+        "totalBalance": 22180328.556138568,
+        "percentage": 1.2800390691258796
       },
       {
         "nickname": "打dog小兵3947068284",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T12:39:14.667Z",
+    "lastUpdate": "2025-11-22T13:07:37.380Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
