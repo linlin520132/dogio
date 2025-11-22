@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          881024148.771291
+          910778440.2495267
         ],
-        "totalBalance": 881024148.771291,
-        "percentage": 3.2853632791665905
+        "totalBalance": 910778440.2495267,
+        "percentage": 6.773556887400556
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -244,11 +244,11 @@
         ],
         "initialBalanceTotal": 186210563,
         "currentBalances": [
-          116983666.08339937,
+          117157927.95649873,
           50625847.37037983
         ],
-        "totalBalance": 167609513.4537792,
-        "percentage": -9.98925584378412
+        "totalBalance": 167783775.32687855,
+        "percentage": -9.89567260645759
       },
       {
         "nickname": "吉姆熊猫",
@@ -521,10 +521,10 @@
         ],
         "initialBalanceTotal": 110000000,
         "currentBalances": [
-          112659946.59430815
+          112683858.26840207
         ],
-        "totalBalance": 112659946.59430815,
-        "percentage": 2.418133267552866
+        "totalBalance": 112683858.26840207,
+        "percentage": 2.4398711530927906
       },
       {
         "nickname": "郁姐",
@@ -667,10 +667,10 @@
         ],
         "initialBalanceTotal": 101701252,
         "currentBalances": [
-          82517161.00101322
+          82687632.1260131
         ],
-        "totalBalance": 82517161.00101322,
-        "percentage": -18.863180759059663
+        "totalBalance": 82687632.1260131,
+        "percentage": -18.695561264070673
       },
       {
         "nickname": "memecoin",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T06:01:03.081Z",
+    "lastUpdate": "2025-11-22T06:35:31.414Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
