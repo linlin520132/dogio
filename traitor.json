@@ -91,5 +91,12 @@
             "0x239611ea0488b8a4bfe3b7dcd205baebd6c3a99f"
         ],
         "initialBalanceTotal": 309788246.54
+    },
+    {
+        "nickname": "风向决定发型d",
+        "addresses": [
+            "0x5f516B369CCe55352151E7E218A569e6C3D5a07e"
+        ],
+        "initialBalanceTotal": 33000000
     }
 ]
