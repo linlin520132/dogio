@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 901382141.7358747,
-    "totalTransactions": 308,
+    "totalTransferred": 901649509.434692,
+    "totalTransactions": 316,
     "usersInvolved": 61,
-    "poolTotalRecords": 978,
+    "poolTotalRecords": 996,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -59,8 +59,8 @@
     },
     {
       "nickname": "小狗旺旺",
-      "totalAmount": 19144884.89964835,
-      "transactionCount": 10
+      "totalAmount": 19243327.238607876,
+      "transactionCount": 14
     },
     {
       "nickname": "清雅",
@@ -89,8 +89,8 @@
     },
     {
       "nickname": "吉姆熊猫",
-      "totalAmount": 12747314.314343434,
-      "transactionCount": 18
+      "totalAmount": 12813123.853062402,
+      "transactionCount": 20
     },
     {
       "nickname": "星星之火",
@@ -219,8 +219,8 @@
     },
     {
       "nickname": "逗霸",
-      "totalAmount": 4800338.987900999,
-      "transactionCount": 2
+      "totalAmount": 4903454.80904,
+      "transactionCount": 4
     },
     {
       "nickname": "Cassie",
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T00:03:35.834Z"
+  "queryTime": "2025-11-22T02:05:28.028Z"
 }
