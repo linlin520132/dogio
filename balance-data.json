@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          961104719.3769333
+          963946050.954362
         ],
-        "totalBalance": 961104719.3769333,
-        "percentage": 12.673472377131692
+        "totalBalance": 963946050.954362,
+        "percentage": 13.00657103802603
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -245,10 +245,10 @@
         "initialBalanceTotal": 186210563,
         "currentBalances": [
           99122659.96384476,
-          50625847.37037983
+          50677383.515760794
         ],
-        "totalBalance": 149748507.33422458,
-        "percentage": -19.58108878376326
+        "totalBalance": 149800043.47960556,
+        "percentage": -19.55341250989851
       },
       {
         "nickname": "吉姆熊猫",
@@ -1235,10 +1235,10 @@
         ],
         "initialBalanceTotal": 38000000,
         "currentBalances": [
-          38957555.59973168
+          39010714.15913681
         ],
-        "totalBalance": 38957555.59973168,
-        "percentage": 2.5198831571886218
+        "totalBalance": 39010714.15913681,
+        "percentage": 2.6597741029916038
       },
       {
         "nickname": "城市/ht 日记",
@@ -1912,11 +1912,11 @@
         ],
         "initialBalanceTotal": 20023059.08,
         "currentBalances": [
-          12088932.085139507,
+          12110474.355518753,
           8119050.980076086
         ],
-        "totalBalance": 20207983.065215595,
-        "percentage": 0.9235551095202426
+        "totalBalance": 20229525.33559484,
+        "percentage": 1.031142418198579
       },
       {
         "nickname": "魔虫",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T13:07:37.380Z",
+    "lastUpdate": "2025-11-22T13:35:46.142Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
