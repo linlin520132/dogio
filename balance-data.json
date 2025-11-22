@@ -895,10 +895,10 @@
         "initialBalanceTotal": 94539367,
         "currentBalances": [
           38360548.24578621,
-          39805844.67214893
+          39858576.0996006
         ],
-        "totalBalance": 78166392.91793513,
-        "percentage": -17.318683847401754
+        "totalBalance": 78219124.3453868,
+        "percentage": -17.26290663085696
       },
       {
         "nickname": "炮兵连长",
@@ -1999,7 +1999,7 @@
         "percentage": 2.4175168118806734
       }
     ],
-    "lastUpdate": "2025-11-21T23:53:04.673Z",
+    "lastUpdate": "2025-11-22T00:03:06.392Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
