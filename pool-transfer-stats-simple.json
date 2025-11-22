@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 987276030.7720758,
-    "totalTransactions": 338,
+    "totalTransferred": 987595719.2950348,
+    "totalTransactions": 340,
     "usersInvolved": 62,
-    "poolTotalRecords": 1113,
+    "poolTotalRecords": 1118,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -193,14 +193,14 @@
       "transactionCount": 8
     },
     {
-      "nickname": "清",
-      "totalAmount": 6765031.648522518,
+      "nickname": "树藤与海岛",
+      "totalAmount": 6996869.118608,
       "transactionCount": 4
     },
     {
-      "nickname": "树藤与海岛",
-      "totalAmount": 6677180.595648999,
-      "transactionCount": 2
+      "nickname": "清",
+      "totalAmount": 6765031.648522518,
+      "transactionCount": 4
     },
     {
       "nickname": "memecoin",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T10:52:40.014Z"
+  "queryTime": "2025-11-22T11:02:28.997Z"
 }
