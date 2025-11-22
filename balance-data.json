@@ -305,10 +305,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          146051525.98165214
+          146091512.88876888
         ],
-        "totalBalance": 146051525.98165214,
-        "percentage": 4.322518558322957
+        "totalBalance": 146091512.88876888,
+        "percentage": 4.351080634834916
       },
       {
         "nickname": "韭菜人生",
@@ -509,10 +509,10 @@
         ],
         "initialBalanceTotal": 110000000,
         "currentBalances": [
-          108676957.86066721
+          1729031.1625310988
         ],
-        "totalBalance": 108676957.86066721,
-        "percentage": -1.2027655812116238
+        "totalBalance": 1729031.1625310988,
+        "percentage": -98.42815348860809
       },
       {
         "nickname": "小柒柒",
@@ -737,10 +737,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          102889907.94813588
+          102918532.61063826
         ],
-        "totalBalance": 102889907.94813588,
-        "percentage": 2.597070306280267
+        "totalBalance": 102918532.61063826,
+        "percentage": 2.6256134993865374
       },
       {
         "nickname": "香香",
@@ -1395,10 +1395,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          26653690.997831978
+          26726707.805088174
         ],
-        "totalBalance": 26653690.997831978,
-        "percentage": -8.246571804699123
+        "totalBalance": 26726707.805088174,
+        "percentage": -7.995216659095594
       },
       {
         "nickname": "小财宝",
@@ -1850,11 +1850,11 @@
         ],
         "initialBalanceTotal": 20270000,
         "currentBalances": [
-          10374609.611244673,
-          10196020.560540998
+          10380923.935772125,
+          10202384.511892969
         ],
-        "totalBalance": 20570630.17178567,
-        "percentage": 1.4831286225242786
+        "totalBalance": 20583308.447665095,
+        "percentage": 1.5456756174893702
       },
       {
         "nickname": "胡云飞",
@@ -1987,7 +1987,7 @@
         "percentage": 2.4661562711328044
       }
     ],
-    "lastUpdate": "2025-11-22T07:59:50.518Z",
+    "lastUpdate": "2025-11-22T08:28:44.172Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
