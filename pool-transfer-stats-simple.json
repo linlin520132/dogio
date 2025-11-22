@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 976219360.2667874,
-    "totalTransactions": 332,
-    "usersInvolved": 61,
-    "poolTotalRecords": 1097,
+    "totalTransferred": 987231519.3605927,
+    "totalTransactions": 336,
+    "usersInvolved": 62,
+    "poolTotalRecords": 1109,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -109,8 +109,8 @@
     },
     {
       "nickname": "光",
-      "totalAmount": 12332383.801884308,
-      "transactionCount": 32
+      "totalAmount": 12343494.84700457,
+      "transactionCount": 34
     },
     {
       "nickname": "上官允禾",
@@ -131,6 +131,11 @@
       "nickname": "南方种植园",
       "totalAmount": 11363884.01384137,
       "transactionCount": 8
+    },
+    {
+      "nickname": "繁星社区~甘",
+      "totalAmount": 11001048.048685132,
+      "transactionCount": 2
     },
     {
       "nickname": "遥远的传说",
@@ -313,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-22T08:29:20.986Z"
+  "queryTime": "2025-11-22T08:49:32.801Z"
 }
