@@ -3,7 +3,7 @@
     "totalTransferred": 1157842799.2908144,
     "totalTransactions": 366,
     "usersInvolved": 62,
-    "poolTotalRecords": 1194,
+    "poolTotalRecords": 1192,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -10466,25 +10466,6 @@
       "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
       "isFromContract": false,
       "isToContract": true,
-      "amount": "380",
-      "transactionSymbol": "USD₮0",
-      "txFee": "",
-      "state": "success",
-      "tokenId": "",
-      "tokenContractAddress": "0x779ded0c9e1022225f8e0630b35a9b54be713736",
-      "challengeStatus": "",
-      "l1OriginHash": ""
-    },
-    {
-      "txId": "0xfe3ff0a1660ba9007efd9e454a8fc6c7b28c69f64c2c20798b3bdaa6918a1b68",
-      "methodId": "0xe8e33700",
-      "blockHash": "0x5ca89be572b482e8d763417aaa43475237c996a4c26a8ed1d64b56c9ba3fdbce",
-      "height": "45019922",
-      "transactionTime": "1763788958000",
-      "from": "0xfd59e609b557dabc2728579ca1d00e2559fe5ea6",
-      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
-      "isFromContract": false,
-      "isToContract": true,
       "amount": "21970704.716691773",
       "transactionSymbol": "DOG",
       "txFee": "",
@@ -13835,25 +13816,6 @@
       "state": "success",
       "tokenId": "",
       "tokenContractAddress": "0xc8113a5afc37a8c9772bd22c4fbf79a07f1a48a0",
-      "challengeStatus": "",
-      "l1OriginHash": ""
-    },
-    {
-      "txId": "0xa489cdc69621addc651716a46bc0ff01a6ef49b68851e0fd2540ea3acb519037",
-      "methodId": "0xe8e33700",
-      "blockHash": "0xbbc78f6db1ea2c1c727e387d16ed0c713221d586a6d8fca020e8d9a5764db9c2",
-      "height": "44916408",
-      "transactionTime": "1763685444000",
-      "from": "0x0000000000000000000000000000000000000000",
-      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
-      "isFromContract": false,
-      "isToContract": true,
-      "amount": "302802.7446420697",
-      "transactionSymbol": "DIVIDEND_TRACKER",
-      "txFee": "",
-      "state": "success",
-      "tokenId": "",
-      "tokenContractAddress": "0x942916f487bdfd9b9f8b7fc3f54d03919e867dff",
       "challengeStatus": "",
       "l1OriginHash": ""
     },
@@ -30084,5 +30046,5 @@
       "l1OriginHash": ""
     }
   ],
-  "queryTime": "2025-11-23T10:43:06.956Z"
+  "queryTime": "2025-11-23T10:53:50.688Z"
 }
