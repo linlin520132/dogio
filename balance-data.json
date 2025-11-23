@@ -1299,10 +1299,10 @@
         "initialBalanceTotal": 32641670.4921,
         "currentBalances": [
           17265700.76417223,
-          20593701.09219323
+          20691897.44627625
         ],
-        "totalBalance": 37859401.85636546,
-        "percentage": 15.984878486927506
+        "totalBalance": 37957598.21044848,
+        "percentage": 16.28570976364415
       },
       {
         "nickname": "天天好心情",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T06:42:12.984Z",
+    "lastUpdate": "2025-11-23T06:58:10.670Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
