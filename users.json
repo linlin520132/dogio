@@ -143,6 +143,13 @@
         "initialBalanceTotal": 186210563
     },
     {
+        "nickname": "williams",
+        "addresses": [
+            "0x7f41b8c7510da4e26dd1ddb0895cf3a82795180f"
+        ],
+        "initialBalanceTotal": 179190000
+    },
+    {
         "nickname": "吉姆熊猫",
         "addresses": [
             "0x4d6ae7eb9c767436fdc91ad1498d7c3ded176afc"
