@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          915562574.7080159
+          923642232.6838963
         ],
-        "totalBalance": 915562574.7080159,
-        "percentage": 7.334416730130823
+        "totalBalance": 923642232.6838963,
+        "percentage": 8.28162165110156
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -318,11 +318,11 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          25555598.04971439,
+          102284058.8384398,
           21773821.981100634
         ],
-        "totalBalance": 47329420.03081502,
-        "percentage": -66.19327140656071
+        "totalBalance": 124057880.81954044,
+        "percentage": -11.387227986042541
       },
       {
         "nickname": "羽辰",
@@ -751,10 +751,10 @@
         "initialBalanceTotal": 100177579,
         "currentBalances": [
           48262616.60321736,
-          56500865.089711934
+          56554700.752593465
         ],
-        "totalBalance": 104763481.6929293,
-        "percentage": 4.577773528475166
+        "totalBalance": 104817317.35581082,
+        "percentage": 4.631513759990967
       },
       {
         "nickname": "安德鲁",
@@ -1115,10 +1115,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          35807057.85829107
+          48299428.95239636
         ],
-        "totalBalance": 35807057.85829107,
-        "percentage": -20.42876031490874
+        "totalBalance": 48299428.95239636,
+        "percentage": 7.3320643386585855
       },
       {
         "nickname": "小满",
@@ -1395,10 +1395,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          26753421.11065429
+          26769293.962452196
         ],
-        "totalBalance": 26753421.11065429,
-        "percentage": -7.903258012005433
+        "totalBalance": 26769293.962452196,
+        "percentage": -7.848616853007523
       },
       {
         "nickname": "小财宝",
@@ -1431,10 +1431,10 @@
         ],
         "initialBalanceTotal": 27592374,
         "currentBalances": [
-          28068430.8750373
+          28156396.412335068
         ],
-        "totalBalance": 28068430.8750373,
-        "percentage": 1.725320463680658
+        "totalBalance": 28156396.412335068,
+        "percentage": 2.0441242654041583
       },
       {
         "nickname": "u哥哥",
@@ -1689,10 +1689,10 @@
         ],
         "initialBalanceTotal": 21900000,
         "currentBalances": [
-          22202497.762259953
+          32369700.227988534
         ],
-        "totalBalance": 22202497.762259953,
-        "percentage": 1.381268320821702
+        "totalBalance": 32369700.227988534,
+        "percentage": 47.80685035611202
       },
       {
         "nickname": "打dog小兵3947068284",
@@ -1789,10 +1789,10 @@
         ],
         "initialBalanceTotal": 20914636.2,
         "currentBalances": [
-          21245288.78971475
+          21260667.551064517
         ],
-        "totalBalance": 21245288.78971475,
-        "percentage": 1.5809626643888297
+        "totalBalance": 21260667.551064517,
+        "percentage": 1.654493760998425
       },
       {
         "nickname": "Leon",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T08:30:04.827Z",
+    "lastUpdate": "2025-11-23T08:49:21.247Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
