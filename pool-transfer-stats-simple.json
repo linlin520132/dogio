@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1157842799.2908144,
-    "totalTransactions": 366,
+    "totalTransferred": 1157937055.0520492,
+    "totalTransactions": 368,
     "usersInvolved": 62,
-    "poolTotalRecords": 1192,
+    "poolTotalRecords": 1197,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -293,6 +293,11 @@
       "transactionCount": 4
     },
     {
+      "nickname": "追梦少年",
+      "totalAmount": 229561.96701274556,
+      "transactionCount": 6
+    },
+    {
       "nickname": "时迁",
       "totalAmount": 214998.58001426747,
       "transactionCount": 4
@@ -308,15 +313,10 @@
       "transactionCount": 2
     },
     {
-      "nickname": "追梦少年",
-      "totalAmount": 135306.20577798795,
-      "transactionCount": 4
-    },
-    {
       "nickname": "渔夫",
       "totalAmount": 6476.296709882455,
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-23T13:39:14.031Z"
+  "queryTime": "2025-11-23T13:50:28.018Z"
 }
