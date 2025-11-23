@@ -371,10 +371,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          121783351.0074409
+          121849242.23481974
         ],
-        "totalBalance": 121783351.0074409,
-        "percentage": 1.486125839534079
+        "totalBalance": 121849242.23481974,
+        "percentage": 1.5410351956831168
       },
       {
         "nickname": "城",
@@ -467,10 +467,10 @@
         "initialBalanceTotal": 116268461,
         "currentBalances": [
           14836863.69891682,
-          98355793.91423722
+          98409009.59542203
         ],
-        "totalBalance": 113192657.61315404,
-        "percentage": -2.645432269758831
+        "totalBalance": 113245873.29433885,
+        "percentage": -2.5996626081265046
       },
       {
         "nickname": "慕兮",
@@ -1043,10 +1043,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52942106.93349022
+          52970751.410563745
         ],
-        "totalBalance": 52942106.93349022,
-        "percentage": 1.8422174486810468
+        "totalBalance": 52970751.410563745,
+        "percentage": 1.8973194692049147
       },
       {
         "nickname": "曾经的自己",
@@ -1283,10 +1283,10 @@
         ],
         "initialBalanceTotal": 33237400,
         "currentBalances": [
-          33400807.59759891
+          33418879.199257467
         ],
-        "totalBalance": 33400807.59759891,
-        "percentage": 0.49163772617265594
+        "totalBalance": 33418879.199257467,
+        "percentage": 0.5460090117080967
       },
       {
         "nickname": "Nayo",
@@ -1529,10 +1529,10 @@
         ],
         "initialBalanceTotal": 24786625,
         "currentBalances": [
-          25131580.431177355
+          25145177.944030154
         ],
-        "totalBalance": 25131580.431177355,
-        "percentage": 1.3916998832126413
+        "totalBalance": 25145177.944030154,
+        "percentage": 1.4465581499302729
       },
       {
         "nickname": "王梓【RWA】）",
@@ -1837,10 +1837,10 @@
         ],
         "initialBalanceTotal": 20639845,
         "currentBalances": [
-          22774917.870585844
+          22787240.304477923
         ],
-        "totalBalance": 22774917.870585844,
-        "percentage": 10.344422986635045
+        "totalBalance": 22787240.304477923,
+        "percentage": 10.404125149573181
       },
       {
         "nickname": "啊真",
@@ -1999,7 +1999,7 @@
         "percentage": 2.6240660614432034
       }
     ],
-    "lastUpdate": "2025-11-23T16:28:06.743Z",
+    "lastUpdate": "2025-11-23T16:48:20.076Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
