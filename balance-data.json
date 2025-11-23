@@ -257,10 +257,10 @@
         ],
         "initialBalanceTotal": 179190000,
         "currentBalances": [
-          179190000
+          179286951.25759262
         ],
-        "totalBalance": 179190000,
-        "percentage": 0
+        "totalBalance": 179286951.25759262,
+        "percentage": 0.05410528354965036
       },
       {
         "nickname": "吉姆熊猫",
@@ -508,11 +508,11 @@
         "initialBalanceTotal": 110261409,
         "currentBalances": [
           20871906.881375264,
-          38721421.09588543,
+          38742371.430563815,
           41676.03400560672
         ],
-        "totalBalance": 59635004.0112663,
-        "percentage": -45.91489030285628
+        "totalBalance": 59655954.34594468,
+        "percentage": -45.89588969795889
       },
       {
         "nickname": "我",
@@ -1863,10 +1863,10 @@
         "initialBalanceTotal": 20270000,
         "currentBalances": [
           10406629.52732929,
-          10222070.848315248
+          10227601.528732376
         ],
-        "totalBalance": 20628700.37564454,
-        "percentage": 1.7696121146745858
+        "totalBalance": 20634231.056061666,
+        "percentage": 1.7968971685331352
       },
       {
         "nickname": "胡云飞",
@@ -1875,10 +1875,10 @@
         ],
         "initialBalanceTotal": 20184078,
         "currentBalances": [
-          20395219.678972553
+          20406254.570410438
         ],
-        "totalBalance": 20395219.678972553,
-        "percentage": 1.0460803756929271
+        "totalBalance": 20406254.570410438,
+        "percentage": 1.1007516439960146
       },
       {
         "nickname": "真善美",
@@ -1949,10 +1949,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          20127069.84068034
+          20137959.648887876
         ],
-        "totalBalance": 20127069.84068034,
-        "percentage": 0.6353492034016922
+        "totalBalance": 20137959.648887876,
+        "percentage": 0.6897982444393821
       },
       {
         "nickname": "三好",
@@ -1999,7 +1999,7 @@
         "percentage": 2.6240660614432034
       }
     ],
-    "lastUpdate": "2025-11-23T15:00:21.280Z",
+    "lastUpdate": "2025-11-23T15:23:06.985Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
