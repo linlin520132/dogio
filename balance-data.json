@@ -1850,11 +1850,11 @@
         ],
         "initialBalanceTotal": 20270000,
         "currentBalances": [
-          10391299.654142575,
-          10212581.780369012
+          10401002.035685878,
+          10222070.848315248
         ],
-        "totalBalance": 20603881.434511587,
-        "percentage": 1.6471703725287963
+        "totalBalance": 20623072.88400113,
+        "percentage": 1.7418494523982653
       },
       {
         "nickname": "胡云飞",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T09:38:21.971Z",
+    "lastUpdate": "2025-11-23T09:49:22.599Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
