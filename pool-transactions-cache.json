@@ -7038,6 +7038,25 @@
       "blockHash": "0x9b0e8755d0c4b9111d48b6c85905bfd7dc4ab7a8df9d2950c2070fffe314c7ce",
       "height": "44911106",
       "transactionTime": "1763680142000",
+      "from": "0x83e31de2cdbe3099eb7b8c7e6b6e10a284efb100",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "2681598.2734850417",
+      "transactionSymbol": "DOG",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x903358faf7c6304afbd560e9e29b12ab1b8fddc5",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
+      "txId": "0x3e3186a92ff45a33e5b800a5d223849b33663127bc481edcacf1d2b84408e254",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x9b0e8755d0c4b9111d48b6c85905bfd7dc4ab7a8df9d2950c2070fffe314c7ce",
+      "height": "44911106",
+      "transactionTime": "1763680142000",
       "from": "0x0000000000000000000000000000000000000000",
       "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
       "isFromContract": false,
@@ -22651,6 +22670,6 @@
       "l1OriginHash": ""
     }
   ],
-  "cacheTime": "2025-11-23T09:00:51.934Z",
-  "totalRecords": 1192
+  "cacheTime": "2025-11-23T09:24:34.018Z",
+  "totalRecords": 1193
 }

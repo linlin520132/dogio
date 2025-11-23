@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1157842799.2908144,
-    "totalTransactions": 366,
+    "totalTransferred": 1160524397.5642993,
+    "totalTransactions": 367,
     "usersInvolved": 62,
-    "poolTotalRecords": 1192,
+    "poolTotalRecords": 1193,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -88,6 +88,11 @@
       "transactionCount": 8
     },
     {
+      "nickname": "光",
+      "totalAmount": 15025093.120489608,
+      "transactionCount": 35
+    },
+    {
       "nickname": "☁️",
       "totalAmount": 15018385.135947999,
       "transactionCount": 4
@@ -111,11 +116,6 @@
       "nickname": "星星之火",
       "totalAmount": 12658927.228639001,
       "transactionCount": 2
-    },
-    {
-      "nickname": "光",
-      "totalAmount": 12343494.84700457,
-      "transactionCount": 34
     },
     {
       "nickname": "上官允禾",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-23T09:00:51.958Z"
+  "queryTime": "2025-11-23T09:24:34.042Z"
 }

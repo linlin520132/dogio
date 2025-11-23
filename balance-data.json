@@ -372,11 +372,11 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          51516878.202628635,
+          51540379.40583634,
           70696470.70768811
         ],
-        "totalBalance": 122213348.91031674,
-        "percentage": 1.8444574252639463
+        "totalBalance": 122236850.11352444,
+        "percentage": 1.8640417612703641
       },
       {
         "nickname": "如果 爱",
@@ -386,11 +386,11 @@
         ],
         "initialBalanceTotal": 119725915,
         "currentBalances": [
-          55695177.21604753,
-          51930898.262831
+          55734126.25040758,
+          51954967.28003294
         ],
-        "totalBalance": 107626075.47887853,
-        "percentage": -10.10628277188065
+        "totalBalance": 107689093.53044051,
+        "percentage": -10.053647507775983
       },
       {
         "nickname": "貳大爺",
@@ -947,10 +947,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          95319774.9172886
+          95368100.23903993
         ],
-        "totalBalance": 95319774.9172886,
-        "percentage": 9.420537777302702
+        "totalBalance": 95368100.23903993,
+        "percentage": 9.476011918936795
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -1566,11 +1566,11 @@
         ],
         "initialBalanceTotal": 23803093,
         "currentBalances": [
-          10880670.486377278,
-          13171422.840334475
+          10880669.486377278,
+          13376298.5906253
         ],
-        "totalBalance": 24052093.32671175,
-        "percentage": 1.0460839131778021
+        "totalBalance": 24256968.077002577,
+        "percentage": 1.906790336039848
       },
       {
         "nickname": "柚子哥",
@@ -1825,10 +1825,10 @@
         ],
         "initialBalanceTotal": 20639845,
         "currentBalances": [
-          21273382.327334814
+          22774917.870585844
         ],
-        "totalBalance": 21273382.327334814,
-        "percentage": 3.0694868461212463
+        "totalBalance": 22774917.870585844,
+        "percentage": 10.344422986635045
       },
       {
         "nickname": "啊真",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T09:00:02.851Z",
+    "lastUpdate": "2025-11-23T09:23:46.401Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
