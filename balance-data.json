@@ -1019,10 +1019,10 @@
         ],
         "initialBalanceTotal": 56797518,
         "currentBalances": [
-          57790634.11932996
+          57885314.42891729
         ],
-        "totalBalance": 57790634.11932996,
-        "percentage": 1.7485202774705035
+        "totalBalance": 57885314.42891729,
+        "percentage": 1.915218247595412
       },
       {
         "nickname": "阳光",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T11:51:47.058Z",
+    "lastUpdate": "2025-11-23T12:01:48.447Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
