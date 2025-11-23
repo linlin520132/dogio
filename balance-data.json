@@ -359,10 +359,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          121691597.6382412
+          121756761.98088308
         ],
-        "totalBalance": 121691597.6382412,
-        "percentage": 1.4096646985343348
+        "totalBalance": 121756761.98088308,
+        "percentage": 1.463968317402564
       },
       {
         "nickname": "城",
@@ -763,10 +763,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          101762338.93595351
+          101831996.33375694
         ],
-        "totalBalance": 101762338.93595351,
-        "percentage": 1.6444954893558577
+        "totalBalance": 101831996.33375694,
+        "percentage": 1.7140722220731226
       },
       {
         "nickname": "一骑红尘",
@@ -1031,10 +1031,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52892987.06701209
+          52942106.93349022
         ],
-        "totalBalance": 52892987.06701209,
-        "percentage": 1.7477278937186722
+        "totalBalance": 52942106.93349022,
+        "percentage": 1.8422174486810468
       },
       {
         "nickname": "曾经的自己",
@@ -1247,10 +1247,10 @@
         ],
         "initialBalanceTotal": 36577296,
         "currentBalances": [
-          35416688.530517116
+          35434711.85488869
         ],
-        "totalBalance": 35416688.530517116,
-        "percentage": -3.173026976851662
+        "totalBalance": 35434711.85488869,
+        "percentage": -3.1237523547703128
       },
       {
         "nickname": "南方种植园",
@@ -1395,10 +1395,10 @@
         ],
         "initialBalanceTotal": 29049259,
         "currentBalances": [
-          26769293.962452196
+          26776331.308521267
         ],
-        "totalBalance": 26769293.962452196,
-        "percentage": -7.848616853007523
+        "totalBalance": 26776331.308521267,
+        "percentage": -7.824391291628929
       },
       {
         "nickname": "小财宝",
@@ -1937,10 +1937,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          18444069.84068034
+          20127069.84068034
         ],
-        "totalBalance": 18444069.84068034,
-        "percentage": -7.7796507965983075
+        "totalBalance": 20127069.84068034,
+        "percentage": 0.6353492034016922
       },
       {
         "nickname": "三好",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T09:23:46.401Z",
+    "lastUpdate": "2025-11-23T09:38:21.971Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
