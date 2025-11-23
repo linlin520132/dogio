@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1100471393.9472659,
-    "totalTransactions": 358,
+    "totalTransferred": 1105975915.928555,
+    "totalTransactions": 360,
     "usersInvolved": 62,
-    "poolTotalRecords": 1165,
+    "poolTotalRecords": 1178,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -138,6 +138,11 @@
       "transactionCount": 8
     },
     {
+      "nickname": "小K",
+      "totalAmount": 11019353.885025261,
+      "transactionCount": 6
+    },
+    {
       "nickname": "繁星社区~甘",
       "totalAmount": 11001048.048685132,
       "transactionCount": 2
@@ -216,11 +221,6 @@
       "nickname": "真善美",
       "totalAmount": 5631856.662224423,
       "transactionCount": 6
-    },
-    {
-      "nickname": "小K",
-      "totalAmount": 5514831.903736028,
-      "transactionCount": 4
     },
     {
       "nickname": "天雨",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-23T00:03:42.991Z"
+  "queryTime": "2025-11-23T02:30:57.027Z"
 }
