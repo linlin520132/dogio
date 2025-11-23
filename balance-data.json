@@ -971,10 +971,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          74667761.88879253
+          74838934.80478422
         ],
-        "totalBalance": 74667761.88879253,
-        "percentage": 19.379581512689565
+        "totalBalance": 74838934.80478422,
+        "percentage": 19.653254521769835
       },
       {
         "nickname": "未来(๑]؂[๑）都是晴天",
@@ -1925,10 +1925,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          26932485.83017466
+          27081983.643564023
         ],
-        "totalBalance": 26932485.83017466,
-        "percentage": 34.662429150873294
+        "totalBalance": 27081983.643564023,
+        "percentage": 35.40991821782011
       },
       {
         "nickname": "小趴菜",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T09:49:22.599Z",
+    "lastUpdate": "2025-11-23T09:59:40.402Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
