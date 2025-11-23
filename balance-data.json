@@ -121,10 +121,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          292271395.0773524
+          292290231.6657647
         ],
-        "totalBalance": 292271395.0773524,
-        "percentage": -1.9744124294763714
+        "totalBalance": 292290231.6657647,
+        "percentage": -1.968094781981482
       },
       {
         "nickname": "道哥币赢",
@@ -1999,7 +1999,7 @@
         "percentage": 2.6240660614432034
       }
     ],
-    "lastUpdate": "2025-11-23T22:41:55.516Z",
+    "lastUpdate": "2025-11-23T22:52:39.864Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
