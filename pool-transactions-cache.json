@@ -17749,6 +17749,25 @@
       "l1OriginHash": ""
     },
     {
+      "txId": "0x07a386c047b671ecb9500b4897f948f3d90c71bf24cec6fe8f106c8c11b39436",
+      "methodId": "0xe8e33700",
+      "blockHash": "0xe6c08a898ab2310ea50349089cf41007a016631a3ad202eba72b7752eb36ffc6",
+      "height": "44789691",
+      "transactionTime": "1763558727000",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "9926151.431931734",
+      "transactionSymbol": "DIVIDEND_TRACKER",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x942916f487bdfd9b9f8b7fc3f54d03919e867dff",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
       "txId": "0xc50575e089265def7779ee203da273a80bf392bf4eb3823c6d4d40db3e97321e",
       "methodId": "0xe8e33700",
       "blockHash": "0x040c4f22c37887c95a38260b63b566d6d0f7ef88321a137e2cfee23ad33a01e1",
@@ -20789,6 +20808,25 @@
       "l1OriginHash": ""
     },
     {
+      "txId": "0xaebd5060d2464ce6210bd1f9314fda2af8d9cb2ff864125d7adac6d094d826c3",
+      "methodId": "0xe8e33700",
+      "blockHash": "0x64cb7502799fbfcfe9aba459b86ac2f6e983465704e8aa153f12a2c2e7dd0dcd",
+      "height": "44758464",
+      "transactionTime": "1763527500000",
+      "from": "0x0000000000000000000000000000000000000000",
+      "to": "0x41027d3cacc14f35abd387b7350c05247e9ac646",
+      "isFromContract": false,
+      "isToContract": true,
+      "amount": "2937704.15763",
+      "transactionSymbol": "DIVIDEND_TRACKER",
+      "txFee": "",
+      "state": "success",
+      "tokenId": "",
+      "tokenContractAddress": "0x942916f487bdfd9b9f8b7fc3f54d03919e867dff",
+      "challengeStatus": "",
+      "l1OriginHash": ""
+    },
+    {
       "txId": "0x1984f552757e01a22db8958a7af8d23224ac446f298293314b4f5d62d477abae",
       "methodId": "0xe8e33700",
       "blockHash": "0x6db9f425adac43fac7edf911998fced6db451b97bd35b8d7532cc04c841b3667",
@@ -22651,6 +22689,6 @@
       "l1OriginHash": ""
     }
   ],
-  "cacheTime": "2025-11-23T08:01:18.319Z",
-  "totalRecords": 1192
+  "cacheTime": "2025-11-23T08:30:49.474Z",
+  "totalRecords": 1194
 }

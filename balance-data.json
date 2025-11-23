@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          915160956.9222549
+          915562574.7080159
         ],
-        "totalBalance": 915160956.9222549,
-        "percentage": 7.287333754074433
+        "totalBalance": 915562574.7080159,
+        "percentage": 7.334416730130823
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -305,10 +305,10 @@
         ],
         "initialBalanceTotal": 140000000,
         "currentBalances": [
-          181338021.1881818
+          181347027.4058784
         ],
-        "totalBalance": 181338021.1881818,
-        "percentage": 29.527157991558422
+        "totalBalance": 181347027.4058784,
+        "percentage": 29.533591004198854
       },
       {
         "nickname": "韭菜人生",
@@ -1247,10 +1247,10 @@
         ],
         "initialBalanceTotal": 36577296,
         "currentBalances": [
-          35402286.85304175
+          35416688.530517116
         ],
-        "totalBalance": 35402286.85304175,
-        "percentage": -3.212400246749368
+        "totalBalance": 35416688.530517116,
+        "percentage": -3.173026976851662
       },
       {
         "nickname": "南方种植园",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T08:00:28.969Z",
+    "lastUpdate": "2025-11-23T08:30:04.827Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
