@@ -97,10 +97,10 @@
         ],
         "initialBalanceTotal": 354034708,
         "currentBalances": [
-          348053833.0941541
+          348116658.4751609
         ],
-        "totalBalance": 348053833.0941541,
-        "percentage": -1.6893470529013446
+        "totalBalance": 348116658.4751609,
+        "percentage": -1.6716015099963317
       },
       {
         "nickname": "闲云",
@@ -121,10 +121,10 @@
         ],
         "initialBalanceTotal": 298158269,
         "currentBalances": [
-          291804947.98806655
+          291869661.2856625
         ],
-        "totalBalance": 291804947.98806655,
-        "percentage": -2.130855210973017
+        "totalBalance": 291869661.2856625,
+        "percentage": -2.1091508665612513
       },
       {
         "nickname": "道哥币赢",
@@ -959,10 +959,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          86099590.85452384
+          86119102.33306132
         ],
-        "totalBalance": 86099590.85452384,
-        "percentage": 16.35079845205924
+        "totalBalance": 86119102.33306132,
+        "percentage": 16.377165314947735
       },
       {
         "nickname": "丑到拖网速",
@@ -1055,10 +1055,10 @@
         ],
         "initialBalanceTotal": 50762682,
         "currentBalances": [
-          51793356.33314448
+          51841243.10929661
         ],
-        "totalBalance": 51793356.33314448,
-        "percentage": 2.030378011044567
+        "totalBalance": 51841243.10929661,
+        "percentage": 2.1247126172265927
       },
       {
         "nickname": "金马影帝",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T05:52:24.413Z",
+    "lastUpdate": "2025-11-23T06:02:55.137Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
