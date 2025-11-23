@@ -1875,10 +1875,10 @@
         ],
         "initialBalanceTotal": 20173002,
         "currentBalances": [
-          16267591.178022664
+          16622961.738645503
         ],
-        "totalBalance": 16267591.178022664,
-        "percentage": -19.359591705673434
+        "totalBalance": 16622961.738645503,
+        "percentage": -17.597977045530936
       },
       {
         "nickname": "喜乐人生",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T10:53:01.653Z",
+    "lastUpdate": "2025-11-23T11:03:29.004Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
