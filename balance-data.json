@@ -97,10 +97,10 @@
         ],
         "initialBalanceTotal": 354034708,
         "currentBalances": [
-          348116658.4751609
+          348436071.9303868
         ],
-        "totalBalance": 348116658.4751609,
-        "percentage": -1.6716015099963317
+        "totalBalance": 348436071.9303868,
+        "percentage": -1.5813805661147828
       },
       {
         "nickname": "闲云",
@@ -1987,7 +1987,7 @@
         "percentage": 2.5685710452463475
       }
     ],
-    "lastUpdate": "2025-11-23T13:59:36.723Z",
+    "lastUpdate": "2025-11-23T14:20:48.483Z",
     "totalUsers": 155,
     "totalAddresses": 217
   }
