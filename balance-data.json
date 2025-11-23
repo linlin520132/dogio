@@ -147,10 +147,10 @@
         ],
         "initialBalanceTotal": 255816946.36,
         "currentBalances": [
-          258367810.5613883
+          258507601.1978936
         ],
-        "totalBalance": 258367810.5613883,
-        "percentage": 0.9971443399995009
+        "totalBalance": 258507601.1978936,
+        "percentage": 1.0517891313217125
       },
       {
         "nickname": "旺旺",
@@ -866,13 +866,13 @@
         ],
         "initialBalanceTotal": 100000000,
         "currentBalances": [
-          40772360.06592246,
+          40794420.066946015,
           42256904.66887507,
           10314431.52791847,
           9333592.698319398
         ],
-        "totalBalance": 102677288.9610354,
-        "percentage": 2.677288961035401
+        "totalBalance": 102699348.96205896,
+        "percentage": 2.6993489620589615
       },
       {
         "nickname": "跑步二十天",
@@ -1163,10 +1163,10 @@
         ],
         "initialBalanceTotal": 41359845,
         "currentBalances": [
-          41792502.24951981
+          41815114.201364405
         ],
-        "totalBalance": 41792502.24951981,
-        "percentage": 1.0460804423222816
+        "totalBalance": 41815114.201364405,
+        "percentage": 1.1007517106614046
       },
       {
         "nickname": "素雅",
@@ -1323,10 +1323,10 @@
         ],
         "initialBalanceTotal": 31296418.3456,
         "currentBalances": [
-          31856460.060570683
+          31873696.08861534
         ],
-        "totalBalance": 31856460.060570683,
-        "percentage": 1.7894754242682172
+        "totalBalance": 31873696.08861534,
+        "percentage": 1.844548908570229
       },
       {
         "nickname": "虚竹",
@@ -1677,10 +1677,10 @@
         ],
         "initialBalanceTotal": 21933408,
         "currentBalances": [
-          30341919.601371355
+          30358336.18300609
         ],
-        "totalBalance": 30341919.601371355,
-        "percentage": 38.336548526208766
+        "totalBalance": 30358336.18300609,
+        "percentage": 38.41139590804169
       },
       {
         "nickname": "静慈",
@@ -1999,7 +1999,7 @@
         "percentage": 2.6240660614432034
       }
     ],
-    "lastUpdate": "2025-11-23T19:02:21.708Z",
+    "lastUpdate": "2025-11-23T19:24:14.020Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
