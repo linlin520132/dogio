@@ -1775,10 +1775,10 @@
         ],
         "initialBalanceTotal": 21000000,
         "currentBalances": [
-          21466874.15185688
+          21478488.86498599
         ],
-        "totalBalance": 21466874.15185688,
-        "percentage": 2.223210246937527
+        "totalBalance": 21478488.86498599,
+        "percentage": 2.2785184046951965
       },
       {
         "nickname": "追梦人",
@@ -1999,7 +1999,7 @@
         "percentage": 2.6240660614432034
       }
     ],
-    "lastUpdate": "2025-11-23T18:31:50.431Z",
+    "lastUpdate": "2025-11-23T18:52:33.292Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
