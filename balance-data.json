@@ -311,18 +311,6 @@
         "percentage": 1.808672206029956
       },
       {
-        "nickname": "斯奈夫",
-        "addresses": [
-          "0x1b0f46a63b290a87608d5723e64aade90204b308"
-        ],
-        "initialBalanceTotal": 140000000,
-        "currentBalances": [
-          1e-18
-        ],
-        "totalBalance": 1e-18,
-        "percentage": -100
-      },
-      {
         "nickname": "韭菜人生",
         "addresses": [
           "0x48388fa2485ee89bbcc3898c56f3482abd338e5d",
@@ -513,18 +501,6 @@
         ],
         "totalBalance": 59699652.04759284,
         "percentage": -45.8562586955579
-      },
-      {
-        "nickname": "我",
-        "addresses": [
-          "0x175eb87bf2c1d6b79cacf5f05428eeb5c922d374"
-        ],
-        "initialBalanceTotal": 110000000,
-        "currentBalances": [
-          1729031.1625310988
-        ],
-        "totalBalance": 1729031.1625310988,
-        "percentage": -98.42815348860809
       },
       {
         "nickname": "小柒柒",
@@ -731,18 +707,6 @@
         "percentage": 10.670684704101483
       },
       {
-        "nickname": "遥远的传说",
-        "addresses": [
-          "0xD8052678472EbB88fd608E8B2651cDB4A6573297"
-        ],
-        "initialBalanceTotal": 100477828.3,
-        "currentBalances": [
-          0
-        ],
-        "totalBalance": 0,
-        "percentage": -100
-      },
-      {
         "nickname": "赢在选择",
         "addresses": [
           "0x30F07E7943669C09fd4bFf545BC6575358c26a92"
@@ -843,18 +807,6 @@
         ],
         "totalBalance": 90552143.10770847,
         "percentage": -9.447856892291531
-      },
-      {
-        "nickname": "小雨",
-        "addresses": [
-          "0x5816d5b5d4bc487ba4484ab4b25402436afdb2a1"
-        ],
-        "initialBalanceTotal": 100000000,
-        "currentBalances": [
-          80395562.53197218
-        ],
-        "totalBalance": 80395562.53197218,
-        "percentage": -19.604437468027815
       },
       {
         "nickname": "墨白",
@@ -1987,8 +1939,8 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T06:35:33.470Z",
-    "totalUsers": 155,
-    "totalAddresses": 217
+    "lastUpdate": "2025-11-24T06:59:59.159Z",
+    "totalUsers": 151,
+    "totalAddresses": 213
   }
 }
