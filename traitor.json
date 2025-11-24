@@ -105,5 +105,33 @@
             "0xa2444b1b96401EEc2aD178676fd250efc67da477"
         ],
         "initialBalanceTotal": 26423672.97822981
+    },
+    {
+        "nickname": "斯奈夫",
+        "addresses": [
+            "0x1b0f46a63b290a87608d5723e64aade90204b308"
+        ],
+        "initialBalanceTotal": 140000000
+    },
+    {
+        "nickname": "遥远的传说",
+        "addresses": [
+            "0xD8052678472EbB88fd608E8B2651cDB4A6573297"
+        ],
+        "initialBalanceTotal": 100477828.3
+    },
+    {
+        "nickname": "我",
+        "addresses": [
+            "0x175eb87bf2c1d6b79cacf5f05428eeb5c922d374"
+        ],
+        "initialBalanceTotal": 110000000
+    },
+    {
+        "nickname": "小雨",
+        "addresses": [
+            "0x5816d5b5d4bc487ba4484ab4b25402436afdb2a1"
+        ],
+        "initialBalanceTotal": 100000000
     }
 ]
