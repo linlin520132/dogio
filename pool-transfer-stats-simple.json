@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1998234518.667291,
-    "totalTransactions": 456,
+    "totalTransferred": 2019644324.61545,
+    "totalTransactions": 458,
     "usersInvolved": 62,
-    "poolTotalRecords": 1429,
+    "poolTotalRecords": 1433,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -108,6 +108,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "东风（叶军民）",
+      "totalAmount": 41307284.494153015,
+      "transactionCount": 14
+    },
+    {
       "nickname": "上官允禾",
       "totalAmount": 31186262.336088,
       "transactionCount": 4
@@ -121,11 +126,6 @@
       "nickname": "貳大爺",
       "totalAmount": 19966233.378077,
       "transactionCount": 4
-    },
-    {
-      "nickname": "东风（叶军民）",
-      "totalAmount": 19897478.545994,
-      "transactionCount": 12
     },
     {
       "nickname": "2025国泰民安",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T17:30:27.346Z"
+  "queryTime": "2025-11-24T17:47:50.402Z"
 }
