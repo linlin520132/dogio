@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1979096145.461602,
-    "totalTransactions": 454,
+    "totalTransferred": 1998234518.667291,
+    "totalTransactions": 456,
     "usersInvolved": 62,
-    "poolTotalRecords": 1425,
+    "poolTotalRecords": 1429,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -108,6 +108,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "上官允禾",
+      "totalAmount": 31186262.336088,
+      "transactionCount": 4
+    },
+    {
       "nickname": "努力赚钱",
       "totalAmount": 28807777.263333004,
       "transactionCount": 8
@@ -156,11 +161,6 @@
       "nickname": "光",
       "totalAmount": 12343494.84700457,
       "transactionCount": 34
-    },
-    {
-      "nickname": "上官允禾",
-      "totalAmount": 12047889.130399,
-      "transactionCount": 2
     },
     {
       "nickname": "zhengch",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T17:03:26.261Z"
+  "queryTime": "2025-11-24T17:30:27.346Z"
 }
