@@ -1,16 +1,16 @@
 {
   "summary": {
-    "totalTransferred": 1511796354.962896,
-    "totalTransactions": 398,
+    "totalTransferred": 1606078717.3248863,
+    "totalTransactions": 402,
     "usersInvolved": 60,
-    "poolTotalRecords": 1322,
+    "poolTotalRecords": 1336,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
     {
       "nickname": "哈密瓜",
-      "totalAmount": 202899076.50580823,
-      "transactionCount": 22
+      "totalAmount": 246303090.91001815,
+      "transactionCount": 24
     },
     {
       "nickname": "吴坚不摧",
@@ -41,6 +41,11 @@
       "nickname": "清雅",
       "totalAmount": 63219684.562517,
       "transactionCount": 8
+    },
+    {
+      "nickname": "旺旺",
+      "totalAmount": 60632793.30993548,
+      "transactionCount": 4
     },
     {
       "nickname": "树藤与海岛",
@@ -193,11 +198,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "旺旺",
-      "totalAmount": 9754445.352154927,
-      "transactionCount": 2
-    },
-    {
       "nickname": "观明",
       "totalAmount": 9629264.609853208,
       "transactionCount": 2
@@ -308,5 +308,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T13:59:51.459Z"
+  "queryTime": "2025-11-24T14:26:04.675Z"
 }

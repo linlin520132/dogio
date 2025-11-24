@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          962571087.4438863
+          918729160.6683329
         ],
-        "totalBalance": 962571087.4438863,
-        "percentage": 12.845379536211757
+        "totalBalance": 918729160.6683329,
+        "percentage": 7.70564603380222
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -85,10 +85,10 @@
         ],
         "initialBalanceTotal": 402843191.4623,
         "currentBalances": [
-          380014363.0340181
+          370014363.0340181
         ],
-        "totalBalance": 380014363.0340181,
-        "percentage": -5.66692671295112
+        "totalBalance": 370014363.0340181,
+        "percentage": -8.149282183252234
       },
       {
         "nickname": "树藤与海岛",
@@ -159,10 +159,10 @@
         ],
         "initialBalanceTotal": 250000000,
         "currentBalances": [
-          244260804.2010271
+          192869133.8419326
         ],
-        "totalBalance": 244260804.2010271,
-        "percentage": -2.295678319589162
+        "totalBalance": 192869133.8419326,
+        "percentage": -22.85234646322696
       },
       {
         "nickname": "大白",
@@ -359,10 +359,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          121979569.20480825
+          122015759.08587593
         ],
-        "totalBalance": 121979569.20480825,
-        "percentage": 1.649641004006875
+        "totalBalance": 122015759.08587593,
+        "percentage": 1.6797992382299403
       },
       {
         "nickname": "城",
@@ -415,10 +415,10 @@
         ],
         "initialBalanceTotal": 118710390,
         "currentBalances": [
-          110318105.93509269
+          110433607.62922953
         ],
-        "totalBalance": 110318105.93509269,
-        "percentage": -7.069544683415926
+        "totalBalance": 110433607.62922953,
+        "percentage": -6.972247644684234
       },
       {
         "nickname": "星星之火",
@@ -858,11 +858,11 @@
         ],
         "initialBalanceTotal": 94539367,
         "currentBalances": [
-          38502546.304984234,
+          38557966.39499495,
           39960666.138592534
         ],
-        "totalBalance": 78463212.44357677,
-        "percentage": -17.00471990300425
+        "totalBalance": 78518632.53358749,
+        "percentage": -16.946098725637242
       },
       {
         "nickname": "炮兵连长",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T13:58:51.978Z",
+    "lastUpdate": "2025-11-24T14:25:02.788Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
