@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1367453173.3943906,
-    "totalTransactions": 388,
+    "totalTransferred": 1500546701.7907372,
+    "totalTransactions": 397,
     "usersInvolved": 60,
-    "poolTotalRecords": 1295,
+    "poolTotalRecords": 1319,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -14,8 +14,8 @@
     },
     {
       "nickname": "吴坚不摧",
-      "totalAmount": 151552506.68952543,
-      "transactionCount": 12
+      "totalAmount": 151553506.68952543,
+      "transactionCount": 13
     },
     {
       "nickname": "韭菜人生",
@@ -33,8 +33,18 @@
       "transactionCount": 2
     },
     {
+      "nickname": "成成",
+      "totalAmount": 65175629.040740505,
+      "transactionCount": 6
+    },
+    {
       "nickname": "清雅",
       "totalAmount": 63219684.562517,
+      "transactionCount": 8
+    },
+    {
+      "nickname": "树藤与海岛",
+      "totalAmount": 58591045.991136,
       "transactionCount": 8
     },
     {
@@ -71,6 +81,11 @@
       "nickname": "leezerofly",
       "totalAmount": 38075735.59316293,
       "transactionCount": 6
+    },
+    {
+      "nickname": "努力赚钱",
+      "totalAmount": 28807777.263333004,
+      "transactionCount": 8
     },
     {
       "nickname": "貳大爺",
@@ -188,29 +203,14 @@
       "transactionCount": 8
     },
     {
-      "nickname": "树藤与海岛",
-      "totalAmount": 6996869.118608,
-      "transactionCount": 4
-    },
-    {
       "nickname": "清",
       "totalAmount": 6765031.648522518,
       "transactionCount": 4
     },
     {
-      "nickname": "努力赚钱",
-      "totalAmount": 6630392.692934,
-      "transactionCount": 6
-    },
-    {
       "nickname": "memecoin",
       "totalAmount": 5875773.695221078,
       "transactionCount": 2
-    },
-    {
-      "nickname": "成成",
-      "totalAmount": 5854662.087321212,
-      "transactionCount": 4
     },
     {
       "nickname": "真善美",
@@ -308,5 +308,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T13:04:29.247Z"
+  "queryTime": "2025-11-24T13:44:05.065Z"
 }
