@@ -442,11 +442,11 @@
         ],
         "initialBalanceTotal": 118000000,
         "currentBalances": [
-          86714893.70383312,
+          86932910.69234444,
           11296928.089724157
         ],
-        "totalBalance": 98011821.79355727,
-        "percentage": -16.93913407325655
+        "totalBalance": 98229838.7820686,
+        "percentage": -16.75437391350119
       },
       {
         "nickname": "Cassie",
@@ -1941,7 +1941,7 @@
         "percentage": 2.7453609013521136
       }
     ],
-    "lastUpdate": "2025-11-24T17:46:46.806Z",
+    "lastUpdate": "2025-11-24T18:36:20.273Z",
     "totalUsers": 151,
     "totalAddresses": 214
   }
