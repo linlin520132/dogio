@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1083205719.0381894,
-    "totalTransactions": 352,
+    "totalTransferred": 1083351341.2604592,
+    "totalTransactions": 354,
     "usersInvolved": 59,
-    "poolTotalRecords": 1215,
+    "poolTotalRecords": 1219,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -138,6 +138,11 @@
       "transactionCount": 14
     },
     {
+      "nickname": "锋人院",
+      "totalAmount": 10071983.654201599,
+      "transactionCount": 4
+    },
+    {
       "nickname": "LV",
       "totalAmount": 10002484.24118926,
       "transactionCount": 4
@@ -146,11 +151,6 @@
       "nickname": "安德鲁",
       "totalAmount": 9999119.922930416,
       "transactionCount": 4
-    },
-    {
-      "nickname": "锋人院",
-      "totalAmount": 9926361.431931734,
-      "transactionCount": 2
     },
     {
       "nickname": "一骑红尘",
@@ -303,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T07:00:52.637Z"
+  "queryTime": "2025-11-24T07:26:07.098Z"
 }

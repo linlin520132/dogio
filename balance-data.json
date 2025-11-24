@@ -631,10 +631,10 @@
         ],
         "initialBalanceTotal": 103121334,
         "currentBalances": [
-          95029876.3266116
+          94882785.19300467
         ],
-        "totalBalance": 95029876.3266116,
-        "percentage": -7.8465409237126496
+        "totalBalance": 94882785.19300467,
+        "percentage": -7.9891798209237015
       },
       {
         "nickname": "@野火（蒙）",
@@ -739,10 +739,10 @@
         ],
         "initialBalanceTotal": 100115936.87,
         "currentBalances": [
-          102001392.64556794
+          102025875.41423506
         ],
-        "totalBalance": 102001392.64556794,
-        "percentage": 1.8832723685302848
+        "totalBalance": 102025875.41423506,
+        "percentage": 1.9077267855117768
       },
       {
         "nickname": "一骑红尘",
@@ -1127,10 +1127,10 @@
         ],
         "initialBalanceTotal": 41000000,
         "currentBalances": [
-          40694514.81789657
+          40719758.43602732
         ],
-        "totalBalance": 40694514.81789657,
-        "percentage": -0.7450858100083725
+        "totalBalance": 40719758.43602732,
+        "percentage": -0.6835160096894677
       },
       {
         "nickname": "可乐",
@@ -1555,10 +1555,10 @@
         ],
         "initialBalanceTotal": 22926678,
         "currentBalances": [
-          23782233.004879054
+          0
         ],
-        "totalBalance": 23782233.004879054,
-        "percentage": 3.7317007063956393
+        "totalBalance": 0,
+        "percentage": -100
       },
       {
         "nickname": "是以前",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T06:59:59.159Z",
+    "lastUpdate": "2025-11-24T07:25:12.308Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
