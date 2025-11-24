@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1245944217.5776386,
-    "totalTransactions": 382,
+    "totalTransferred": 1296567605.553275,
+    "totalTransactions": 384,
     "usersInvolved": 59,
-    "poolTotalRecords": 1281,
+    "poolTotalRecords": 1286,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -14,8 +14,8 @@
     },
     {
       "nickname": "吴坚不摧",
-      "totalAmount": 100929118.71388899,
-      "transactionCount": 10
+      "totalAmount": 151552506.68952543,
+      "transactionCount": 12
     },
     {
       "nickname": "韭菜人生",
@@ -303,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T11:02:07.319Z"
+  "queryTime": "2025-11-24T11:26:26.891Z"
 }

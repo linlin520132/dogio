@@ -496,11 +496,11 @@
         "initialBalanceTotal": 110261409,
         "currentBalances": [
           20894549.144193444,
-          89025386.67656694,
+          37891386.695907936,
           41676.03400560672
         ],
-        "totalBalance": 109961611.854766,
-        "percentage": -0.27189671159925377
+        "totalBalance": 58827611.87410698,
+        "percentage": -46.647142996234535
       },
       {
         "nickname": "小柒柒",
@@ -1019,10 +1019,10 @@
         ],
         "initialBalanceTotal": 50762682,
         "currentBalances": [
-          51897481.52862136
+          51975889.97623532
         ],
-        "totalBalance": 51897481.52862136,
-        "percentage": 2.2354995518585103
+        "totalBalance": 51975889.97623532,
+        "percentage": 2.3899603575621216
       },
       {
         "nickname": "金马影帝",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T11:01:14.194Z",
+    "lastUpdate": "2025-11-24T11:25:34.264Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
