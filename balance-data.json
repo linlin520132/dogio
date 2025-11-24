@@ -269,10 +269,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          30369059.34918578
+          30399525.793383993
         ],
-        "totalBalance": 30369059.34918578,
-        "percentage": -82.62143700001063
+        "totalBalance": 30399525.793383993,
+        "percentage": -82.60400270895154
       },
       {
         "nickname": "黄药师",
@@ -467,10 +467,10 @@
         ],
         "initialBalanceTotal": 115532138,
         "currentBalances": [
-          65972.0142499448
+          23063404.69796154
         ],
-        "totalBalance": 65972.0142499448,
-        "percentage": -99.94289726184246
+        "totalBalance": 23063404.69796154,
+        "percentage": -80.03723890406881
       },
       {
         "nickname": "以马内利",
@@ -1629,10 +1629,10 @@
         ],
         "initialBalanceTotal": 21926838,
         "currentBalances": [
-          22217157.458145384
+          22233664.303959806
         ],
-        "totalBalance": 22217157.458145384,
-        "percentage": 1.3240370460409465
+        "totalBalance": 22233664.303959806,
+        "percentage": 1.3993185153272236
       },
       {
         "nickname": "嘟嘟",
@@ -1877,10 +1877,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          29981141.517974723
+          29997364.093574725
         ],
-        "totalBalance": 29981141.517974723,
-        "percentage": 49.905707589873614
+        "totalBalance": 29997364.093574725,
+        "percentage": 49.98682046787363
       },
       {
         "nickname": "小趴菜",
@@ -1939,7 +1939,7 @@
         "percentage": 2.7453609013521136
       }
     ],
-    "lastUpdate": "2025-11-24T15:31:46.446Z",
+    "lastUpdate": "2025-11-24T15:50:40.354Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
