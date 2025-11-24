@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1500546701.7907372,
-    "totalTransactions": 397,
+    "totalTransferred": 1511796354.962896,
+    "totalTransactions": 398,
     "usersInvolved": 60,
-    "poolTotalRecords": 1319,
+    "poolTotalRecords": 1322,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -14,8 +14,8 @@
     },
     {
       "nickname": "吴坚不摧",
-      "totalAmount": 151553506.68952543,
-      "transactionCount": 13
+      "totalAmount": 151552506.68952543,
+      "transactionCount": 12
     },
     {
       "nickname": "韭菜人生",
@@ -116,6 +116,11 @@
       "nickname": "如果 爱",
       "totalAmount": 14561139.133785414,
       "transactionCount": 4
+    },
+    {
+      "nickname": "城市/ht 日记",
+      "totalAmount": 14143769.548696151,
+      "transactionCount": 8
     },
     {
       "nickname": "慕兮",
@@ -243,11 +248,6 @@
       "transactionCount": 2
     },
     {
-      "nickname": "城市/ht 日记",
-      "totalAmount": 2893116.3765371507,
-      "transactionCount": 6
-    },
-    {
       "nickname": "金马影帝",
       "totalAmount": 2421944.6114283595,
       "transactionCount": 4
@@ -308,5 +308,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T13:44:05.065Z"
+  "queryTime": "2025-11-24T13:59:51.459Z"
 }
