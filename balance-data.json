@@ -269,10 +269,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          179200042.06238237
+          169200042.06238237
         ],
-        "totalBalance": 179200042.06238237,
-        "percentage": 2.5464498183528383
+        "totalBalance": 169200042.06238237,
+        "percentage": -3.176006975639141
       },
       {
         "nickname": "黄药师",
@@ -935,10 +935,10 @@
         ],
         "initialBalanceTotal": 62546510,
         "currentBalances": [
-          74920121.5808902
+          74973566.01918188
         ],
-        "totalBalance": 74920121.5808902,
-        "percentage": 19.783056769898423
+        "totalBalance": 74973566.01918188,
+        "percentage": 19.868504284542617
       },
       {
         "nickname": "未来(๑]؂[๑）都是晴天",
@@ -1211,10 +1211,10 @@
         ],
         "initialBalanceTotal": 36577296,
         "currentBalances": [
-          35473152.14035302
+          35500737.228299074
         ],
-        "totalBalance": 35473152.14035302,
-        "percentage": -3.018659060109264
+        "totalBalance": 35500737.228299074,
+        "percentage": -2.94324318479126
       },
       {
         "nickname": "南方种植园",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T07:43:58.730Z",
+    "lastUpdate": "2025-11-24T07:54:12.988Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
