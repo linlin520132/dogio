@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1153971109.678854,
-    "totalTransactions": 366,
+    "totalTransferred": 1161019300.269488,
+    "totalTransactions": 370,
     "usersInvolved": 59,
-    "poolTotalRecords": 1246,
+    "poolTotalRecords": 1255,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -133,6 +133,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "LV",
+      "totalAmount": 10720320.85629826,
+      "transactionCount": 6
+    },
+    {
       "nickname": "老铁Bro",
       "totalAmount": 10252986.554041885,
       "transactionCount": 14
@@ -140,11 +145,6 @@
     {
       "nickname": "锋人院",
       "totalAmount": 10071983.654201599,
-      "transactionCount": 4
-    },
-    {
-      "nickname": "LV",
-      "totalAmount": 10002484.24118926,
       "transactionCount": 4
     },
     {
@@ -191,6 +191,11 @@
       "nickname": "清",
       "totalAmount": 6765031.648522518,
       "transactionCount": 4
+    },
+    {
+      "nickname": "努力赚钱",
+      "totalAmount": 6630392.692934,
+      "transactionCount": 6
     },
     {
       "nickname": "memecoin",
@@ -278,11 +283,6 @@
       "transactionCount": 4
     },
     {
-      "nickname": "努力赚钱",
-      "totalAmount": 300038.71740900003,
-      "transactionCount": 4
-    },
-    {
       "nickname": "追梦少年",
       "totalAmount": 229561.96701274556,
       "transactionCount": 6
@@ -303,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T09:04:56.372Z"
+  "queryTime": "2025-11-24T09:39:54.020Z"
 }

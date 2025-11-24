@@ -293,10 +293,10 @@
         ],
         "initialBalanceTotal": 150000000,
         "currentBalances": [
-          163029673.26474547
+          162304595.87574548
         ],
-        "totalBalance": 163029673.26474547,
-        "percentage": 8.68644884316365
+        "totalBalance": 162304595.87574548,
+        "percentage": 8.20306391716365
       },
       {
         "nickname": "努力赚钱",
@@ -305,10 +305,10 @@
         ],
         "initialBalanceTotal": 149000000,
         "currentBalances": [
-          151694921.58698463
+          145556762.2436033
         ],
-        "totalBalance": 151694921.58698463,
-        "percentage": 1.808672206029956
+        "totalBalance": 145556762.2436033,
+        "percentage": -2.3108978230850408
       },
       {
         "nickname": "韭菜人生",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T09:04:02.734Z",
+    "lastUpdate": "2025-11-24T09:38:58.512Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
