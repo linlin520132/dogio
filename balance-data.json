@@ -130,15 +130,17 @@
         "nickname": "道哥币赢",
         "addresses": [
           "0xb05db08b8067ee5007d7bbb7690afd391048b4cf",
-          "0xe49c97662513c138b1701EEbFd02c955C025e16E"
+          "0xe49c97662513c138b1701EEbFd02c955C025e16E",
+          "0x6392b37404e5c2609a19445bf91b71e699a3f98f"
         ],
         "initialBalanceTotal": 282000000,
         "currentBalances": [
           100520095.88236119,
-          100530220.40491255
+          100530220.40491255,
+          15698571.730810585
         ],
-        "totalBalance": 201050316.28727373,
-        "percentage": -28.70556160025754
+        "totalBalance": 216748888.01808432,
+        "percentage": -23.13869219216868
       },
       {
         "nickname": "云淡风轻",
@@ -269,10 +271,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          30399525.793383993
+          51026111.76002111
         ],
-        "totalBalance": 30399525.793383993,
-        "percentage": -82.60400270895154
+        "totalBalance": 51026111.76002111,
+        "percentage": -70.80052800878731
       },
       {
         "nickname": "黄药师",
@@ -509,10 +511,10 @@
         ],
         "initialBalanceTotal": 110000000,
         "currentBalances": [
-          113190126.00192654
+          113271477.6147485
         ],
-        "totalBalance": 113190126.00192654,
-        "percentage": 2.9001145472059466
+        "totalBalance": 113271477.6147485,
+        "percentage": 2.9740705588622665
       },
       {
         "nickname": "郁姐",
@@ -845,10 +847,10 @@
         ],
         "initialBalanceTotal": 97554933,
         "currentBalances": [
-          99006281.8526058
+          98879113.48983212
         ],
-        "totalBalance": 99006281.8526058,
-        "percentage": 1.4877247187549243
+        "totalBalance": 98879113.48983212,
+        "percentage": 1.35736907310686
       },
       {
         "nickname": "观明",
@@ -1877,10 +1879,10 @@
         ],
         "initialBalanceTotal": 20000000,
         "currentBalances": [
-          29997364.093574725
+          30006783.775274724
         ],
-        "totalBalance": 29997364.093574725,
-        "percentage": 49.98682046787363
+        "totalBalance": 30006783.775274724,
+        "percentage": 50.03391887637362
       },
       {
         "nickname": "小趴菜",
@@ -1939,8 +1941,8 @@
         "percentage": 2.7453609013521136
       }
     ],
-    "lastUpdate": "2025-11-24T16:01:43.839Z",
+    "lastUpdate": "2025-11-24T16:26:28.784Z",
     "totalUsers": 151,
-    "totalAddresses": 213
+    "totalAddresses": 214
   }
 }
