@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 2019644324.61545,
-    "totalTransactions": 458,
+    "totalTransferred": 2019827047.2041988,
+    "totalTransactions": 460,
     "usersInvolved": 62,
-    "poolTotalRecords": 1433,
+    "poolTotalRecords": 1437,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -289,8 +289,8 @@
     },
     {
       "nickname": "墨白",
-      "totalAmount": 632536.391277,
-      "transactionCount": 6
+      "totalAmount": 815258.9800260001,
+      "transactionCount": 8
     },
     {
       "nickname": "城",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T23:39:01.492Z"
+  "queryTime": "2025-11-24T23:51:23.699Z"
 }
