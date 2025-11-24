@@ -269,10 +269,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          80778360.29233876
+          77789113.42950833
         ],
-        "totalBalance": 80778360.29233876,
-        "percentage": -53.77493233375742
+        "totalBalance": 77789113.42950833,
+        "percentage": -55.48551593566974
       },
       {
         "nickname": "黄药师",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T08:46:17.723Z",
+    "lastUpdate": "2025-11-24T09:04:02.734Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
