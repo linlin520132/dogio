@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1195815141.6675372,
-    "totalTransactions": 372,
+    "totalTransferred": 1238819706.9446597,
+    "totalTransactions": 380,
     "usersInvolved": 59,
-    "poolTotalRecords": 1260,
+    "poolTotalRecords": 1277,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -36,6 +36,11 @@
       "nickname": "清雅",
       "totalAmount": 63219684.562517,
       "transactionCount": 8
+    },
+    {
+      "nickname": "老铁Bro",
+      "totalAmount": 53257551.83116428,
+      "transactionCount": 22
     },
     {
       "nickname": "哪有赌狗天天输",
@@ -136,11 +141,6 @@
       "nickname": "繁星社区~甘",
       "totalAmount": 11001048.048685132,
       "transactionCount": 2
-    },
-    {
-      "nickname": "老铁Bro",
-      "totalAmount": 10252986.554041885,
-      "transactionCount": 14
     },
     {
       "nickname": "锋人院",
@@ -303,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T09:55:43.898Z"
+  "queryTime": "2025-11-24T10:28:10.646Z"
 }
