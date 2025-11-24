@@ -21,10 +21,10 @@
         ],
         "initialBalanceTotal": 853000000,
         "currentBalances": [
-          956662152.7446706
+          946736123.6649209
         ],
-        "totalBalance": 956662152.7446706,
-        "percentage": 12.152655655881668
+        "totalBalance": 946736123.6649209,
+        "percentage": 10.98899456798604
       },
       {
         "nickname": "哪有赌狗天天输",
@@ -359,10 +359,10 @@
         ],
         "initialBalanceTotal": 120000000,
         "currentBalances": [
-          122093619.01653375
+          122106995.65681939
         ],
-        "totalBalance": 122093619.01653375,
-        "percentage": 1.7446825137781226
+        "totalBalance": 122106995.65681939,
+        "percentage": 1.755829714016157
       },
       {
         "nickname": "城",
@@ -1939,7 +1939,7 @@
         "percentage": 2.7453609013521136
       }
     ],
-    "lastUpdate": "2025-11-24T15:50:40.354Z",
+    "lastUpdate": "2025-11-24T16:01:43.839Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
