@@ -971,10 +971,10 @@
         ],
         "initialBalanceTotal": 74000000,
         "currentBalances": [
-          86221845.46939498
+          86246785.26317632
         ],
-        "totalBalance": 86221845.46939498,
-        "percentage": 16.5160073910743
+        "totalBalance": 86246785.26317632,
+        "percentage": 16.54970981510314
       },
       {
         "nickname": "丑到拖网速",
@@ -1999,7 +1999,7 @@
         "percentage": 2.6240660614432034
       }
     ],
-    "lastUpdate": "2025-11-23T23:53:15.502Z",
+    "lastUpdate": "2025-11-24T00:03:41.079Z",
     "totalUsers": 156,
     "totalAddresses": 218
   }
