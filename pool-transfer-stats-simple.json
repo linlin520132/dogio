@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1296567605.553275,
-    "totalTransactions": 384,
-    "usersInvolved": 59,
-    "poolTotalRecords": 1286,
+    "totalTransferred": 1367453173.3943906,
+    "totalTransactions": 388,
+    "usersInvolved": 60,
+    "poolTotalRecords": 1295,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -23,14 +23,14 @@
       "transactionCount": 10
     },
     {
+      "nickname": "吉姆熊猫",
+      "totalAmount": 91127861.25496806,
+      "transactionCount": 32
+    },
+    {
       "nickname": "狂飚",
       "totalAmount": 69996223.26795663,
       "transactionCount": 2
-    },
-    {
-      "nickname": "吉姆熊猫",
-      "totalAmount": 63710655.0797677,
-      "transactionCount": 30
     },
     {
       "nickname": "清雅",
@@ -61,6 +61,11 @@
       "nickname": "LV",
       "totalAmount": 45516162.254347265,
       "transactionCount": 8
+    },
+    {
+      "nickname": "旷谷",
+      "totalAmount": 43468361.665915355,
+      "transactionCount": 2
     },
     {
       "nickname": "leezerofly",
@@ -303,5 +308,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T12:04:42.862Z"
+  "queryTime": "2025-11-24T13:04:29.247Z"
 }
