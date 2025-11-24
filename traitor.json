@@ -98,5 +98,12 @@
             "0x5f516B369CCe55352151E7E218A569e6C3D5a07e"
         ],
         "initialBalanceTotal": 33000000
+    },
+    {
+        "nickname": "卡卡",
+        "addresses": [
+            "0xa2444b1b96401EEc2aD178676fd250efc67da477"
+        ],
+        "initialBalanceTotal": 26423672.97822981
     }
 ]
