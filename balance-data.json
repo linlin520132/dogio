@@ -269,10 +269,10 @@
         ],
         "initialBalanceTotal": 174750118,
         "currentBalances": [
-          139956438.45528963
+          80778360.29233876
         ],
-        "totalBalance": 139956438.45528963,
-        "percentage": -19.910532789860756
+        "totalBalance": 80778360.29233876,
+        "percentage": -53.77493233375742
       },
       {
         "nickname": "黄药师",
@@ -509,10 +509,10 @@
         ],
         "initialBalanceTotal": 110000000,
         "currentBalances": [
-          113079230.39487845
+          113117943.88927685
         ],
-        "totalBalance": 113079230.39487845,
-        "percentage": 2.7993003589804064
+        "totalBalance": 113117943.88927685,
+        "percentage": 2.8344944447971336
       },
       {
         "nickname": "郁姐",
@@ -655,10 +655,10 @@
         ],
         "initialBalanceTotal": 101701252,
         "currentBalances": [
-          76919639.35625951
+          56998465.12525951
         ],
-        "totalBalance": 76919639.35625951,
-        "percentage": -24.367067421884332
+        "totalBalance": 56998465.12525951,
+        "percentage": -43.95500153207602
       },
       {
         "nickname": "memecoin",
@@ -1079,10 +1079,10 @@
         ],
         "initialBalanceTotal": 45000000,
         "currentBalances": [
-          48382084.22511629
+          48389388.6861384
         ],
-        "totalBalance": 48382084.22511629,
-        "percentage": 7.5157427224806455
+        "totalBalance": 48389388.6861384,
+        "percentage": 7.531974858085332
       },
       {
         "nickname": "小满",
@@ -1629,10 +1629,10 @@
         ],
         "initialBalanceTotal": 21926838,
         "currentBalances": [
-          22195910.049331073
+          22202989.425835107
         ],
-        "totalBalance": 22195910.049331073,
-        "percentage": 1.2271356651199443
+        "totalBalance": 22202989.425835107,
+        "percentage": 1.259422018966467
       },
       {
         "nickname": "嘟嘟",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T08:04:38.177Z",
+    "lastUpdate": "2025-11-24T08:46:17.723Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
