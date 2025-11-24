@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1238819706.9446597,
-    "totalTransactions": 380,
+    "totalTransferred": 1245944217.5776386,
+    "totalTransactions": 382,
     "usersInvolved": 59,
-    "poolTotalRecords": 1277,
+    "poolTotalRecords": 1281,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -43,6 +43,11 @@
       "transactionCount": 22
     },
     {
+      "nickname": "以马内利",
+      "totalAmount": 51466980.01694087,
+      "transactionCount": 14
+    },
+    {
       "nickname": "哪有赌狗天天输",
       "totalAmount": 48373620.26415378,
       "transactionCount": 2
@@ -56,11 +61,6 @@
       "nickname": "LV",
       "totalAmount": 45516162.254347265,
       "transactionCount": 8
-    },
-    {
-      "nickname": "以马内利",
-      "totalAmount": 44342469.383961864,
-      "transactionCount": 12
     },
     {
       "nickname": "leezerofly",
@@ -303,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T10:28:10.646Z"
+  "queryTime": "2025-11-24T10:52:24.342Z"
 }

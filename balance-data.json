@@ -281,10 +281,10 @@
         ],
         "initialBalanceTotal": 159285728,
         "currentBalances": [
-          162929625.30785793
+          163177226.01667836
         ],
-        "totalBalance": 162929625.30785793,
-        "percentage": 2.287648337117768
+        "totalBalance": 163177226.01667836,
+        "percentage": 2.4430927149219315
       },
       {
         "nickname": "LV",
@@ -1741,10 +1741,10 @@
         ],
         "initialBalanceTotal": 20914636.2,
         "currentBalances": [
-          21294588.47079408
+          21303086.217564944
         ],
-        "totalBalance": 21294588.47079408,
-        "percentage": 1.8166812329926278
+        "totalBalance": 21303086.217564944,
+        "percentage": 1.8573118549628176
       },
       {
         "nickname": "Leon",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T10:27:13.676Z",
+    "lastUpdate": "2025-11-24T10:51:29.575Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
