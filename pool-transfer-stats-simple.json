@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1691017623.7795024,
-    "totalTransactions": 414,
+    "totalTransferred": 1805259868.0114717,
+    "totalTransactions": 422,
     "usersInvolved": 61,
-    "poolTotalRecords": 1365,
+    "poolTotalRecords": 1389,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -18,6 +18,11 @@
       "transactionCount": 12
     },
     {
+      "nickname": "慕兮",
+      "totalAmount": 116467243.50419131,
+      "transactionCount": 4
+    },
+    {
       "nickname": "韭菜人生",
       "totalAmount": 93570156.08964661,
       "transactionCount": 10
@@ -28,6 +33,11 @@
       "transactionCount": 32
     },
     {
+      "nickname": "清雅",
+      "totalAmount": 74596625.88152799,
+      "transactionCount": 12
+    },
+    {
       "nickname": "狂飚",
       "totalAmount": 69996223.26795663,
       "transactionCount": 2
@@ -36,11 +46,6 @@
       "nickname": "成成",
       "totalAmount": 65175629.040740505,
       "transactionCount": 6
-    },
-    {
-      "nickname": "清雅",
-      "totalAmount": 63219684.562517,
-      "transactionCount": 8
     },
     {
       "nickname": "旺旺",
@@ -138,11 +143,6 @@
       "transactionCount": 8
     },
     {
-      "nickname": "慕兮",
-      "totalAmount": 14113932.722699175,
-      "transactionCount": 2
-    },
-    {
       "nickname": "星星之火",
       "totalAmount": 12658927.228639001,
       "transactionCount": 2
@@ -183,6 +183,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "DOG王",
+      "totalAmount": 10375308.326186202,
+      "transactionCount": 4
+    },
+    {
       "nickname": "安德鲁",
       "totalAmount": 9999119.922930416,
       "transactionCount": 4
@@ -191,11 +196,6 @@
       "nickname": "一骑红尘",
       "totalAmount": 9876075.679522643,
       "transactionCount": 6
-    },
-    {
-      "nickname": "DOG王",
-      "totalAmount": 9863316.194720056,
-      "transactionCount": 2
     },
     {
       "nickname": "无鱼",
@@ -313,5 +313,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T14:50:45.929Z"
+  "queryTime": "2025-11-24T15:02:09.468Z"
 }
