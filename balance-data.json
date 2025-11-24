@@ -715,10 +715,10 @@
         ],
         "initialBalanceTotal": 100285424.9551,
         "currentBalances": [
-          103543112.52267282
+          103618120.1893077
         ],
-        "totalBalance": 103543112.52267282,
-        "percentage": 3.2484157782961542
+        "totalBalance": 103618120.1893077,
+        "percentage": 3.323209963661047
       },
       {
         "nickname": "香香",
@@ -913,10 +913,10 @@
         ],
         "initialBalanceTotal": 87113239.3,
         "currentBalances": [
-          95568531.30018799
+          95687221.62996176
         ],
-        "totalBalance": 95568531.30018799,
-        "percentage": 9.706092975224713
+        "totalBalance": 95687221.62996176,
+        "percentage": 9.842341300654358
       },
       {
         "nickname": "dog钻石手嬴荏",
@@ -1941,7 +1941,7 @@
         "percentage": 2.7453609013521136
       }
     ],
-    "lastUpdate": "2025-11-24T22:00:51.494Z",
+    "lastUpdate": "2025-11-24T22:25:30.540Z",
     "totalUsers": 151,
     "totalAddresses": 214
   }
