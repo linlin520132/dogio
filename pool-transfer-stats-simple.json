@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1161019300.269488,
-    "totalTransactions": 370,
+    "totalTransferred": 1195815141.6675372,
+    "totalTransactions": 372,
     "usersInvolved": 59,
-    "poolTotalRecords": 1255,
+    "poolTotalRecords": 1260,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -46,6 +46,11 @@
       "nickname": "齐天大圣",
       "totalAmount": 47982140.53068432,
       "transactionCount": 2
+    },
+    {
+      "nickname": "LV",
+      "totalAmount": 45516162.254347265,
+      "transactionCount": 8
     },
     {
       "nickname": "以马内利",
@@ -131,11 +136,6 @@
       "nickname": "繁星社区~甘",
       "totalAmount": 11001048.048685132,
       "transactionCount": 2
-    },
-    {
-      "nickname": "LV",
-      "totalAmount": 10720320.85629826,
-      "transactionCount": 6
     },
     {
       "nickname": "老铁Bro",
@@ -303,5 +303,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T09:39:54.020Z"
+  "queryTime": "2025-11-24T09:55:43.898Z"
 }
