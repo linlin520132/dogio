@@ -480,11 +480,11 @@
         ],
         "initialBalanceTotal": 111491843,
         "currentBalances": [
-          48422850.158828974,
+          41226478.25682897,
           19580456.99539184
         ],
-        "totalBalance": 68003307.15422082,
-        "percentage": -39.00602472396046
+        "totalBalance": 60806935.25222081,
+        "percentage": -45.46064212767493
       },
       {
         "nickname": "吴坚不摧",
@@ -1939,7 +1939,7 @@
         "percentage": 2.6798394863950485
       }
     ],
-    "lastUpdate": "2025-11-24T10:51:29.575Z",
+    "lastUpdate": "2025-11-24T11:01:14.194Z",
     "totalUsers": 151,
     "totalAddresses": 213
   }
