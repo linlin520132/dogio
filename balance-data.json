@@ -709,10 +709,10 @@
         ],
         "initialBalanceTotal": 101000000,
         "currentBalances": [
-          103594218.26032715
+          103850390.45704918
         ],
-        "totalBalance": 103594218.26032715,
-        "percentage": 2.5685329310169758
+        "totalBalance": 103850390.45704918,
+        "percentage": 2.8221687693556197
       },
       {
         "nickname": "代号火麒麟",
@@ -1043,10 +1043,10 @@
         ],
         "initialBalanceTotal": 51984440.5,
         "currentBalances": [
-          52970751.410563745
+          52993281.28954812
         ],
-        "totalBalance": 52970751.410563745,
-        "percentage": 1.8973194692049147
+        "totalBalance": 52993281.28954812,
+        "percentage": 1.9406591277021081
       },
       {
         "nickname": "曾经的自己",
@@ -1473,18 +1473,6 @@
         ],
         "totalBalance": 25189944.633826163,
         "percentage": -4.7024608025171935
-      },
-      {
-        "nickname": "卡卡",
-        "addresses": [
-          "0xa2444b1b96401EEc2aD178676fd250efc67da477"
-        ],
-        "initialBalanceTotal": 26423672.97822981,
-        "currentBalances": [
-          1.27834943e-10
-        ],
-        "totalBalance": 1.27834943e-10,
-        "percentage": -100
       },
       {
         "nickname": "百",
@@ -1999,8 +1987,8 @@
         "percentage": 2.6240660614432034
       }
     ],
-    "lastUpdate": "2025-11-24T00:03:41.079Z",
-    "totalUsers": 156,
-    "totalAddresses": 218
+    "lastUpdate": "2025-11-24T02:24:09.773Z",
+    "totalUsers": 155,
+    "totalAddresses": 217
   }
 }
