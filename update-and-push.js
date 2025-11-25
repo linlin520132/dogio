@@ -4,16 +4,20 @@ const path = require('path');
 const crypto = require('crypto');
 const { execSync } = require('child_process');
 const fetch = require('node-fetch');
+const { getAddressTokenBalances, getSpecificTokenBalance, getLPTokenMaxSupply, calculateUserPoolDOGHoldings } = require('./balance-utils');
 
 // DOG代币合约地址
 const DOG_CONTRACT = '0x903358faf7c6304afbd560e9e29b12ab1b8fddc5';
+
+// 池子地址（LP代币合约地址）
+const POOL_ADDRESS = '0x41027D3CaCc14F35Abd387B7350c05247e9Ac646';
 
 // OKX API配置
 const OKX_CONFIG = {
     apiKey: process.env.OKX_API_KEY,
     apiSecret: process.env.OKX_API_SECRET,
     apiPassphrase: process.env.OKX_API_PASSPHRASE,
-    chainIndex: '196'
+    chainIndex: '501' // XLayer链
 };
 
 // 检查API配置
@@ -35,59 +39,105 @@ function createSignature(method, requestPath, body = '') {
     return { signature, timestamp };
 }
 
-// 获取单个地址的余额
-async function getTokenBalance(address, tokenContractAddress, retryCount = 0) {
+// 获取地址的所有代币余额（包括DOG和LP代币）
+async function getAddressBalances(address, retryCount = 0) {
     const maxRetries = 3;
-    const requestBody = {
-        address: address,
-        tokenContractAddresses: [{
-            chainIndex: OKX_CONFIG.chainIndex,
-            tokenContractAddress: tokenContractAddress
-        }]
-    };
 
     try {
-        const { signature, timestamp } = createSignature('POST', '/api/v6/dex/balance/token-balances-by-address', JSON.stringify(requestBody));
+        // 使用新的API接口获取所有代币余额
+        const allBalances = await getAddressTokenBalances(address, 0); // 已经在balance-utils中有重试
 
-        const response = await fetch('https://web3.okx.com/api/v6/dex/balance/token-balances-by-address', {
-            method: 'POST',
-            headers: {
-                'OK-ACCESS-KEY': OKX_CONFIG.apiKey,
-                'OK-ACCESS-SIGN': signature,
-                'OK-ACCESS-TIMESTAMP': timestamp,
-                'OK-ACCESS-PASSPHRASE': OKX_CONFIG.apiPassphrase,
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(requestBody)
-        });
-
-        const result = await response.json();
-
-        if (result.code !== '0') {
-            throw new Error(`OKX API错误: ${result.msg || '未知错误'}`);
+        // 检查API调用是否失败（balance-utils返回null表示失败）
+        if (allBalances === null) {
+            if (retryCount < maxRetries) {
+                console.warn(`⚠️ 地址 ${address} API调用失败，重试 (${retryCount + 1}/${maxRetries})...`);
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                return getAddressBalances(address, retryCount + 1);
+            } else {
+                console.error(`❌ 地址 ${address} 获取代币余额失败，已达到最大重试次数`);
+                return {
+                    dogBalance: 0,
+                    lpBalance: 0,
+                    allBalances: [],
+                    error: 'API调用失败'
+                };
+            }
         }
 
-        if (result.data && result.data.length > 0 && result.data[0].tokenAssets && result.data[0].tokenAssets.length > 0) {
-            const tokenAsset = result.data[0].tokenAssets[0];
+        // 检查是否成功获取到数据
+        if (!allBalances || allBalances.length === 0) {
+            console.warn(`⚠️ 地址 ${address} 未持有任何代币`);
             return {
-                balance: parseFloat(tokenAsset.balance),
-                rawBalance: tokenAsset.rawBalance || '0',
-                symbol: tokenAsset.symbol || 'DOG'
+                dogBalance: 0,
+                lpBalance: 0,
+                allBalances: [],
+                tokenCount: 0
             };
         }
 
-        return { balance: 0, rawBalance: '0', symbol: 'DOG' };
+        // 提取DOG代币余额
+        const dogBalance = getSpecificTokenBalance(allBalances, DOG_CONTRACT);
 
-    } catch (error) {
-        console.error(`获取地址 ${address} 余额失败 (重试 ${retryCount}/${maxRetries}):`, error.message);
+        // 提取LP代币余额
+        const lpBalance = getSpecificTokenBalance(allBalances, POOL_ADDRESS);
 
-        if (retryCount < maxRetries) {
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            return getTokenBalance(address, tokenContractAddress, retryCount + 1);
+        // 验证是否至少找到了DOG代币（作为成功获取数据的标志）
+        if (dogBalance.balance === 0 && allBalances.length > 0) {
+            console.warn(`⚠️ 地址 ${address} 未找到DOG代币，可能数据不完整`);
         }
 
-        return { balance: 0, rawBalance: '0', symbol: 'DOG', error: error.message };
+        return {
+            dogBalance: dogBalance.balance,
+            lpBalance: lpBalance.balance,
+            allBalances: allBalances,
+            tokenCount: allBalances.length
+        };
+
+    } catch (error) {
+        console.error(`❌ 获取地址 ${address} 余额失败 (重试 ${retryCount}/${maxRetries}):`, error.message);
+
+        if (retryCount < maxRetries) {
+            console.log(`⏳ 等待2秒后重试...`);
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            return getAddressBalances(address, retryCount + 1);
+        }
+
+        return {
+            dogBalance: 0,
+            lpBalance: 0,
+            allBalances: [],
+            error: error.message
+        };
     }
+}
+
+// 获取池子基本信息（一次性获取，避免重复请求）
+let poolInfo = null;
+async function getPoolInfo() {
+    if (poolInfo) return poolInfo;
+
+    console.log('正在获取池子基本信息...');
+
+    // 获取LP代币总供应量
+    const lpTokenInfo = await getLPTokenMaxSupply(POOL_ADDRESS);
+    if (!lpTokenInfo || lpTokenInfo.maxSupply === 0) {
+        console.error('无法获取LP代币总供应量');
+        return null;
+    }
+
+    // 获取池子DOG储备量
+    const poolBalances = await getAddressBalances(POOL_ADDRESS);
+    const poolDOGReserve = poolBalances.dogBalance;
+
+    poolInfo = {
+        lpTokenInfo: lpTokenInfo,
+        poolDOGReserve: poolDOGReserve
+    };
+
+    console.log(`LP代币总供应量: ${lpTokenInfo.maxSupply.toLocaleString()} ${lpTokenInfo.symbol}`);
+    console.log(`池子DOG储备量: ${poolDOGReserve.toLocaleString()} DOG`);
+
+    return poolInfo;
 }
 
 // 更新所有余额数据
@@ -95,22 +145,44 @@ async function updateAllBalances() {
     console.log('开始更新所有余额数据...');
     const startTime = Date.now();
 
+    // 先获取池子信息
+    const poolData = await getPoolInfo();
+    if (!poolData) {
+        console.error('无法获取池子信息，退出');
+        return null;
+    }
+
     const updatedUsers = [];
+    let totalPoolDOGHoldings = 0;
+    let usersWithPoolHoldings = 0;
 
     for (let i = 0; i < users.length; i++) {
         const user = users[i];
-        let totalBalance = 0;
+        let totalDOGBalance = 0;
+        let totalLPBalance = 0;
+        let userPoolDOGHoldings = 0;
         const addressBalances = [];
+        const addressLPBalances = [];
 
         // 为每个用户的每个地址获取余额
         for (let j = 0; j < user.addresses.length; j++) {
             const address = user.addresses[j];
             console.log(`正在获取 ${user.nickname} (${address.slice(0, 6)}...${address.slice(-4)}) 的余额...`);
 
-            const balanceData = await getTokenBalance(address, DOG_CONTRACT);
-            const balance = balanceData.balance || 0;
-            totalBalance += balance;
-            addressBalances.push(balance);
+            const balanceData = await getAddressBalances(address);
+            const dogBalance = balanceData.dogBalance || 0;
+            const lpBalance = balanceData.lpBalance || 0;
+
+            totalDOGBalance += dogBalance;
+            totalLPBalance += lpBalance;
+            addressBalances.push(dogBalance);
+            addressLPBalances.push(lpBalance);
+
+            // 计算该地址在池子中的DOG持有量
+            if (lpBalance > 0) {
+                const addressPoolHoldings = (lpBalance / poolData.lpTokenInfo.maxSupply) * poolData.poolDOGReserve;
+                userPoolDOGHoldings += addressPoolHoldings;
+            }
 
             // 请求结束后等待1秒再开始下一个请求（除了最后一个地址）
             if (j < user.addresses.length - 1 || i < users.length - 1) {
@@ -122,16 +194,38 @@ async function updateAllBalances() {
         const updatedUser = {
             ...user,
             currentBalances: addressBalances,
-            totalBalance: totalBalance,
-            percentage: user.initialBalanceTotal > 0 ? ((totalBalance - user.initialBalanceTotal) / user.initialBalanceTotal) * 100 : 0
+            totalBalance: totalDOGBalance,
+            percentage: user.initialBalanceTotal > 0 ? ((totalDOGBalance + userPoolDOGHoldings - user.initialBalanceTotal) / user.initialBalanceTotal) * 100 : 0,
+            // 新增池子持有量相关字段
+            lpBalances: addressLPBalances,
+            totalLPBalance: totalLPBalance,
+            poolDOGHoldings: userPoolDOGHoldings
         };
 
         updatedUsers.push(updatedUser);
-        console.log(`${user.nickname} 总余额: ${totalBalance.toLocaleString()}, 百分比: ${updatedUser.percentage.toFixed(2)}%`);
+
+        if (userPoolDOGHoldings > 0) {
+            totalPoolDOGHoldings += userPoolDOGHoldings;
+            usersWithPoolHoldings++;
+        }
+
+        const balanceText = totalDOGBalance > 0 ?
+            `${totalDOGBalance.toLocaleString()}` :
+            `0 (⚠️ 该地址当前无DOG余额)`;
+
+        console.log(`${user.nickname} DOG余额: ${balanceText}, 池子持有量: ${userPoolDOGHoldings.toFixed(6)}, 百分比: ${updatedUser.percentage.toFixed(2)}%`);
+
+        // 如果初始余额很大但当前余额为0，给出警告
+        if (user.initialBalanceTotal > 100000 && totalDOGBalance === 0 && userPoolDOGHoldings === 0) {
+            console.log(`   💡 注意: ${user.nickname} 初始持有 ${user.initialBalanceTotal.toLocaleString()} DOG，但当前余额为0，可能已转移到其他地址`);
+        }
     }
 
     const lastUpdateTime = new Date().toISOString();
     const totalAddresses = updatedUsers.reduce((sum, user) => sum + user.addresses.length, 0);
+
+    // 计算未分配的DOG量
+    const unallocatedDOG = poolData.poolDOGReserve - totalPoolDOGHoldings;
 
     // 生成输出数据
     const outputData = {
@@ -140,7 +234,18 @@ async function updateAllBalances() {
             users: updatedUsers,
             lastUpdate: lastUpdateTime,
             totalUsers: updatedUsers.length,
-            totalAddresses: totalAddresses
+            totalAddresses: totalAddresses,
+            // 新增池子持有量统计
+            poolStats: {
+                poolAddress: POOL_ADDRESS,
+                poolDOGReserve: poolData.poolDOGReserve,
+                lpTokenSupply: poolData.lpTokenInfo.maxSupply,
+                lpTokenSymbol: poolData.lpTokenInfo.symbol,
+                totalPoolDOGHoldings: totalPoolDOGHoldings,
+                usersWithPoolHoldings: usersWithPoolHoldings,
+                unallocatedDOG: unallocatedDOG,
+                unallocatedPercent: poolData.poolDOGReserve > 0 ? (unallocatedDOG / poolData.poolDOGReserve) * 100 : 0
+            }
         }
     };
 
@@ -150,59 +255,16 @@ async function updateAllBalances() {
     console.log(`\n✅ 数据已保存到: ${outputFile}`);
 
     const duration = Math.round((Date.now() - startTime) / 1000);
-    console.log(`余额数据更新完成，耗时 ${duration} 秒，共处理 ${updatedUsers.length} 个用户，${totalAddresses} 个地址`);
+    console.log(`\n=== 池子持有量统计 ===`);
+    console.log(`池子DOG储备量: ${poolData.poolDOGReserve.toLocaleString()} DOG`);
+    console.log(`LP代币总供应量: ${poolData.lpTokenInfo.maxSupply.toLocaleString()} ${poolData.lpTokenInfo.symbol}`);
+    console.log(`用户池子DOG持有总量: ${totalPoolDOGHoldings.toFixed(6)} DOG`);
+    console.log(`持有LP代币的用户数: ${usersWithPoolHoldings} 个`);
+    console.log(`未分配DOG量: ${unallocatedDOG.toFixed(6)} DOG (${outputData.data.poolStats.unallocatedPercent.toFixed(2)}%)`);
+
+    console.log(`\n余额数据更新完成，耗时 ${duration} 秒，共处理 ${updatedUsers.length} 个用户，${totalAddresses} 个地址`);
 
     return outputFile;
-}
-
-// Git推送函数
-function pushToGitHub(filePath) {
-    // 如果在CI环境中（如GitHub Actions），不执行push，由CI流程处理
-    if (process.env.CI === 'true' || process.env.GITHUB_ACTIONS === 'true') {
-        console.log('📝 检测到CI环境，跳过Git推送（将由GitHub Actions处理）');
-        return true;
-    }
-
-    try {
-        console.log('\n开始推送到GitHub...');
-        
-        // 检查git是否初始化
-        try {
-            execSync('git status', { stdio: 'ignore', cwd: __dirname });
-        } catch (error) {
-            console.error('❌ 当前目录不是Git仓库，请先初始化Git仓库');
-            console.log('💡 提示：如果使用GitHub Actions，可以跳过此步骤');
-            return false;
-        }
-
-        // 检查是否有变更
-        try {
-            execSync(`git add "${filePath}"`, { cwd: __dirname, stdio: 'pipe' });
-            const status = execSync('git status --porcelain', { cwd: __dirname, encoding: 'utf8' });
-            
-            if (!status.trim()) {
-                console.log('📝 没有数据变更，跳过提交');
-                return true;
-            }
-        } catch (error) {
-            console.error('❌ Git操作失败:', error.message);
-            return false;
-        }
-        
-        // 提交
-        const commitMessage = `更新余额数据 - ${new Date().toLocaleString('zh-CN')}`;
-        execSync(`git commit -m "${commitMessage}"`, { cwd: __dirname, stdio: 'inherit' });
-        
-        // 推送到GitHub
-        execSync('git push', { cwd: __dirname, stdio: 'inherit' });
-        
-        console.log('✅ 已成功推送到GitHub');
-        return true;
-    } catch (error) {
-        console.error('❌ Git推送失败:', error.message);
-        console.log('💡 提示：如果使用GitHub Actions，可以忽略此错误');
-        return false;
-    }
 }
 
 // 主函数
@@ -210,9 +272,6 @@ async function main() {
     try {
         // 更新余额数据
         const outputFile = await updateAllBalances();
-        
-        // 推送到GitHub
-        pushToGitHub(outputFile);
         
     } catch (error) {
         console.error('❌ 执行失败:', error);
@@ -225,5 +284,5 @@ if (require.main === module) {
     main();
 }
 
-module.exports = { updateAllBalances, pushToGitHub };
+module.exports = { updateAllBalances };
 

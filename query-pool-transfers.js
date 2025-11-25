@@ -4,6 +4,7 @@ const crypto = require('crypto');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 const { SocksProxyAgent } = require('socks-proxy-agent');
 const fetch = require('node-fetch');
+const { calculateUserPoolDOGHoldings } = require('./balance-utils');
 
 // 读取配置文件和用户数据
 const usersData = JSON.parse(fs.readFileSync('users.json', 'utf8'));
@@ -87,202 +88,11 @@ async function testProxyConnection() {
     }
 }
 
-// 查询地址交易列表（分页获取所有数据）
-async function queryAllTransactions(address) {
-    const allTransactions = [];
-    let hasMore = true;
-    let currentPage = 1;
-    let retryCount = 0;
-    const maxRetries = 3;
-
-    while (hasMore) {
-        const timestamp = new Date().toISOString();
-        const method = 'GET';
-        const requestPath = '/api/v5/xlayer/address/transaction-list';
-
-        const params = new URLSearchParams({
-            chainShortName: 'XLAYER',
-            address: address,
-            protocolType: 'token_20', // 获取ERC20代币交易
-            limit: '100', // 每次最多查询100条
-            page: currentPage.toString()
-        });
-
-        const signature = generateSignature(timestamp, method, requestPath + '?' + params.toString());
-
-        const headers = {
-            'OK-ACCESS-KEY': CONFIG.API_KEY,
-            'OK-ACCESS-TIMESTAMP': timestamp,
-            'OK-ACCESS-PASSPHRASE': CONFIG.PASSPHRASE,
-            'OK-ACCESS-SIGN': signature,
-            'Content-Type': 'application/json'
-        };
-
-        try {
-            const url = `https://web3.okx.com${requestPath}?${params}`;
-            console.log(`\n🔗 请求URL: ${url}`);
-            console.log(`📝 请求方法: ${method}`);
-            console.log(`🏷️ 请求头:`, JSON.stringify(headers, null, 2));
-
-            const fetchOptions = {
-                method: method,
-                headers: headers
-            };
-
-            // 如果启用代理，添加代理agent
-            const proxyAgent = createProxyAgent();
-            if (proxyAgent) {
-                fetchOptions.agent = proxyAgent;
-                console.log(`✅ 代理已配置到请求选项中`);
-                console.log(`🔍 代理对象类型: ${proxyAgent.constructor.name}`);
-            } else {
-                console.log(`⚠️ 代理未配置或创建失败，使用直连`);
-            }
-
-            console.log(`⏳ 正在发送请求...`);
-            const response = await fetch(url, fetchOptions);
-
-            console.log(`📡 响应状态: ${response.status} ${response.statusText}`);
-
-            if (!response.ok) {
-                console.error(`❌ HTTP请求失败 (状态码: ${response.status})`);
-                const text = await response.text();
-                console.error(`📄 错误响应内容:`, text.substring(0, 1000));
-
-                // 根据状态码给出建议
-                if (response.status === 401) {
-                    console.error('💡 401错误: API密钥或签名验证失败');
-                } else if (response.status === 403) {
-                    console.error('💡 403错误: API访问被拒绝，可能是权限问题');
-                } else if (response.status === 404) {
-                    console.error('💡 404错误: API接口不存在或参数错误');
-                } else if (response.status >= 500) {
-                    console.error('💡 5xx错误: 服务器内部错误');
-                }
-
-                return allTransactions; // 返回已获取的数据
-            }
-
-            const data = await response.json();
-            console.log(`API响应码: ${data.code}, 消息: ${JSON.stringify(data)}`);
-
-            if (data && data.code === '0' && data.data && data.data.length > 0) {
-                const transactionData = data.data[0];
-
-                if (transactionData.transactionLists && transactionData.transactionLists.length > 0) {
-                    allTransactions.push(...transactionData.transactionLists);
-
-                    // 如果返回的数据少于100条，说明没有更多数据了
-                    if (transactionData.transactionLists.length < 100) {
-                        hasMore = false;
-                    } else {
-                        // 检查是否有更多页面
-                        const returnedPage = parseInt(transactionData.page);
-                        const totalPages = parseInt(transactionData.totalPage);
-
-                        if (returnedPage >= totalPages) {
-                            hasMore = false;
-                        } else {
-                            // 分页查询下一页
-                            currentPage = returnedPage + 1;
-                            console.log(`    已获取第 ${returnedPage} 页 ${allTransactions.length} 条记录，继续获取第 ${currentPage} 页...`);
-                        }
-                    }
-                } else {
-                    hasMore = false;
-                }
-            } else {
-                hasMore = false;
-            }
-
-            // 请求成功，重置重试计数
-            retryCount = 0;
-
-            // API限流，避免请求过快
-            await new Promise(resolve => setTimeout(resolve, 1000));
-
-        } catch (error) {
-            console.error(`\n❌ 查询地址 ${address} 第${currentPage}页失败 (重试 ${retryCount}/${maxRetries}):`);
-            console.error(`错误类型: ${error.constructor.name}`);
-            console.error(`错误消息: ${error.message}`);
-
-            // 输出更详细的错误信息
-            if (error.cause) {
-                console.error(`错误原因: ${error.cause}`);
-            }
-
-            if (error.code) {
-                console.error(`错误代码: ${error.code}`);
-            }
-
-            if (error.errno) {
-                console.error(`系统错误号: ${error.errno}`);
-            }
-
-            if (error.syscall) {
-                console.error(`系统调用: ${error.syscall}`);
-            }
-
-            // 检查是否可以重试
-            if (retryCount < maxRetries) {
-                retryCount++;
-                console.log(`⏳ ${2 ** retryCount}秒后重试...`);
-                await new Promise(resolve => setTimeout(resolve, 2000 ** retryCount)); // 指数退避
-                continue; // 继续下一次循环
-            }
-
-            // 检查是否是代理相关错误
-            if (error.message.includes('proxy') || error.message.includes('tunnel') || error.message.includes('connect')) {
-                console.error('\n💡 可能的解决方案:');
-                console.error('1. 检查代理服务器是否正在运行');
-                console.error('2. 确认代理地址和端口是否正确');
-                console.error('3. 尝试更换代理类型 (http/socks5)');
-                console.error('4. 检查防火墙设置');
-            }
-
-            console.error('❌ 重试次数已达上限，停止查询');
-            console.error(''); // 空行分隔
-            hasMore = false;
-        }
-    }
-
-    return allTransactions;
-}
-
-// 获取池子所有转入的DOG代币交易
-async function getPoolAllTransfers() {
-    console.log('正在获取池子的所有DOG类型交易记录（强制刷新缓存）...');
-
-    const cacheFile = 'pool-transactions-cache.json';
-
-    // 获取新的数据 - 使用transaction-list接口获取所有交易
-    const transactions = await queryAllTransactions(CONFIG.POOL_ADDRESS);
-    const addLiquidityTransactions = transactions.filter(tx => tx.methodId === '0xe8e33700');
-
-    // // 过滤出转入池子的交易（to地址是池子地址且交易符号是DOG）
-    // const poolTransfers = transactions.filter(tx =>
-    //     tx.to && tx.to.toLowerCase() === CONFIG.POOL_ADDRESS.toLowerCase() &&
-    //     tx.transactionSymbol === 'DOG'
-    // );
-
-    // 保存到缓存文件
-    const cacheData = {
-        poolAddress: CONFIG.POOL_ADDRESS,
-        tokenAddress: DOG_CONTRACT,
-        transfers: addLiquidityTransactions,
-        cacheTime: new Date().toISOString(),
-        totalRecords: addLiquidityTransactions.length
-    };
-
-    fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2));
-    console.log(`✅ 已获取并更新 ${addLiquidityTransactions.length} 条转入池子的DOG交易记录，已保存到缓存`);
-
-    return addLiquidityTransactions;
-}
+// 注意：已移除查询转账记录的功能，现在直接计算用户在池子中的实际持有量
 
 // 主函数
 async function main() {
-    console.log('=== DOG代币池子转账统计 ===');
+    console.log('=== DOG代币池子持有量统计 ===');
     console.log('::group::配置信息');
 
     // 配置检查
@@ -327,112 +137,151 @@ async function main() {
         console.log('  配置方法: 设置USE_PROXY=true并配置PROXY_URL');
     }
 
-    // 第一步：获取池子的所有转账记录（带缓存）
-    console.log('::group::获取池子转账数据');
-    const poolTransfers = await getPoolAllTransfers();
+    // 第一步：获取池子当前的实际DOG代币余额
+    console.log('::group::获取池子实际余额');
+    const poolBalanceData = await calculateUserPoolDOGHoldings(
+        CONFIG.POOL_ADDRESS, // 查询池子本身的余额
+        CONFIG.POOL_ADDRESS,
+        CONFIG.POOL_ADDRESS,
+        DOG_CONTRACT
+    ).then(result => ({
+        balance: result.poolDOGReserve || 0,
+        symbol: 'DOG'
+    })).catch(() => ({
+        balance: 0,
+        symbol: 'DOG'
+    }));
+    console.log(`池子DOG储备量: ${poolBalanceData.balance.toLocaleString()} DOG`);
     console.log('::endgroup::');
 
-    if (poolTransfers.length === 0) {
-        console.log('未找到任何转入池子的DOG交易记录');
-        return;
-    }
+    // 第二步：计算每个用户在池子中的实际DOG持有量
+    console.log('::group::计算用户实际池子持有量');
+    const userStatsArray = [];
 
-    console.log('::group::统计用户转账情况');
-    console.log(`开始统计users.json中用户的转账情况...`);
+    for (const user of usersData) {
+        console.log(`正在计算用户 ${user.nickname} 的池子持有量...`);
 
-    // 第二步：创建用户地址映射（address -> user）
-    const addressToUser = new Map();
-    usersData.forEach(user => {
-        user.addresses.forEach(address => {
-            addressToUser.set(address.toLowerCase(), user);
-        });
-    });
+        let totalDOGHoldings = 0;
+        let totalLPBalance = 0;
+        const addressHoldings = [];
 
-    // 第三步：统计每个用户的转账情况
-    const userStats = new Map();
+        // 计算每个地址的持有量
+        for (const address of user.addresses) {
+            console.log(`  计算地址 ${address.slice(0, 6)}...${address.slice(-4)}`);
 
-    poolTransfers.forEach(tx => {
-        const fromAddress = tx.from.toLowerCase();
-        const user = addressToUser.get(fromAddress);
+            const holdings = await calculateUserPoolDOGHoldings(
+                address,
+                CONFIG.POOL_ADDRESS,
+                CONFIG.POOL_ADDRESS, // 池子合约就是LP代币合约
+                DOG_CONTRACT
+            );
 
-        if (user) {
-            let amount = 0;
-
-            // transaction-list接口的数据结构
-            if (tx.amount) {
-                amount = parseFloat(tx.amount);
-            } else if (tx.value) {
-                amount = parseFloat(tx.value);
-            } else {
-                console.log(`无法获取交易金额:`, tx.hash || tx.txId);
-                return;
-            }
-
-            if (userStats.has(user.nickname)) {
-                const stats = userStats.get(user.nickname);
-                stats.totalAmount += amount;
-                stats.transactionCount += 1;
-                stats.transactions.push(tx);
-            } else {
-                userStats.set(user.nickname, {
-                    nickname: user.nickname,
-                    totalAmount: amount,
-                    transactionCount: 1,
-                    transactions: [tx]
+            if (holdings.dogHoldings > 0) {
+                totalDOGHoldings += holdings.dogHoldings;
+                totalLPBalance += holdings.lpBalance;
+                addressHoldings.push({
+                    address: address,
+                    dogHoldings: holdings.dogHoldings,
+                    lpBalance: holdings.lpBalance,
+                    userShare: holdings.userShare || 0
                 });
             }
-        }
-    });
 
-    // 转换为数组并排序
-    const userStatsArray = Array.from(userStats.values()).sort((a, b) => b.totalAmount - a.totalAmount);
+            // 避免API限流
+            await new Promise(resolve => setTimeout(resolve, 200));
+        }
+
+        if (totalDOGHoldings > 0) {
+            userStatsArray.push({
+                nickname: user.nickname,
+                totalDOGHoldings: totalDOGHoldings,
+                totalLPBalance: totalLPBalance,
+                addressHoldings: addressHoldings
+            });
+
+            console.log(`${user.nickname} 池子DOG持有量: ${totalDOGHoldings.toFixed(6)} DOG`);
+        }
+    }
+    console.log('::endgroup::');
+
+    // 按DOG持有量排序
+    userStatsArray.sort((a, b) => b.totalDOGHoldings - a.totalDOGHoldings);
 
     // 计算总计
-    const totalTransferred = userStatsArray.reduce((sum, user) => sum + user.totalAmount, 0);
-    const totalTransactions = userStatsArray.reduce((sum, user) => sum + user.transactionCount, 0);
+    const totalDOGHoldings = userStatsArray.reduce((sum, user) => sum + user.totalDOGHoldings, 0);
 
     // 输出统计结果
-    console.log('\n=== 统计结果 ===');
-    console.log(`总转账金额: ${totalTransferred.toLocaleString()} DOG`);
-    console.log(`总转账笔数: ${totalTransactions} 笔`);
-    console.log(`涉及用户数: ${userStatsArray.length} 个`);
-    console.log(`池子总转入记录数: ${poolTransfers.length} 条`);
+    console.log(`\n=== 实际池子持有量统计 ===`);
+    console.log(`用户总DOG持有量: ${totalDOGHoldings.toFixed(6)} DOG`);
+    console.log(`持有LP代币的用户数: ${userStatsArray.length} 个`);
 
-    console.log('\n=== 用户转账详情（按金额排序） ===');
+    // 显示池子实际余额
+    if (poolBalanceData) {
+        console.log(`\n=== 池子储备量对比 ===`);
+        console.log(`池子当前DOG储备量: ${poolBalanceData.balance.toLocaleString()} DOG`);
+        console.log(`用户持有DOG总量: ${totalDOGHoldings.toFixed(6)} DOG`);
+
+        const unallocatedDOG = poolBalanceData.balance - totalDOGHoldings;
+        const unallocatedPercent = poolBalanceData.balance > 0 ? (unallocatedDOG / poolBalanceData.balance) * 100 : 0;
+
+        console.log(`未分配DOG量: ${unallocatedDOG.toFixed(6)} DOG (${unallocatedPercent.toFixed(2)}%)`);
+
+        if (Math.abs(unallocatedDOG) > 0.01) {
+            console.log(`ℹ️  未分配DOG可能来自初始流动性或其他来源`);
+        }
+    } else {
+        console.log(`\n⚠️  无法获取池子实际余额，请检查API配置`);
+    }
+
+    console.log('\n=== 用户池子持有量详情（按持有量排序） ===');
     userStatsArray.forEach((user, index) => {
-        console.log(`${index + 1}. ${user.nickname}: ${user.totalAmount.toLocaleString()} DOG (${user.transactionCount} 笔)`);
+        console.log(`${index + 1}. ${user.nickname}:`);
+        console.log(`   池子DOG持有量: ${user.totalDOGHoldings.toFixed(6)} DOG`);
+
+        if (user.totalLPBalance > 0) {
+            console.log(`   LP代币持有量: ${user.totalLPBalance.toFixed(6)}`);
+        }
+
+        // 显示各地址详情
+        if (user.addressHoldings && user.addressHoldings.length > 0) {
+            user.addressHoldings.forEach(addr => {
+                console.log(`   - ${addr.address.slice(0, 6)}...${addr.address.slice(-4)}: ${addr.dogHoldings.toFixed(6)} DOG`);
+            });
+        }
+
+        console.log('');
     });
 
     // 保存详细结果到文件
     const result = {
         summary: {
-            totalTransferred,
-            totalTransactions,
-            usersInvolved: userStatsArray.length,
-            poolTotalRecords: poolTransfers.length,
-            poolAddress: CONFIG.POOL_ADDRESS
+            poolAddress: CONFIG.POOL_ADDRESS,
+            poolActualBalance: poolBalanceData ? poolBalanceData.balance : null,
+            totalDOGHoldings: totalDOGHoldings,
+            usersWithHoldings: userStatsArray.length
         },
         userDetails: userStatsArray,
-        poolTransfers: poolTransfers,
+        poolBalanceData: poolBalanceData,
         queryTime: new Date().toISOString()
     };
 
-    fs.writeFileSync('pool-transfer-stats.json', JSON.stringify(result, null, 2));
-    console.log('\n详细结果已保存到 pool-transfer-stats.json');
+    fs.writeFileSync('pool-holdings-stats.json', JSON.stringify(result, null, 2));
+    console.log('\n详细结果已保存到 pool-holdings-stats.json');
 
-    // 保存简化版本（只包含统计信息，不包含详细交易记录）
+    // 保存简化版本
     const simpleResult = {
         summary: result.summary,
         userDetails: userStatsArray.map(user => ({
             nickname: user.nickname,
-            totalAmount: user.totalAmount,
-            transactionCount: user.transactionCount
+            totalDOGHoldings: user.totalDOGHoldings,
+            totalLPBalance: user.totalLPBalance
         })),
+        poolBalanceData: poolBalanceData,
         queryTime: result.queryTime
     };
 
-    fs.writeFileSync('pool-transfer-stats-simple.json', JSON.stringify(simpleResult, null, 2));
-    console.log('简化结果已保存到 pool-transfer-stats-simple.json');
+    fs.writeFileSync('pool-holdings-stats-simple.json', JSON.stringify(simpleResult, null, 2));
+    console.log('简化结果已保存到 pool-holdings-stats-simple.json');
     console.log('::endgroup::');
 }
 

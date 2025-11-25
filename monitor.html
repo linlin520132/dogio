@@ -321,11 +321,11 @@
                                             <span class="zh">当前持仓</span>
                                             <span class="en hidden">Current Balance</span>
                                         </th>
-                                        <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolAddedAmount" data-tab="large">
+                                        <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolDOGHoldings" data-tab="large">
                                             <div class="flex items-center">
                                                 <span>
-                                                    <span class="zh">加池子数量</span>
-                                                    <span class="en hidden">Pool AddedAmount</span>
+                                                    <span class="zh">池子DOG持有量</span>
+                                                    <span class="en hidden">Pool DOG Holdings</span>
                                                 </span>
                                                 <div class="sort-icons flex flex-col ml-2">
                                                     <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
@@ -402,11 +402,11 @@
                                             <span class="zh">当前持仓</span>
                                             <span class="en hidden">Current Balance</span>
                                         </th>
-                                        <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolAddedAmount" data-tab="small">
+                                        <th class="pb-3 text-light/80 font-medium min-w-[120px] w-[140px] cursor-pointer hover:text-secondary transition-colors sortable-header" data-sort="poolDOGHoldings" data-tab="small">
                                             <div class="flex items-center">
                                                 <span>
-                                                    <span class="zh">加池子数量</span>
-                                                    <span class="en hidden">Pool AddedAmount</span>
+                                                    <span class="zh">池子DOG持有量</span>
+                                                    <span class="en hidden">Pool DOG Holdings</span>
                                                 </span>
                                                 <div class="sort-icons flex flex-col ml-2">
                                                     <i class="fa fa-chevron-up text-xs opacity-30 sort-up"></i>
@@ -572,11 +572,11 @@
                 totalUsersEl.textContent = data.totalUsers;
             }
 
-            // 计算并更新当前总持仓（包含加池子的DOG数量）
+            // 计算并更新当前总持仓（包含池子DOG持有量）
             if (data.users && data.users.length > 0) {
                 const totalBalance = data.users.reduce((sum, user) => {
-                    const poolAddedAmount = poolTransferData[user.nickname] || 0;
-                    return sum + (user.totalBalance || 0) + poolAddedAmount;
+                    const poolDOGHoldings = user.poolDOGHoldings || 0;
+                    return sum + (user.totalBalance || 0) + poolDOGHoldings;
                 }, 0);
                 totalBalanceEl.textContent = Math.round(totalBalance).toLocaleString();
             }
@@ -641,13 +641,13 @@
         function renderRankingModal() {
             const modalContent = document.getElementById('ranking-modal-content');
 
-            // 检查是否有转账数据
-            if (!poolTransferData || Object.keys(poolTransferData).length === 0) {
+            // 检查是否有用户数据
+            if (!usersLarge || usersLarge.length === 0) {
                 modalContent.innerHTML = `
                     <div class="text-center text-light/50 py-12">
                         <i class="fa fa-info-circle text-4xl mb-4"></i>
-                        <p class="text-lg zh">暂无转账数据</p>
-                        <p class="text-lg en hidden">No transfer data available</p>
+                        <p class="text-lg zh">暂无用户数据</p>
+                        <p class="text-lg en hidden">No user data available</p>
                         <p class="text-sm mt-2 zh">请稍后刷新页面重试</p>
                         <p class="text-sm mt-2 en hidden">Please refresh the page later</p>
                     </div>
@@ -655,11 +655,14 @@
                 return;
             }
 
-            // 将转账数据转换为数组并排序
-            const rankingData = Object.entries(poolTransferData)
-                .map(([nickname, amount]) => ({ nickname, amount }))
-                .filter(item => item.amount > 0) // 只显示有转账的用户
-                .sort((a, b) => b.amount - a.amount); // 按金额降序排序
+            // 将池子DOG持有量数据转换为数组并排序
+            const rankingData = [...usersLarge, ...usersSmall]
+                .filter(user => (user.poolDOGHoldings || 0) > 0) // 只显示有池子持有量的用户
+                .map(user => ({
+                    nickname: user.nickname,
+                    amount: user.poolDOGHoldings || 0
+                }))
+                .sort((a, b) => b.amount - a.amount); // 按持有量降序排序
 
             // 生成排行榜HTML
             const rankingHtml = rankingData.map((item, index) => {
@@ -706,8 +709,8 @@
                                 <!-- 用户信息 -->
                                 <div class="flex-1">
                                     <div class="font-semibold text-white text-lg">${item.nickname}</div>
-                                    <div class="text-sm text-light/60 zh">池子贡献者</div>
-                                    <div class="text-sm text-light/60 en hidden">Pool Contributor</div>
+                                    <div class="text-sm text-light/60 zh">池子持有者</div>
+                                    <div class="text-sm text-light/60 en hidden">Pool Holder</div>
                                 </div>
                             </div>
 
@@ -810,8 +813,8 @@
 
             // 重新计算每个用户的调整后余额
             allUsers.forEach(user => {
-                const poolAddedAmount = poolTransferData[user.nickname] || 0;
-                user.adjustedTotalBalance = user.totalBalance + poolAddedAmount;
+                const poolDOGHoldings = user.poolDOGHoldings || 0;
+                user.adjustedTotalBalance = user.totalBalance + poolDOGHoldings;
             });
 
             // 基于调整后的余额重新分组
@@ -884,13 +887,10 @@
                 return;
             }
 
-            // 更新每个用户的百分比和加池子数量（基于调整后的持仓合计）
+            // 更新每个用户的百分比和池子持有量（基于调整后的持仓合计）
             usersToRender.forEach(user => {
-                const poolAddedAmount = poolTransferData[user.nickname] || 0;
-                const adjustedTotalBalance = user.totalBalance + poolAddedAmount;
-
-                // 添加poolAddedAmount字段用于排序
-                user.poolAddedAmount = poolAddedAmount;
+                const poolDOGHoldings = user.poolDOGHoldings || 0;
+                const adjustedTotalBalance = user.totalBalance + poolDOGHoldings;
 
                 if (user.initialBalanceTotal > 0) {
                     user.adjustedPercentage = ((adjustedTotalBalance - user.initialBalanceTotal) / user.initialBalanceTotal) * 100;
@@ -908,6 +908,12 @@
                     if (state.field === 'percentage') {
                         aValue = a.adjustedPercentage || 0;
                         bValue = b.adjustedPercentage || 0;
+                    } else if (state.field === 'totalBalance') {
+                        // 当前持仓合计列：使用包含池子DOG的总持仓
+                        const poolDOGHoldingsA = a.poolDOGHoldings || 0;
+                        const poolDOGHoldingsB = b.poolDOGHoldings || 0;
+                        aValue = (a.totalBalance || 0) + poolDOGHoldingsA;
+                        bValue = (b.totalBalance || 0) + poolDOGHoldingsB;
                     } else {
                         aValue = a[state.field];
                         bValue = b[state.field];
@@ -1057,11 +1063,17 @@
                     const allUsers = response.data.users;
                     const threshold = 100000000; // 1亿
 
-                    // 将用户数据分成两组
-                    usersLarge = allUsers.filter(user => (user.totalBalance || 0) >= threshold);
-                    usersSmall = allUsers.filter(user => (user.totalBalance || 0) < threshold);
+                    // 将用户数据分成两组（基于包含池子DOG的总持仓）
+                    usersLarge = allUsers.filter(user => {
+                        const totalWithPool = (user.totalBalance || 0) + (user.poolDOGHoldings || 0);
+                        return totalWithPool >= threshold;
+                    });
+                    usersSmall = allUsers.filter(user => {
+                        const totalWithPool = (user.totalBalance || 0) + (user.poolDOGHoldings || 0);
+                        return totalWithPool < threshold;
+                    });
 
-                    // 更新 tab 计数
+                    // 更新 tab 计数（基于新的分组逻辑）
                     tabLargeCount.textContent = `(${usersLarge.length})`;
                     tabSmallCount.textContent = `(${usersSmall.length})`;
 
@@ -1122,8 +1134,8 @@
                     throw new Error('数据格式错误：缺少 success 或 data 字段');
                 }
 
-                // 同时加载转账数据
-                await loadPoolTransferData();
+                // 加载池子统计数据
+                await loadPoolStatsData();
 
                 // 处理响应数据（转换为字符串格式以兼容现有处理函数）
                 handleApiResponse(JSON.stringify(jsonData));
@@ -1150,35 +1162,22 @@
             }
         }
 
-        // 加载转账数据
-        async function loadPoolTransferData() {
+        // 加载池子统计数据（现在集成在balance-data.json中）
+        async function loadPoolStatsData() {
             try {
-                console.log('正在加载转账数据...');
-                const response = await fetch('./pool-transfer-stats-simple.json');
+                console.log('正在加载池子统计数据...');
 
-                if (!response.ok) {
-                    console.warn('转账数据文件不存在，将使用默认值');
-                    poolTransferData = {};
-                    return;
-                }
-
-                const data = await response.json();
+                // 池子统计数据现在在balance-data.json中，所以这里设置为空对象
+                // 实际的池子统计信息会从balance-data.json的poolStats字段获取
                 poolTransferData = {};
 
-                // 将转账数据按昵称索引，便于快速查找
-                if (data.userDetails) {
-                    data.userDetails.forEach(user => {
-                        poolTransferData[user.nickname] = user.totalAmount || 0;
-                    });
-                }
+                console.log('池子统计数据初始化完成');
 
-                console.log('转账数据加载完成，涉及用户数:', Object.keys(poolTransferData).length);
-
-                // 转账数据加载完成后，重新渲染表格以应用新的分组逻辑
+                // 重新渲染表格以应用新的分组逻辑
                 renderSortedTable('large');
                 renderSortedTable('small');
             } catch (error) {
-                console.warn('加载转账数据失败:', error);
+                console.warn('初始化池子统计数据失败:', error);
                 poolTransferData = {};
             }
         }
@@ -1236,11 +1235,11 @@
                     return `<div class="text-white font-mono text-sm mb-1 last:mb-0">${Math.round(balance).toLocaleString()}</div>`;
                 }).join('');
 
-                // 加池子的DOG数量
-                const poolAddedAmount = poolTransferData[user.nickname] || 0;
+                // 池子DOG持有量（从新的数据字段获取）
+                const poolDOGHoldings = user.poolDOGHoldings || 0;
 
-                // 重新计算当前持仓合计（包含加池子的DOG数量）
-                const adjustedTotalBalance = user.totalBalance + poolAddedAmount;
+                // 重新计算当前持仓合计（包含池子中的DOG数量）
+                const adjustedTotalBalance = user.totalBalance + poolDOGHoldings;
 
                 // 百分比样式
                 let percentageClass = 'text-light/70';
@@ -1259,7 +1258,7 @@
                         <td class="py-3 text-white font-medium min-w-[100px] w-[120px] align-middle">${user.nickname}</td>
                         <td class="py-3 text-light/70 min-w-[120px] w-[150px] align-middle">${addressesHtml}</td>
                         <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${balancesHtml}</td>
-                        <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${Math.round(poolAddedAmount).toLocaleString()}</td>
+                        <td class="py-3 text-white font-mono min-w-[120px] w-[140px] align-middle">${Math.round(poolDOGHoldings).toLocaleString()}</td>
                         <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(adjustedTotalBalance).toLocaleString()}</td>
                         <td class="py-3 text-white font-mono min-w-[130px] w-[150px] align-middle">${Math.round(user.initialBalanceTotal).toLocaleString()}</td>
                         <td class="py-3 min-w-[100px] w-[120px] align-middle"><span class="${percentageClass}">${percentageIcon}${user.adjustedPercentage.toFixed(2)}%</span></td>
@@ -1279,8 +1278,8 @@
                 <div class="flex items-center justify-between p-6 border-b border-primary/20">
                     <h2 class="text-xl font-bold text-white flex items-center">
                         <i class="fa fa-trophy text-secondary mr-3 text-2xl"></i>
-                        <span class="zh">池子贡献排行榜</span>
-                        <span class="en hidden">Pool Contribution Ranking</span>
+                        <span class="zh">池子DOG持有量排行榜</span>
+                        <span class="en hidden">Pool DOG Holdings Ranking</span>
                     </h2>
                     <button id="ranking-modal-close" class="text-light/60 hover:text-white transition-colors">
                         <i class="fa fa-times text-xl"></i>
