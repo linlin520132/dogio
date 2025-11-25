@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalTransferred": 1979096145.461602,
-    "totalTransactions": 454,
+    "totalTransferred": 2116041664.967221,
+    "totalTransactions": 474,
     "usersInvolved": 62,
-    "poolTotalRecords": 1425,
+    "poolTotalRecords": 1493,
     "poolAddress": "0x41027D3CaCc14F35Abd387B7350c05247e9Ac646"
   },
   "userDetails": [
@@ -73,6 +73,11 @@
       "transactionCount": 6
     },
     {
+      "nickname": "东风（叶军民）",
+      "totalAmount": 55438044.302792005,
+      "transactionCount": 16
+    },
+    {
       "nickname": "老铁Bro",
       "totalAmount": 53257551.83116428,
       "transactionCount": 22
@@ -93,6 +98,11 @@
       "transactionCount": 2
     },
     {
+      "nickname": "DOG王",
+      "totalAmount": 45746463.99692363,
+      "transactionCount": 6
+    },
+    {
       "nickname": "LV",
       "totalAmount": 45516162.254347265,
       "transactionCount": 8
@@ -108,6 +118,16 @@
       "transactionCount": 2
     },
     {
+      "nickname": "如果 爱",
+      "totalAmount": 42750728.22865292,
+      "transactionCount": 6
+    },
+    {
+      "nickname": "上官允禾",
+      "totalAmount": 34386372.940007,
+      "transactionCount": 6
+    },
+    {
       "nickname": "努力赚钱",
       "totalAmount": 28807777.263333004,
       "transactionCount": 8
@@ -116,11 +136,6 @@
       "nickname": "貳大爺",
       "totalAmount": 19966233.378077,
       "transactionCount": 4
-    },
-    {
-      "nickname": "东风（叶军民）",
-      "totalAmount": 19897478.545994,
-      "transactionCount": 12
     },
     {
       "nickname": "2025国泰民安",
@@ -133,19 +148,24 @@
       "transactionCount": 14
     },
     {
-      "nickname": "☁️",
-      "totalAmount": 15018385.135947999,
-      "transactionCount": 4
+      "nickname": "Cassie",
+      "totalAmount": 18830141.818755157,
+      "transactionCount": 6
     },
     {
-      "nickname": "如果 爱",
-      "totalAmount": 14561139.133785414,
+      "nickname": "☁️",
+      "totalAmount": 15018385.135947999,
       "transactionCount": 4
     },
     {
       "nickname": "城市/ht 日记",
       "totalAmount": 14143769.548696151,
       "transactionCount": 8
+    },
+    {
+      "nickname": "zhengch",
+      "totalAmount": 12745584.184627313,
+      "transactionCount": 14
     },
     {
       "nickname": "星星之火",
@@ -156,16 +176,6 @@
       "nickname": "光",
       "totalAmount": 12343494.84700457,
       "transactionCount": 34
-    },
-    {
-      "nickname": "上官允禾",
-      "totalAmount": 12047889.130399,
-      "transactionCount": 2
-    },
-    {
-      "nickname": "zhengch",
-      "totalAmount": 11760995.08171638,
-      "transactionCount": 10
     },
     {
       "nickname": "大白",
@@ -186,11 +196,6 @@
       "nickname": "繁星社区~甘",
       "totalAmount": 11001048.048685132,
       "transactionCount": 2
-    },
-    {
-      "nickname": "DOG王",
-      "totalAmount": 10375308.326186202,
-      "transactionCount": 4
     },
     {
       "nickname": "安德鲁",
@@ -243,11 +248,6 @@
       "transactionCount": 4
     },
     {
-      "nickname": "Cassie",
-      "totalAmount": 4491728.336807049,
-      "transactionCount": 4
-    },
-    {
       "nickname": "汽修",
       "totalAmount": 4344305.938191,
       "transactionCount": 8
@@ -289,8 +289,8 @@
     },
     {
       "nickname": "墨白",
-      "totalAmount": 632536.391277,
-      "transactionCount": 6
+      "totalAmount": 815258.9800260001,
+      "transactionCount": 8
     },
     {
       "nickname": "城",
@@ -318,5 +318,5 @@
       "transactionCount": 2
     }
   ],
-  "queryTime": "2025-11-24T16:33:44.351Z"
+  "queryTime": "2025-11-25T01:47:22.591Z"
 }
