@@ -131,7 +131,8 @@
     {
         "nickname": "焚石",
         "addresses": [
-            "0x67514d3219fd78AA1e6d528fBa32A589a167968c"
+            "0x67514d3219fd78AA1e6d528fBa32A589a167968c",
+            "0x97bbaa519ee28f8cb36fe7d9a4e4683998fc8200"
         ],
         "initialBalanceTotal": 200000000
     },
